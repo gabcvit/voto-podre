@@ -11,6 +11,5 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
-const props = defineProps<{ info: Record<string, any> }>();
+defineProps<{ info: Record<string, string | number> }>();
 </script>

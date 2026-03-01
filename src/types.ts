@@ -16,5 +16,5 @@ export type PautaPodre = {
     descricao: string,
     urlVotos: string,
     urlProposicao: string,
-    idsDeputadosPodres: number[],
+    idsDeputadosPodres: (number | undefined)[],
 }
