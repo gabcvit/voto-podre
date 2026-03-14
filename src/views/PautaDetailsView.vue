@@ -54,7 +54,7 @@ function getPautaById(id: string | number) {
   return PAUTAS_PODRES.find(pauta => String(pauta.id) === String(id));
 }
 
-function getDeputadosByIds(ids: Array<string | number>) {
+function getDeputadosByIds(ids: Array<number | undefined>) {
   return TODOS_DEPUTADOS.dados.filter(deputado => ids.includes(deputado.id));
 }
 
@@ -65,7 +65,7 @@ const pautaId = computed(() => {
 const pauta = computed(() => pautaId.value ? getPautaById(pautaId.value) : undefined);
 const deputados = computed(() => {
   if (!pauta.value || !Array.isArray(pauta.value.idsDeputadosPodres)) return [];
-  return getDeputadosByIds(pauta.value.idsDeputadosPodres.filter((id): id is string | number => id !== undefined));
+  return getDeputadosByIds(pauta.value.idsDeputadosPodres.filter((id) => id !== undefined));
 });
 
 // --- Navigation ---
@@ -73,7 +73,7 @@ function goBack() {
   router.back();
 }
 
-function goToDeputadoDetails(id: string | number) {
+function goToDeputadoDetails(id: number) {
   router.push({ name: 'DeputadoDetails', params: { id } });
 }
 </script>
