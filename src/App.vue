@@ -1,10 +1,13 @@
 <script setup lang="ts">
-
+import TheNavbar from '@/components/TheNavbar.vue';
 </script>
 
 <template>
   <div class="bg-zinc-950 text-white min-h-screen">
-    <router-view />
+    <TheNavbar />
+    <main>
+      <router-view />
+    </main>
   </div>
 </template>
 

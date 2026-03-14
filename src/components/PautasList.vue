@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-2xl font-semibold mb-4">Pautas Podres apoiadas por este Deputado</h2>
+    <h2 v-if="showTitle" class="text-2xl font-semibold mb-4">Pautas Podres apoiadas por este Deputado</h2>
     <div v-if="pautas.length > 0" class="flex flex-col gap-3">
       <div
         v-for="pauta in pautas"
@@ -23,7 +23,11 @@
 import { useRouter } from 'vue-router';
 import IconDocumentation from '@/components/icons/IconDocumentation.vue';
 
-defineProps<{ pautas: Array<{ id: string | number; nome: string; descricao: string }> }>();
+withDefaults(defineProps<{
+  pautas: Array<{ id: string | number; nome: string; descricao: string }>;
+  showTitle?: boolean;
+}>(), { showTitle: true });
+
 const router = useRouter();
 
 function goToPautaDetails(id: string | number) {

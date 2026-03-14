@@ -7244,3 +7244,5 @@ export const IDS_DEPUTADOS_PODRES = VOTOS.dados.map(voto => {
         return voto.deputado_.id
     }
 })
+
+export default IDS_DEPUTADOS_PODRES;
