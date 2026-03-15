@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: './voto-podre/',
   plugins: [
     vue(),
     vueDevTools(),
