@@ -3,14 +3,14 @@
 
     <!-- Hero -->
     <section aria-label="Apresentação" class="pt-16 pb-14 border-b border-zinc-200 dark:border-zinc-800 animate-fade-in-up">
-      <p class="text-xs font-black uppercase tracking-widest text-red-500 mb-4">Transparência · Memória · Responsabilidade</p>
+      <p class="text-md font-black uppercase tracking-widest text-red-500 mb-4">Transparência · Memória · Responsabilidade</p>
       <h1
         class="font-black uppercase leading-none tracking-tighter text-zinc-900 mb-6 dark:text-white"
         style="font-family: 'Syne', sans-serif; font-size: clamp(3rem, 10vw, 7rem);"
       >
         Voto<br><span class="text-red-500">Podre</span>
       </h1>
-      <p class="text-zinc-600 max-w-xl leading-relaxed mb-8 text-base dark:text-zinc-400">
+      <p class="text-zinc-600 max-w-xl leading-relaxed mb-8 text-md dark:text-zinc-400">
         Transparência é a arma do cidadão.<br>
         Aqui você descobre quais deputados votaram
         <strong class="text-zinc-900 font-bold dark:text-white">contra o seu futuro</strong>.
@@ -18,13 +18,13 @@
       <div class="flex flex-wrap gap-3">
         <RouterLink
           to="/pautas-podres"
-          class="px-5 py-2 bg-red-500 hover:bg-red-400 text-white text-xs font-black uppercase tracking-widest transition-colors"
+          class="px-5 py-2 bg-red-500 hover:bg-red-400 text-white text-sm font-black uppercase tracking-widest transition-colors"
         >
           Ver Pautas
         </RouterLink>
         <RouterLink
           to="/deputados"
-          class="px-5 py-2 border border-zinc-300 hover:border-zinc-500 text-zinc-900 text-xs font-black uppercase tracking-widest transition-colors dark:border-zinc-700 dark:hover:border-zinc-500 dark:text-white"
+          class="px-5 py-2 border border-zinc-300 hover:border-zinc-500 text-zinc-900 text-sm font-black uppercase tracking-widest transition-colors dark:border-zinc-700 dark:hover:border-zinc-500 dark:text-white"
         >
           Ver Deputados
         </RouterLink>
@@ -61,7 +61,7 @@
       >
         Nunca esqueça quem votou <span class="text-red-500">contra o seu futuro.</span>
       </h2>
-      <p class="text-zinc-500 leading-relaxed max-w-2xl text-sm">
+      <p class="text-zinc-500 leading-relaxed max-w-2xl text-md">
         Cada voto podre é uma escolha deliberada de um parlamentar em prejudicar
         trabalhadores, mulheres, os mais vulneráveis e a democracia brasileira.
         Guarde esses nomes. Compartilhe com as pessoas ao seu redor. Leve essa informação

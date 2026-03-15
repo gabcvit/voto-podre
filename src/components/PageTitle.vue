@@ -6,7 +6,7 @@
     >
       {{ title }}
     </h1>
-    <p v-if="subtitle" class="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-8">{{ subtitle }}</p>
+    <p v-if="subtitle" class="text-zinc-500 text-md font-bold uppercase tracking-widest mb-8">{{ subtitle }}</p>
   </div>
 </template>
 

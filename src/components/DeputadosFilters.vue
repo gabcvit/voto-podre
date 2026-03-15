@@ -3,12 +3,12 @@
     <!-- Header -->
     <div class="px-4 py-3 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between">
       <span
-        class="text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400"
+        class="text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400"
         style="font-family: 'Syne', sans-serif;"
       >Filtros</span>
       <button
         v-if="hasActiveFilters"
-        class="text-[10px] font-black uppercase tracking-widest text-red-500 hover:text-red-400 transition-colors"
+        class="text-sm font-black uppercase tracking-widest text-red-500 hover:text-red-400 transition-colors"
         @click="$emit('reset')"
       >
         Limpar filtros
@@ -18,7 +18,7 @@
     <div class="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       <!-- Search by name -->
       <div class="sm:col-span-2 lg:col-span-3">
-        <label for="filter-search" class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
+        <label for="filter-search" class="block text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
           Buscar por nome
         </label>
         <input
@@ -33,7 +33,7 @@
 
       <!-- Status filter -->
       <div class="sm:col-span-2 lg:col-span-3">
-        <p id="status-filter-label" class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
+        <p id="status-filter-label" class="block text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
           Status
         </p>
         <div class="flex flex-wrap gap-2" role="group" aria-labelledby="status-filter-label">
@@ -42,7 +42,7 @@
             :key="option.value"
             :aria-pressed="statusFilter === option.value"
             :class="[
-              'px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-colors border focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500',
+              'px-3 py-1.5 text-sm font-black uppercase tracking-widest transition-colors border focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500',
               statusFilter === option.value
                 ? activeStatusClass(option.value)
                 : 'bg-transparent border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:border-zinc-500 dark:hover:border-zinc-500 hover:text-zinc-900 dark:hover:text-white'
@@ -56,7 +56,7 @@
 
       <!-- Partido filter -->
       <div>
-        <label for="filter-partido" class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
+        <label for="filter-partido" class="block text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
           Partido
         </label>
         <div class="relative">
@@ -71,13 +71,13 @@
               {{ partido }}
             </option>
           </select>
-          <span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-zinc-400 text-xs">▾</span>
+          <span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-zinc-400 text-sm">▾</span>
         </div>
       </div>
 
       <!-- UF filter -->
       <div>
-        <label for="filter-uf" class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
+        <label for="filter-uf" class="block text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
           Estado (UF)
         </label>
         <div class="relative">
@@ -90,14 +90,14 @@
             <option value="">Todos os estados</option>
             <option v-for="uf in availableUfs" :key="uf" :value="uf">{{ uf }}</option>
           </select>
-          <span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-zinc-400 text-xs">▾</span>
+          <span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-zinc-400 text-sm">▾</span>
         </div>
       </div>
 
-      <!-- Min pautas -->
+      <!-- Min votos podres -->
       <div>
-        <label for="filter-min-pautas" class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
-          Mín. pautas
+        <label for="filter-min-pautas" class="block text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
+          Mín. votos podres
         </label>
         <input
           id="filter-min-pautas"

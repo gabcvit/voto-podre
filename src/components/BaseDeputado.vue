@@ -37,7 +37,7 @@
         <div class="flex items-center gap-2 flex-wrap" :class="isCard ? 'mb-2' : ''">
           <span
             :class="[
-              isCard ? 'text-2xl font-black uppercase tracking-tight' : 'font-bold text-zinc-900 dark:text-white text-sm',
+              isCard ? 'text-2xl font-black uppercase tracking-tight' : 'font-bold text-zinc-900 dark:text-white text-md',
               isPodre ? 'text-red-800 dark:text-red-100' : 'text-zinc-900 dark:text-white'
             ]"
             style="font-family: 'Syne', sans-serif;"
@@ -45,7 +45,7 @@
           <span
             class="font-bold uppercase tracking-widest"
             :class="[
-              isCard ? 'text-xs px-2 py-0.5' : 'text-[10px] px-1.5 py-0.5',
+              isCard ? 'text-xs px-2 py-0.5' : 'text-xs px-1.5 py-0.5',
               isPodre ? 'bg-red-500/20 text-red-400' : 'bg-zinc-200 text-zinc-500 dark:bg-zinc-800'
             ]"
           >
@@ -78,7 +78,7 @@
         >{{ podreCount }}</span>
         <span
           class="font-bold uppercase tracking-widest text-red-600"
-          :class="isCard ? 'text-[10px]' : 'text-[9px]'"
+          :class="isCard ? 'text-xs' : 'text-[11px]'"
         >
           voto{{ podreCount > 1 ? 's' : '' }}<br>podre{{ podreCount > 1 ? 's' : '' }}
         </span>

@@ -1,5 +1,5 @@
 <template>
-  <h2 v-if="showTitle" class="text-xl font-black uppercase tracking-tight my-4" style="font-family: 'Syne', sans-serif;">{{ title }}</h2>
+  <h2 v-if="showTitle" class="text-xl font-black uppercase tracking-tight my-8" style="font-family: 'Syne', sans-serif;">{{ title }}</h2>
   <TransitionGroup v-if="pautas.length > 0" name="fade-up" tag="div" class="flex flex-col gap-2">
     <RouterLink
       v-for="(pauta, index) in pautas"
@@ -26,12 +26,14 @@
         <span
           v-for="tema in pauta.temas"
           :key="tema"
-          :class="['text-[10px] font-black uppercase tracking-widest', TEMA_CONFIG[tema].colorClass]"
+          :class="['text-xs font-black uppercase tracking-widest', TEMA_CONFIG[tema].colorClass]"
         >
           {{ TEMA_CONFIG[tema].emoji }} {{ tema }}
         </span>
       </div>
-      <div class="text-xs text-zinc-500 leading-relaxed">{{ pauta.descricao }}</div>
+      <div class="text-sm text-zinc-500 leading-relaxed">
+        {{ pauta.descricao.slice(0, 300) }}{{ pauta.descricao.length > 300 ? '...' : '' }}
+      </div>
     </RouterLink>
   </TransitionGroup>
   <div v-else class="text-zinc-600 text-sm uppercase tracking-widest">Nenhum voto encontrado.</div>

@@ -8,7 +8,7 @@
         class="flex items-start gap-4 px-4 py-3 border-b border-zinc-200 last:border-b-0 dark:border-zinc-800"
         :class="index % 2 === 0 ? 'bg-white dark:bg-black' : 'bg-zinc-50 dark:bg-zinc-950'"
       >
-        <dt class="text-[10px] font-black uppercase tracking-widest text-zinc-500 w-28 flex-shrink-0 pt-0.5 dark:text-zinc-600">{{ labelFor(key) }}</dt>
+        <dt class="text-xs font-black uppercase tracking-widest text-zinc-500 w-28 flex-shrink-0 pt-0.5 dark:text-zinc-600">{{ labelFor(key) }}</dt>
         <dd class="text-zinc-600 text-sm break-all dark:text-zinc-400">{{ value }}</dd>
       </div>
     </dl>

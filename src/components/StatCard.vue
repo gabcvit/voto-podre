@@ -5,7 +5,7 @@
   >
     <span class="text-5xl font-black tabular-nums" :class="valueClasses">{{ value }}</span>
     <span class="text-xs font-bold uppercase tracking-widest text-zinc-600 mt-1 dark:text-zinc-300">{{ label }}</span>
-    <p class="text-xs text-zinc-500 mt-0.5 leading-relaxed dark:text-zinc-600">{{ description }}</p>
+    <p class="text-sm text-zinc-500 mt-0.5 leading-relaxed dark:text-zinc-500">{{ description }}</p>
   </div>
 </template>
 

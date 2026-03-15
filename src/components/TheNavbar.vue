@@ -11,7 +11,7 @@
           v-for="link in navLinks"
           :key="link.to"
           :to="link.to"
-          class="px-3 py-1 text-xs font-bold text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors uppercase tracking-widest"
+          class="px-3 py-1 text-sm font-bold text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors uppercase tracking-widest"
           active-class="text-zinc-900 dark:text-white"
         >
           {{ link.label }}
@@ -64,7 +64,7 @@
         v-for="link in navLinks"
         :key="link.to"
         :to="link.to"
-        class="block px-4 py-3 text-xs font-bold text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors uppercase tracking-widest border-b border-zinc-100 dark:border-zinc-900 last:border-b-0"
+        class="block px-4 py-3 text-sm font-bold text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors uppercase tracking-widest border-b border-zinc-100 dark:border-zinc-900 last:border-b-0"
         active-class="text-zinc-900 dark:text-white"
         @click="menuOpen = false"
       >

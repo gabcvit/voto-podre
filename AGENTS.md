@@ -62,7 +62,7 @@ Data is static (hand-curated from the public Câmara dos Deputados Open Data API
 
 ```bash
 pnpm dev          # dev server
-pnpm build        # type-check + vite build → dist/
+pnpm build        # type-check + vite build → dist/ + runs scripts/prerender.mjs
 pnpm preview      # serve dist/
 pnpm test:unit    # vitest
 pnpm lint         # oxlint + eslint (auto-fix)
@@ -76,6 +76,11 @@ pnpm deploy       # build + push to gh-pages branch
 ```
 /
 ├── index.html                  # Loads Google Fonts (Syne + DM Sans), mounts #app; anti-flash theme script; base SEO/OG/Twitter meta + JSON-LD
+├── scripts/
+│   └── prerender.mjs           # Post-build script: generates dist/<route>/index.html for each static
+│                               # route with correct OG/Twitter meta pre-patched, plus dist/404.html
+│                               # fallback. Required for social-media rich-embed support (GitHub Pages
+│                               # returns 404 for SPA sub-paths without these files).
 ├── public/
 │   ├── robots.txt              # Allow all crawlers; points to sitemap
 │   ├── sitemap.xml             # Static-route + pauta-detail sitemap for search engines
@@ -114,9 +119,9 @@ pnpm deploy       # build + push to gh-pages branch
 │   ├── views/
 │   │   ├── HomeView.vue            # Landing: hero, stats, callout, message cards
 │   │   ├── DeputadosView.vue       # Lists deputies via BaseDeputado; includes DeputadosFilters panel
-│   │   ├── DeputadoDetailsView.vue # Single deputy: card + InfoList + PautasList
+│   │   ├── DeputadoDetailsView.vue # Single deputy: card + InfoList + PautasList + share button (Web Share API / clipboard fallback)
 │   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList; tema filter buttons
-│   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + list of flagged deputies
+│   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + list of flagged deputies + share button (Web Share API / clipboard fallback)
 │   │   ├── AboutView.vue          # Static info / methodology
 │   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, declares zero data collection
 │   │   └── TermsOfUseView.vue     # Termos de Uso — govering law, liability, editorial character
@@ -133,6 +138,7 @@ pnpm deploy       # build + push to gh-pages branch
 │       ├── DeputadosFilters.vue    # Filter panel for DeputadosView (search, status, partido, UF, min pautas)
 │       └── icons/                  # Simple SVG icon components
 │           ├── IconArrowBack.vue
+│           ├── IconShare.vue       # Used in DeputadoDetailsView and PautaDetailsView share buttons
 │           ├── IconSun.vue         # Used in theme toggle (shown in dark mode → switch to light)
 │           └── IconMoon.vue        # Used in theme toggle (shown in light mode → switch to dark)
 ```
@@ -270,8 +276,9 @@ useMeta({
 Exports `SITE_URL = 'https://gabcvit.github.io/voto-podre'` for use in other modules.
 
 **Bot compatibility:**
-- Google, Twitter/X, Facebook, Bluesky: resolved dynamically (all execute JS)
-- WhatsApp / Telegram: uses the static base tags in `index.html` as fallback
+- All static routes (`/sobre`, `/deputados`, etc.): `scripts/prerender.mjs` generates a separate `dist/<route>/index.html` with the correct OG/Twitter meta pre-patched at build time. GitHub Pages serves these as HTTP 200, so all crawlers (Bluesky, WhatsApp, Telegram, Google, etc.) get the right metadata without executing JS.
+- Dynamic routes (`/deputado/:id`, `/pauta/:id`): fall back to `dist/404.html` (GitHub Pages' SPA fallback). Real users get correct in-app navigation; social-media crawlers may show the homepage defaults.
+- If you add a new static route, add a matching entry to `scripts/prerender.mjs`.
 
 ### `useDeputadosFilters(deputados, pautasPodres)`
 Accepts `Ref<Deputado[]>` and `Ref<PautaPodre[]>` (use `storeToRefs` when passing from stores). Returns:

@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-white border-t border-zinc-200 dark:bg-black dark:border-zinc-800 mt-auto">
     <div class="max-w-5xl mx-auto px-4 py-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
-      <p class="text-zinc-500 text-xs leading-relaxed text-center sm:text-left">
+      <p class="text-zinc-500 text-sm leading-relaxed text-center sm:text-left">
         Desenvolvido por
         <a
           href="https://gabcvit.dev/"

@@ -1,9 +1,15 @@
 <template>
   <div v-if="pauta" class="max-w-3xl mx-auto px-4 py-12">
-    <button @click="goBack" class="mb-8 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
-      <IconArrowBack />
-      Voltar
-    </button>
+    <div class="mb-8 flex items-center justify-between">
+      <button @click="goBack" class="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+        <IconArrowBack />
+        Voltar
+      </button>
+      <button @click="share" class="flex items-center gap-2 text-xs font-black uppercase tracking-widest transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500" :class="copied ? 'text-green-500' : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white'">
+        <IconShare class="w-4 h-4" />
+        {{ copied ? 'Link copiado!' : 'Compartilhar' }}
+      </button>
+    </div>
 
     <div
       class="pl-6 mb-10"
@@ -54,8 +60,9 @@
 
 <script setup lang="ts">
 import { useRoute, useRouter } from 'vue-router';
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import IconArrowBack from '@/components/icons/IconArrowBack.vue';
+import IconShare from '@/components/icons/IconShare.vue';
 import BaseDeputado from '@/components/BaseDeputado.vue';
 import { TODOS_DEPUTADOS } from '@/data/deputados';
 import { PAUTAS_PODRES } from '@/data/pautasPodres';
@@ -82,15 +89,37 @@ const deputados = computed(() => {
   return getDeputadosByIds(pauta.value.idsDeputadosPodres.filter((id) => id !== undefined));
 });
 
+const metaDescription = computed(() => {
+  if (!pauta.value) return 'Detalhes sobre esta pauta e os deputados com voto questionável.';
+  const count = deputados.value.length;
+  const action = pauta.value.tipo === 'positiva' ? 'votaram contra' : 'apoiaram';
+  return `${count} deputado${count !== 1 ? 's' : ''} ${action} ${pauta.value.nome}. ${pauta.value.descricao.slice(0, 100)} Compartilhe e mostre quem votou.`;
+});
+
 useMeta({
   title: computed(() => pauta.value?.nome ?? 'Pauta'),
-  description: computed(() => {
-    if (!pauta.value) return 'Detalhes sobre esta pauta e os deputados com voto questionável.'
-    const action = pauta.value.tipo === 'positiva' ? 'votaram contra' : 'apoiaram'
-    return `${pauta.value.nome}: ${pauta.value.descricao.slice(0, 120)}… Veja os deputados que ${action}.`
-  }),
+  description: metaDescription,
   canonicalPath: computed(() => pauta.value ? `/pauta/${pauta.value.id}` : '/pautas-podres'),
 });
+
+const copied = ref(false);
+
+async function share() {
+  const url = window.location.href;
+  const title = pauta.value ? `${pauta.value.nome} — Voto Podre` : 'Voto Podre';
+  const text = metaDescription.value;
+  if (navigator.share) {
+    try {
+      await navigator.share({ title, text, url });
+    } catch {
+      // user cancelled
+    }
+  } else {
+    await navigator.clipboard.writeText(url);
+    copied.value = true;
+    setTimeout(() => { copied.value = false; }, 2500);
+  }
+}
 
 function goBack() {
   router.back();

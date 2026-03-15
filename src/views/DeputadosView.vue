@@ -34,7 +34,7 @@
       <p
         role="status"
         aria-live="polite"
-        class="text-[10px] font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-3"
+        class="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-3"
       >
         {{ filteredDeputados.length }} deputado{{ filteredDeputados.length !== 1 ? 's' : '' }} encontrado{{ filteredDeputados.length !== 1 ? 's' : '' }}
       </p>
