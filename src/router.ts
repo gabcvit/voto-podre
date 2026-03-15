@@ -57,6 +57,7 @@ const routes: RouteRecordRaw[] = [
 const router = createRouter({
   history: createWebHistory('/voto-podre/'),
   routes,
+  scrollBehavior: () => ({ top: 0 }),
 });
 
 export default router;
