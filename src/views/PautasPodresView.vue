@@ -12,6 +12,13 @@
 import PautasList from '@/components/PautasList.vue';
 import PageTitle from '@/components/PageTitle.vue';
 import { usePautasPodresStore } from '@/stores/usePautasPodresStore';
+import { useMeta } from '@/composables/useMeta';
 
 const { pautasPodres } = usePautasPodresStore();
+
+useMeta({
+  title: 'Pautas Podres',
+  description: 'Conheça as pautas podres catalogadas pelo Voto Podre — proposições legislativas que votaram contra os interesses do povo brasileiro.',
+  canonicalPath: '/pautas-podres',
+});
 </script>

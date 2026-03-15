@@ -51,6 +51,7 @@ import IconArrowBack from '@/components/icons/IconArrowBack.vue';
 import BaseDeputado from '@/components/BaseDeputado.vue';
 import { TODOS_DEPUTADOS } from '@/data/deputados';
 import { PAUTAS_PODRES } from '@/data/pautasPodres';
+import { useMeta } from '@/composables/useMeta';
 
 const route = useRoute();
 const router = useRouter();
@@ -71,6 +72,16 @@ const pauta = computed(() => pautaId.value ? getPautaById(pautaId.value) : undef
 const deputados = computed(() => {
   if (!pauta.value || !Array.isArray(pauta.value.idsDeputadosPodres)) return [];
   return getDeputadosByIds(pauta.value.idsDeputadosPodres.filter((id) => id !== undefined));
+});
+
+useMeta({
+  title: computed(() => pauta.value?.nome ?? 'Pauta Podre'),
+  description: computed(() =>
+    pauta.value
+      ? `${pauta.value.nome}: ${pauta.value.descricao.slice(0, 140)}…`
+      : 'Detalhes sobre esta pauta podre e os deputados que a apoiaram.'
+  ),
+  canonicalPath: computed(() => pauta.value ? `/pauta/${pauta.value.id}` : '/pautas-podres'),
 });
 
 function goBack() {

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&amp;display=swap');
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#09090b"/>
+
+  <!-- Red left accent bar -->
+  <rect x="0" y="0" width="8" height="630" fill="#ef4444"/>
+
+  <!-- Top label -->
+  <text x="60" y="100" font-family="'DM Sans', 'Arial Black', sans-serif" font-size="22" font-weight="900" fill="#fb2c36" letter-spacing="8" text-transform="uppercase">TRANSPARÊNCIA · MEMÓRIA · RESPONSABILIDADE</text>
+
+  <!-- Main heading: VOTO -->
+  <text x="56" y="290" font-family="'Syne', 'system-ui', sans-serif" font-size="170" font-weight="900" fill="#ffffff" letter-spacing="-6">VOTO</text>
+
+  <!-- Main heading: PODRE (red) -->
+  <text x="56" y="430" font-family="'Syne', 'Arial Black', sans-serif" font-size="170" font-weight="900" fill="#fb2c36" letter-spacing="-6">PODRE</text>
+
+  <!-- Tagline -->
+  <text x="60" y="546" font-family="'DM Sans', 'Arial', sans-serif" font-size="32" font-weight="400" fill="#52525c">Descubra quais deputados votaram <tspan font-weight="700" fill="#ffffff">contra o seu futuro.</tspan></text>
+
+  <!-- Right side decorative label -->
+  <text x="1180" y="620" font-family="'Syne', 'Arial Black', sans-serif" font-size="14" font-weight="900" fill="#3f3f46" letter-spacing="4" text-anchor="end" text-transform="uppercase">GABCVIT.GITHUB.IO/VOTO-PODRE</text>
+</svg>

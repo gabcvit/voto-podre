@@ -75,7 +75,11 @@ pnpm deploy       # build + push to gh-pages branch
 
 ```
 /
-├── index.html                  # Loads Google Fonts (Syne + DM Sans), mounts #app; anti-flash theme script
+├── index.html                  # Loads Google Fonts (Syne + DM Sans), mounts #app; anti-flash theme script; base SEO/OG/Twitter meta + JSON-LD
+├── public/
+│   ├── robots.txt              # Allow all crawlers; points to sitemap
+│   ├── sitemap.xml             # Static-route + pauta-detail sitemap for search engines
+│   └── og-image.svg            # Source artwork for OG share image (convert to og-image.png for deployment)
 ├── src/
 │   ├── main.ts                 # Creates Vue app, registers Pinia + Router, mounts
 │   ├── App.vue                 # Root: initialises useThemeStore, applies theme-aware bg/text, TheNavbar + <router-view> + TheFooter; flex-col layout so footer sticks to bottom
@@ -100,7 +104,8 @@ pnpm deploy       # build + push to gh-pages branch
 │   │
 │   ├── composables/
 │   │   ├── useDeputadoDetails.ts   # Takes an ID, returns { deputado, pautasDoDeputado }
-│   │   └── useDeputadosFilters.ts  # Filter logic for DeputadosView; exports useDeputadosFilters + StatusFilter type + STATUS_OPTIONS
+│   │   ├── useDeputadosFilters.ts  # Filter logic for DeputadosView; exports useDeputadosFilters + StatusFilter type + STATUS_OPTIONS
+│   │   └── useMeta.ts              # Per-route <head> management (title, description, OG, Twitter/X, canonical)
 │   │
 │   ├── views/
 │   │   ├── HomeView.vue            # Landing: hero, stats, callout, message cards
@@ -238,6 +243,24 @@ Clicking a row navigates to `/pauta/:id`.
 
 ### `useDeputadoDetails(id: string | number)`
 Returns `{ deputado: Ref<Deputado | null>, pautasDoDeputado: ComputedRef<PautaPodre[]> }`.
+
+### `useMeta(opts)`
+Reactively updates `<head>` meta, Open Graph, and Twitter/X Card tags for the current route. Uses `watchEffect` so reactive refs update the DOM when data resolves.
+
+```ts
+useMeta({
+  title: MaybeRefOrGetter<string>       // page title; appended with '— Voto Podre' unless already 'Voto Podre'
+  description: MaybeRefOrGetter<string> // meta description, og:description, twitter:description
+  canonicalPath?: MaybeRefOrGetter<string> // e.g. '/deputado/12345'; defaults to '/'
+  ogImage?: string                      // absolute URL; defaults to SITE_URL + '/og-image.png'
+})
+```
+
+Exports `SITE_URL = 'https://gabcvit.github.io/voto-podre'` for use in other modules.
+
+**Bot compatibility:**
+- Google, Twitter/X, Facebook, Bluesky: resolved dynamically (all execute JS)
+- WhatsApp / Telegram: uses the static base tags in `index.html` as fallback
 
 ### `useDeputadosFilters(deputados, pautasPodres)`
 Accepts `Ref<Deputado[]>` and `Ref<PautaPodre[]>` (use `storeToRefs` when passing from stores). Returns:

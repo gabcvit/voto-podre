@@ -48,6 +48,13 @@ import PageTitle from '@/components/PageTitle.vue'
 import { useDeputadosStore } from '@/stores/useDeputadosStore'
 import { usePautasPodresStore } from '@/stores/usePautasPodresStore'
 import { useDeputadosFilters } from '@/composables/useDeputadosFilters'
+import { useMeta } from '@/composables/useMeta'
+
+useMeta({
+  title: 'Deputados Federais',
+  description: 'Lista completa de deputados federais monitorados pelo Voto Podre. Filtre por partido, estado e veja quem apoiou pautas podres no Congresso.',
+  canonicalPath: '/deputados',
+})
 
 const { deputados } = storeToRefs(useDeputadosStore())
 const { pautasPodres } = storeToRefs(usePautasPodresStore())

@@ -98,6 +98,13 @@ import { useDeputadosStore } from '@/stores/useDeputadosStore';
 import { usePautasPodresStore } from '@/stores/usePautasPodresStore';
 import StatCard from '@/components/StatCard.vue';
 import MessageCard from '@/components/MessageCard.vue';
+import { useMeta } from '@/composables/useMeta';
+
+useMeta({
+  title: 'Voto Podre',
+  description: 'Descubra quais deputados federais votaram a favor de pautas podres. Transparência, memória e responsabilidade eleitoral. Leve a informação para as urnas.',
+  canonicalPath: '/',
+});
 
 const { deputados } = useDeputadosStore();
 const { pautasPodres } = usePautasPodresStore();

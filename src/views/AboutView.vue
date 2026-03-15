@@ -91,4 +91,11 @@
 
 <script setup lang="ts">
 import PageTitle from '@/components/PageTitle.vue';
+import { useMeta } from '@/composables/useMeta';
+
+useMeta({
+  title: 'Sobre',
+  description: 'Sobre o Voto Podre — projeto de transparência eleitoral que monitora votações dos deputados federais no Brasil e identifica pautas prejudiciais ao povo.',
+  canonicalPath: '/sobre',
+});
 </script>

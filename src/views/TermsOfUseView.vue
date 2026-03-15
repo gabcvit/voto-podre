@@ -207,4 +207,11 @@
 
 <script setup lang="ts">
 import PageTitle from '@/components/PageTitle.vue';
+import { useMeta } from '@/composables/useMeta';
+
+useMeta({
+  title: 'Termos de Uso',
+  description: 'Termos de uso do Voto Podre. Projeto de transparência eleitoral baseado em dados públicos da Câmara dos Deputados, sob a Lei de Acesso à Informação.',
+  canonicalPath: '/termos',
+});
 </script>

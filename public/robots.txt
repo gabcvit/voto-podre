@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gabcvit.github.io/voto-podre/sitemap.xml

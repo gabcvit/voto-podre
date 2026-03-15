@@ -204,4 +204,11 @@
 
 <script setup lang="ts">
 import PageTitle from '@/components/PageTitle.vue';
+import { useMeta } from '@/composables/useMeta';
+
+useMeta({
+  title: 'Política de Privacidade',
+  description: 'Política de privacidade do Voto Podre. Este site não coleta dados pessoais, não utiliza cookies e está em conformidade com a LGPD.',
+  canonicalPath: '/privacidade',
+});
 </script>
