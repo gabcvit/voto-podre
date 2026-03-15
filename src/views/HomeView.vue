@@ -3,7 +3,7 @@
 
     <!-- Hero -->
     <section aria-label="Apresentação" class="pt-16 pb-14 border-b border-zinc-200 dark:border-zinc-800 animate-fade-in-up">
-      <p class="text-xs font-black uppercase tracking-widest text-red-500 mb-4">Organização · Memória · Luta de Classes</p>
+      <p class="text-xs font-black uppercase tracking-widest text-red-500 mb-4">Transparência · Memória · Responsabilidade</p>
       <h1
         class="font-black uppercase leading-none tracking-tighter text-zinc-900 mb-6 dark:text-white"
         style="font-family: 'Syne', sans-serif; font-size: clamp(3rem, 10vw, 7rem);"
