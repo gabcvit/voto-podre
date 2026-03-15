@@ -51,7 +51,7 @@ pnpm deploy       # build + push to gh-pages branch
 ├── index.html                  # Loads Google Fonts (Syne + DM Sans), mounts #app; anti-flash theme script
 ├── src/
 │   ├── main.ts                 # Creates Vue app, registers Pinia + Router, mounts
-│   ├── App.vue                 # Root: initialises useThemeStore, applies theme-aware bg/text, TheNavbar + <router-view>
+│   ├── App.vue                 # Root: initialises useThemeStore, applies theme-aware bg/text, TheNavbar + <router-view> + TheFooter; flex-col layout so footer sticks to bottom
 │   ├── router.ts               # All routes (see §6)
 │   ├── types.ts                # Shared TypeScript types: Deputado, PautaPodre
 │   │
@@ -80,10 +80,13 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   ├── DeputadoDetailsView.vue # Single deputy: card + InfoList + PautasList
 │   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList
 │   │   ├── PautaDetailsView.vue    # Single pauta: header + list of deputies who voted for it
-│   │   └── AboutView.vue          # Static info / methodology
+│   │   ├── AboutView.vue          # Static info / methodology
+│   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, declares zero data collection
+│   │   └── TermsOfUseView.vue     # Termos de Uso — govering law, liability, editorial character
 │   │
 │   └── components/
 │       ├── TheNavbar.vue           # Sticky top nav (logo + 4 links + theme toggle button)
+│       ├── TheFooter.vue           # Site footer: author credit (gabcvit), links to /privacidade and /termos
 │       ├── BaseDeputado.vue        # Deputy row (list) or expanded card (details view)
 │       ├── PageTitle.vue           # h1 + optional subtitle used by list views
 │       ├── StatCard.vue            # Number + label + description; top-border colour variant
@@ -135,6 +138,8 @@ type PautaPodre = {
 | `/pautas-podres` | `PautasPodres` | `PautasPodresView` | |
 | `/pauta/:id` | `PautaDetails` | `PautaDetailsView` | |
 | `/sobre` | `Sobre` | `AboutView` | |
+| `/privacidade` | `Privacidade` | `PrivacyPolicyView` | |
+| `/termos` | `Termos` | `TermsOfUseView` | |
 
 ---
 
@@ -205,6 +210,14 @@ Clicking a row navigates to `/pauta/:id`.
 ### `useDeputadoDetails(id: string | number)`
 Returns `{ deputado: Ref<Deputado | null>, pautasDoDeputado: ComputedRef<PautaPodre[]> }`.
 
+### `TheFooter`
+No props. Renders the site-wide footer with:
+- Author credit linking to `https://gabcvit.dev/`
+- Attribution link to the Câmara dos Deputados open data API
+- Navigation links to `/privacidade` and `/termos`
+
+Registered globally in `App.vue`. The root `<div>` in `App.vue` uses `flex flex-col` so the footer always sits at the bottom — `<main>` gets `flex-1`.
+
 ---
 
 ## 9. Design System
@@ -259,7 +272,24 @@ Bootstrap it once in `App.vue` (`useThemeStore()`) so the watcher fires on app i
 
 ---
 
-## 10. Adding New Content
+## 10. Legal Pages
+
+Both legal pages are static views with no props or stores. They follow the same layout conventions as `AboutView.vue` (`max-w-3xl mx-auto px-4 py-12`) and use `PageTitle` for the heading.
+
+### `PrivacyPolicyView` (`/privacidade`)
+- Declares **zero data collection, zero cookies** (permanently and irrevocably)
+- Sections: identification, data collected, cookies, third-party sharing, LGPD conformance, data subject rights, hosting (GitHub Pages), change policy
+- Only data persisted locally: `theme` key in `localStorage` (never transmitted to any server)
+- LGPD articles referenced: art. 7º (legal basis), art. 18 (data subject rights), art. 20 (profiling), art. 33 (international transfer)
+
+### `TermsOfUseView` (`/termos`)
+- Sections: object/purpose, nature of data (all public via Lei de Acesso à Informação nº 12.527/2011), liability disclaimer, editorial character + constitutional free speech basis (CF art. 5º IV), intellectual property, user conduct, applicable law, contact
+- Governing law: Brazilian (LGPD, Marco Civil da Internet, LAI, CF/1988)
+- Jurisdiction: São Paulo/SP
+
+---
+
+## 11. Adding New Content
 
 ### New Pauta Podre
 1. Create `src/data/pecs-podres/pec-<slug>.ts` — export an array of deputy IDs who voted FOR it (IDs sourced from the Câmara votações API endpoint)
@@ -271,14 +301,14 @@ Add an entry to `TODOS_DEPUTADOS.dados` in `src/data/deputados.ts` following the
 
 ---
 
-## 11. Testing
+## 12. Testing
 
 Tests live in `src/components/__tests__/` (currently empty — no tests written yet).
 Test runner: `pnpm test:unit` (Vitest + jsdom + `@vue/test-utils`).
 
 ---
 
-## 12. Build & Deploy
+## 13. Build & Deploy
 
 - `pnpm build` runs `vue-tsc --build` (type-check) in parallel with `vite build`
 - Output: `dist/`

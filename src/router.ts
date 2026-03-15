@@ -6,6 +6,8 @@ import DeputadoDetailsView from './views/DeputadoDetailsView.vue';
 import PautasPodresView from './views/PautasPodresView.vue';
 import PautaDetailsView from './views/PautaDetailsView.vue';
 import AboutView from './views/AboutView.vue';
+import PrivacyPolicyView from './views/PrivacyPolicyView.vue';
+import TermsOfUseView from './views/TermsOfUseView.vue';
 
 const routes: RouteRecordRaw[] = [
   {
@@ -39,6 +41,16 @@ const routes: RouteRecordRaw[] = [
     path: '/sobre',
     name: 'Sobre',
     component: AboutView,
+  },
+  {
+    path: '/privacidade',
+    name: 'Privacidade',
+    component: PrivacyPolicyView,
+  },
+  {
+    path: '/termos',
+    name: 'Termos',
+    component: TermsOfUseView,
   },
 ];
 
