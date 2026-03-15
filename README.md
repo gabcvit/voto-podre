@@ -1,26 +1,68 @@
 # Voto Podre
-## Sobre
 
-Este projeto extrai informações públicas da Câmara dos Deputados e identifica parlamentares que votaram a favor de "pautas podres" — proposições impopulares que não melhoram a vida do povo brasileiro.
+![Voto Podre](public/og-image.png)
 
-## Objetivo
+**Transparência · Memória · Responsabilidade**
 
-Fornecer informações para auxiliar eleitores na escolha consciente de seus representantes nas próximas eleições, destacando votações consideradas prejudiciais aos interesses da população.
+Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputados federais brasileiros e identifica aqueles que votaram a favor de "pautas podres" — proposições consideradas prejudiciais ao povo brasileiro. Os dados são extraídos da [API pública da Câmara dos Deputados](https://dadosabertos.camara.leg.br/).
+
+🔗 **[gabcvit.github.io/voto-podre](https://gabcvit.github.io/voto-podre)**
+
+---
 
 ## Funcionalidades
 
-- Extração de dados públicos da Câmara dos Deputados
-- Análise de votações em pautas selecionadas
-- Identificação de deputados que votaram contra os interesses da população
-- Base de dados para consulta e comparação de votações
+- **Listagem de deputados** com busca por nome, filtro por partido, estado (UF), status ("podre" / "limpo") e quantidade mínima de pautas podres
+- **Perfil individual** de cada deputado com seus dados e as pautas podres em que votou a favor
+- **Catálogo de pautas podres** com descrição detalhada e lista de todos os deputados que votaram a favor
+- **Estatísticas** em tempo real: total de deputados monitorados, pautas catalogadas e deputados flagrados
+- **Tema escuro/claro** com preferência persistida em `localStorage` (escuro por padrão)
+- **Navegação responsiva** com menu burger para dispositivos móveis
+- **SEO completo** com meta tags Open Graph, Twitter/X Card e sitemap estático
 
-## Como Usar
+## Pautas Podres Catalogadas
 
-1. Visite o site [https://gabcvit.dev/voto-podre/](https://gabcvit.dev/voto-podre/)
-2. Leia o conteúdo do site
-3. Não vote em liberal lambe-bota que serve apenas aos interesses da burguesia
-4. Apoie movimentos trabalhistas
+| PEC | Descrição resumida |
+|---|---|
+| **PEC da Bandidagem** | Proposta que beneficia membros de organizações criminosas como o PCC |
+| **PEC do Aborto** | Proposta que criminaliza o aborto em todas as circunstâncias, incluindo estupro e risco de vida |
+
+---
+
+## Stack
+
+| Camada | Tecnologia |
+|---|---|
+| Framework | Vue 3 (Composition API, `<script setup>`) |
+| Linguagem | TypeScript |
+| Build | Vite |
+| Estilo | Tailwind CSS v4 |
+| Estado | Pinia |
+| Roteamento | Vue Router v5 |
+| Testes | Vitest + `@vue/test-utils` |
+| Deploy | GitHub Pages (`gh-pages`) |
+
+## Rodando localmente
+
+```bash
+# Instalar dependências
+pnpm install
+
+# Servidor de desenvolvimento
+pnpm dev
+
+# Build de produção
+pnpm build
+
+# Rodar testes
+pnpm test:unit
+
+# Deploy para GitHub Pages
+pnpm deploy
+```
+
+---
 
 ## Aviso
 
-Este repositório reflete uma perspectiva crítica das políticas governamentais atuais e busca promover engajamento eleitoral informado.
+Este repositório reflete uma perspectiva crítica sobre votações parlamentares e busca promover o engajamento eleitoral informado com base em dados públicos. As classificações das pautas representam a posição editorial do projeto.
