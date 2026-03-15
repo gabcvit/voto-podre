@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white border-b border-zinc-200 sticky top-0 z-50 dark:bg-black dark:border-zinc-800">
+  <nav aria-label="Navegação principal" class="bg-white border-b border-zinc-200 sticky top-0 z-50 dark:bg-black dark:border-zinc-800">
     <div class="max-w-5xl mx-auto px-4 flex items-center justify-between h-14">
       <RouterLink to="/" class="text-zinc-900 font-black text-lg uppercase tracking-tighter hover:text-red-500 transition-colors dark:text-white" style="font-family: 'Syne', sans-serif;">
         Voto Podre
@@ -41,6 +41,7 @@
           class="p-1.5 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
           :aria-label="menuOpen ? 'Fechar menu' : 'Abrir menu'"
           :aria-expanded="menuOpen"
+          aria-controls="mobile-menu"
         >
           <!-- Burger / X icon -->
           <svg v-if="!menuOpen" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
@@ -55,6 +56,7 @@
 
     <!-- Mobile dropdown menu -->
     <div
+      id="mobile-menu"
       v-if="menuOpen"
       class="md:hidden border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-black"
     >

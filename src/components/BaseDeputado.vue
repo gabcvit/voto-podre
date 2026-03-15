@@ -1,11 +1,13 @@
 
 <template>
-    <div
+    <component
+      :is="isCard ? 'div' : RouterLink"
+      v-bind="isCard ? undefined : { to: { name: 'DeputadoDetails', params: { id: deputado.id } } }"
       class="relative flex items-center overflow-hidden transition-colors duration-150"
       :class="[
         isCard
           ? 'gap-6 p-6 w-full'
-          : 'gap-4 px-4 py-3 my-1 w-full max-w-3xl cursor-pointer',
+          : 'gap-4 px-4 py-3 my-1 w-full max-w-3xl cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-red-500',
         isPodre
           ? isCard
             ? 'bg-zinc-50 border-l-4 border-red-500 dark:bg-zinc-950'
@@ -14,7 +16,6 @@
             ? 'bg-zinc-50 border-l-4 border-zinc-300 dark:bg-zinc-950 dark:border-zinc-700'
             : 'bg-zinc-50 border-l-4 border-zinc-300 border-r border-t border-b border-r-zinc-200 border-t-zinc-200 border-b-zinc-200 hover:bg-zinc-100 hover:border-l-zinc-400 dark:bg-zinc-950 dark:border-zinc-800 dark:border-r-zinc-800 dark:border-t-zinc-800 dark:border-b-zinc-800 dark:hover:bg-zinc-900 dark:hover:border-l-zinc-600'
       ]"
-      @click="handleClick"
     >
       <!-- Avatar -->
       <div class="relative flex-shrink-0 ml-2">
@@ -82,12 +83,12 @@
           voto{{ podreCount > 1 ? 's' : '' }}<br>podre{{ podreCount > 1 ? 's' : '' }}
         </span>
       </div>
-    </div>
+    </component>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useRouter } from 'vue-router';
+import { RouterLink } from 'vue-router';
 import type { Deputado, PautaPodre } from '@/types';
 
 interface Props {
@@ -97,7 +98,6 @@ interface Props {
 }
 
 const props = defineProps<Props>()
-const router = useRouter();
 
 const isCard = computed(() => props.variant === 'card');
 
@@ -108,10 +108,4 @@ const isPodre = computed(() =>
 const podreCount = computed(() =>
     props.pautasPodres.filter(pauta => pauta.idsDeputadosPodres.includes(props.deputado.id)).length
 )
-
-function handleClick() {
-    if (!isCard.value) {
-        router.push({ name: 'DeputadoDetails', params: { id: props.deputado.id } });
-    }
-}
 </script>

@@ -22,6 +22,8 @@
 
     <p
       v-if="filteredDeputados.length === 0"
+      role="status"
+      aria-live="polite"
       class="text-zinc-500 dark:text-zinc-400 text-sm py-12 text-center animate-fade-in-up"
       style="animation-delay: 150ms"
     >
@@ -29,7 +31,11 @@
     </p>
 
     <div v-else class="animate-fade-in-up" style="animation-delay: 150ms">
-      <p class="text-[10px] font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-3">
+      <p
+        role="status"
+        aria-live="polite"
+        class="text-[10px] font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-3"
+      >
         {{ filteredDeputados.length }} deputado{{ filteredDeputados.length !== 1 ? 's' : '' }} encontrado{{ filteredDeputados.length !== 1 ? 's' : '' }}
       </p>
       <TransitionGroup name="fade-up" tag="div" class="w-full">

@@ -209,7 +209,7 @@ const isPodre = pautasPodres.some(p => p.idsDeputadosPodres.includes(deputado.id
 | `pautasPodres` | `PautaPodre[]` | — | Used to compute `isPodre` and `podreCount` |
 | `variant` | `'list' \| 'card'` | `'list'` | `'card'` = expanded layout, no click-to-navigate |
 
-In `list` variant: clicking navigates to `/deputado/:id`. In `card` variant: no navigation.
+In `list` variant: renders as `<RouterLink>` (anchor) to `/deputado/:id` — fully keyboard accessible. In `card` variant: renders as `<div>` with no navigation.
 
 ### `StatCard`
 | Prop | Type | Notes |
@@ -237,12 +237,14 @@ In `list` variant: clicking navigates to `/deputado/:id`. In `card` variant: no 
 | `pautas` | `Array<{ id, nome, descricao, tipo }>` | — |
 | `showTitle` | `boolean` | `true` |
 
-Rows with `tipo === 'negativa'` get a red left-border and a **PAUTA PODRE** label. Rows with `tipo === 'positiva'` get a green left-border and a **PAUTA POSITIVA** label. Clicking navigates to `/pauta/:id`.
+Rows with `tipo === 'negativa'` get a red left-border and a **PAUTA PODRE** label. Rows with `tipo === 'positiva'` get a green left-border and a **PAUTA POSITIVA** label. Each row is a `RouterLink` (anchor) navigating to `/pauta/:id` — fully keyboard accessible.
 
 ### `InfoList`
 | Prop | Type | Notes |
 |---|---|---|
 | `info` | `Record<string, string \| number>` | Filters hidden keys: `uri`, `uriPartido`, `urlFoto` |
+
+Rendered as a `<dl>` (description list) with `<dt>`/`<dd>` pairs for each key-value entry.
 
 ### `useDeputadoDetails(id: string | number)`
 Returns `{ deputado: Ref<Deputado | null>, pautasDoDeputado: ComputedRef<PautaPodre[]> }`.
@@ -291,7 +293,7 @@ Dumb UI component — all state lives in the composable. Communicates via `v-mod
 | Prop / v-model | Type | Notes |
 |---|---|---|
 | `v-model:searchQuery` | `string` | Text search by name |
-| `v-model:statusFilter` | `StatusFilter` | Toggle buttons: Todos / Somente podres / Somente limpos |
+| `v-model:statusFilter` | `StatusFilter` | Toggle buttons with `aria-pressed`; wrapped in `role="group"` |
 | `v-model:partidoFilter` | `string` | Dropdown; `''` = all parties |
 | `v-model:ufFilter` | `string` | Dropdown; `''` = all states |
 | `v-model:minPautasPodres` | `number` | Number input; `0` = no minimum |
@@ -299,7 +301,7 @@ Dumb UI component — all state lives in the composable. Communicates via `v-mod
 | `availableUfs` | `string[]` | Drives UF dropdown options |
 | `hasActiveFilters` | `boolean` | Shows "Limpar filtros" button when `true` |
 
-Emits `reset` when "Limpar filtros" is clicked.
+Emits `reset` when "Limpar filtros" is clicked. All inputs have programmatically associated `<label>` elements via `for`/`id`.
 
 ### `TheFooter`
 No props. Renders the site-wide footer with:

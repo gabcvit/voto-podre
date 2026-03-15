@@ -1,6 +1,6 @@
 <template>
     <div v-if="deputado" class="max-w-3xl mx-auto px-4 py-12">
-      <button @click="goBack" class="mb-8 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white">
+      <button @click="goBack" class="mb-8 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
         <IconArrowBack />
         Voltar
       </button>
@@ -17,7 +17,7 @@
     </div>
     <div v-else class="text-center py-16">
       <p class="text-zinc-500 uppercase tracking-widest text-sm dark:text-zinc-600">Deputado não encontrado.</p>
-      <button @click="goBack" class="mt-6 flex items-center gap-2 mx-auto text-xs font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white">
+      <button @click="goBack" class="mt-6 flex items-center gap-2 mx-auto text-xs font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
         <IconArrowBack />
         Voltar
       </button>

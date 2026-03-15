@@ -18,29 +18,31 @@
     <div class="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       <!-- Search by name -->
       <div class="sm:col-span-2 lg:col-span-3">
-        <label class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
+        <label for="filter-search" class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
           Buscar por nome
         </label>
         <input
+          id="filter-search"
           :value="searchQuery"
           type="text"
           placeholder="Ex: João Silva"
-          class="w-full bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:border-red-500 dark:focus:border-red-500 transition-colors"
+          class="w-full bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:border-red-500 dark:focus:border-red-500 focus-visible:ring-1 focus-visible:ring-red-500 transition-colors"
           @input="$emit('update:searchQuery', ($event.target as HTMLInputElement).value)"
         />
       </div>
 
       <!-- Status filter -->
       <div class="sm:col-span-2 lg:col-span-3">
-        <label class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
+        <p id="status-filter-label" class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
           Status
-        </label>
-        <div class="flex flex-wrap gap-2">
+        </p>
+        <div class="flex flex-wrap gap-2" role="group" aria-labelledby="status-filter-label">
           <button
             v-for="option in STATUS_OPTIONS"
             :key="option.value"
+            :aria-pressed="statusFilter === option.value"
             :class="[
-              'px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-colors border',
+              'px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-colors border focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500',
               statusFilter === option.value
                 ? activeStatusClass(option.value)
                 : 'bg-transparent border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:border-zinc-500 dark:hover:border-zinc-500 hover:text-zinc-900 dark:hover:text-white'
@@ -54,13 +56,14 @@
 
       <!-- Partido filter -->
       <div>
-        <label class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
+        <label for="filter-partido" class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
           Partido
         </label>
         <div class="relative">
           <select
+            id="filter-partido"
             :value="partidoFilter"
-            class="w-full appearance-none bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 pr-8 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-red-500 dark:focus:border-red-500 transition-colors"
+            class="w-full appearance-none bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 pr-8 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-red-500 dark:focus:border-red-500 focus-visible:ring-1 focus-visible:ring-red-500 transition-colors"
             @change="$emit('update:partidoFilter', ($event.target as HTMLSelectElement).value)"
           >
             <option value="">Todos os partidos</option>
@@ -74,13 +77,14 @@
 
       <!-- UF filter -->
       <div>
-        <label class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
+        <label for="filter-uf" class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
           Estado (UF)
         </label>
         <div class="relative">
           <select
+            id="filter-uf"
             :value="ufFilter"
-            class="w-full appearance-none bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 pr-8 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-red-500 dark:focus:border-red-500 transition-colors"
+            class="w-full appearance-none bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 pr-8 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-red-500 dark:focus:border-red-500 focus-visible:ring-1 focus-visible:ring-red-500 transition-colors"
             @change="$emit('update:ufFilter', ($event.target as HTMLSelectElement).value)"
           >
             <option value="">Todos os estados</option>
@@ -92,15 +96,16 @@
 
       <!-- Min pautas podres -->
       <div>
-        <label class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
+        <label for="filter-min-pautas" class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
           Mín. pautas podres
         </label>
         <input
+          id="filter-min-pautas"
           :value="minPautasPodres"
           type="number"
           min="0"
           placeholder="0"
-          class="w-full bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:border-red-500 dark:focus:border-red-500 transition-colors"
+          class="w-full bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:border-red-500 dark:focus:border-red-500 focus-visible:ring-1 focus-visible:ring-red-500 transition-colors"
           @input="$emit('update:minPautasPodres', Number(($event.target as HTMLInputElement).value))"
         />
       </div>
