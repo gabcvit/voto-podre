@@ -79,7 +79,7 @@
           class="font-bold uppercase tracking-widest text-red-600"
           :class="isCard ? 'text-[10px]' : 'text-[9px]'"
         >
-          pauta{{ podreCount > 1 ? 's' : '' }}<br>podre{{ podreCount > 1 ? 's' : '' }}
+          voto{{ podreCount > 1 ? 's' : '' }}<br>podre{{ podreCount > 1 ? 's' : '' }}
         </span>
       </div>
     </div>

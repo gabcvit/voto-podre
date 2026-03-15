@@ -1,10 +1,13 @@
 <template>
   <div class="max-w-3xl mx-auto px-4 py-12">
     <PageTitle
+      class="animate-fade-in-up"
       title="Pautas Podres"
-      subtitle="Proposições legislativas consideradas prejudiciais aos interesses do povo brasileiro."
+      subtitle="Proposições legislativas monitoradas — pautas podres que deputados apoiaram e pautas positivas que deputados rejeitaram."
     />
-    <PautasList :pautas="pautasPodres" :show-title="false" />
+    <div class="animate-fade-in-up" style="animation-delay: 100ms">
+      <PautasList :pautas="pautasPodres" :show-title="false" />
+    </div>
   </div>
 </template>
 

@@ -18,7 +18,7 @@ After completing any code change, identify and update every markdown file whose 
 - Adding or changing a composable, store, component, or view (update the Component API / Data Flow sections)
 - Adding or changing a route (update §6 Routes table)
 - Adding or changing a type (update §5 Core Types)
-- Adding or changing a data source or PEC file (update §11 Adding New Content)
+- Adding or changing a data source or proposition file (PEC/PL) (update §11 Adding New Content)
 - Changing build, deploy, or test commands (update §3 Key Scripts)
 - Changing design system conventions (update §9 Design System)
 
@@ -34,7 +34,7 @@ After completing any code change, identify and update every markdown file whose 
 
 ## 1. Project Purpose
 
-**Voto Podre** ("Rotten Vote") is a Brazilian political transparency web app. It tracks which federal deputies (*deputados*) voted in favour of "pautas podres" — proposed legislation (PECs) deemed harmful to the Brazilian public. Users can browse deputies, see their voting records on catalogued bad proposals, and share the information.
+**Voto Podre** ("Rotten Vote") is a Brazilian political transparency web app. It tracks which federal deputies (*deputados*) voted in favour of "pautas podres" — proposed legislation (PECs, PLs, and other proposals) deemed harmful to the Brazilian public. Users can browse deputies, see their voting records on catalogued bad proposals, and share the information.
 
 Data is static (hand-curated from the public Câmara dos Deputados Open Data API). There is no backend.
 
@@ -92,10 +92,13 @@ pnpm deploy       # build + push to gh-pages branch
 │   │
 │   ├── data/
 │   │   ├── deputados.ts        # TODOS_DEPUTADOS — static export of all monitored deputies
-│   │   ├── pautasPodres.ts     # PAUTAS_PODRES — array of PautaPodre objects
+│   │   ├── pautasPodres.ts     # PAUTAS_PODRES: PautaPodre[] — array of PautaPodre objects (typed)
 │   │   └── pecs-podres/
-│   │       ├── pec-aborto.ts       # Array of deputy IDs who voted FOR this PEC
-│   │       └── pec-bandidagem.ts   # Array of deputy IDs who voted FOR this PEC
+│   │       ├── utils.ts            # extractIdsPodres(votos) — IDs of deputies who voted "Sim" (use for negative pautas)
+│   │       │                       # extractIdsContraPauta(votos) — IDs of deputies who voted "Não" (use for positive pautas)
+│   │       ├── pec-aborto.ts       # Array of deputy IDs flagged for this PEC (voted Sim)
+│   │       ├── pec-bandidagem.ts   # Array of deputy IDs flagged for this PEC (voted Sim)
+│   │       └── pl-devastacao.ts    # Array of deputy IDs flagged for this PL (voted Sim)
 │   │
 │   ├── stores/
 │   │   ├── useDeputadosStore.ts     # Pinia store: exposes { deputados }
@@ -112,7 +115,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   ├── DeputadosView.vue       # Lists deputies via BaseDeputado; includes DeputadosFilters panel
 │   │   ├── DeputadoDetailsView.vue # Single deputy: card + InfoList + PautasList
 │   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList
-│   │   ├── PautaDetailsView.vue    # Single pauta: header + list of deputies who voted for it
+│   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + list of flagged deputies
 │   │   ├── AboutView.vue          # Static info / methodology
 │   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, declares zero data collection
 │   │   └── TermsOfUseView.vue     # Termos de Uso — govering law, liability, editorial character
@@ -120,11 +123,11 @@ pnpm deploy       # build + push to gh-pages branch
 │   └── components/
 │       ├── TheNavbar.vue           # Sticky top nav (logo + 4 links + theme toggle button)
 │       ├── TheFooter.vue           # Site footer: author credit (gabcvit), links to /privacidade and /termos
-│       ├── BaseDeputado.vue        # Deputy row (list) or expanded card (details view)
+│       ├── BaseDeputado.vue        # Deputy row (list) or expanded card (details view); badge shows "votos podres" count
 │       ├── PageTitle.vue           # h1 + optional subtitle used by list views
 │       ├── StatCard.vue            # Number + label + description; top-border colour variant
 │       ├── MessageCard.vue         # Left-bordered editorial text block
-│       ├── PautasList.vue          # Renders list of PautaPodre items; clickable rows
+│       ├── PautasList.vue          # Renders list of PautaPodre items; red row for negative, green row for positive; clickable
 │       ├── InfoList.vue            # Key-value table of a deputy's raw fields
 │       ├── DeputadosFilters.vue    # Filter panel for DeputadosView (search, status, partido, UF, min pautas podres)
 │       └── icons/                  # Simple SVG icon components
@@ -231,10 +234,10 @@ In `list` variant: clicking navigates to `/deputado/:id`. In `card` variant: no 
 ### `PautasList`
 | Prop | Type | Default |
 |---|---|---|
-| `pautas` | `Array<{ id, nome, descricao }>` | — |
+| `pautas` | `Array<{ id, nome, descricao, tipo }>` | — |
 | `showTitle` | `boolean` | `true` |
 
-Clicking a row navigates to `/pauta/:id`.
+Rows with `tipo === 'negativa'` get a red left-border and a **PAUTA PODRE** label. Rows with `tipo === 'positiva'` get a green left-border and a **PAUTA POSITIVA** label. Clicking navigates to `/pauta/:id`.
 
 ### `InfoList`
 | Prop | Type | Notes |
@@ -379,10 +382,12 @@ Both legal pages are static views with no props or stores. They follow the same 
 
 ## 11. Adding New Content
 
-### New Pauta Podre
-1. Create `src/data/pecs-podres/pec-<slug>.ts` — export an array of deputy IDs who voted FOR it (IDs sourced from the Câmara votações API endpoint)
-2. Import it in `src/data/pautasPodres.ts` and add an entry to `PAUTAS_PODRES` with all `PautaPodre` fields
-3. No store, router, or component changes needed
+### New Pauta Podre (PEC, PL, or other)
+1. Create `src/data/pecs-podres/<type>-<slug>.ts` — use `pec-` prefix for PECs and `pl-` prefix for PLs.
+   - For **negative** pautas (voting Sim = bad): import `extractIdsPodres` from `./utils` and call it with the raw `VOTOS` constant.
+   - For **positive** pautas (voting Não = bad): import `extractIdsContraPauta` from `./utils` and call it with the raw `VOTOS` constant.
+2. Import it in `src/data/pautasPodres.ts` and add an entry to `PAUTAS_PODRES` with all `PautaPodre` fields, setting `tipo` to `'negativa'` or `'positiva'` accordingly.
+3. No store, router, or component changes needed.
 
 ### New Deputy
 Add an entry to `TODOS_DEPUTADOS.dados` in `src/data/deputados.ts` following the `Deputado` type. Deputy IDs must match those referenced in `idsDeputadosPodres` arrays.

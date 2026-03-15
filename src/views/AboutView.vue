@@ -5,8 +5,7 @@
       subtitle="Transparência. Memória. Responsabilidade."
     />
 
-    <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800">
-      <h2 class="text-xl font-black uppercase tracking-tight text-zinc-900 mb-3 dark:text-white" style="font-family: 'Syne', sans-serif;">O que é o Voto Podre?</h2>
+    <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800 animate-fade-in-up">
       <p class="text-zinc-500 leading-relaxed text-sm">
         O <strong class="text-red-500 font-bold">Voto Podre</strong> é um projeto de
         transparência eleitoral que extrai dados públicos da Câmara dos Deputados
@@ -16,7 +15,7 @@
       </p>
     </section>
 
-    <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800">
+    <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800 animate-fade-in-up" style="animation-delay: 100ms">
       <h2 class="text-xl font-black uppercase tracking-tight text-zinc-900 mb-3 dark:text-white" style="font-family: 'Syne', sans-serif;">Por que monitoramos o Congresso?</h2>
       <p class="text-zinc-500 leading-relaxed text-sm mb-4">
         Deputados são eleitos para representar o povo. Quando votam contra os
@@ -31,18 +30,18 @@
       </p>
     </section>
 
-    <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800">
+    <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800 animate-fade-in-up" style="animation-delay: 200ms">
       <h2 class="text-xl font-black uppercase tracking-tight text-zinc-900 mb-3 dark:text-white" style="font-family: 'Syne', sans-serif;">O que são as Pautas Podres?</h2>
       <p class="text-zinc-500 leading-relaxed text-sm">
         São proposições legislativas — como Propostas de Emenda à Constituição
-        (PECs) — que, na análise deste projeto, representam retrocesso social,
+        (PECs), Projetos de Lei (PLs) e outras votações — que, na análise deste projeto, representam retrocesso social,
         ofensa a direitos fundamentais ou benefício a grupos com interesses
         contrários ao bem-estar da população. Cada pauta é documentada com
         fontes oficiais da Câmara dos Deputados para completa verificação.
       </p>
     </section>
 
-    <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800">
+    <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800 animate-fade-in-up" style="animation-delay: 300ms">
       <h2 class="text-xl font-black uppercase tracking-tight text-zinc-900 mb-3 dark:text-white" style="font-family: 'Syne', sans-serif;">Como usar este site</h2>
       <ol class="space-y-3 text-sm">
         <li class="flex items-start gap-3">
@@ -64,7 +63,7 @@
       </ol>
     </section>
 
-    <section class="border-l-2 border-red-500 pl-5 py-1 mb-10">
+    <section class="border-l-2 border-red-500 pl-5 py-1 mb-10 animate-fade-in-up" style="animation-delay: 400ms">
       <h2 class="text-xs font-black uppercase tracking-widest text-red-500 mb-2">Aviso</h2>
       <p class="text-zinc-500 text-sm leading-relaxed">
         Este projeto reflete uma perspectiva crítica das políticas governamentais
@@ -74,7 +73,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="animate-fade-in-up" style="animation-delay: 500ms">
       <p class="text-zinc-400 text-xs uppercase tracking-widest dark:text-zinc-700">
         Dados extraídos da
         <a

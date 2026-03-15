@@ -22,10 +22,11 @@ Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputad
 
 ## Pautas Podres Catalogadas
 
-| PEC | Descrição resumida |
-|---|---|
-| **PEC da Bandidagem** | Proposta que beneficia membros de organizações criminosas como o PCC |
-| **PEC do Aborto** | Proposta que criminaliza o aborto em todas as circunstâncias, incluindo estupro e risco de vida |
+| Proposição | Tipo | Descrição resumida |
+|---|---|---|
+| **PEC da Bandidagem** | PEC | Proposta que beneficia membros de organizações criminosas como o PCC |
+| **PEC do Aborto** | PEC | Proposta que criminaliza o aborto em todas as circunstâncias, incluindo estupro e risco de vida |
+| **PL da Devastação** | PL | Projeto que desmonta o licenciamento ambiental e abre caminho para desastres como Mariana e Brumadinho |
 
 ---
 

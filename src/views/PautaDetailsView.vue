@@ -5,8 +5,14 @@
       Voltar
     </button>
 
-    <div class="border-l-4 border-red-500 pl-6 mb-10">
-      <p class="text-xs font-black uppercase tracking-widest text-red-500 mb-2">Pauta Podre</p>
+    <div
+      class="pl-6 mb-10"
+      :class="pauta.tipo === 'positiva' ? 'border-l-4 border-green-500' : 'border-l-4 border-red-500'"
+    >
+      <p
+        class="text-xs font-black uppercase tracking-widest mb-2"
+        :class="pauta.tipo === 'positiva' ? 'text-green-500' : 'text-red-500'"
+      >{{ pauta.tipo === 'positiva' ? 'Pauta Positiva' : 'Pauta Podre' }}</p>
       <h1
         class="font-black uppercase leading-tight text-zinc-900 mb-3 dark:text-white"
         style="font-family: 'Syne', sans-serif; font-size: clamp(1.5rem, 4vw, 2.25rem);"
@@ -23,16 +29,18 @@
 
     <div class="mb-6">
       <p class="text-xs font-black uppercase tracking-widest text-zinc-500 mb-4 dark:text-zinc-600">
-        {{ deputados.length }} deputado{{ deputados.length !== 1 ? 's' : '' }} que apoiaram
+        {{ deputados.length }} deputado{{ deputados.length !== 1 ? 's' : '' }}
+        {{ pauta.tipo === 'positiva' ? 'que votaram contra' : 'que apoiaram' }}
       </p>
-      <div class="flex flex-col">
+      <TransitionGroup name="fade-up" tag="div" class="flex flex-col">
         <BaseDeputado
-          v-for="deputado in deputados"
+          v-for="(deputado, index) in deputados"
           :key="deputado.id"
+          :style="{ '--enter-delay': `${Math.min(index, 15) * 30}ms` }"
           :deputado="deputado"
           :pautasPodres="[pauta]"
         />
-      </div>
+      </TransitionGroup>
     </div>
   </div>
   <div v-else class="text-center py-16">
@@ -75,12 +83,12 @@ const deputados = computed(() => {
 });
 
 useMeta({
-  title: computed(() => pauta.value?.nome ?? 'Pauta Podre'),
-  description: computed(() =>
-    pauta.value
-      ? `${pauta.value.nome}: ${pauta.value.descricao.slice(0, 140)}…`
-      : 'Detalhes sobre esta pauta podre e os deputados que a apoiaram.'
-  ),
+  title: computed(() => pauta.value?.nome ?? 'Pauta'),
+  description: computed(() => {
+    if (!pauta.value) return 'Detalhes sobre esta pauta e os deputados com voto questionável.'
+    const action = pauta.value.tipo === 'positiva' ? 'votaram contra' : 'apoiaram'
+    return `${pauta.value.nome}: ${pauta.value.descricao.slice(0, 120)}… Veja os deputados que ${action}.`
+  }),
   canonicalPath: computed(() => pauta.value ? `/pauta/${pauta.value.id}` : '/pautas-podres'),
 });
 

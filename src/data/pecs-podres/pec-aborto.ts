@@ -760,10 +760,8 @@ const VOTOS = {
 }
 
 
-export const IDS_DEPUTADOS_PODRES = VOTOS.dados.map(voto => {
-    if (voto.tipoVoto === "Sim") {
-        return voto.deputado_.id
-    }
-})
+import { extractIdsPodres } from './utils'
+
+export const IDS_DEPUTADOS_PODRES = extractIdsPodres(VOTOS)
 
 export default IDS_DEPUTADOS_PODRES;

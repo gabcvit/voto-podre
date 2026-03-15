@@ -11,7 +11,11 @@ useThemeStore();
   <div class="bg-white text-zinc-900 min-h-screen flex flex-col dark:bg-black dark:text-white">
     <TheNavbar />
     <main class="flex-1">
-      <router-view />
+      <router-view v-slot="{ Component }">
+        <Transition name="page" mode="out-in">
+          <component :is="Component" :key="$route.path" />
+        </Transition>
+      </router-view>
     </main>
     <TheFooter />
   </div>

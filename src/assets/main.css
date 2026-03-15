@@ -2,3 +2,55 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section entrance animation */
+.animate-fade-in-up {
+  animation: fade-in-up 0.4s ease-out both;
+}
+
+/* Page-level route transitions */
+.page-enter-active {
+  animation: fade-in-up 0.3s ease-out both;
+}
+.page-leave-active {
+  transition-property: opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.page-leave-to {
+  opacity: 0;
+}
+
+/* List item transitions (TransitionGroup) */
+.fade-up-enter-active {
+  transition-property: opacity, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: var(--enter-delay, 0ms);
+}
+.fade-up-enter-from {
+  opacity: 0;
+  transform: translateY(8px);
+}
+.fade-up-leave-active {
+  transition-property: opacity;
+  transition-duration: 0.1s;
+  transition-timing-function: ease;
+}
+.fade-up-leave-to {
+  opacity: 0;
+}
+.fade-up-move {
+  transition: transform 0.3s ease;
+}

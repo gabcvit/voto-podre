@@ -1,11 +1,14 @@
 <template>
   <div class="max-w-3xl mx-auto px-4 py-12">
     <PageTitle
+      class="animate-fade-in-up"
       title="Lista de Deputados"
       subtitle="Quem está do lado do povo?"
     />
 
     <DeputadosFilters
+      class="animate-fade-in-up"
+      style="animation-delay: 100ms"
       v-model:searchQuery="searchQuery"
       v-model:statusFilter="statusFilter"
       v-model:partidoFilter="partidoFilter"
@@ -19,24 +22,26 @@
 
     <p
       v-if="filteredDeputados.length === 0"
-      class="text-zinc-500 dark:text-zinc-400 text-sm py-12 text-center"
+      class="text-zinc-500 dark:text-zinc-400 text-sm py-12 text-center animate-fade-in-up"
+      style="animation-delay: 150ms"
     >
       Nenhum deputado encontrado com os filtros selecionados.
     </p>
 
-    <template v-else>
+    <div v-else class="animate-fade-in-up" style="animation-delay: 150ms">
       <p class="text-[10px] font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-3">
         {{ filteredDeputados.length }} deputado{{ filteredDeputados.length !== 1 ? 's' : '' }} encontrado{{ filteredDeputados.length !== 1 ? 's' : '' }}
       </p>
-      <div class="w-full">
+      <TransitionGroup name="fade-up" tag="div" class="w-full">
         <BaseDeputado
-          v-for="deputado in filteredDeputados"
+          v-for="(deputado, index) in filteredDeputados"
           :key="deputado.id"
+          :style="{ '--enter-delay': `${Math.min(index, 15) * 30}ms` }"
           :deputado="deputado"
           :pautasPodres="pautasPodres"
         />
-      </div>
-    </template>
+      </TransitionGroup>
+    </div>
   </div>
 </template>
 

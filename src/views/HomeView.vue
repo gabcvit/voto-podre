@@ -2,7 +2,7 @@
   <div class="max-w-4xl mx-auto px-4">
 
     <!-- Hero -->
-    <section class="pt-16 pb-14 border-b border-zinc-200 dark:border-zinc-800">
+    <section class="pt-16 pb-14 border-b border-zinc-200 dark:border-zinc-800 animate-fade-in-up">
       <p class="text-xs font-black uppercase tracking-widest text-red-500 mb-4">Transparência · Memória · Responsabilidade</p>
       <h1
         class="font-black uppercase leading-none tracking-tighter text-zinc-900 mb-6 dark:text-white"
@@ -32,7 +32,7 @@
     </section>
 
     <!-- Statistics -->
-    <section class="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-zinc-200 mb-0 border-b border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
+    <section class="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-zinc-200 mb-0 border-b border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800 animate-fade-in-up" style="animation-delay: 100ms">
       <StatCard
         :value="totalDeputadosMonitorados"
         label="Deputados monitorados"
@@ -41,8 +41,8 @@
       />
       <StatCard
         :value="totalPautasPodres"
-        label="Pautas Podres catalogadas"
-        description="Proposições consideradas prejudiciais aos interesses do povo."
+        label="Pautas catalogadas"
+        description="Proposições legislativas classificadas e monitoradas pelo Voto Podre."
         color="red"
       />
       <StatCard
@@ -54,7 +54,7 @@
     </section>
 
     <!-- Callout -->
-    <section class="border-b border-zinc-200 py-12 dark:border-zinc-800">
+    <section class="border-b border-zinc-200 py-12 dark:border-zinc-800 animate-fade-in-up" style="animation-delay: 200ms">
       <h2
         class="font-black uppercase leading-none tracking-tight text-zinc-900 mb-4 dark:text-white"
         style="font-family: 'Syne', sans-serif; font-size: clamp(1.5rem, 4vw, 2.5rem);"
@@ -70,7 +70,7 @@
     </section>
 
     <!-- Messages -->
-    <section class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-12">
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-12 animate-fade-in-up" style="animation-delay: 300ms">
       <MessageCard
         title="Seu voto tem poder"
         body="A democracia só funciona quando cidadãos informados exercem seu direito de voto. Não deixe que candidatos com histórico de traição ao povo sejam reeleitos."
@@ -113,10 +113,9 @@ const totalDeputadosMonitorados = computed(() => deputados.length);
 
 const totalPautasPodres = computed(() => pautasPodres.length);
 
-const totalDeputadosPodres = computed(() => {
-  const ids = new Set(
-    pautasPodres.flatMap(p => p.idsDeputadosPodres.filter(Boolean))
-  );
-  return ids.size;
-});
+const totalDeputadosPodres = computed(() =>
+  deputados.filter(d =>
+    pautasPodres.some(p => p.idsDeputadosPodres.includes(d.id))
+  ).length
+);
 </script>

@@ -51,8 +51,8 @@ const metaTitle = computed(() =>
 );
 const metaDescription = computed(() =>
   deputado.value
-    ? `Veja o histórico de votações de ${deputado.value.nome} (${deputado.value.siglaPartido}/${deputado.value.siglaUf}) e as pautas podres que apoiou na Câmara dos Deputados.`
-    : 'Histórico de votações e pautas podres apoiadas por este deputado federal.'
+    ? `Veja os votos podres de ${deputado.value.nome} (${deputado.value.siglaPartido}/${deputado.value.siglaUf}) — pautas que apoiou ou rejeitou de forma questionável na Câmara dos Deputados.`
+    : 'Histórico de votos podres deste deputado federal.'
 );
 
 useMeta({
