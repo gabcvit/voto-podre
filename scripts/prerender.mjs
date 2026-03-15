@@ -21,7 +21,7 @@ import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = resolve(__dirname, '..', 'dist')
-const SITE_URL = 'https://gabcvit.github.io/voto-podre'
+const SITE_URL = 'https://voto-podre.com.br'
 
 // ---------------------------------------------------------------------------
 // Route definitions — must mirror the useMeta() calls inside each view.

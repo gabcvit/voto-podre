@@ -273,7 +273,7 @@ useMeta({
 })
 ```
 
-Exports `SITE_URL = 'https://gabcvit.github.io/voto-podre'` for use in other modules.
+Exports `SITE_URL = 'https://voto-podre.com.br'` for use in other modules.
 
 **Bot compatibility:**
 - All static routes (`/sobre`, `/deputados`, etc.): `scripts/prerender.mjs` generates a separate `dist/<route>/index.html` with the correct OG/Twitter meta pre-patched at build time. GitHub Pages serves these as HTTP 200, so all crawlers (Bluesky, WhatsApp, Telegram, Google, etc.) get the right metadata without executing JS.

@@ -1,6 +1,6 @@
 import { watchEffect, toValue, type MaybeRefOrGetter } from 'vue'
 
-export const SITE_URL = 'https://gabcvit.github.io/voto-podre'
+export const SITE_URL = 'https://voto-podre.com.br'
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`
 
 interface MetaOptions {

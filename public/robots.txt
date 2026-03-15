@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gabcvit.github.io/voto-podre/sitemap.xml
+Sitemap: https://voto-podre.com.br/sitemap.xml
