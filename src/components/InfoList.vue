@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-8">
+  <div class="mb-4">
     <h2 class="text-xs font-black uppercase tracking-widest text-zinc-600 mb-3">Informações completas</h2>
     <dl class="border border-zinc-200 dark:border-zinc-800">
       <div

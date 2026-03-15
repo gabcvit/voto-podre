@@ -13,7 +13,17 @@
       />
 
       <InfoList :info="deputado" />
-      <PautasList :pautas="pautasDoDeputado" />
+      <PautasList
+        v-if="pautasNegativas.length"
+        :pautas="pautasNegativas"
+        title="Pautas Podres apoiadas"
+        class="mb-8"
+      />
+      <PautasList
+        v-if="pautasPositivas.length"
+        :pautas="pautasPositivas"
+        title="Pautas Positivas negadas"
+      />
     </div>
     <div v-else class="text-center py-16">
       <p class="text-zinc-500 uppercase tracking-widest text-sm dark:text-zinc-600">Deputado não encontrado.</p>
@@ -43,6 +53,9 @@ const idParam =
       ? route.params.id[0]
       : '';
 const { deputado, pautasDoDeputado } = useDeputadoDetails(idParam ?? '');
+
+const pautasNegativas = computed(() => pautasDoDeputado.value.filter(p => p.tipo === 'negativa'));
+const pautasPositivas = computed(() => pautasDoDeputado.value.filter(p => p.tipo === 'positiva'));
 
 const metaTitle = computed(() =>
   deputado.value

@@ -95,14 +95,14 @@
         4. Caráter Editorial e Liberdade de Expressão
       </h2>
       <p class="text-zinc-500 leading-relaxed text-sm mb-3">
-        A seleção de "pautas podres" e os comentários editoriais presentes no site refletem
+        A seleção de pautas e os comentários editoriais presentes no site refletem
         <strong class="text-zinc-900 dark:text-white">opinião e análise independente</strong>, amparada pelo direito constitucional à liberdade
         de expressão e manifestação do pensamento (art. 5º, IV da CF/1988) e pelo direito à crítica política.
       </p>
       <p class="text-zinc-500 leading-relaxed text-sm mb-3">
         Os votos e dados parlamentares apresentados correspondem a registros <strong class="text-zinc-900 dark:text-white">objetivos e verificáveis</strong>
         nas fontes oficiais da Câmara dos Deputados. O julgamento editorial sobre quais votações constituem
-        "pautas podres" é de responsabilidade exclusiva do autor do projeto.
+        pautas relevantes é de responsabilidade exclusiva do autor do projeto.
       </p>
       <p class="text-zinc-500 leading-relaxed text-sm">
         Este site não constitui material de propaganda eleitoral nos termos da

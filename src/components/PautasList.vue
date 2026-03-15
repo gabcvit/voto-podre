@@ -1,5 +1,5 @@
 <template>
-  <h2 v-if="showTitle" class="text-xl font-black uppercase tracking-tight mb-4" style="font-family: 'Syne', sans-serif;">Votos Podres deste Deputado</h2>
+  <h2 v-if="showTitle" class="text-xl font-black uppercase tracking-tight my-4" style="font-family: 'Syne', sans-serif;">{{ title }}</h2>
   <TransitionGroup v-if="pautas.length > 0" name="fade-up" tag="div" class="flex flex-col gap-2">
     <RouterLink
       v-for="(pauta, index) in pautas"
@@ -22,17 +22,29 @@
         >{{ pauta.tipo === 'positiva' ? 'PAUTA POSITIVA' : 'PAUTA PODRE' }}</span>
         <span class="font-bold text-zinc-900 text-sm dark:text-white">{{ pauta.nome }}</span>
       </div>
+      <div v-if="pauta.temas?.length" class="flex flex-wrap gap-2 mb-1">
+        <span
+          v-for="tema in pauta.temas"
+          :key="tema"
+          :class="['text-[10px] font-black uppercase tracking-widest', TEMA_CONFIG[tema].colorClass]"
+        >
+          {{ TEMA_CONFIG[tema].emoji }} {{ tema }}
+        </span>
+      </div>
       <div class="text-xs text-zinc-500 leading-relaxed">{{ pauta.descricao }}</div>
     </RouterLink>
   </TransitionGroup>
-  <div v-else class="text-zinc-600 text-sm uppercase tracking-widest">Nenhum voto podre encontrado para este deputado.</div>
+  <div v-else class="text-zinc-600 text-sm uppercase tracking-widest">Nenhum voto encontrado.</div>
 </template>
 
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
+import type { Tema } from '@/types';
+import { TEMA_CONFIG } from '@/data/temas';
 
 withDefaults(defineProps<{
-  pautas: Array<{ id: string | number; nome: string; descricao: string; tipo: 'negativa' | 'positiva' }>;
+  pautas: Array<{ id: string | number; nome: string; descricao: string; tipo: 'negativa' | 'positiva'; temas?: Tema[] }>;
   showTitle?: boolean;
-}>(), { showTitle: true });
+  title?: string;
+}>(), { showTitle: true, title: 'Votos deste Deputado' });
 </script>

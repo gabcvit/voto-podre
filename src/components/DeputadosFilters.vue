@@ -94,10 +94,10 @@
         </div>
       </div>
 
-      <!-- Min pautas podres -->
+      <!-- Min pautas -->
       <div>
         <label for="filter-min-pautas" class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
-          Mín. pautas podres
+          Mín. pautas
         </label>
         <input
           id="filter-min-pautas"

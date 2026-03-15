@@ -4,7 +4,7 @@
 
 **Transparência · Memória · Responsabilidade**
 
-Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputados federais brasileiros e identifica aqueles que votaram a favor de "pautas podres" — proposições consideradas prejudiciais ao povo brasileiro. Os dados são extraídos da [API pública da Câmara dos Deputados](https://dadosabertos.camara.leg.br/).
+Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputados federais brasileiros e identifica aqueles com votos questionáveis em proposições catalogadas. Os dados são extraídos da [API pública da Câmara dos Deputados](https://dadosabertos.camara.leg.br/).
 
 🔗 **[gabcvit.github.io/voto-podre](https://gabcvit.github.io/voto-podre)**
 
@@ -12,15 +12,15 @@ Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputad
 
 ## Funcionalidades
 
-- **Listagem de deputados** com busca por nome, filtro por partido, estado (UF), status ("podre" / "limpo") e quantidade mínima de pautas podres
-- **Perfil individual** de cada deputado com seus dados e as pautas podres em que votou a favor
-- **Catálogo de pautas podres** com descrição detalhada e lista de todos os deputados que votaram a favor
+- **Listagem de deputados** com busca por nome, filtro por partido, estado (UF), status ("podre" / "limpo") e quantidade mínima de pautas
+- **Perfil individual** de cada deputado com seus dados e as pautas em que teve voto questionável
+- **Catálogo de pautas** com descrição detalhada e lista de todos os deputados flagrados
 - **Estatísticas** em tempo real: total de deputados monitorados, pautas catalogadas e deputados flagrados
 - **Tema escuro/claro** com preferência persistida em `localStorage` (escuro por padrão)
 - **Navegação responsiva** com menu burger para dispositivos móveis
 - **SEO completo** com meta tags Open Graph, Twitter/X Card e sitemap estático
 
-## Pautas Podres Catalogadas
+## Pautas Catalogadas
 
 | Proposição | Tipo | Descrição resumida |
 |---|---|---|

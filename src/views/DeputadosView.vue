@@ -63,7 +63,7 @@ import { useMeta } from '@/composables/useMeta'
 
 useMeta({
   title: 'Deputados Federais',
-  description: 'Lista completa de deputados federais monitorados pelo Voto Podre. Filtre por partido, estado e veja quem apoiou pautas podres no Congresso.',
+  description: 'Lista completa de deputados federais monitorados pelo Voto Podre. Filtre por partido, estado e veja quem tem votos questionáveis no Congresso.',
   canonicalPath: '/deputados',
 })
 

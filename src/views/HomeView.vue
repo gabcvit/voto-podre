@@ -3,7 +3,7 @@
 
     <!-- Hero -->
     <section aria-label="Apresentação" class="pt-16 pb-14 border-b border-zinc-200 dark:border-zinc-800 animate-fade-in-up">
-      <p class="text-xs font-black uppercase tracking-widest text-red-500 mb-4">Transparência · Memória · Responsabilidade</p>
+      <p class="text-xs font-black uppercase tracking-widest text-red-500 mb-4">Organização · Memória · Luta de Classes</p>
       <h1
         class="font-black uppercase leading-none tracking-tighter text-zinc-900 mb-6 dark:text-white"
         style="font-family: 'Syne', sans-serif; font-size: clamp(3rem, 10vw, 7rem);"
@@ -11,16 +11,16 @@
         Voto<br><span class="text-red-500">Podre</span>
       </h1>
       <p class="text-zinc-600 max-w-xl leading-relaxed mb-8 text-base dark:text-zinc-400">
-        Transparência é a arma do cidadão.<br>
-        Aqui você descobre quais deputados votaram
-        <strong class="text-zinc-900 font-bold dark:text-white">contra o seu futuro</strong>.
+        A luta de classes não passa pelo Congresso — passa pelas ruas, pelos sindicatos, pelos movimentos.<br>
+        Mas saber quais deputados votaram
+        <strong class="text-zinc-900 font-bold dark:text-white">contra a classe trabalhadora</strong> também é parte da disputa.
       </p>
       <div class="flex flex-wrap gap-3">
         <RouterLink
           to="/pautas-podres"
           class="px-5 py-2 bg-red-500 hover:bg-red-400 text-white text-xs font-black uppercase tracking-widest transition-colors"
         >
-          Ver Pautas Podres
+          Ver Pautas
         </RouterLink>
         <RouterLink
           to="/deputados"
@@ -36,19 +36,19 @@
       <StatCard
         :value="totalDeputadosMonitorados"
         label="Deputados monitorados"
-        description="Parlamentares cujos votos estão sendo acompanhados de perto."
+        description="Parlamentares cujos votos contra os trabalhadores estão sendo registrados."
         color="zinc"
       />
       <StatCard
         :value="totalPautasPodres"
         label="Pautas catalogadas"
-        description="Proposições legislativas classificadas e monitoradas pelo Voto Podre."
+        description="Proposições legislativas classificadas e monitoradas."
         color="red"
       />
       <StatCard
         :value="totalDeputadosPodres"
         label="Deputados flagrados"
-        description="Parlamentares detectados apoiando ao menos uma pauta podre."
+        description="Parlamentares detectados com ao menos um voto questionável catalogado."
         color="orange"
       />
     </section>
@@ -102,7 +102,7 @@ import { useMeta } from '@/composables/useMeta';
 
 useMeta({
   title: 'Voto Podre',
-  description: 'Descubra quais deputados federais votaram a favor de pautas podres. Transparência, memória e responsabilidade eleitoral. Leve a informação para as urnas.',
+  description: 'Descubra quais deputados federais têm votos questionáveis no Congresso. Transparência, memória e responsabilidade eleitoral.',
   canonicalPath: '/',
 });
 

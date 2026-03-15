@@ -87,6 +87,6 @@ const navLinks = [
   { to: '/', label: 'Início' },
   { to: '/sobre', label: 'Sobre' },
   { to: '/deputados', label: 'Deputados' },
-  { to: '/pautas-podres', label: 'Pautas Podres' },
+  { to: '/pautas-podres', label: 'Pautas' },
 ];
 </script>

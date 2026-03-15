@@ -10,6 +10,8 @@ export type Deputado = {
     email: string
 }
 
+export type Tema = 'segurança pública' | 'direitos humanos' | 'meio ambiente' | 'democracia'
+
 export type PautaPodre = {
     id: number,
     nome: string,
@@ -22,4 +24,5 @@ export type PautaPodre = {
      * 'positiva' — deputies who voted AGAINST this proposal are flagged (voting Não = bad).
      */
     tipo: 'negativa' | 'positiva',
+    temas: Tema[],
 }

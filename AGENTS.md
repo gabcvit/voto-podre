@@ -34,7 +34,7 @@ After completing any code change, identify and update every markdown file whose 
 
 ## 1. Project Purpose
 
-**Voto Podre** ("Rotten Vote") is a Brazilian political transparency web app. It tracks which federal deputies (*deputados*) voted in favour of "pautas podres" — proposed legislation (PECs, PLs, and other proposals) deemed harmful to the Brazilian public. Users can browse deputies, see their voting records on catalogued bad proposals, and share the information.
+**Voto Podre** ("Rotten Vote") is a Brazilian political transparency web app. It tracks which federal deputies (*deputados*) voted in favour of or against catalogued proposals deemed relevant to the Brazilian public. Users can browse deputies, see their voting records on monitored proposals, and share the information.
 
 Data is static (hand-curated from the public Câmara dos Deputados Open Data API). There is no backend.
 
@@ -93,6 +93,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   ├── data/
 │   │   ├── deputados.ts        # TODOS_DEPUTADOS — static export of all monitored deputies
 │   │   ├── pautasPodres.ts     # PAUTAS_PODRES: PautaPodre[] — array of PautaPodre objects (typed)
+│   │   ├── temas.ts            # TEMA_CONFIG: Record<Tema, { emoji, colorClass, buttonActiveClass }> — per-tema UI config
 │   │   └── pecs-podres/
 │   │       ├── utils.ts            # extractIdsPodres(votos) — IDs of deputies who voted "Sim" (use for negative pautas)
 │   │       │                       # extractIdsContraPauta(votos) — IDs of deputies who voted "Não" (use for positive pautas)
@@ -114,7 +115,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   ├── HomeView.vue            # Landing: hero, stats, callout, message cards
 │   │   ├── DeputadosView.vue       # Lists deputies via BaseDeputado; includes DeputadosFilters panel
 │   │   ├── DeputadoDetailsView.vue # Single deputy: card + InfoList + PautasList
-│   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList
+│   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList; tema filter buttons
 │   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + list of flagged deputies
 │   │   ├── AboutView.vue          # Static info / methodology
 │   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, declares zero data collection
@@ -129,7 +130,7 @@ pnpm deploy       # build + push to gh-pages branch
 │       ├── MessageCard.vue         # Left-bordered editorial text block
 │       ├── PautasList.vue          # Renders list of PautaPodre items; red row for negative, green row for positive; clickable
 │       ├── InfoList.vue            # Key-value table of a deputy's raw fields
-│       ├── DeputadosFilters.vue    # Filter panel for DeputadosView (search, status, partido, UF, min pautas podres)
+│       ├── DeputadosFilters.vue    # Filter panel for DeputadosView (search, status, partido, UF, min pautas)
 │       └── icons/                  # Simple SVG icon components
 │           ├── IconArrowBack.vue
 │           ├── IconSun.vue         # Used in theme toggle (shown in dark mode → switch to light)
@@ -141,6 +142,8 @@ pnpm deploy       # build + push to gh-pages branch
 ## 5. Core Types (`src/types.ts`)
 
 ```ts
+export type Tema = 'segurança pública' | 'direitos humanos' | 'meio ambiente' | 'democracia'
+
 type Deputado = {
   id: number
   uri: string          // Câmara API URI
@@ -160,6 +163,8 @@ type PautaPodre = {
   urlVotos: string                    // Câmara API endpoint for votes
   urlProposicao: string               // Câmara website link
   idsDeputadosPodres: (number | undefined)[]  // Deputy IDs who voted FOR it
+  tipo: 'negativa' | 'positiva'       // negativa = voted Sim is bad; positiva = voted Não is bad
+  temas: Tema[]                        // One or more thematic categories — use the Tema union type
 }
 ```
 
@@ -172,7 +177,7 @@ type PautaPodre = {
 | `/` | `Home` | `HomeView` | |
 | `/deputados` | `Deputados` | `DeputadosView` | |
 | `/deputado/:id` | `DeputadoDetails` | `DeputadoDetailsView` | `props: true` |
-| `/pautas-podres` | `PautasPodres` | `PautasPodresView` | |
+| `/pautas-podres` | `PautasPodres` | `PautasPodresView` | tema filter buttons |
 | `/pauta/:id` | `PautaDetails` | `PautaDetailsView` | |
 | `/sobre` | `Sobre` | `AboutView` | |
 | `/privacidade` | `Privacidade` | `PrivacyPolicyView` | |
@@ -234,10 +239,11 @@ In `list` variant: renders as `<RouterLink>` (anchor) to `/deputado/:id` — ful
 ### `PautasList`
 | Prop | Type | Default |
 |---|---|---|
-| `pautas` | `Array<{ id, nome, descricao, tipo }>` | — |
+| `pautas` | `Array<{ id, nome, descricao, tipo, temas? }>` | — |
 | `showTitle` | `boolean` | `true` |
+| `title` | `string` | `'Votos deste Deputado'` |
 
-Rows with `tipo === 'negativa'` get a red left-border and a **PAUTA PODRE** label. Rows with `tipo === 'positiva'` get a green left-border and a **PAUTA POSITIVA** label. Each row is a `RouterLink` (anchor) navigating to `/pauta/:id` — fully keyboard accessible.
+Rows with `tipo === 'negativa'` get a red left-border and a **PAUTA PODRE** label. Rows with `tipo === 'positiva'` get a green left-border and a **PAUTA POSITIVA** label. When `temas` is present, colored emoji badges (one per tema) appear below the tipo/nome row (colors and emoji sourced from `TEMA_CONFIG` in `src/data/temas.ts`). Each row is a `RouterLink` (anchor) navigating to `/pauta/:id` — fully keyboard accessible.
 
 ### `InfoList`
 | Prop | Type | Notes |
@@ -301,7 +307,7 @@ Dumb UI component — all state lives in the composable. Communicates via `v-mod
 | `availableUfs` | `string[]` | Drives UF dropdown options |
 | `hasActiveFilters` | `boolean` | Shows "Limpar filtros" button when `true` |
 
-Emits `reset` when "Limpar filtros" is clicked. All inputs have programmatically associated `<label>` elements via `for`/`id`.
+Emits `reset` when "Limpar filtros" is clicked. Label reads **Mín. pautas** (no longer "pautas podres"). All inputs have programmatically associated `<label>` elements via `for`/`id`.
 
 ### `TheFooter`
 No props. Renders the site-wide footer with:
@@ -384,11 +390,12 @@ Both legal pages are static views with no props or stores. They follow the same 
 
 ## 11. Adding New Content
 
-### New Pauta Podre (PEC, PL, or other)
+### `PautasPodresView` (`/pautas-podres`)
+Displays all catalogued `pautas` with a row of **tema filter buttons** ("Todos" + one button per unique `tema` value). Clicking a button filters the list to that theme; clicking "Todos" resets. Filter state is local (`ref`) inside the view — no composable needed.
 1. Create `src/data/pecs-podres/<type>-<slug>.ts` — use `pec-` prefix for PECs and `pl-` prefix for PLs.
    - For **negative** pautas (voting Sim = bad): import `extractIdsPodres` from `./utils` and call it with the raw `VOTOS` constant.
    - For **positive** pautas (voting Não = bad): import `extractIdsContraPauta` from `./utils` and call it with the raw `VOTOS` constant.
-2. Import it in `src/data/pautasPodres.ts` and add an entry to `PAUTAS_PODRES` with all `PautaPodre` fields, setting `tipo` to `'negativa'` or `'positiva'` accordingly.
+2. Import it in `src/data/pautasPodres.ts` and add an entry to `PAUTAS_PODRES` with all `PautaPodre` fields, setting `tipo` to `'negativa'` or `'positiva'` and `tema` to a descriptive thematic category string (e.g. `'direitos humanos'`, `'meio ambiente'`, `'segurança pública'`, `'democracia'`).
 3. No store, router, or component changes needed.
 
 ### New Deputy
