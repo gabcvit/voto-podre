@@ -4,12 +4,12 @@
     <div
       v-for="pauta in pautas"
       :key="pauta.id"
-      class="border-l-2 border-red-500 bg-zinc-950 px-4 py-3 cursor-pointer hover:bg-zinc-900 transition-colors"
+      class="border-l-2 border-red-500 bg-zinc-50 px-4 py-3 cursor-pointer hover:bg-zinc-100 transition-colors dark:bg-zinc-950 dark:hover:bg-zinc-900"
       @click="goToPautaDetails(pauta.id)"
     >
       <div class="flex items-center gap-2 mb-1">
         <span class="text-xs font-black uppercase tracking-widest text-red-500">PAUTA</span>
-        <span class="font-bold text-white text-sm">{{ pauta.nome }}</span>
+        <span class="font-bold text-zinc-900 text-sm dark:text-white">{{ pauta.nome }}</span>
       </div>
       <div class="text-xs text-zinc-500 leading-relaxed">{{ pauta.descricao }}</div>
     </div>

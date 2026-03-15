@@ -1,11 +1,11 @@
 <template>
   <div
-    class="p-6 border-t-2 bg-zinc-950 flex flex-col items-start gap-1"
+    class="p-6 border-t-2 bg-zinc-50 flex flex-col items-start gap-1 dark:bg-zinc-950"
     :class="borderClasses"
   >
     <span class="text-5xl font-black tabular-nums" :class="valueClasses">{{ value }}</span>
-    <span class="text-xs font-bold uppercase tracking-widest text-zinc-300 mt-1">{{ label }}</span>
-    <p class="text-xs text-zinc-600 mt-0.5 leading-relaxed">{{ description }}</p>
+    <span class="text-xs font-bold uppercase tracking-widest text-zinc-600 mt-1 dark:text-zinc-300">{{ label }}</span>
+    <p class="text-xs text-zinc-500 mt-0.5 leading-relaxed dark:text-zinc-600">{{ description }}</p>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ const borderClasses = computed(() => ({
 }));
 
 const valueClasses = computed(() => ({
-  'text-white': props.color === 'zinc',
+  'text-zinc-900 dark:text-white': props.color === 'zinc',
   'text-red-500': props.color === 'red',
   'text-orange-400': props.color === 'orange',
 }));

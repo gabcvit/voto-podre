@@ -1,7 +1,7 @@
 <template>
   <div :class="subtitle ? 'mb-4' : 'mb-10'">
     <h1
-      class="font-black text-white uppercase leading-none tracking-tight"
+      class="font-black text-zinc-900 uppercase leading-none tracking-tight dark:text-white"
       :class="[subtitle ? 'mb-3' : '', 'text-4xl sm:text-5xl']"
     >
       {{ title }}

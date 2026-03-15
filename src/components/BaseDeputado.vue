@@ -8,11 +8,11 @@
           : 'gap-4 px-4 py-3 my-1 w-full max-w-3xl cursor-pointer',
         isPodre
           ? isCard
-            ? 'bg-zinc-950 border-l-4 border-red-500'
-            : 'bg-zinc-950 border-l-4 border-red-500 border-r border-t border-b border-r-zinc-800 border-t-zinc-800 border-b-zinc-800 hover:bg-zinc-900'
+            ? 'bg-zinc-50 border-l-4 border-red-500 dark:bg-zinc-950'
+            : 'bg-zinc-50 border-l-4 border-red-500 border-r border-t border-b border-r-zinc-200 border-t-zinc-200 border-b-zinc-200 hover:bg-zinc-100 dark:bg-zinc-950 dark:border-r-zinc-800 dark:border-t-zinc-800 dark:border-b-zinc-800 dark:hover:bg-zinc-900'
           : isCard
-            ? 'bg-zinc-950 border-l-4 border-zinc-700'
-            : 'bg-zinc-950 border-l-4 border-zinc-800 border-r border-t border-b border-r-zinc-800 border-t-zinc-800 border-b-zinc-800 hover:bg-zinc-900 hover:border-l-zinc-600'
+            ? 'bg-zinc-50 border-l-4 border-zinc-300 dark:bg-zinc-950 dark:border-zinc-700'
+            : 'bg-zinc-50 border-l-4 border-zinc-300 border-r border-t border-b border-r-zinc-200 border-t-zinc-200 border-b-zinc-200 hover:bg-zinc-100 hover:border-l-zinc-400 dark:bg-zinc-950 dark:border-zinc-800 dark:border-r-zinc-800 dark:border-t-zinc-800 dark:border-b-zinc-800 dark:hover:bg-zinc-900 dark:hover:border-l-zinc-600'
       ]"
       @click="handleClick"
     >
@@ -26,7 +26,7 @@
             isCard ? 'w-20 h-20' : 'w-11 h-11',
             isPodre
               ? isCard ? 'ring-2 ring-red-500' : 'ring-1 ring-red-500'
-              : isCard ? 'ring-2 ring-zinc-700' : 'ring-1 ring-zinc-700'
+              : isCard ? 'ring-2 ring-zinc-300 dark:ring-zinc-700' : 'ring-1 ring-zinc-300 dark:ring-zinc-700'
           ]"
         />
       </div>
@@ -36,8 +36,8 @@
         <div class="flex items-center gap-2 flex-wrap" :class="isCard ? 'mb-2' : ''">
           <span
             :class="[
-              isCard ? 'text-2xl font-black uppercase tracking-tight' : 'font-bold text-white text-sm',
-              isPodre ? 'text-red-100' : 'text-white'
+              isCard ? 'text-2xl font-black uppercase tracking-tight' : 'font-bold text-zinc-900 dark:text-white text-sm',
+              isPodre ? 'text-red-800 dark:text-red-100' : 'text-zinc-900 dark:text-white'
             ]"
             style="font-family: 'Syne', sans-serif;"
           >{{ deputado.nome }}</span>
@@ -45,7 +45,7 @@
             class="font-bold uppercase tracking-widest"
             :class="[
               isCard ? 'text-xs px-2 py-0.5' : 'text-[10px] px-1.5 py-0.5',
-              isPodre ? 'bg-red-500/20 text-red-400' : 'bg-zinc-800 text-zinc-500'
+              isPodre ? 'bg-red-500/20 text-red-400' : 'bg-zinc-200 text-zinc-500 dark:bg-zinc-800'
             ]"
           >
             {{ deputado.siglaPartido }} · {{ deputado.siglaUf }}
