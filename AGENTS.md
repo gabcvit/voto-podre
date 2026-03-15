@@ -5,6 +5,33 @@
 
 ---
 
+## 0. Standing Rules for AI Agents
+
+These rules apply to **every task**, without exception.
+
+### 0.1 Always update documentation after code changes
+
+After completing any code change, identify and update every markdown file whose content is affected. This includes — but is not limited to — `AGENTS.md` itself.
+
+**What triggers an update:**
+- Adding, removing, or renaming a file (update the file structure tree and any relevant section)
+- Adding or changing a composable, store, component, or view (update the Component API / Data Flow sections)
+- Adding or changing a route (update §6 Routes table)
+- Adding or changing a type (update §5 Core Types)
+- Adding or changing a data source or PEC file (update §11 Adding New Content)
+- Changing build, deploy, or test commands (update §3 Key Scripts)
+- Changing design system conventions (update §9 Design System)
+
+**How to do it:**
+1. Before finishing a task, review the full list of changed files.
+2. For each changed file, ask: *does any section of AGENTS.md describe this file or its API?*
+3. If yes, update that section to reflect the current state of the code.
+4. Keep descriptions concise — match the existing tone and format of the file.
+
+> Failing to update documentation after a code change is considered an incomplete task.
+
+---
+
 ## 1. Project Purpose
 
 **Voto Podre** ("Rotten Vote") is a Brazilian political transparency web app. It tracks which federal deputies (*deputados*) voted in favour of "pautas podres" — proposed legislation (PECs) deemed harmful to the Brazilian public. Users can browse deputies, see their voting records on catalogued bad proposals, and share the information.
@@ -72,11 +99,12 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   └── useThemeStore.ts         # Pinia store: exposes { isDark, toggle() }; syncs .dark class on <html> and localStorage
 │   │
 │   ├── composables/
-│   │   └── useDeputadoDetails.ts   # Takes an ID, returns { deputado, pautasDoDeputado }
+│   │   ├── useDeputadoDetails.ts   # Takes an ID, returns { deputado, pautasDoDeputado }
+│   │   └── useDeputadosFilters.ts  # Filter logic for DeputadosView; exports useDeputadosFilters + StatusFilter type + STATUS_OPTIONS
 │   │
 │   ├── views/
 │   │   ├── HomeView.vue            # Landing: hero, stats, callout, message cards
-│   │   ├── DeputadosView.vue       # Lists all deputies via BaseDeputado
+│   │   ├── DeputadosView.vue       # Lists deputies via BaseDeputado; includes DeputadosFilters panel
 │   │   ├── DeputadoDetailsView.vue # Single deputy: card + InfoList + PautasList
 │   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList
 │   │   ├── PautaDetailsView.vue    # Single pauta: header + list of deputies who voted for it
@@ -93,6 +121,7 @@ pnpm deploy       # build + push to gh-pages branch
 │       ├── MessageCard.vue         # Left-bordered editorial text block
 │       ├── PautasList.vue          # Renders list of PautaPodre items; clickable rows
 │       ├── InfoList.vue            # Key-value table of a deputy's raw fields
+│       ├── DeputadosFilters.vue    # Filter panel for DeputadosView (search, status, partido, UF, min pautas podres)
 │       └── icons/                  # Simple SVG icon components
 │           ├── IconArrowBack.vue
 │           ├── IconSun.vue         # Used in theme toggle (shown in dark mode → switch to light)
@@ -209,6 +238,42 @@ Clicking a row navigates to `/pauta/:id`.
 
 ### `useDeputadoDetails(id: string | number)`
 Returns `{ deputado: Ref<Deputado | null>, pautasDoDeputado: ComputedRef<PautaPodre[]> }`.
+
+### `useDeputadosFilters(deputados, pautasPodres)`
+Accepts `Ref<Deputado[]>` and `Ref<PautaPodre[]>` (use `storeToRefs` when passing from stores). Returns:
+```ts
+{
+  searchQuery: Ref<string>           // name substring search
+  statusFilter: Ref<StatusFilter>    // 'all' | 'podres' | 'clean'
+  partidoFilter: Ref<string>         // '' = all parties
+  ufFilter: Ref<string>              // '' = all states
+  minPautasPodres: Ref<number>       // 0 = no minimum
+  availablePartidos: ComputedRef<string[]>
+  availableUfs: ComputedRef<string[]>
+  filteredDeputados: ComputedRef<Deputado[]>
+  hasActiveFilters: ComputedRef<boolean>
+  resetFilters(): void
+}
+```
+Each filter criterion is a separate pure predicate function internally (`matchesSearch`, `matchesStatus`, `matchesPartido`, `matchesUf`, `matchesMinPautas`).
+
+`StatusFilter` type and `STATUS_OPTIONS` array are also exported from this module.
+
+### `DeputadosFilters`
+Dumb UI component — all state lives in the composable. Communicates via `v-model` bindings and a `reset` event.
+
+| Prop / v-model | Type | Notes |
+|---|---|---|
+| `v-model:searchQuery` | `string` | Text search by name |
+| `v-model:statusFilter` | `StatusFilter` | Toggle buttons: Todos / Somente podres / Somente limpos |
+| `v-model:partidoFilter` | `string` | Dropdown; `''` = all parties |
+| `v-model:ufFilter` | `string` | Dropdown; `''` = all states |
+| `v-model:minPautasPodres` | `number` | Number input; `0` = no minimum |
+| `availablePartidos` | `string[]` | Drives partido dropdown options |
+| `availableUfs` | `string[]` | Drives UF dropdown options |
+| `hasActiveFilters` | `boolean` | Shows "Limpar filtros" button when `true` |
+
+Emits `reset` when "Limpar filtros" is clicked.
 
 ### `TheFooter`
 No props. Renders the site-wide footer with:

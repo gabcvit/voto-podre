@@ -11,9 +11,9 @@
         Voto<br><span class="text-red-500">Podre</span>
       </h1>
       <p class="text-zinc-600 max-w-xl leading-relaxed mb-8 text-base dark:text-zinc-400">
+        Transparência é a arma do cidadão.<br>
         Aqui você descobre quais deputados votaram
         <strong class="text-zinc-900 font-bold dark:text-white">contra o seu futuro</strong>.
-        Transparência é a arma do cidadão. Nunca mais os esqueça na hora de votar.
       </p>
       <div class="flex flex-wrap gap-3">
         <RouterLink
