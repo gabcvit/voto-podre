@@ -1,11 +1,11 @@
 <template>
   <div
-    class="rounded-xl p-6 border text-center flex flex-col items-center gap-2"
-    :class="colorClasses"
+    class="p-6 border-t-2 bg-zinc-950 flex flex-col items-start gap-1"
+    :class="borderClasses"
   >
-    <span class="text-5xl font-extrabold">{{ value }}</span>
-    <span class="text-lg font-semibold">{{ label }}</span>
-    <p class="text-sm opacity-75">{{ description }}</p>
+    <span class="text-5xl font-black tabular-nums" :class="valueClasses">{{ value }}</span>
+    <span class="text-xs font-bold uppercase tracking-widest text-zinc-300 mt-1">{{ label }}</span>
+    <p class="text-xs text-zinc-600 mt-0.5 leading-relaxed">{{ description }}</p>
   </div>
 </template>
 
@@ -19,9 +19,15 @@ const props = defineProps<{
   color: 'zinc' | 'red' | 'orange';
 }>();
 
-const colorClasses = computed(() => ({
-  'bg-zinc-800 border-zinc-600 text-zinc-100': props.color === 'zinc',
-  'bg-red-950 border-red-700 text-red-100': props.color === 'red',
-  'bg-orange-950 border-orange-700 text-orange-100': props.color === 'orange',
+const borderClasses = computed(() => ({
+  'border-zinc-600': props.color === 'zinc',
+  'border-red-500': props.color === 'red',
+  'border-orange-500': props.color === 'orange',
+}));
+
+const valueClasses = computed(() => ({
+  'text-white': props.color === 'zinc',
+  'text-red-500': props.color === 'red',
+  'text-orange-400': props.color === 'orange',
 }));
 </script>

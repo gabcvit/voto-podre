@@ -1,7 +1,12 @@
 <template>
-  <div>
-    <h1 class="text-4xl font-extrabold text-red-400" :class="subtitle ? 'mb-2' : 'mb-8'">{{ title }}</h1>
-    <p v-if="subtitle" class="text-zinc-400 text-sm mb-8">{{ subtitle }}</p>
+  <div :class="subtitle ? 'mb-4' : 'mb-10'">
+    <h1
+      class="font-black text-white uppercase leading-none tracking-tight"
+      :class="[subtitle ? 'mb-3' : '', 'text-4xl sm:text-5xl']"
+    >
+      {{ title }}
+    </h1>
+    <p v-if="subtitle" class="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-8">{{ subtitle }}</p>
   </div>
 </template>
 

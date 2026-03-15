@@ -1,15 +1,15 @@
 <template>
   <div class="mb-8">
-    <h2 class="text-xl font-semibold mb-3 text-zinc-200">Informações completas</h2>
-    <div class="bg-zinc-900 border border-zinc-700 rounded-xl overflow-hidden">
+    <h2 class="text-xs font-black uppercase tracking-widest text-zinc-600 mb-3">Informações completas</h2>
+    <div class="border border-zinc-800">
       <div
         v-for="([key, value], index) in displayEntries"
         :key="key"
-        class="flex items-start gap-4 px-4 py-3"
-        :class="index % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-800/50'"
+        class="flex items-start gap-4 px-4 py-3 border-b border-zinc-800 last:border-b-0"
+        :class="index % 2 === 0 ? 'bg-black' : 'bg-zinc-950'"
       >
-        <span class="text-xs font-semibold uppercase tracking-widest text-zinc-500 w-32 flex-shrink-0 pt-0.5">{{ labelFor(key) }}</span>
-        <span class="text-zinc-300 break-all">{{ value }}</span>
+        <span class="text-[10px] font-black uppercase tracking-widest text-zinc-600 w-28 flex-shrink-0 pt-0.5">{{ labelFor(key) }}</span>
+        <span class="text-zinc-400 text-sm break-all">{{ value }}</span>
       </div>
     </div>
   </div>

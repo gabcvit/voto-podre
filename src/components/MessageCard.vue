@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-zinc-800 border border-zinc-600 rounded-xl p-6">
-    <h3 class="text-lg font-bold text-white mb-2">{{ title }}</h3>
-    <p class="text-zinc-300 text-sm leading-relaxed">{{ body }}</p>
+  <div class="border-l-2 border-zinc-700 pl-5 py-2">
+    <h3 class="text-sm font-black text-white uppercase tracking-widest mb-2">{{ title }}</h3>
+    <p class="text-zinc-500 text-sm leading-relaxed">{{ body }}</p>
   </div>
 </template>
 

@@ -3,7 +3,7 @@ import TheNavbar from '@/components/TheNavbar.vue';
 </script>
 
 <template>
-  <div class="bg-zinc-950 text-white min-h-screen">
+  <div class="bg-black text-white min-h-screen">
     <TheNavbar />
     <main>
       <router-view />

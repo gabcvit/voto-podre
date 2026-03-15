@@ -1,7 +1,7 @@
 <template>
     <div v-if="deputado" class="max-w-3xl mx-auto px-4 py-12">
-      <button @click="goBack" class="mb-6 px-4 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white flex items-center gap-2 transition">
-        <IconArrowBack class="text-blue-400" />
+      <button @click="goBack" class="mb-8 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-zinc-600 hover:text-white transition-colors">
+        <IconArrowBack />
         Voltar
       </button>
 
@@ -16,9 +16,9 @@
       <PautasList :pautas="pautasDoDeputado" />
     </div>
     <div v-else class="text-center py-16">
-      <p class="text-xl text-zinc-300">Deputado não encontrado.</p>
-      <button @click="goBack" class="mt-6 px-4 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white flex items-center gap-2 transition">
-        <IconArrowBack class="text-blue-400" />
+      <p class="text-zinc-600 uppercase tracking-widest text-sm">Deputado não encontrado.</p>
+      <button @click="goBack" class="mt-6 flex items-center gap-2 mx-auto text-xs font-black uppercase tracking-widest text-zinc-600 hover:text-white transition-colors">
+        <IconArrowBack />
         Voltar
       </button>
     </div>

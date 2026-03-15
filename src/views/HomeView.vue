@@ -1,26 +1,30 @@
 <template>
-  <div class="max-w-4xl mx-auto px-4 py-12">
+  <div class="max-w-4xl mx-auto px-4">
 
     <!-- Hero -->
-    <section class="text-center mb-16">
-      <h1 class="text-5xl font-extrabold text-red-400 mb-4 leading-tight">
-        Voto Podre
+    <section class="pt-16 pb-14 border-b border-zinc-800">
+      <p class="text-xs font-black uppercase tracking-widest text-red-500 mb-4">Transparência · Memória · Responsabilidade</p>
+      <h1
+        class="font-black uppercase leading-none tracking-tighter text-white mb-6"
+        style="font-family: 'Syne', sans-serif; font-size: clamp(3rem, 10vw, 7rem);"
+      >
+        Voto<br><span class="text-red-500">Podre</span>
       </h1>
-      <p class="text-xl text-zinc-300 max-w-2xl mx-auto leading-relaxed">
-        Transparência é a arma do cidadão. Aqui você descobre quais deputados
-        votaram <strong class="text-red-300">contra o seu futuro</strong>.
-        Nunca mais os esqueça na hora de votar.
+      <p class="text-zinc-400 max-w-xl leading-relaxed mb-8 text-base">
+        Aqui você descobre quais deputados votaram
+        <strong class="text-white font-bold">contra o seu futuro</strong>.
+        Transparência é a arma do cidadão. Nunca mais os esqueça na hora de votar.
       </p>
-      <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <div class="flex flex-wrap gap-3">
         <RouterLink
           to="/pautas-podres"
-          class="px-6 py-3 bg-red-700 hover:bg-red-600 text-white font-semibold rounded-lg transition"
+          class="px-5 py-2 bg-red-500 hover:bg-red-400 text-white text-xs font-black uppercase tracking-widest transition-colors"
         >
           Ver Pautas Podres
         </RouterLink>
         <RouterLink
           to="/deputados"
-          class="px-6 py-3 bg-zinc-700 hover:bg-zinc-600 text-white font-semibold rounded-lg transition"
+          class="px-5 py-2 border border-zinc-700 hover:border-zinc-500 text-white text-xs font-black uppercase tracking-widest transition-colors"
         >
           Ver Deputados
         </RouterLink>
@@ -28,7 +32,7 @@
     </section>
 
     <!-- Statistics -->
-    <section class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
+    <section class="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-zinc-800 mb-0 border-b border-zinc-800">
       <StatCard
         :value="totalDeputadosMonitorados"
         label="Deputados monitorados"
@@ -50,20 +54,23 @@
     </section>
 
     <!-- Callout -->
-    <section class="bg-red-950 border border-red-700 rounded-xl p-8 text-center mb-16">
-      <h2 class="text-2xl font-bold text-red-300 mb-3">
-        Nunca esqueça quem votou contra o seu futuro.
+    <section class="border-b border-zinc-800 py-12">
+      <h2
+        class="font-black uppercase leading-none tracking-tight text-white mb-4"
+        style="font-family: 'Syne', sans-serif; font-size: clamp(1.5rem, 4vw, 2.5rem);"
+      >
+        Nunca esqueça quem votou <span class="text-red-500">contra o seu futuro.</span>
       </h2>
-      <p class="text-zinc-300 leading-relaxed max-w-2xl mx-auto">
+      <p class="text-zinc-500 leading-relaxed max-w-2xl text-sm">
         Cada voto podre é uma escolha deliberada de um parlamentar em prejudicar
         trabalhadores, mulheres, os mais vulneráveis e a democracia brasileira.
-        Guarde esses nomes. Compartilhe com sua família. Leve essa informação
+        Guarde esses nomes. Compartilhe com as pessoas ao seu redor. Leve essa informação
         para as urnas.
       </p>
     </section>
 
     <!-- Messages -->
-    <section class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-12">
       <MessageCard
         title="Seu voto tem poder"
         body="A democracia só funciona quando cidadãos informados exercem seu direito de voto. Não deixe que candidatos com histórico de traição ao povo sejam reeleitos."

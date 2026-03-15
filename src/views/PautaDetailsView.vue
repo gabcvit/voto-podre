@@ -1,44 +1,44 @@
 <template>
   <div v-if="pauta" class="max-w-3xl mx-auto px-4 py-12">
-    <button @click="goBack" class="mb-6 px-4 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white flex items-center gap-2 transition">
-      <IconArrowBack class="text-blue-400" />
+    <button @click="goBack" class="mb-8 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-zinc-600 hover:text-white transition-colors">
+      <IconArrowBack />
       Voltar
     </button>
 
-    <div class="relative overflow-hidden bg-red-950/90 border border-red-500 shadow-[0_0_22px_4px_rgba(239,68,68,0.35)] rounded-xl p-6 mb-8">
-      <div class="absolute left-0 top-0 bottom-0 w-2 bg-red-500"></div>
-      <div class="ml-4">
-        <div class="flex items-center gap-3 mb-2">
-          <span class="text-3xl leading-none select-none">⚠️</span>
-          <h1 class="text-3xl font-bold text-red-200">{{ pauta.nome }}</h1>
-        </div>
-        <p class="text-red-100 mb-3">{{ pauta.descricao }}</p>
-        <a
-          v-if="pauta.urlProposicao"
-          :href="pauta.urlProposicao"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-sm text-red-300 underline hover:text-red-200 transition"
-        >Ver tramitação na Câmara →</a>
-      </div>
+    <div class="border-l-4 border-red-500 pl-6 mb-10">
+      <p class="text-xs font-black uppercase tracking-widest text-red-500 mb-2">Pauta Podre</p>
+      <h1
+        class="font-black uppercase leading-tight text-white mb-3"
+        style="font-family: 'Syne', sans-serif; font-size: clamp(1.5rem, 4vw, 2.25rem);"
+      >{{ pauta.nome }}</h1>
+      <p class="text-zinc-500 text-sm leading-relaxed mb-4">{{ pauta.descricao }}</p>
+      <a
+        v-if="pauta.urlProposicao"
+        :href="pauta.urlProposicao"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-xs font-black uppercase tracking-widest text-zinc-600 hover:text-white transition-colors"
+      >Ver tramitação na Câmara →</a>
     </div>
 
-    <h3 class="text-lg font-semibold mb-3 text-red-200 uppercase tracking-wide">
-      🚨 {{ deputados.length }} deputado{{ deputados.length !== 1 ? 's' : '' }} que apoiaram
-    </h3>
-    <div class="flex flex-col">
-      <BaseDeputado
-        v-for="deputado in deputados"
-        :key="deputado.id"
-        :deputado="deputado"
-        :pautasPodres="[pauta]"
-      />
+    <div class="mb-6">
+      <p class="text-xs font-black uppercase tracking-widest text-zinc-600 mb-4">
+        {{ deputados.length }} deputado{{ deputados.length !== 1 ? 's' : '' }} que apoiaram
+      </p>
+      <div class="flex flex-col">
+        <BaseDeputado
+          v-for="deputado in deputados"
+          :key="deputado.id"
+          :deputado="deputado"
+          :pautasPodres="[pauta]"
+        />
+      </div>
     </div>
   </div>
   <div v-else class="text-center py-16">
-    <p class="text-xl text-red-300">Pauta não encontrada.</p>
-    <button @click="goBack" class="mt-6 px-4 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white flex items-center gap-2 transition">
-      <IconArrowBack class="text-blue-400" />
+    <p class="text-zinc-600 uppercase tracking-widest text-sm">Pauta não encontrada.</p>
+    <button @click="goBack" class="mt-6 flex items-center gap-2 mx-auto text-xs font-black uppercase tracking-widest text-zinc-600 hover:text-white transition-colors">
+      <IconArrowBack />
       Voltar
     </button>
   </div>
