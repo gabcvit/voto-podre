@@ -6,7 +6,7 @@
 
 Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputados federais brasileiros e identifica aqueles com votos questionáveis em proposições catalogadas. Os dados são extraídos da [API pública da Câmara dos Deputados](https://dadosabertos.camara.leg.br/).
 
-🔗 **[gabcvit.github.io/voto-podre](https://gabcvit.github.io/voto-podre)**
+🔗 **[voto-podre.com.br](https://voto-podre.com.br)**
 
 ---
 

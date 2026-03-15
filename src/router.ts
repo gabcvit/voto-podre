@@ -55,7 +55,7 @@ const routes: RouteRecordRaw[] = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/voto-podre/'),
+  history: createWebHistory('/'),
   routes,
   scrollBehavior: () => ({ top: 0 }),
 });
