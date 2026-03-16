@@ -25,5 +25,17 @@ export default defineConfigWithVueTs(
     files: ['src/**/__tests__/*'],
   },
 
+  {
+    files: ['cypress/**/*.ts'],
+    languageOptions: {
+      globals: {
+        Cypress: 'readonly',
+        cy: 'readonly',
+        describe: 'readonly',
+        it: 'readonly',
+      },
+    },
+  },
+
   ...pluginOxlint.configs['flat/recommended'],
 )

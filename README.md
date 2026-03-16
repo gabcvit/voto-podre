@@ -41,7 +41,7 @@ Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputad
 | Estilo | Tailwind CSS v4 |
 | Estado | Pinia |
 | Roteamento | Vue Router v5 |
-| Testes | Vitest + `@vue/test-utils` |
+| Testes | Vitest + `@vue/test-utils` + Cypress |
 | Deploy | GitHub Pages (`gh-pages`) |
 
 ## Rodando localmente
@@ -56,8 +56,9 @@ pnpm dev
 # Build de produção
 pnpm build
 
-# Rodar testes
-pnpm test:unit
+# Rodar testes E2E (inicie o servidor antes em outro terminal)
+pnpm dev
+pnpm test
 
 # Atualizar redeSocial dos deputados a partir da API da Câmara
 pnpm sync:deputados:rede-social
@@ -65,6 +66,12 @@ pnpm sync:deputados:rede-social
 # Deploy para GitHub Pages
 pnpm deploy
 ```
+
+## Testes E2E
+
+- `pnpm test` executa o Cypress em modo headless (`cypress run`). Requer o servidor de desenvolvimento em execução (`pnpm dev` em outro terminal).
+- Em CI, o pipeline usa `cypress-io/github-action@v6`, que inicializa o servidor automaticamente antes de rodar os testes.
+- O job de build declara `needs: test`, então o deploy só ocorre se todos os smoke tests passarem.
 
 ---
 

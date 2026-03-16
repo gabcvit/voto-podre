@@ -50,7 +50,7 @@ Data is static (hand-curated from the public Câmara dos Deputados Open Data API
 | Styling | Tailwind CSS v4 (via `@tailwindcss/vite` plugin — no `tailwind.config.js`) |
 | State | Pinia (stores are thin wrappers over static data) |
 | Routing | Vue Router v5 (HTML5 history mode) |
-| Testing | Vitest + `@vue/test-utils` |
+| Testing | Vitest + `@vue/test-utils` + Cypress |
 | Linting | ESLint + oxlint |
 | Package manager | **pnpm** |
 | Deploy | `gh-pages` (runs `pnpm build && gh-pages -d dist`) |
@@ -61,10 +61,10 @@ Data is static (hand-curated from the public Câmara dos Deputados Open Data API
 ## 3. Key Scripts
 
 ```bash
-pnpm dev          # dev server
+pnpm dev          # dev server (localhost:5173)
 pnpm build        # type-check + vite build → dist/ + runs scripts/prerender.mjs
 pnpm preview      # serve dist/
-pnpm test:unit    # vitest
+pnpm test         # run Cypress E2E smoke tests headlessly (requires dev server already running)
 pnpm lint         # oxlint + eslint (auto-fix)
 pnpm sync:deputados:rede-social  # fetches redeSocial for every deputy and rewrites src/data/deputados.ts
 pnpm deploy       # build + push to gh-pages branch
@@ -76,6 +76,13 @@ pnpm deploy       # build + push to gh-pages branch
 
 ```
 /
+├── .github/
+│   └── workflows/
+│       └── main_workflow.yml      # CI pipeline: install → Cypress smoke tests → build → GitHub Pages deploy
+├── cypress/
+│   └── e2e/
+│       └── smoke.cy.ts            # Smoke coverage for every public route, including one deputado and one pauta details page
+├── cypress.config.ts          # Cypress E2E config (baseUrl, spec pattern, no support file)
 ├── index.html                  # Loads Google Fonts (Syne + DM Sans), mounts #app; anti-flash theme script; base SEO/OG/Twitter meta + JSON-LD
 ├── scripts/
 │   ├── prerender.mjs           # Post-build script: generates dist/<route>/index.html for each static
@@ -102,11 +109,15 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   ├── pautasPodres.ts     # PAUTAS_PODRES: PautaPodre[] — array of PautaPodre objects (typed)
 │   │   ├── temas.ts            # TEMA_CONFIG: Record<Tema, { emoji, colorClass, buttonActiveClass }> — per-tema UI config
 │   │   └── pecs-podres/
-│   │       ├── utils.ts            # extractIdsPodres(votos) — IDs of deputies who voted "Sim" (use for negative pautas)
-│   │       │                       # extractIdsContraPauta(votos) — IDs of deputies who voted "Não" (use for positive pautas)
-│   │       ├── pec-aborto.ts       # Array of deputy IDs flagged for this PEC (voted Sim)
-│   │       ├── pec-bandidagem.ts   # Array of deputy IDs flagged for this PEC (voted Sim)
-│   │       └── pl-devastacao.ts    # Array of deputy IDs flagged for this PL (voted Sim)
+│           ├── utils.ts                                                 # extractIdsPodres(votos) — IDs of deputies who voted "Sim" (use for negative pautas)
+│           │                                                            # extractIdsContraPauta(votos) — IDs of deputies who voted "Não" (use for positive pautas)
+│           ├── pec-aborto.ts                                           # Deputy IDs flagged (voted Sim)
+│           ├── pec-anistia.ts                                          # Deputy IDs flagged (voted Sim)
+│           ├── pec-bandidagem.ts                                       # Deputy IDs flagged (voted Sim)
+│           ├── pl-anti-movimentos-trabalhadores-rurais-e-indigenas.ts  # Deputy IDs flagged (voted Sim)
+│           ├── pl-devastacao.ts                                        # Deputy IDs flagged (voted Sim)
+│           ├── pl-marco-temporal.ts                                    # Deputy IDs flagged (voted Sim)
+│           └── pl-mercado-de-carbono.ts                                # Deputy IDs flagged (voted Sim)
 │   │
 │   ├── stores/
 │   │   ├── useDeputadosStore.ts     # Pinia store: exposes { deputados }
@@ -439,8 +450,12 @@ Add an entry to `TODOS_DEPUTADOS.dados` in `src/data/deputados.ts` following the
 
 ## 12. Testing
 
-Tests live in `src/components/__tests__/` (currently empty — no tests written yet).
-Test runner: `pnpm test:unit` (Vitest + jsdom + `@vue/test-utils`).
+- E2E smoke tests live in `cypress/e2e/smoke.cy.ts` — one test per public route asserting the page title, main heading, and key UI controls/content.
+- `pnpm test` runs Cypress headlessly (`cypress run`). The dev server must already be running (`pnpm dev` in a separate terminal).
+- In CI, the `test` job uses `cypress-io/github-action@v6` which starts `pnpm vite --host` automatically and waits for `http://localhost:5173` before running the suite.
+- The `build` job declares `needs: test`, so GitHub Pages deploys are gated on passing smoke coverage.
+- Unit test infrastructure (Vitest + `@vue/test-utils`) is installed but no `test:unit` script is defined. Specs would live in `src/components/__tests__/`.
+- **Cypress config notes** (`cypress.config.ts`): `baseUrl: http://localhost:5173/`, `pageLoadTimeout: 30000`, `defaultCommandTimeout: 8000`. A `beforeEach` intercept stubs all `camara.leg.br` requests so external deputy photo URLs don't stall `window.load` on pages that render hundreds of images.
 
 ---
 
