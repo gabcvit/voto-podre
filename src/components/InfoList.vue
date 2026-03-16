@@ -20,7 +20,7 @@ import { computed } from 'vue';
 
 const props = defineProps<{ info: Record<string, string | number | string[]> }>();
 
-const HIDDEN_KEYS = new Set(['uri', 'uriPartido', 'urlFoto']);
+const HIDDEN_KEYS = new Set(['uri', 'uriPartido', 'urlFoto', 'redeSocial']);
 
 const LABELS: Record<string, string> = {
   id: 'ID',

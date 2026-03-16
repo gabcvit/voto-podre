@@ -271,7 +271,7 @@ Rows with `tipo === 'negativa'` get a red left-border and a **PAUTA PODRE** labe
 ### `InfoList`
 | Prop | Type | Notes |
 |---|---|---|
-| `info` | `Record<string, string \| number \| string[]>` | Filters hidden keys: `uri`, `uriPartido`, `urlFoto` |
+| `info` | `Record<string, string \| number \| string[]>` | Filters hidden keys: `uri`, `uriPartido`, `urlFoto`, `redeSocial` |
 
 Rendered as a `<dl>` (description list) with `<dt>`/`<dd>` pairs for each key-value entry.
 
