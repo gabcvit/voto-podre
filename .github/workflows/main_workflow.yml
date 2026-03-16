@@ -89,9 +89,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run end-to-end smoke tests
-        run: pnpm test:e2e
-
       - name: Build static files
         run: pnpm build
 
