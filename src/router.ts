@@ -6,6 +6,7 @@ import DeputadoDetailsView from './views/DeputadoDetailsView.vue';
 import PautasPodresView from './views/PautasPodresView.vue';
 import PautaDetailsView from './views/PautaDetailsView.vue';
 import AboutView from './views/AboutView.vue';
+import GlossaryView from './views/GlossaryView.vue';
 import PrivacyPolicyView from './views/PrivacyPolicyView.vue';
 import TermsOfUseView from './views/TermsOfUseView.vue';
 
@@ -41,6 +42,11 @@ const routes: RouteRecordRaw[] = [
     path: '/sobre',
     name: 'Sobre',
     component: AboutView,
+  },
+  {
+    path: '/glossario',
+    name: 'Glossario',
+    component: GlossaryView,
   },
   {
     path: '/privacidade',

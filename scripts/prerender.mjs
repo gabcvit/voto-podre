@@ -46,6 +46,12 @@ const routes = [
       'Sobre o Voto Podre — ferramenta de memória coletiva que expõe deputados que votaram contra trabalhadores e movimentos populares no Brasil.',
   },
   {
+    path: '/glossario',
+    title: 'Glossário — Voto Podre',
+    description:
+      'Glossário do Voto Podre com explicações simples de termos como PEC, PL, pauta, proposição e outros conceitos usados no Congresso Nacional.',
+  },
+  {
     path: '/privacidade',
     title: 'Política de Privacidade — Voto Podre',
     description:

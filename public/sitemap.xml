@@ -23,6 +23,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://voto-podre.com.br/glossario</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://voto-podre.com.br/privacidade</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

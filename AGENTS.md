@@ -123,11 +123,12 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList; tema filter buttons
 │   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + list of flagged deputies + share button (Web Share API / clipboard fallback)
 │   │   ├── AboutView.vue          # Static info / methodology
+│   │   ├── GlossaryView.vue       # Glossário de termos legislativos usados no site (PEC, PL, proposição, etc.)
 │   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, declares zero data collection
 │   │   └── TermsOfUseView.vue     # Termos de Uso — govering law, liability, editorial character
 │   │
 │   └── components/
-│       ├── TheNavbar.vue           # Sticky top nav (logo + 4 links + theme toggle button)
+│       ├── TheNavbar.vue           # Sticky top nav (logo + 5 links + theme toggle button)
 │       ├── TheFooter.vue           # Site footer: author credit (gabcvit), links to /privacidade and /termos
 │       ├── BaseDeputado.vue        # Deputy row (list) or expanded card (details view); badge shows "votos podres" count
 │       ├── PageTitle.vue           # h1 + optional subtitle used by list views
@@ -186,6 +187,7 @@ type PautaPodre = {
 | `/pautas-podres` | `PautasPodres` | `PautasPodresView` | tema filter buttons |
 | `/pauta/:id` | `PautaDetails` | `PautaDetailsView` | |
 | `/sobre` | `Sobre` | `AboutView` | |
+| `/glossario` | `Glossario` | `GlossaryView` | glossário de termos legislativos |
 | `/privacidade` | `Privacidade` | `PrivacyPolicyView` | |
 | `/termos` | `Termos` | `TermsOfUseView` | |
 
@@ -276,7 +278,7 @@ useMeta({
 Exports `SITE_URL = 'https://voto-podre.com.br'` for use in other modules.
 
 **Bot compatibility:**
-- All static routes (`/sobre`, `/deputados`, etc.): `scripts/prerender.mjs` generates a separate `dist/<route>/index.html` with the correct OG/Twitter meta pre-patched at build time. GitHub Pages serves these as HTTP 200, so all crawlers (Bluesky, WhatsApp, Telegram, Google, etc.) get the right metadata without executing JS.
+- All static routes (`/sobre`, `/glossario`, `/deputados`, etc.): `scripts/prerender.mjs` generates a separate `dist/<route>/index.html` with the correct OG/Twitter meta pre-patched at build time. GitHub Pages serves these as HTTP 200, so all crawlers (Bluesky, WhatsApp, Telegram, Google, etc.) get the right metadata without executing JS.
 - Dynamic routes (`/deputado/:id`, `/pauta/:id`): fall back to `dist/404.html` (GitHub Pages' SPA fallback). Real users get correct in-app navigation; social-media crawlers may show the homepage defaults.
 - If you add a new static route, add a matching entry to `scripts/prerender.mjs`.
 

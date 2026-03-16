@@ -15,6 +15,7 @@ Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputad
 - **Listagem de deputados** com busca por nome, filtro por partido, estado (UF), status ("podre" / "limpo") e quantidade mínima de pautas
 - **Perfil individual** de cada deputado com seus dados e as pautas em que teve voto questionável
 - **Catálogo de pautas** com descrição detalhada e lista de todos os deputados flagrados
+- **Glossário de termos** com explicações simples para siglas e conceitos legislativos (ex.: PEC, PL, proposição)
 - **Estatísticas** em tempo real: total de deputados monitorados, pautas catalogadas e deputados flagrados
 - **Tema escuro/claro** com preferência persistida em `localStorage` (escuro por padrão)
 - **Navegação responsiva** com menu burger para dispositivos móveis
