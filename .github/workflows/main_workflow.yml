@@ -55,9 +55,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Install Cypress binary
+        run: pnpm cypress install
+
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
+          install: false
           start: pnpm vite --host
           wait-on: 'http://localhost:5173'
 

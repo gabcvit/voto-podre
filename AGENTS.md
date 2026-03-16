@@ -452,7 +452,7 @@ Add an entry to `TODOS_DEPUTADOS.dados` in `src/data/deputados.ts` following the
 
 - E2E smoke tests live in `cypress/e2e/smoke.cy.ts` — one test per public route asserting the page title, main heading, and key UI controls/content.
 - `pnpm test` runs Cypress headlessly (`cypress run`). The dev server must already be running (`pnpm dev` in a separate terminal).
-- In CI, the `test` job uses `cypress-io/github-action@v6` which starts `pnpm vite --host` automatically and waits for `http://localhost:5173` before running the suite.
+- In CI, the `test` job runs `pnpm cypress install` before `cypress-io/github-action@v6` (configured with `install: false`) to ensure the Cypress binary is present under pnpm v10; the action then starts `pnpm vite --host` and waits for `http://localhost:5173` before running the suite.
 - The `build` job declares `needs: test`, so GitHub Pages deploys are gated on passing smoke coverage.
 - Unit test infrastructure (Vitest + `@vue/test-utils`) is installed but no `test:unit` script is defined. Specs would live in `src/components/__tests__/`.
 - **Cypress config notes** (`cypress.config.ts`): `baseUrl: http://localhost:5173/`, `pageLoadTimeout: 30000`, `defaultCommandTimeout: 8000`. A `beforeEach` intercept stubs all `camara.leg.br` requests so external deputy photo URLs don't stall `window.load` on pages that render hundreds of images.
