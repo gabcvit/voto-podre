@@ -30,13 +30,13 @@
         :href="pauta.urlProposicao"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-block text-xs font-black uppercase tracking-widest border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-colors px-4 py-2"
+        class="mt-3 inline-block text-xs font-black uppercase tracking-widest border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-colors px-4 py-2 mr-3 "
       >Ver tramitação na Câmara →</a>
       <button
         v-if="references.length"
         type="button"
         @click="showReferences = !showReferences"
-        class="ml-3 inline-block text-xs font-black uppercase tracking-widest border-2 border-zinc-300 text-zinc-500 hover:border-zinc-900 hover:text-zinc-900 transition-colors px-4 py-2 dark:border-zinc-800 dark:text-zinc-600 dark:hover:border-white dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+        class="mt-3 inline-block text-xs font-black uppercase tracking-widest border-2 border-zinc-300 text-zinc-500 hover:border-zinc-900 hover:text-zinc-900 transition-colors px-4 py-2 dark:border-zinc-800 dark:text-zinc-600 dark:hover:border-white dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
       >
         {{ showReferences ? 'Ocultar materiais de leitura' : 'Mostrar materiais de leitura' }}
       </button>
