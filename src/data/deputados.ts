@@ -9,7 +9,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204379.jpg",
-      "email": "dep.acaciofavacho@camara.leg.br"
+      "email": "dep.acaciofavacho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/acaciofavacho",
+        "https://www.facebook.com/deputadofederalacaciofavacho",
+        "https://youtube.com/channel/UCWNbptIjAriL2pt8H3W6CGw"
+      ]
     },
     {
       "id": 220714,
@@ -20,7 +25,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AM",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220714.jpg",
-      "email": "dep.adailfilho@camara.leg.br"
+      "email": "dep.adailfilho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/adailfilhoam?s=21&t=O_eoTX0q1QfS6vmySI7biQ",
+        "https://www.facebook.com/AdailFilhoAM",
+        "https://www.instagram.com/adailfilho/",
+        "https://www.youtube.com/@AdailFilho"
+      ]
     },
     {
       "id": 221328,
@@ -31,7 +42,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/221328.jpg",
-      "email": "dep.adilsonbarroso@camara.leg.br"
+      "email": "dep.adilsonbarroso@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204560,
@@ -42,7 +54,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204560.jpg",
-      "email": "dep.adolfoviana@camara.leg.br"
+      "email": "dep.adolfoviana@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204528,
@@ -53,7 +66,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204528.jpg",
-      "email": "dep.adrianaventura@camara.leg.br"
+      "email": "dep.adrianaventura@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/adriventurasp",
+        "https://www.facebook.com/adriventurasp",
+        "https://www.instagram.com/adriventurasp",
+        "https://youtube.com/adrianaventura"
+      ]
     },
     {
       "id": 121948,
@@ -64,7 +83,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/121948.jpg",
-      "email": "dep.adrianodobaldy@camara.leg.br"
+      "email": "dep.adrianodobaldy@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/adrianodobaldy",
+        "https://www.facebook.com/AdrianoDoBaldyOficial",
+        "https://www.instagram.com/adrianodobaldyoficial"
+      ]
     },
     {
       "id": 74646,
@@ -75,7 +99,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74646.jpg",
-      "email": "dep.aecioneves@camara.leg.br"
+      "email": "dep.aecioneves@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 136811,
@@ -86,7 +111,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/136811.jpg",
-      "email": "dep.afonsohamm@camara.leg.br"
+      "email": "dep.afonsohamm@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/depafonsohamm",
+        "https://www.instagram.com/afonsohamm"
+      ]
     },
     {
       "id": 178835,
@@ -97,7 +126,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178835.jpg",
-      "email": "dep.afonsomotta@camara.leg.br"
+      "email": "dep.afonsomotta@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160527,
@@ -108,7 +138,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160527.jpg",
-      "email": "dep.aguinaldoribeiro@camara.leg.br"
+      "email": "dep.aguinaldoribeiro@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depaguinaldo11",
+        "https://www.facebook.com/depaguinaldoribeiro",
+        "https://www.instagram.com/depaguinaldoribeiro"
+      ]
     },
     {
       "id": 204495,
@@ -119,7 +154,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204495.jpg",
-      "email": "dep.airtonfaleiro@camara.leg.br"
+      "email": "dep.airtonfaleiro@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204549,
@@ -130,7 +166,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204549.jpg",
-      "email": "dep.ajalbuquerque@camara.leg.br"
+      "email": "dep.ajalbuquerque@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 73579,
@@ -141,7 +178,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "DF",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73579.jpg",
-      "email": "dep.albertofraga@camara.leg.br"
+      "email": "dep.albertofraga@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/deputadoalbertofraga"
+      ]
     },
     {
       "id": 220538,
@@ -152,7 +192,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220538.jpg",
-      "email": "dep.albuquerque@camara.leg.br"
+      "email": "dep.albuquerque@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160559,
@@ -163,7 +204,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160559.jpg",
-      "email": "dep.alceumoreira@camara.leg.br"
+      "email": "dep.alceumoreira@camara.leg.br",
+      "redeSocial": [
+        "http://twitter.com/alceu_moreira"
+      ]
     },
     {
       "id": 204501,
@@ -174,7 +218,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204501.jpg",
-      "email": "dep.alencarsantana@camara.leg.br"
+      "email": "dep.alencarsantana@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/AlencarBraga13",
+        "https://www.facebook.com/AlencarBraga13",
+        "https://www.instagram.com/AlencarBraga13",
+        "https://youtube.com/AlencarBraga13"
+      ]
     },
     {
       "id": 178972,
@@ -185,7 +235,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178972.jpg",
-      "email": "dep.alexmanente@camara.leg.br"
+      "email": "dep.alexmanente@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/AlexManente23",
+        "https://www.facebook.com/alexmanente",
+        "https://www.instagram.com/alexmanente/",
+        "https://youtube.com/c/AlexManenteOficial"
+      ]
     },
     {
       "id": 204571,
@@ -196,7 +252,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204571.jpg",
-      "email": "dep.alexsantana@camara.leg.br"
+      "email": "dep.alexsantana@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220542,
@@ -207,7 +264,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "TO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220542.jpg",
-      "email": "dep.alexandreguimaraes@camara.leg.br"
+      "email": "dep.alexandreguimaraes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220554,
@@ -218,7 +276,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220554.jpg",
-      "email": "dep.alexandrelindenmeyer@camara.leg.br"
+      "email": "dep.alexandrelindenmeyer@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 221148,
@@ -229,7 +288,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/221148.jpg",
-      "email": "dep.alfredinho@camara.leg.br"
+      "email": "dep.alfredinho@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/Alfredinho.pt"
+      ]
     },
     {
       "id": 220576,
@@ -240,7 +302,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AL",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220576.jpg",
-      "email": "dep.alfredogaspar@camara.leg.br"
+      "email": "dep.alfredogaspar@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/Alfredogaspar_",
+        "https://www.facebook.com/alfredogasparoficial",
+        "https://www.instagram.com/alfredogaspar",
+        "https://youtube.com/AlfredoGasparOficial"
+      ]
     },
     {
       "id": 74057,
@@ -251,7 +319,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74057.jpg",
-      "email": "dep.aliceportugal@camara.leg.br"
+      "email": "dep.aliceportugal@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178927,
@@ -262,7 +331,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178927.jpg",
-      "email": "dep.alielmachado@camara.leg.br"
+      "email": "dep.alielmachado@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 226708,
@@ -273,7 +343,14 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/226708.jpg",
-      "email": "dep.allangarces@camara.leg.br"
+      "email": "dep.allangarces@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/AllanGarcs1",
+        "https://www.facebook.com/AllanGarcês",
+        "https://www.facebook.com/allangarcesoficial",
+        "https://www.instagram.com/allan.garces",
+        "https://youtube.com/channel/UCarcImE3nnhmisi8RRbdm-w"
+      ]
     },
     {
       "id": 178937,
@@ -284,7 +361,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178937.jpg",
-      "email": "dep.altineucortes@camara.leg.br"
+      "email": "dep.altineucortes@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/altineu",
+        "https://www.facebook.com/altineucortesrj",
+        "https://www.instagram.com/altineucortesrj"
+      ]
     },
     {
       "id": 178881,
@@ -295,7 +377,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178881.jpg",
-      "email": "dep.aluisiomendes@camara.leg.br"
+      "email": "dep.aluisiomendes@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/aluisiomendesma",
+        "https://www.facebook.com/aluisiomendesma",
+        "https://www.instagram.com/aluisiomendesma",
+        "https://youtube.com/aluisiomendesma"
+      ]
     },
     {
       "id": 220707,
@@ -306,7 +394,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220707.jpg",
-      "email": "dep.amandagentil@camara.leg.br"
+      "email": "dep.amandagentil@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/amandagentiI",
+        "https://www.instagram.com/amandagentill"
+      ]
     },
     {
       "id": 204356,
@@ -317,7 +409,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "ES",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204356.jpg",
-      "email": "dep.amaroneto@camara.leg.br"
+      "email": "dep.amaroneto@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/amaronetotv",
+        "https://www.facebook.com/amaronetotv",
+        "https://www.instagram.com/amaronetotv"
+      ]
     },
     {
       "id": 220715,
@@ -328,7 +425,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AM",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220715.jpg",
-      "email": "dep.amommandel@camara.leg.br"
+      "email": "dep.amommandel@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/eusouamom",
+        "https://www.facebook.com/eusouamom",
+        "https://www.instagram.com/eusouamom",
+        "https://youtube.com/channel/UCwPEeCb9CuIqhqpUoGvGpvA"
+      ]
     },
     {
       "id": 107970,
@@ -339,7 +442,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/107970.jpg",
-      "email": "dep.anapaulaleao@camara.leg.br"
+      "email": "dep.anapaulaleao@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/apjunqueira",
+        "https://www.facebook.com/AnaPaulaJunqueiraLeao",
+        "https://www.instagram.com/anapaulajunqueiraleao",
+        "https://youtube.com/channel/UC-DlAUSQo11ZjK_yhbXoTgQ"
+      ]
     },
     {
       "id": 220556,
@@ -350,7 +459,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220556.jpg",
-      "email": "dep.anapaulalima@camara.leg.br"
+      "email": "dep.anapaulalima@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/anapaulalimapt",
+        "https://www.facebook.com/anapaulalima.pt13",
+        "https://www.instagram.com/anapaulalimapt",
+        "https://youtube.com/channel/UC271rCNzTprXed1zDwykMaw"
+      ]
     },
     {
       "id": 220632,
@@ -361,7 +476,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220632.jpg",
-      "email": "dep.anapimentel@camara.leg.br"
+      "email": "dep.anapimentel@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178831,
@@ -372,7 +488,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178831.jpg",
-      "email": "dep.andreabdon@camara.leg.br"
+      "email": "dep.andreabdon@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/andreabdon_"
+      ]
     },
     {
       "id": 220657,
@@ -383,7 +502,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220657.jpg",
-      "email": "dep.andrefernandes@camara.leg.br"
+      "email": "dep.andrefernandes@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/andrefernm",
+        "https://www.facebook.com/andrefernm",
+        "https://www.instagram.com/andrefernandes",
+        "https://youtube.com/depandrefernandes"
+      ]
     },
     {
       "id": 204423,
@@ -394,7 +519,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204423.jpg",
-      "email": "dep.andreferreira@camara.leg.br"
+      "email": "dep.andreferreira@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/andreferreira.pe",
+        "https://www.instagram.com/andreferreira.pe",
+        "https://youtube.com/channel/UC54XdbWXP1ZaimNu9Ujuvgw"
+      ]
     },
     {
       "id": 133439,
@@ -405,7 +535,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/133439.jpg",
-      "email": "dep.andrefigueiredo@camara.leg.br"
+      "email": "dep.andrefigueiredo@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/andrepdt12",
+        "https://www.facebook.com/DeputadoAndreFigueiredo"
+      ]
     },
     {
       "id": 204515,
@@ -416,7 +550,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204515.jpg",
-      "email": "dep.andrejanones@camara.leg.br"
+      "email": "dep.andrejanones@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/AndreJanonesAdv",
+        "https://www.facebook.com/andrejanones",
+        "https://www.instagram.com/andrejanones",
+        "https://youtube.com/AndreJanonesAdv"
+      ]
     },
     {
       "id": 220676,
@@ -427,7 +567,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220676.jpg",
-      "email": "dep.andreiasiqueira@camara.leg.br"
+      "email": "dep.andreiasiqueira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/deputadaandreia",
+        "https://www.facebook.com/andreiabsiqueira",
+        "https://www.instagram.com/andreiasiqueira"
+      ]
     },
     {
       "id": 123756,
@@ -438,7 +583,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/123756.jpg",
-      "email": "dep.antonialucia@camara.leg.br"
+      "email": "dep.antonialucia@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220544,
@@ -449,7 +595,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "TO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220544.jpg",
-      "email": "dep.antonioandrade@camara.leg.br"
+      "email": "dep.antonioandrade@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/antonioandradet",
+        "https://www.facebook.com/toinhoandradetocantins",
+        "https://www.instagram.com/toinhoandradeto"
+      ]
     },
     {
       "id": 160553,
@@ -460,7 +611,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160553.jpg",
-      "email": "dep.antoniobrito@camara.leg.br"
+      "email": "dep.antoniobrito@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/antoniobritobahia/"
+      ]
     },
     {
       "id": 220638,
@@ -471,7 +625,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220638.jpg",
-      "email": "dep.antoniocarlosrodrigues@camara.leg.br"
+      "email": "dep.antoniocarlosrodrigues@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220675,
@@ -482,7 +637,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220675.jpg",
-      "email": "dep.antoniodoido@camara.leg.br"
+      "email": "dep.antoniodoido@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220549,
@@ -493,7 +649,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220549.jpg",
-      "email": "dep.anyortiz@camara.leg.br"
+      "email": "dep.anyortiz@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 73433,
@@ -504,7 +661,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73433.jpg",
-      "email": "dep.arlindochinaglia@camara.leg.br"
+      "email": "dep.arlindochinaglia@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/achinaglia",
+        "https://www.facebook.com/depchinaglia",
+        "https://www.instagram.com/depchinaglia"
+      ]
     },
     {
       "id": 141391,
@@ -515,7 +677,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141391.jpg",
-      "email": "dep.arnaldojardim@camara.leg.br"
+      "email": "dep.arnaldojardim@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/arnaldojardim",
+        "https://www.facebook.com/deputadoarnaldojardim",
+        "https://www.instagram.com/arnaldojardimoficial",
+        "https://youtube.com/channel/UCBmGmOqIcw_Dob8eq3VtjZQ"
+      ]
     },
     {
       "id": 160541,
@@ -526,7 +694,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AL",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160541.jpg",
-      "email": "dep.arthurlira@camara.leg.br"
+      "email": "dep.arthurlira@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160600,
@@ -537,7 +706,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160600.jpg",
-      "email": "dep.arthuroliveiramaia@camara.leg.br"
+      "email": "dep.arthuroliveiramaia@camara.leg.br",
+      "redeSocial": [
+        "https://facebook.com/arthur.oliveiramaia",
+        "https://instagram.com/departhuroliveiramaia",
+        "https://twitter.com/DepArthurMaia"
+      ]
     },
     {
       "id": 74090,
@@ -548,7 +722,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AM",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74090.jpg",
-      "email": "dep.atilalins@camara.leg.br"
+      "email": "dep.atilalins@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 123086,
@@ -559,7 +734,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PI",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/123086.jpg",
-      "email": "dep.atilamlira@camara.leg.br"
+      "email": "dep.atilamlira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/atilaliraof",
+        "https://www.facebook.com/atilalirapi",
+        "https://www.instagram.com/atilalirapi/#"
+      ]
     },
     {
       "id": 160665,
@@ -570,7 +750,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160665.jpg",
-      "email": "dep.augustocoutinho@camara.leg.br"
+      "email": "dep.augustocoutinho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/dep_acoutinho",
+        "https://www.facebook.com/augusto.coutinho",
+        "https://www.instagram.com/augustocoutinhope",
+        "https://youtube.com/featured"
+      ]
     },
     {
       "id": 160512,
@@ -581,7 +767,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160512.jpg",
-      "email": "dep.aureoribeiro@camara.leg.br"
+      "email": "dep.aureoribeiro@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/AureoRibeiroRJ",
+        "https://www.facebook.com/AureoRibeiroRJ",
+        "https://www.instagram.com/aureo.ribeiro",
+        "https://youtube.com/AureoRibeiro77"
+      ]
     },
     {
       "id": 69871,
@@ -592,7 +784,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/69871.jpg",
-      "email": "dep.bacelar@camara.leg.br"
+      "email": "dep.bacelar@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DEPUTADOBACELAR",
+        "https://www.facebook.com/DEPUTADOBACELAR",
+        "https://www.instagram.com/DEPUTADOBACELAR"
+      ]
     },
     {
       "id": 178975,
@@ -603,7 +800,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178975.jpg",
-      "email": "dep.baleiarossi@camara.leg.br"
+      "email": "dep.baleiarossi@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/baleia.rossi"
+      ]
     },
     {
       "id": 220605,
@@ -614,7 +814,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220605.jpg",
-      "email": "dep.bandeirademello@camara.leg.br"
+      "email": "dep.bandeirademello@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/mello_bandeira",
+        "https://www.facebook.com/eduardobandeirademello",
+        "https://www.instagram.com/eduardobandeirademello",
+        "https://youtube.com/bandeirademello.oficial"
+      ]
     },
     {
       "id": 220612,
@@ -625,7 +831,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220612.jpg",
-      "email": "dep.bebeto@camara.leg.br"
+      "email": "dep.bebeto@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/bebetodaveggi",
+        "https://www.instagram.com/bebetorj"
+      ]
     },
     {
       "id": 73701,
@@ -636,7 +846,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73701.jpg",
-      "email": "dep.beneditadasilva@camara.leg.br"
+      "email": "dep.beneditadasilva@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 109429,
@@ -647,7 +858,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RN",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/109429.jpg",
-      "email": "dep.benesleocadio@camara.leg.br"
+      "email": "dep.benesleocadio@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/benesleocadiorn",
+        "https://www.facebook.com/BenesLeocadioRN",
+        "https://www.instagram.com/benesleocadiorn"
+      ]
     },
     {
       "id": 204358,
@@ -658,7 +874,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204358.jpg",
-      "email": "dep.betopereira@camara.leg.br"
+      "email": "dep.betopereira@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220683,
@@ -669,7 +886,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220683.jpg",
-      "email": "dep.betoricha@camara.leg.br"
+      "email": "dep.betoricha@camara.leg.br",
+      "redeSocial": [
+        "https://pt-br.facebook.com/BetoRichaOficial",
+        "https://twitter.com/BetoRicha",
+        "https://www.instagram.com/betoricha/",
+        "https://www.youtube.com/channel/UC11K_Oia5ib5Zknm87oG1FQ"
+      ]
     },
     {
       "id": 204374,
@@ -680,7 +903,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "DF",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204374.jpg",
-      "email": "dep.biakicis@camara.leg.br"
+      "email": "dep.biakicis@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/biakicis",
+        "https://www.facebook.com/biakicis",
+        "https://www.instagram.com/biakicis",
+        "https://youtube.com/biakicis"
+      ]
     },
     {
       "id": 204388,
@@ -691,7 +920,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204388.jpg",
-      "email": "dep.bibonunes@camara.leg.br"
+      "email": "dep.bibonunes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160538,
@@ -702,7 +932,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160538.jpg",
-      "email": "dep.bohngass@camara.leg.br"
+      "email": "dep.bohngass@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/BohnGass",
+        "https://www.facebook.com/bohngass13",
+        "https://www.instagram.com/bohn_gass",
+        "https://youtube.com/channel/UC8LeZcF8VFnSRHcAW9-lvwg"
+      ]
     },
     {
       "id": 210989,
@@ -713,7 +949,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/210989.jpg",
-      "email": "dep.brunofarias@camara.leg.br"
+      "email": "dep.brunofarias@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/brunofariasmg",
+        "https://www.instagram.com/brunofariasmg"
+      ]
     },
     {
       "id": 220635,
@@ -724,7 +964,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220635.jpg",
-      "email": "dep.brunoganem@camara.leg.br"
+      "email": "dep.brunoganem@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/BrunoGanemSP",
+        "https://www.instagram.com/brunoganemsp"
+      ]
     },
     {
       "id": 220574,
@@ -735,7 +979,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220574.jpg",
-      "email": "dep.cabogilbertosilva@camara.leg.br"
+      "email": "dep.cabogilbertosilva@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/cabogilberto",
+        "https://www.facebook.com/CaboGilbertoSilva",
+        "https://www.instagram.com/CaboGilbertoSilva",
+        "https://youtube.com/cabogilberto"
+      ]
     },
     {
       "id": 143942,
@@ -746,7 +996,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/143942.jpg",
-      "email": "dep.caiovianna@camara.leg.br"
+      "email": "dep.caiovianna@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220548,
@@ -757,7 +1008,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220548.jpg",
-      "email": "dep.camilajara@camara.leg.br"
+      "email": "dep.camilajara@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/camilajarams",
+        "https://www.facebook.com/camilajarams",
+        "https://www.instagram.com/camilajarams"
+      ]
     },
     {
       "id": 204572,
@@ -768,7 +1024,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AM",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204572.jpg",
-      "email": "dep.capitaoalbertoneto@camara.leg.br"
+      "email": "dep.capitaoalbertoneto@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/capalbertoneto",
+        "https://www.facebook.com/capitaoalbertoneto",
+        "https://www.instagram.com/capitaoalbertoneto"
+      ]
     },
     {
       "id": 220690,
@@ -779,7 +1040,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220690.jpg",
-      "email": "dep.capitaoalden@camara.leg.br"
+      "email": "dep.capitaoalden@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/https:",
+        "https://www.facebook.com/deputadocapitaoalden"
+      ]
     },
     {
       "id": 178829,
@@ -790,7 +1055,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178829.jpg",
-      "email": "dep.capitaoaugusto@camara.leg.br"
+      "email": "dep.capitaoaugusto@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 213762,
@@ -801,7 +1067,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RN",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/213762.jpg",
-      "email": "dep.carladickson@camara.leg.br"
+      "email": "dep.carladickson@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/carladicksonoficial",
+        "https://www.instagram.com/carladicksonoficial"
+      ]
     },
     {
       "id": 204361,
@@ -812,7 +1082,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204361.jpg",
-      "email": "dep.carloschiodini@camara.leg.br"
+      "email": "dep.carloschiodini@camara.leg.br",
+      "redeSocial": [
+        "https://pt-br.facebook.com/CarlosChiodini/",
+        "https://twitter.com/carloschiodini",
+        "https://www.instagram.com/carloschiodini",
+        "https://youtube.com/channel/UClnRgQbRinB3rSABMSePm7w"
+      ]
     },
     {
       "id": 178962,
@@ -823,7 +1099,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178962.jpg",
-      "email": "dep.carlosgomes@camara.leg.br"
+      "email": "dep.carlosgomes@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/carlosgomesdep",
+        "https://www.facebook.com/deputadocarlosgomes",
+        "https://www.instagram.com/carlosgomesdep"
+      ]
     },
     {
       "id": 178993,
@@ -834,7 +1115,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "TO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178993.jpg",
-      "email": "dep.carloshenriquegaguim@camara.leg.br"
+      "email": "dep.carloshenriquegaguim@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/carlosgaguim"
+      ]
     },
     {
       "id": 204460,
@@ -845,7 +1129,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204460.jpg",
-      "email": "dep.carlosjordy@camara.leg.br"
+      "email": "dep.carlosjordy@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/carlosjordy",
+        "https://www.facebook.com/carlosjordyoficial",
+        "https://www.instagram.com/carlosjordy",
+        "https://youtube.com/channel/UCkWU59eSRp41W6bCdyJlRdg"
+      ]
     },
     {
       "id": 74262,
@@ -856,7 +1146,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74262.jpg",
-      "email": "dep.carlossampaio@camara.leg.br"
+      "email": "dep.carlossampaio@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204426,
@@ -867,7 +1158,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204426.jpg",
-      "email": "dep.carlosveras@camara.leg.br"
+      "email": "dep.carlosveras@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/carlosveraspt",
+        "https://www.facebook.com/deputadocarlosveras",
+        "https://www.instagram.com/carlosverass",
+        "https://youtube.com/channel/UC93PwCF8EVN4RYG-h2OpJLw"
+      ]
     },
     {
       "id": 141398,
@@ -878,7 +1175,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141398.jpg",
-      "email": "dep.carloszarattini@camara.leg.br"
+      "email": "dep.carloszarattini@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/CarlosZarattini",
+        "https://www.facebook.com/dep.zarattini",
+        "https://www.instagram.com/depzarattini",
+        "https://youtube.com/channel/UCAToRcTD6QsRAXjCBU8LTzw"
+      ]
     },
     {
       "id": 220704,
@@ -889,7 +1192,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220704.jpg",
-      "email": "dep.caroldartora@camara.leg.br"
+      "email": "dep.caroldartora@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204369,
@@ -900,7 +1204,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204369.jpg",
-      "email": "dep.carolinedetoni@camara.leg.br"
+      "email": "dep.carolinedetoni@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/CarolDeToni",
+        "https://www.facebook.com/carolinerdetoni",
+        "https://www.instagram.com/carolinedetoni",
+        "https://youtube.com/videos"
+      ]
     },
     {
       "id": 220699,
@@ -911,7 +1221,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PI",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220699.jpg",
-      "email": "dep.castroneto@camara.leg.br"
+      "email": "dep.castroneto@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 206018,
@@ -922,7 +1233,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/206018.jpg",
-      "email": "dep.celiaxakriaba@camara.leg.br"
+      "email": "dep.celiaxakriaba@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178876,
@@ -933,7 +1245,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178876.jpg",
-      "email": "dep.celiosilveira@camara.leg.br"
+      "email": "dep.celiosilveira@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/celiosilveiradeputado",
+        "https://www.instagram.com/celiosilveiradeputado"
+      ]
     },
     {
       "id": 204488,
@@ -944,7 +1260,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204488.jpg",
-      "email": "dep.celiostudart@camara.leg.br"
+      "email": "dep.celiostudart@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/CelioStudart",
+        "https://www.facebook.com/celio.studart",
+        "https://www.instagram.com/celiostudart",
+        "https://youtube.com/channel/UCHEI0XtQiyNwR5x7bVTewGQ"
+      ]
     },
     {
       "id": 73441,
@@ -955,7 +1277,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73441.jpg",
-      "email": "dep.celsorussomanno@camara.leg.br"
+      "email": "dep.celsorussomanno@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/celsorussomanno",
+        "https://www.facebook.com/celsorussomanno",
+        "https://www.instagram.com/celsorussomanno",
+        "https://youtube.com/celsorussomanno"
+      ]
     },
     {
       "id": 204496,
@@ -966,7 +1294,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204496.jpg",
-      "email": "dep.celsosabino@camara.leg.br"
+      "email": "dep.celsosabino@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depcelsosabino",
+        "https://www.facebook.com/celsosabinooficial",
+        "https://www.instagram.com/celsosabinooficial"
+      ]
     },
     {
       "id": 204504,
@@ -977,7 +1310,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204504.jpg",
-      "email": "dep.cezinhademadureira@camara.leg.br"
+      "email": "dep.cezinhademadureira@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/cezinhademadureira",
+        "https://www.instagram.com/cezinhademadureira"
+      ]
     },
     {
       "id": 205476,
@@ -988,7 +1325,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/205476.jpg",
-      "email": "dep.charlesfernandes@camara.leg.br"
+      "email": "dep.charlesfernandes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74171,
@@ -999,7 +1337,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74171.jpg",
-      "email": "dep.chicoalencar@camara.leg.br"
+      "email": "dep.chicoalencar@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depchicoalencar",
+        "https://www.facebook.com/chicoalencar",
+        "https://www.instagram.com/chico.alencar"
+      ]
     },
     {
       "id": 204462,
@@ -1010,7 +1353,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204462.jpg",
-      "email": "dep.christonietto@camara.leg.br"
+      "email": "dep.christonietto@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/ToniettoChris",
+        "https://www.facebook.com/ChrisTonietto",
+        "https://www.instagram.com/christonietto",
+        "https://youtube.com/channel/UCqqG6AaU2hm2vLhMir4Jdlw"
+      ]
     },
     {
       "id": 220665,
@@ -1021,7 +1370,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220665.jpg",
-      "email": "dep.clarissatercio@camara.leg.br"
+      "email": "dep.clarissatercio@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/clarissatercio",
+        "https://www.facebook.com/clarissatercio",
+        "https://www.instagram.com/clarissatercio",
+        "https://youtube.com/CLARISSATERCIOOficial"
+      ]
     },
     {
       "id": 74537,
@@ -1032,7 +1387,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74537.jpg",
-      "email": "dep.claudiocajado@camara.leg.br"
+      "email": "dep.claudiocajado@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141408,
@@ -1043,7 +1399,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141408.jpg",
-      "email": "dep.cleberverde@camara.leg.br"
+      "email": "dep.cleberverde@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 88256,
@@ -1054,7 +1411,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/88256.jpg",
-      "email": "dep.clodoaldomagalhaes@camara.leg.br"
+      "email": "dep.clodoaldomagalhaes@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depclodoaldom",
+        "https://www.facebook.com/deputadoclodoaldomagalhaes",
+        "https://www.instagram.com/deputadoclodoaldomagalhaes"
+      ]
     },
     {
       "id": 98148,
@@ -1065,7 +1427,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/98148.jpg",
-      "email": "dep.cobalchini@camara.leg.br"
+      "email": "dep.cobalchini@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220594,
@@ -1076,7 +1439,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MT",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220594.jpg",
-      "email": "dep.coronelassis@camara.leg.br"
+      "email": "dep.coronelassis@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/coronelassismt",
+        "https://www.facebook.com/coronelassismt",
+        "https://www.instagram.com/coronelassis",
+        "https://youtube.com/coronelassis308"
+      ]
     },
     {
       "id": 204378,
@@ -1087,7 +1456,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204378.jpg",
-      "email": "dep.coronelchrisostomo@camara.leg.br"
+      "email": "dep.coronelchrisostomo@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220595,
@@ -1098,7 +1468,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MT",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220595.jpg",
-      "email": "dep.coronelfernanda@camara.leg.br"
+      "email": "dep.coronelfernanda@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/coronelfernand9",
+        "https://www.facebook.com/coronelfernandamt",
+        "https://www.instagram.com/coronelfernandamt"
+      ]
     },
     {
       "id": 220666,
@@ -1109,7 +1484,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220666.jpg",
-      "email": "dep.coronelmeira@camara.leg.br"
+      "email": "dep.coronelmeira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/coronel_meira",
+        "https://www.instagram.com/coronelmeiraoficial"
+      ]
     },
     {
       "id": 220590,
@@ -1120,7 +1499,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220590.jpg",
-      "email": "dep.coronelulysses@camara.leg.br"
+      "email": "dep.coronelulysses@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/coronelulysses",
+        "https://www.facebook.com/coronelulysses",
+        "https://www.instagram.com/coronelulysses",
+        "https://youtube.com/coronelulysses"
+      ]
     },
     {
       "id": 178963,
@@ -1131,7 +1516,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178963.jpg",
-      "email": "dep.covattifilho@camara.leg.br"
+      "email": "dep.covattifilho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/covattifilho",
+        "https://www.facebook.com/covatti.filho",
+        "https://www.instagram.com/covattifilho"
+      ]
     },
     {
       "id": 220608,
@@ -1142,7 +1532,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220608.jpg",
-      "email": "dep.cristianelopes@camara.leg.br"
+      "email": "dep.cristianelopes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 234840,
@@ -1153,7 +1544,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/234840.jpg",
-      "email": "dep.cristianofurlan@camara.leg.br"
+      "email": "dep.cristianofurlan@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204355,
@@ -1164,7 +1556,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "ES",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204355.jpg",
-      "email": "dep.davitoria@camara.leg.br"
+      "email": "dep.davitoria@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depdavitoria",
+        "https://www.facebook.com/deputadodavitoria",
+        "https://www.instagram.com/deputadodavitoria",
+        "https://youtube.com/channel/UC4YSDb1Hfh-DtR1Wj0WQNWg?view_as=subscriber"
+      ]
     },
     {
       "id": 141411,
@@ -1175,7 +1573,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141411.jpg",
-      "email": "dep.dagobertonogueira@camara.leg.br"
+      "email": "dep.dagobertonogueira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depdagoberto",
+        "https://www.facebook.com/dagobertonogueirams",
+        "https://www.instagram.com/dagobertonogueirams"
+      ]
     },
     {
       "id": 220555,
@@ -1186,7 +1589,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220555.jpg",
-      "email": "dep.daianasantos@camara.leg.br"
+      "email": "dep.daianasantos@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/daianasantospoa",
+        "https://www.facebook.com/daianasantospoa",
+        "https://www.instagram.com/daianasantospoa"
+      ]
     },
     {
       "id": 220692,
@@ -1197,7 +1605,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220692.jpg",
-      "email": "dep.dalbarreto@camara.leg.br"
+      "email": "dep.dalbarreto@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/deputadodal",
+        "https://www.facebook.com/dalbarretodep",
+        "https://www.instagram.com/dalbarretodeputado",
+        "https://youtube.com/channel/UCFUsJuJCkySxlbxeZjrpKgQ"
+      ]
     },
     {
       "id": 74467,
@@ -1208,7 +1622,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74467.jpg",
-      "email": "dep.damiaofeliciano@camara.leg.br"
+      "email": "dep.damiaofeliciano@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220629,
@@ -1219,7 +1634,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220629.jpg",
-      "email": "dep.dandara@camara.leg.br"
+      "email": "dep.dandara@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/todandara",
+        "https://www.instagram.com/todandara"
+      ]
     },
     {
       "id": 220603,
@@ -1230,7 +1649,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220603.jpg",
-      "email": "dep.danicunha@camara.leg.br"
+      "email": "dep.danicunha@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220571,
@@ -1241,7 +1661,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220571.jpg",
-      "email": "dep.danielagrobom@camara.leg.br"
+      "email": "dep.danielagrobom@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/daniel.agrobom"
+      ]
     },
     {
       "id": 74060,
@@ -1252,7 +1675,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74060.jpg",
-      "email": "dep.danielalmeida@camara.leg.br"
+      "email": "dep.danielalmeida@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220582,
@@ -1263,7 +1687,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AL",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220582.jpg",
-      "email": "dep.danielbarbosa@camara.leg.br"
+      "email": "dep.danielbarbosa@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DanielBarbosaAL",
+        "https://www.instagram.com/daniel.barbosa.al"
+      ]
     },
     {
       "id": 204367,
@@ -1274,7 +1702,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204367.jpg",
-      "email": "dep.danielfreitas@camara.leg.br"
+      "email": "dep.danielfreitas@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DFDanielFreitas",
+        "https://www.facebook.com/depdanielfreitas",
+        "https://www.instagram.com/danielcfreitas"
+      ]
     },
     {
       "id": 204409,
@@ -1285,7 +1718,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204409.jpg",
-      "email": "dep.danieltrzeciak@camara.leg.br"
+      "email": "dep.danieltrzeciak@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/TrzeciakDaniel",
+        "https://www.facebook.com/DanielTrzeciak45",
+        "https://www.instagram.com/danieltrzeciak45",
+        "https://youtube.com/DanielTrzeciak"
+      ]
     },
     {
       "id": 204459,
@@ -1296,7 +1735,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204459.jpg",
-      "email": "dep.danieladowaguinho@camara.leg.br"
+      "email": "dep.danieladowaguinho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/https:",
+        "https://www.facebook.com/share",
+        "https://www.instagram.com/danielacarneirooficial"
+      ]
     },
     {
       "id": 220557,
@@ -1307,7 +1751,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220557.jpg",
-      "email": "dep.danielareinehr@camara.leg.br"
+      "email": "dep.danielareinehr@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DanielaReinehr",
+        "https://www.facebook.com/danielareinehr.sc",
+        "https://www.instagram.com/danielareinehr"
+      ]
     },
     {
       "id": 62881,
@@ -1318,7 +1767,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/62881.jpg",
-      "email": "dep.daniloforte@camara.leg.br"
+      "email": "dep.daniloforte@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depdaniloforte",
+        "https://www.facebook.com/depdaniloforte",
+        "https://www.instagram.com/depdaniloforte"
+      ]
     },
     {
       "id": 160552,
@@ -1329,7 +1783,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160552.jpg",
-      "email": "dep.danrleidedeushinterholz@camara.leg.br"
+      "email": "dep.danrleidedeushinterholz@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204511,
@@ -1340,7 +1795,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204511.jpg",
-      "email": "dep.davidsoares@camara.leg.br"
+      "email": "dep.davidsoares@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220539,
@@ -1351,7 +1807,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220539.jpg",
-      "email": "dep.defensorsteliodener@camara.leg.br"
+      "email": "dep.defensorsteliodener@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220565,
@@ -1362,7 +1819,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220565.jpg",
-      "email": "dep.delegadaadrianaaccorsi@camara.leg.br"
+      "email": "dep.delegadaadrianaaccorsi@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/Adriana_Accorsi",
+        "https://www.facebook.com/delegadaadrianaaccorsi",
+        "https://www.instagram.com/adriana_accorsi/",
+        "https://www.youtube.com/channel/UCka3DO1hTh69qpZm27yjlmg"
+      ]
     },
     {
       "id": 220625,
@@ -1373,7 +1836,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220625.jpg",
-      "email": "dep.delegadaione@camara.leg.br"
+      "email": "dep.delegadaione@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220561,
@@ -1384,7 +1848,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220561.jpg",
-      "email": "dep.delegadakatarina@camara.leg.br"
+      "email": "dep.delegadakatarina@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/delegadakatarina",
+        "https://www.instagram.com/delegadakatarina/",
+        "https://www.youtube.com/@delegadakatarina"
+      ]
     },
     {
       "id": 220642,
@@ -1395,7 +1864,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220642.jpg",
-      "email": "dep.delegadobrunolima@camara.leg.br"
+      "email": "dep.delegadobrunolima@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/https:",
+        "https://www.facebook.com/profile.php",
+        "https://www.instagram.com/del.brunolima"
+      ]
     },
     {
       "id": 220673,
@@ -1406,7 +1880,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220673.jpg",
-      "email": "dep.delegadocaveira@camara.leg.br"
+      "email": "dep.delegadocaveira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/delegadocaveira",
+        "https://www.facebook.com/delegadocaveira",
+        "https://www.instagram.com/delegadocaveira",
+        "https://youtube.com/delegadocaveira"
+      ]
     },
     {
       "id": 220649,
@@ -1417,7 +1897,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220649.jpg",
-      "email": "dep.delegadodacunha@camara.leg.br"
+      "email": "dep.delegadodacunha@camara.leg.br",
+      "redeSocial": [
+        "https://instagram.com/delegadodacunha?igshid=ZDdkNTZiNTM=",
+        "https://m.facebook.com/delegadodacunha?mibextid=ZbWKwL",
+        "https://twitter.com/DacunhaDelegado",
+        "https://www.youtube.com/@DelegadodaCunha"
+      ]
     },
     {
       "id": 178908,
@@ -1428,7 +1914,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178908.jpg",
-      "email": "dep.delegadoedermauro@camara.leg.br"
+      "email": "dep.delegadoedermauro@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220583,
@@ -1439,7 +1926,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AL",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220583.jpg",
-      "email": "dep.delegadofabiocosta@camara.leg.br"
+      "email": "dep.delegadofabiocosta@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/delegadofabioc1",
+        "https://www.facebook.com/DelegadoFabioCosta",
+        "https://www.instagram.com/delegadofabiocosta",
+        "https://youtube.com/channel/UC8rTmVCfhCWa0ufzxg_cMzw"
+      ]
     },
     {
       "id": 204512,
@@ -1450,7 +1943,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204512.jpg",
-      "email": "dep.delegadomarcelofreitas@camara.leg.br"
+      "email": "dep.delegadomarcelofreitas@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DelegadoFreitas",
+        "https://www.facebook.com/delegadomarcelofreitas",
+        "https://www.instagram.com/delegadomarcelofreitas",
+        "https://youtube.com/channel/UC-YDFg5FTo1FKRkav_mD6oQ"
+      ]
     },
     {
       "id": 220701,
@@ -1461,7 +1960,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220701.jpg",
-      "email": "dep.delegadomatheuslaiola@camara.leg.br"
+      "email": "dep.delegadomatheuslaiola@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/MatheusLaiola",
+        "https://www.facebook.com/delegadomatheuslaiola",
+        "https://www.instagram.com/delegado.matheuslaiola"
+      ]
     },
     {
       "id": 220652,
@@ -1472,7 +1976,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220652.jpg",
-      "email": "dep.delegadopalumbo@camara.leg.br"
+      "email": "dep.delegadopalumbo@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/delegadopalumbo",
+        "https://www.instagram.com/delegadopalumbo/"
+      ]
     },
     {
       "id": 220654,
@@ -1483,7 +1991,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220654.jpg",
-      "email": "dep.delegadopaulobilynskyj@camara.leg.br"
+      "email": "dep.delegadopaulobilynskyj@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220553,
@@ -1494,7 +2003,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220553.jpg",
-      "email": "dep.denisepessoa@camara.leg.br"
+      "email": "dep.denisepessoa@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160588,
@@ -1505,7 +2015,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160588.jpg",
-      "email": "dep.diegoandrade@camara.leg.br"
+      "email": "dep.diegoandrade@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/@diegoandrademg",
+        "https://www.facebook.com/diegoandrademg",
+        "https://www.instagram.com/diegoandrademg"
+      ]
     },
     {
       "id": 220691,
@@ -1516,7 +2031,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220691.jpg",
-      "email": "dep.diegocoronel@camara.leg.br"
+      "email": "dep.diegocoronel@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178929,
@@ -1527,7 +2043,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178929.jpg",
-      "email": "dep.diegogarcia@camara.leg.br"
+      "email": "dep.diegogarcia@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/diegogarciapr",
+        "https://www.facebook.com/diegogarciapr",
+        "https://www.instagram.com/diegogarciaparana",
+        "https://youtube.com/diegogarciapr"
+      ]
     },
     {
       "id": 73768,
@@ -1538,7 +2060,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73768.jpg",
-      "email": "dep.dilceusperafico@camara.leg.br"
+      "email": "dep.dilceusperafico@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220671,
@@ -1549,7 +2072,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220671.jpg",
-      "email": "dep.dilvandafaro@camara.leg.br"
+      "email": "dep.dilvandafaro@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160599,
@@ -1560,7 +2084,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160599.jpg",
-      "email": "dep.dimasfabiano@camara.leg.br"
+      "email": "dep.dimasfabiano@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220602,
@@ -1571,7 +2096,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220602.jpg",
-      "email": "dep.dimasgadelha@camara.leg.br"
+      "email": "dep.dimasgadelha@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/drdimasgadelha",
+        "https://www.facebook.com/dimasgadelha13",
+        "https://www.instagram.com/dimasgadelha13",
+        "https://youtube.com/channel/UCgGSnpuEXdYKaeE7ZyPgjqw"
+      ]
     },
     {
       "id": 143632,
@@ -1582,7 +2113,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/143632.jpg",
-      "email": "dep.domingosneto@camara.leg.br"
+      "email": "dep.domingosneto@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/domingos_neto",
+        "https://www.facebook.com/DomingosNetoCeara",
+        "https://www.instagram.com/domingosneto",
+        "https://youtube.com/channel/UCenz2PqXTJKnPGRVNTs0AAg"
+      ]
     },
     {
       "id": 160758,
@@ -1593,7 +2130,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160758.jpg",
-      "email": "dep.domingossavio@camara.leg.br"
+      "email": "dep.domingossavio@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220573,
@@ -1604,7 +2142,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220573.jpg",
-      "email": "dep.dorinaldomalafaia@camara.leg.br"
+      "email": "dep.dorinaldomalafaia@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/malafaia_d",
+        "https://www.instagram.com/malafaiadorinaldo"
+      ]
     },
     {
       "id": 227433,
@@ -1615,7 +2157,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/227433.jpg",
-      "email": "dep.douglasviegas@camara.leg.br"
+      "email": "dep.douglasviegas@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204450,
@@ -1626,7 +2169,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204450.jpg",
-      "email": "dep.doutorluizinho@camara.leg.br"
+      "email": "dep.doutorluizinho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/Doutorluizinhot",
+        "https://www.facebook.com/doutorluizinho",
+        "https://www.instagram.com/doutorluizinho"
+      ]
     },
     {
       "id": 227991,
@@ -1637,7 +2185,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/227991.jpg",
-      "email": "dep.drflavio@camara.leg.br"
+      "email": "dep.drflavio@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220610,
@@ -1648,7 +2197,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220610.jpg",
-      "email": "dep.dr.fernandomaximo@camara.leg.br"
+      "email": "dep.dr.fernandomaximo@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/fernandomaximoX",
+        "https://www.facebook.com/drfernandomaximo007",
+        "https://www.instagram.com/drfernandomaximo007/",
+        "https://www.youtube.com/@DrFernandoMaximo"
+      ]
     },
     {
       "id": 220688,
@@ -1659,7 +2214,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PI",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220688.jpg",
-      "email": "dep.dr.francisco@camara.leg.br"
+      "email": "dep.dr.francisco@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/drfranciscopi",
+        "https://www.facebook.com/drfranciscopiaui",
+        "https://www.instagram.com/drfranciscopiaui"
+      ]
     },
     {
       "id": 204518,
@@ -1670,7 +2230,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204518.jpg",
-      "email": "dep.dr.frederico@camara.leg.br"
+      "email": "dep.dr.frederico@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/drfredericomg",
+        "https://www.instagram.com/drfredericomg"
+      ]
     },
     {
       "id": 220570,
@@ -1681,7 +2245,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220570.jpg",
-      "email": "dep.dr.ismaelalexandrino@camara.leg.br"
+      "email": "dep.dr.ismaelalexandrino@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/IsmAlexandrino",
+        "https://www.facebook.com/IsmaelAlexandrino",
+        "https://www.instagram.com/ismael.alexandrino"
+      ]
     },
     {
       "id": 204481,
@@ -1692,7 +2261,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204481.jpg",
-      "email": "dep.dr.jaziel@camara.leg.br"
+      "email": "dep.dr.jaziel@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204351,
@@ -1703,7 +2273,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204351.jpg",
-      "email": "dep.dr.luizovando@camara.leg.br"
+      "email": "dep.dr.luizovando@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/drluizovando",
+        "https://www.facebook.com/drluizovando",
+        "https://www.instagram.com/drluizovando",
+        "https://youtube.com/channel/UCQ1v5nEfElt-ztWZkpxZdBQ"
+      ]
     },
     {
       "id": 220528,
@@ -1714,7 +2290,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "ES",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220528.jpg",
-      "email": "dep.dr.victorlinhalis@camara.leg.br"
+      "email": "dep.dr.victorlinhalis@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DepDrVictor",
+        "https://www.facebook.com/DrVictorLinhalis",
+        "https://www.instagram.com/drvictorlinhalis/",
+        "https://www.youtube.com/channel/UC9lrrW_04FxppALPdqqoUjw"
+      ]
     },
     {
       "id": 204412,
@@ -1725,7 +2307,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204412.jpg",
-      "email": "dep.dr.zachariascalil@camara.leg.br"
+      "email": "dep.dr.zachariascalil@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/zachariascalil",
+        "https://www.facebook.com/drzachariascalil",
+        "https://www.instagram.com/drzachariascalil"
+      ]
     },
     {
       "id": 220674,
@@ -1736,7 +2323,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220674.jpg",
-      "email": "dep.dra.alessandrahaber@camara.leg.br"
+      "email": "dep.dra.alessandrahaber@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/draalessandrahaber",
+        "https://www.instagram.com/draalessandrahaber"
+      ]
     },
     {
       "id": 220686,
@@ -1747,7 +2338,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220686.jpg",
-      "email": "dep.duartejr@camara.leg.br"
+      "email": "dep.duartejr@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DuarteJr_",
+        "https://www.facebook.com/ProfessorDuarteJr",
+        "https://www.instagram.com/duartejr_"
+      ]
     },
     {
       "id": 220540,
@@ -1758,7 +2354,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220540.jpg",
-      "email": "dep.dudaramos@camara.leg.br"
+      "email": "dep.dudaramos@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/soududaramos",
+        "https://www.facebook.com/dudaramos.rr",
+        "https://www.instagram.com/dudaramos.rr"
+      ]
     },
     {
       "id": 220623,
@@ -1769,7 +2370,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220623.jpg",
-      "email": "dep.dudasalabert@camara.leg.br"
+      "email": "dep.dudasalabert@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DudaSalabert",
+        "https://www.facebook.com/DudaSalabert",
+        "https://www.instagram.com/duda_salabert"
+      ]
     },
     {
       "id": 141421,
@@ -1780,7 +2386,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141421.jpg",
-      "email": "dep.eduardodafonte@camara.leg.br"
+      "email": "dep.eduardodafonte@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220589,
@@ -1791,7 +2398,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220589.jpg",
-      "email": "dep.eduardovelloso@camara.leg.br"
+      "email": "dep.eduardovelloso@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/_EduardoVelloso",
+        "https://www.facebook.com/dr.eduardovellosoo",
+        "https://www.instagram.com/dr.eduardovelloso",
+        "https://youtube.com/channel"
+      ]
     },
     {
       "id": 74075,
@@ -1802,7 +2415,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74075.jpg",
-      "email": "dep.elcionebarbalho@camara.leg.br"
+      "email": "dep.elcionebarbalho@camara.leg.br",
+      "redeSocial": [
+        "http://twitter.com/elcionepmdb",
+        "http://www.facebook.com/elcionepmdb",
+        "https://www.instagram.com/elcionebarbalho"
+      ]
     },
     {
       "id": 204364,
@@ -1813,7 +2431,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "TO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204364.jpg",
-      "email": "dep.eliborges@camara.leg.br"
+      "email": "dep.eliborges@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 229585,
@@ -1824,7 +2443,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/229585.jpg",
-      "email": "dep.elisangelaaraujo@camara.leg.br"
+      "email": "dep.elisangelaaraujo@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178854,
@@ -1835,7 +2455,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178854.jpg",
-      "email": "dep.elmarnascimento@camara.leg.br"
+      "email": "dep.elmarnascimento@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 218086,
@@ -1846,7 +2467,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/218086.jpg",
-      "email": "dep.elysantos@camara.leg.br"
+      "email": "dep.elysantos@camara.leg.br",
+      "redeSocial": [
+        "https://instagram.com/deputadafederal_elysantos?utm_medium=copy_link",
+        "https://pt-br.facebook.com/oficialelysantos/"
+      ]
     },
     {
       "id": 198783,
@@ -1857,7 +2482,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MT",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/198783.jpg",
-      "email": "dep.emanuelpinheironeto@camara.leg.br"
+      "email": "dep.emanuelpinheironeto@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/emanuelzinhomt",
+        "https://www.facebook.com/emanuelpinheironeto",
+        "https://www.instagram.com/emanuelpinheironeto"
+      ]
     },
     {
       "id": 161550,
@@ -1868,7 +2498,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/161550.jpg",
-      "email": "dep.emidinhomadeira@camara.leg.br"
+      "email": "dep.emidinhomadeira@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/emidinhomadeira",
+        "https://www.instagram.com/emidinhomadeira"
+      ]
     },
     {
       "id": 225730,
@@ -1879,7 +2513,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/225730.jpg",
-      "email": "dep.enfermeiraanapaula@camara.leg.br"
+      "email": "dep.enfermeiraanapaula@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 230765,
@@ -1890,7 +2525,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/230765.jpg",
-      "email": "dep.enfermeirarejane@camara.leg.br"
+      "email": "dep.enfermeirarejane@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220663,
@@ -1901,7 +2537,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220663.jpg",
-      "email": "dep.eribertomedeiros@camara.leg.br"
+      "email": "dep.eribertomedeiros@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220645,
@@ -1912,7 +2549,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220645.jpg",
-      "email": "dep.erikahilton@camara.leg.br"
+      "email": "dep.erikahilton@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/erikakhilton",
+        "https://www.instagram.com/hilton_erika"
+      ]
     },
     {
       "id": 160575,
@@ -1923,7 +2564,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "DF",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160575.jpg",
-      "email": "dep.erikakokay@camara.leg.br"
+      "email": "dep.erikakokay@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160640,
@@ -1934,7 +2576,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160640.jpg",
-      "email": "dep.erosbiondini@camara.leg.br"
+      "email": "dep.erosbiondini@camara.leg.br",
+      "redeSocial": [
+        "http://twitter.com/erosbiondini",
+        "http://www.youtube.com/erosbiondini",
+        "https://www.facebook.com/erosbiondini",
+        "https://www.instagram.com/ErosBiondini"
+      ]
     },
     {
       "id": 204482,
@@ -1945,7 +2593,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204482.jpg",
-      "email": "dep.euclydespettersen@camara.leg.br"
+      "email": "dep.euclydespettersen@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74454,
@@ -1956,7 +2605,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74454.jpg",
-      "email": "dep.euniciooliveira@camara.leg.br"
+      "email": "dep.euniciooliveira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/eunicio",
+        "https://www.instagram.com/euniciooliveira"
+      ]
     },
     {
       "id": 178871,
@@ -1967,7 +2620,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "ES",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178871.jpg",
-      "email": "dep.evairvieirademelo@camara.leg.br"
+      "email": "dep.evairvieirademelo@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/evair.vieirademelo",
+        "https://youtube.com/channel/UCT5EVLanh6IiCl01fzPSOBQ"
+      ]
     },
     {
       "id": 234388,
@@ -1978,7 +2635,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/234388.jpg",
-      "email": "dep.fabianocazeca@camara.leg.br"
+      "email": "dep.fabianocazeca@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220681,
@@ -1989,7 +2647,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220681.jpg",
-      "email": "dep.fabiomacedo@camara.leg.br"
+      "email": "dep.fabiomacedo@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 171623,
@@ -2000,7 +2659,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/171623.jpg",
-      "email": "dep.fabioreis@camara.leg.br"
+      "email": "dep.fabioreis@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/fabioreispsd"
+      ]
     },
     {
       "id": 204368,
@@ -2011,7 +2673,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204368.jpg",
-      "email": "dep.fabioschiochet@camara.leg.br"
+      "email": "dep.fabioschiochet@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220653,
@@ -2022,7 +2685,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220653.jpg",
-      "email": "dep.fabioteruel@camara.leg.br"
+      "email": "dep.fabioteruel@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/TmjFabioTeruel",
+        "https://www.instagram.com/fabioterueloficial",
+        "https://youtube.com/FabioTeruelOficial"
+      ]
     },
     {
       "id": 74065,
@@ -2033,7 +2701,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74065.jpg",
-      "email": "dep.fatimapelaes@camara.leg.br"
+      "email": "dep.fatimapelaes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220712,
@@ -2044,7 +2713,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AM",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220712.jpg",
-      "email": "dep.faustosantosjr@camara.leg.br"
+      "email": "dep.faustosantosjr@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 66828,
@@ -2055,7 +2725,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/66828.jpg",
-      "email": "dep.faustopinato@camara.leg.br"
+      "email": "dep.faustopinato@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220646,
@@ -2066,7 +2737,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220646.jpg",
-      "email": "dep.felipebecari@camara.leg.br"
+      "email": "dep.felipebecari@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/felipebecari",
+        "https://www.facebook.com/felipebecarisp",
+        "https://www.instagram.com/felipebecari",
+        "https://youtube.com/channel"
+      ]
     },
     {
       "id": 72442,
@@ -2077,7 +2754,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/72442.jpg",
-      "email": "dep.felipecarreras@camara.leg.br"
+      "email": "dep.felipecarreras@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204398,
@@ -2088,7 +2766,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204398.jpg",
-      "email": "dep.felipefrancischini@camara.leg.br"
+      "email": "dep.felipefrancischini@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160666,
@@ -2099,7 +2778,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160666.jpg",
-      "email": "dep.felixmendoncajunior@camara.leg.br"
+      "email": "dep.felixmendoncajunior@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/felixmendoncajr",
+        "https://www.facebook.com/felixmendoncajr",
+        "https://www.instagram.com/felixmendoncajr"
+      ]
     },
     {
       "id": 204407,
@@ -2110,7 +2794,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204407.jpg",
-      "email": "dep.fernandamelchionna@camara.leg.br"
+      "email": "dep.fernandamelchionna@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141431,
@@ -2121,7 +2806,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141431.jpg",
-      "email": "dep.fernandocoelhofilho@camara.leg.br"
+      "email": "dep.fernandocoelhofilho@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204445,
@@ -2132,7 +2818,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RN",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204445.jpg",
-      "email": "dep.fernandomineiro@camara.leg.br"
+      "email": "dep.fernandomineiro@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/mineiroptrn",
+        "https://www.facebook.com/fernandomineiro",
+        "https://www.instagram.com/mineiroptrn"
+      ]
     },
     {
       "id": 92699,
@@ -2143,7 +2834,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/92699.jpg",
-      "email": "dep.fernandomonteiro@camara.leg.br"
+      "email": "dep.fernandomonteiro@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204427,
@@ -2154,7 +2846,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204427.jpg",
-      "email": "dep.fernandorodolfo@camara.leg.br"
+      "email": "dep.fernandorodolfo@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/FernandoRodolfoTV",
+        "https://www.instagram.com/fernandorodolfooficial"
+      ]
     },
     {
       "id": 204411,
@@ -2165,7 +2861,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204411.jpg",
-      "email": "dep.filipebarros@camara.leg.br"
+      "email": "dep.filipebarros@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/filipebarrost",
+        "https://www.instagram.com/filipebarrosoficial"
+      ]
     },
     {
       "id": 220545,
@@ -2176,7 +2876,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "TO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220545.jpg",
-      "email": "dep.filipemartins@camara.leg.br"
+      "email": "dep.filipemartins@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/filipemartinsto",
+        "https://www.instagram.com/filipemartinsto",
+        "https://youtube.com/filipemartinsto"
+      ]
     },
     {
       "id": 160598,
@@ -2187,7 +2892,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160598.jpg",
-      "email": "dep.flaviamorais@camara.leg.br"
+      "email": "dep.flaviamorais@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/FláviaMorais",
+        "https://www.instagram.com/flaviamorais1212"
+      ]
     },
     {
       "id": 191923,
@@ -2198,7 +2907,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PI",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/191923.jpg",
-      "email": "dep.flavionogueira@camara.leg.br"
+      "email": "dep.flavionogueira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/flavionpi",
+        "https://www.facebook.com/flavionogueirapi",
+        "https://www.instagram.com/flavionogueirapi",
+        "https://youtube.com/channel/UCK5EmojEtDuJnbOAGHcWhiA"
+      ]
     },
     {
       "id": 220700,
@@ -2209,7 +2924,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PI",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220700.jpg",
-      "email": "dep.florentinoneto@camara.leg.br"
+      "email": "dep.florentinoneto@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220551,
@@ -2220,7 +2936,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220551.jpg",
-      "email": "dep.francianebayer@camara.leg.br"
+      "email": "dep.francianebayer@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204494,
@@ -2231,7 +2948,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204494.jpg",
-      "email": "dep.fredcosta@camara.leg.br"
+      "email": "dep.fredcosta@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/fredcostadep",
+        "https://www.facebook.com/FredCostaDEP",
+        "https://www.instagram.com/FredCostaDEP"
+      ]
     },
     {
       "id": 220534,
@@ -2242,7 +2964,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "DF",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220534.jpg",
-      "email": "dep.fredlinhares@camara.leg.br"
+      "email": "dep.fredlinhares@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/fredlinhares?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+        "https://www.facebook.com/FredLinharesBrasilia?mibextid=LQQJ4d",
+        "https://www.instagram.com/fredlinharesbrasilia",
+        "https://www.youtube.com/@fredlinharesbrasilia/videos"
+      ]
     },
     {
       "id": 224117,
@@ -2253,7 +2981,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/224117.jpg",
-      "email": "dep.gabrielmota@camara.leg.br"
+      "email": "dep.gabrielmota@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/gabrielmotarr",
+        "https://www.facebook.com/gabrielmotarr"
+      ]
     },
     {
       "id": 220708,
@@ -2264,7 +2996,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220708.jpg",
-      "email": "dep.gabrielnunes@camara.leg.br"
+      "email": "dep.gabrielnunes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204473,
@@ -2275,7 +3008,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RN",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204473.jpg",
-      "email": "dep.generalgirao@camara.leg.br"
+      "email": "dep.generalgirao@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220611,
@@ -2286,7 +3020,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220611.jpg",
-      "email": "dep.generalpazuello@camara.leg.br"
+      "email": "dep.generalpazuello@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178966,
@@ -2297,7 +3032,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178966.jpg",
-      "email": "dep.geovaniadesa@camara.leg.br"
+      "email": "dep.geovaniadesa@camara.leg.br",
+      "redeSocial": [
+        "https://instagram.com/geovaniasa?igshid=ZDdkNTZiNTM=",
+        "https://twitter.com/geovaniadesa?t=zlR3T1G0uVQIQSdO6omG7A&s=09",
+        "https://www.facebook.com/geovaniadesaa?mibextid=ZbWKwL"
+      ]
     },
     {
       "id": 220702,
@@ -2308,7 +3048,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220702.jpg",
-      "email": "dep.geraldomendes@camara.leg.br"
+      "email": "dep.geraldomendes@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/geraldomendesoficial?mibextid=LQQJ4d",
+        "https://www.instagram.com/geraldomendesoficial/?igshid=YmMyMTA2M2Y%3D",
+        "https://www.youtube.com/@geraldomendes3450"
+      ]
     },
     {
       "id": 74374,
@@ -2319,7 +3064,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74374.jpg",
-      "email": "dep.geraldoresende@camara.leg.br"
+      "email": "dep.geraldoresende@camara.leg.br",
+      "redeSocial": [
+        "http://twitter.com/dep_geraldo",
+        "https://www.facebook.com/geraldoresendems",
+        "https://www.instagram.com/geraldoresendems",
+        "https://youtube.com/channel/UCbnj5-ROiu04qLttEG6HNmQ"
+      ]
     },
     {
       "id": 204394,
@@ -2330,7 +3081,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204394.jpg",
-      "email": "dep.gervasiomaia@camara.leg.br"
+      "email": "dep.gervasiomaia@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/gervasiomaia",
+        "https://www.facebook.com/gervasiomaiapb",
+        "https://www.instagram.com/gervasiomaia"
+      ]
     },
     {
       "id": 74383,
@@ -2341,7 +3097,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74383.jpg",
-      "email": "dep.giacobo@camara.leg.br"
+      "email": "dep.giacobo@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/fernandogiacobo",
+        "https://www.instagram.com/fernandogiacobo"
+      ]
     },
     {
       "id": 204491,
@@ -2352,7 +3112,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204491.jpg",
-      "email": "dep.gilbertoabramo@camara.leg.br"
+      "email": "dep.gilbertoabramo@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/gilbertoabramo",
+        "https://www.facebook.com/gilbertoabramo",
+        "https://www.instagram.com/gilbertoabramo_"
+      ]
     },
     {
       "id": 74270,
@@ -2363,7 +3128,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74270.jpg",
-      "email": "dep.gilbertonascimento@camara.leg.br"
+      "email": "dep.gilbertonascimento@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220529,
@@ -2374,7 +3140,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "ES",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220529.jpg",
-      "email": "dep.gilsondaniel@camara.leg.br"
+      "email": "dep.gilsondaniel@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/gilsondaniel1919"
+      ]
     },
     {
       "id": 204365,
@@ -2385,7 +3154,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204365.jpg",
-      "email": "dep.gilsonmarques@camara.leg.br"
+      "email": "dep.gilsonmarques@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/gilson__marques",
+        "https://www.facebook.com/gilson.marques.novo",
+        "https://www.instagram.com/gilson.marques.novo",
+        "https://youtube.com/gilsonmarquesnovo"
+      ]
     },
     {
       "id": 220526,
@@ -2396,7 +3171,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "ES",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220526.jpg",
-      "email": "dep.gilvandafederal@camara.leg.br"
+      "email": "dep.gilvandafederal@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/gilvandafederal"
+      ]
     },
     {
       "id": 160673,
@@ -2407,7 +3185,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160673.jpg",
-      "email": "dep.giovanicherini@camara.leg.br"
+      "email": "dep.giovanicherini@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 226179,
@@ -2418,7 +3197,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MT",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/226179.jpg",
-      "email": "dep.giselasimona@camara.leg.br"
+      "email": "dep.giselasimona@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204419,
@@ -2429,7 +3209,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204419.jpg",
-      "email": "dep.glaustindafokus@camara.leg.br"
+      "email": "dep.glaustindafokus@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 129618,
@@ -2440,7 +3221,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/129618.jpg",
-      "email": "dep.goretepereira@camara.leg.br"
+      "email": "dep.goretepereira@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 198197,
@@ -2451,7 +3233,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/198197.jpg",
-      "email": "dep.greyceelias@camara.leg.br"
+      "email": "dep.greyceelias@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/greyceelias",
+        "https://www.facebook.com/greyce.elias",
+        "https://www.instagram.com/greyceelias",
+        "https://youtube.com/channel/UCcSZxLiSfO1dFmAryUnxPHg"
+      ]
     },
     {
       "id": 204531,
@@ -2462,7 +3250,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204531.jpg",
-      "email": "dep.guilhermederrite@camara.leg.br"
+      "email": "dep.guilhermederrite@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/capitaoderrite",
+        "https://www.facebook.com/capitaoderrite",
+        "https://www.instagram.com/capitaoderrite",
+        "https://youtube.com/channel/UCZHZxgmwC2c5tz3_Jn-gGOw"
+      ]
     },
     {
       "id": 220664,
@@ -2473,7 +3267,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220664.jpg",
-      "email": "dep.guilhermeuchoa@camara.leg.br"
+      "email": "dep.guilhermeuchoa@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/GUILHERMEUCHOAJR"
+      ]
     },
     {
       "id": 220568,
@@ -2484,7 +3281,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220568.jpg",
-      "email": "dep.gustavogayer@camara.leg.br"
+      "email": "dep.gustavogayer@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/GayerGus",
+        "https://www.facebook.com/gustavogayer",
+        "https://www.instagram.com/gusgayer",
+        "https://youtube.com/GustavoGayer"
+      ]
     },
     {
       "id": 204408,
@@ -2495,7 +3298,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204408.jpg",
-      "email": "dep.gustinhoribeiro@camara.leg.br"
+      "email": "dep.gustinhoribeiro@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204456,
@@ -2506,7 +3310,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204456.jpg",
-      "email": "dep.gutembergreis@camara.leg.br"
+      "email": "dep.gutembergreis@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178964,
@@ -2517,7 +3322,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178964.jpg",
-      "email": "dep.heitorschuch@camara.leg.br"
+      "email": "dep.heitorschuch@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/HeitorSchuch",
+        "https://www.facebook.com/heitorschuchoficial",
+        "https://www.instagram.com/heitorschuch"
+      ]
     },
     {
       "id": 178873,
@@ -2528,7 +3338,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "ES",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178873.jpg",
-      "email": "dep.heldersalomao@camara.leg.br"
+      "email": "dep.heldersalomao@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220537,
@@ -2539,7 +3350,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220537.jpg",
-      "email": "dep.helenalima@camara.leg.br"
+      "email": "dep.helenalima@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/helenadaasatur",
+        "https://www.instagram.com/helenadaasatur"
+      ]
     },
     {
       "id": 204444,
@@ -2550,7 +3365,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204444.jpg",
-      "email": "dep.heliolopes@camara.leg.br"
+      "email": "dep.heliolopes@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depheliolopes",
+        "https://www.facebook.com/depheliolopes",
+        "https://www.instagram.com/depheliolopes"
+      ]
     },
     {
       "id": 234788,
@@ -2561,7 +3381,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/234788.jpg",
-      "email": "dep.heloisahelena@camara.leg.br"
+      "email": "dep.heloisahelena@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/_Heloisa_Helena",
+        "https://www.facebook.com/heloisa.helena.rede",
+        "https://www.instagram.com/_heloisa_helena"
+      ]
     },
     {
       "id": 220672,
@@ -2572,7 +3397,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220672.jpg",
-      "email": "dep.hendersonpinto@camara.leg.br"
+      "email": "dep.hendersonpinto@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204539,
@@ -2583,7 +3409,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204539.jpg",
-      "email": "dep.herciliocoelhodiniz@camara.leg.br"
+      "email": "dep.herciliocoelhodiniz@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/herciliodiniz",
+        "https://www.facebook.com/herciliocoelhodinizoficial",
+        "https://www.instagram.com/herciliocoelhodinizoficial",
+        "https://youtube.com/HercílioCoelhoDinizOficial"
+      ]
     },
     {
       "id": 178884,
@@ -2594,7 +3426,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178884.jpg",
-      "email": "dep.hildorocha@camara.leg.br"
+      "email": "dep.hildorocha@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141450,
@@ -2605,7 +3438,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141450.jpg",
-      "email": "dep.hugoleal@camara.leg.br"
+      "email": "dep.hugoleal@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/dephugoleal",
+        "https://www.instagram.com/dephugoleal"
+      ]
     },
     {
       "id": 160674,
@@ -2616,7 +3453,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160674.jpg",
-      "email": "dep.hugomotta@camara.leg.br"
+      "email": "dep.hugomotta@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220563,
@@ -2627,7 +3465,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220563.jpg",
-      "email": "dep.icarodevalmir@camara.leg.br"
+      "email": "dep.icarodevalmir@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/icarodevalmir",
+        "https://www.instagram.com/icarodevalmir"
+      ]
     },
     {
       "id": 204508,
@@ -2638,7 +3480,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204508.jpg",
-      "email": "dep.igortimo@camara.leg.br"
+      "email": "dep.igortimo@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/oficialigortimo",
+        "https://www.facebook.com/oficialigortimo",
+        "https://www.instagram.com/oficialigortimo"
+      ]
     },
     {
       "id": 98615,
@@ -2649,7 +3496,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/98615.jpg",
-      "email": "dep.ismael@camara.leg.br"
+      "email": "dep.ismael@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/deputadoismael",
+        "https://www.facebook.com/deputadoismael",
+        "https://www.instagram.com/deputadoismael"
+      ]
     },
     {
       "id": 204436,
@@ -2660,7 +3512,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AL",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204436.jpg",
-      "email": "dep.isnaldobulhoesjr@camara.leg.br"
+      "email": "dep.isnaldobulhoesjr@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/bulhoesjr",
+        "https://www.facebook.com/isnaldobulhoesjr",
+        "https://www.instagram.com/isnaldobulhoes"
+      ]
     },
     {
       "id": 73531,
@@ -2671,7 +3528,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73531.jpg",
-      "email": "dep.ivanvalente@camara.leg.br"
+      "email": "dep.ivanvalente@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220696,
@@ -2682,7 +3540,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220696.jpg",
-      "email": "dep.ivoneidecaetano@camara.leg.br"
+      "email": "dep.ivoneidecaetano@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/ivoneidecaetano",
+        "https://www.facebook.com/ivoneidecaetanooficial",
+        "https://www.instagram.com/ivoneidecaetanooficial",
+        "https://youtube.com/channel/UCG1OT1V0SGnvBIf_RRicnpg"
+      ]
     },
     {
       "id": 220670,
@@ -2693,7 +3557,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220670.jpg",
-      "email": "dep.izaarruda@camara.leg.br"
+      "email": "dep.izaarruda@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/izaarrudape",
+        "https://www.instagram.com/izaarrudape"
+      ]
     },
     {
       "id": 220527,
@@ -2704,7 +3572,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "ES",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220527.jpg",
-      "email": "dep.jackrocha@camara.leg.br"
+      "email": "dep.jackrocha@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220697,
@@ -2715,7 +3584,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PI",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220697.jpg",
-      "email": "dep.jadyelalencar@camara.leg.br"
+      "email": "dep.jadyelalencar@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74848,
@@ -2726,7 +3596,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74848.jpg",
-      "email": "dep.jandirafeghali@camara.leg.br"
+      "email": "dep.jandirafeghali@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220567,
@@ -2737,7 +3608,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220567.jpg",
-      "email": "dep.jefersonrodrigues@camara.leg.br"
+      "email": "dep.jefersonrodrigues@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74273,
@@ -2748,7 +3620,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74273.jpg",
-      "email": "dep.jeffersoncampos@camara.leg.br"
+      "email": "dep.jeffersoncampos@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depjefferson",
+        "https://www.facebook.com/depjefferson",
+        "https://www.instagram.com/depjefferson",
+        "https://youtube.com/DepJeffersonCampos"
+      ]
     },
     {
       "id": 141456,
@@ -2759,7 +3637,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141456.jpg",
-      "email": "dep.jilmartatto@camara.leg.br"
+      "email": "dep.jilmartatto@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141458,
@@ -2770,7 +3649,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141458.jpg",
-      "email": "dep.joaocarlosbacelar@camara.leg.br"
+      "email": "dep.joaocarlosbacelar@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/joaobacelaroficial"
+      ]
     },
     {
       "id": 230957,
@@ -2781,7 +3663,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/230957.jpg",
-      "email": "dep.joaocury@camara.leg.br"
+      "email": "dep.joaocury@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/JoaoCury",
+        "https://www.instagram.com/joaocurysp"
+      ]
     },
     {
       "id": 178970,
@@ -2792,7 +3678,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178970.jpg",
-      "email": "dep.joaodaniel@camara.leg.br"
+      "email": "dep.joaodaniel@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depjoaodanielpt",
+        "https://www.facebook.com/deputadojoaodaniel",
+        "https://www.instagram.com/deputadojoaodaniel",
+        "https://youtube.com/deputadojoaodaniel"
+      ]
     },
     {
       "id": 74550,
@@ -2803,7 +3695,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74550.jpg",
-      "email": "dep.joaoleao@camara.leg.br"
+      "email": "dep.joaoleao@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141459,
@@ -2814,7 +3707,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RN",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141459.jpg",
-      "email": "dep.joaomaia@camara.leg.br"
+      "email": "dep.joaomaia@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178910,
@@ -2825,7 +3719,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178910.jpg",
-      "email": "dep.joaquimpassarinho@camara.leg.br"
+      "email": "dep.joaquimpassarinho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depjpassarinho",
+        "https://www.facebook.com/joaquimpassarinhooficial",
+        "https://www.instagram.com/joaquim_passarinho"
+      ]
     },
     {
       "id": 160548,
@@ -2836,7 +3735,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160548.jpg",
-      "email": "dep.jonasdonizette@camara.leg.br"
+      "email": "dep.jonasdonizette@camara.leg.br",
+      "redeSocial": [
+        "http://www.twitter.com/jonas_donizette",
+        "https://www.facebook.com/jonasdonizette",
+        "https://www.instagram.com/jonasdonizette/"
+      ]
     },
     {
       "id": 205550,
@@ -2847,7 +3751,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/205550.jpg",
-      "email": "dep.jorgebraz@camara.leg.br"
+      "email": "dep.jorgebraz@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/Jorge_Braz",
+        "https://www.facebook.com/jorgebrazoficial",
+        "https://www.instagram.com/jorge_braz",
+        "https://youtube.com/VEREADORJORGEBRAZ"
+      ]
     },
     {
       "id": 214694,
@@ -2858,7 +3768,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/214694.jpg",
-      "email": "dep.jorgegoetten@camara.leg.br"
+      "email": "dep.jorgegoetten@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/jorgegoetten",
+        "https://www.facebook.com/Jorgegoettenminister",
+        "https://www.instagram.com/jorgegoetten"
+      ]
     },
     {
       "id": 178857,
@@ -2869,7 +3784,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178857.jpg",
-      "email": "dep.jorgesolla@camara.leg.br"
+      "email": "dep.jorgesolla@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141464,
@@ -2880,7 +3796,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141464.jpg",
-      "email": "dep.joseairtonfelixcirilo@camara.leg.br"
+      "email": "dep.joseairtonfelixcirilo@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/joseairtonpt",
+        "https://www.facebook.com/Joseairtoncirilo",
+        "https://www.instagram.com/Joseairtoncirilo"
+      ]
     },
     {
       "id": 141470,
@@ -2891,7 +3812,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141470.jpg",
-      "email": "dep.joseguimaraes@camara.leg.br"
+      "email": "dep.joseguimaraes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204472,
@@ -2902,7 +3824,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MT",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204472.jpg",
-      "email": "dep.josemedeiros@camara.leg.br"
+      "email": "dep.josemedeiros@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/josemedeirosmt",
+        "https://www.facebook.com/josemedeirosmt",
+        "https://www.instagram.com/josemedeirosmt"
+      ]
     },
     {
       "id": 204391,
@@ -2913,7 +3840,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204391.jpg",
-      "email": "dep.josenelto@camara.leg.br"
+      "email": "dep.josenelto@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depjosenelto",
+        "https://www.facebook.com/joseneltopodemos",
+        "https://www.instagram.com/joseneltooficial"
+      ]
     },
     {
       "id": 74079,
@@ -2924,7 +3856,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74079.jpg",
-      "email": "dep.josepriante@camara.leg.br"
+      "email": "dep.josepriante@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74554,
@@ -2935,7 +3868,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74554.jpg",
-      "email": "dep.joserocha@camara.leg.br"
+      "email": "dep.joserocha@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 209189,
@@ -2946,7 +3880,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/209189.jpg",
-      "email": "dep.joseildoramos@camara.leg.br"
+      "email": "dep.joseildoramos@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/joseildoramos",
+        "https://www.facebook.com/deputadojoseildoramos",
+        "https://www.instagram.com/joseildoramos"
+      ]
     },
     {
       "id": 220578,
@@ -2957,7 +3896,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220578.jpg",
-      "email": "dep.josenildo@camara.leg.br"
+      "email": "dep.josenildo@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/josenildoap_"
+      ]
     },
     {
       "id": 215043,
@@ -2968,7 +3910,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/215043.jpg",
-      "email": "dep.josivaldojp@camara.leg.br"
+      "email": "dep.josivaldojp@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/deputadojosivaldojp/",
+        "https://www.instagram.com/jpdeputado/"
+      ]
     },
     {
       "id": 204474,
@@ -2979,7 +3925,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MT",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204474.jpg",
-      "email": "dep.juarezcosta@camara.leg.br"
+      "email": "dep.juarezcosta@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/juarezcostamt",
+        "https://www.facebook.com/juarezcostamt",
+        "https://www.instagram.com/juarezcostamt",
+        "https://www.youtube.com/channel/UCKKA7s-2Lo6xKtZlgahT-aA"
+      ]
     },
     {
       "id": 220559,
@@ -2990,7 +3942,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220559.jpg",
-      "email": "dep.juliazanatta@camara.leg.br"
+      "email": "dep.juliazanatta@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/apropriajulia",
+        "https://www.facebook.com/juliazanattasc",
+        "https://www.instagram.com/juliazanattasc",
+        "https://youtube.com/channel/UC-xMxlTPP-xGmOry0wx2sxw"
+      ]
     },
     {
       "id": 220640,
@@ -3001,7 +3959,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220640.jpg",
-      "email": "dep.julianacardoso@camara.leg.br"
+      "email": "dep.julianacardoso@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/julianapt",
+        "https://www.facebook.com/julianacardosopt",
+        "https://www.instagram.com/julianacardoso_pt",
+        "https://youtube.com/julianacardosopt"
+      ]
     },
     {
       "id": 66385,
@@ -3012,7 +3976,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PI",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/66385.jpg",
-      "email": "dep.julioarcoverde@camara.leg.br"
+      "email": "dep.julioarcoverde@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/julioarcoverde",
+        "https://www.facebook.com/depjulioarcoverde",
+        "https://www.instagram.com/julioarcoverde",
+        "https://youtube.com/julioarcoverde"
+      ]
     },
     {
       "id": 74317,
@@ -3023,7 +3993,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PI",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74317.jpg",
-      "email": "dep.juliocesar@camara.leg.br"
+      "email": "dep.juliocesar@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depjuliocesarPI",
+        "https://www.facebook.com/depjuliocesar",
+        "https://www.instagram.com/deputadojuliocesar",
+        "https://youtube.com/deputadojuliocesarpi"
+      ]
     },
     {
       "id": 204372,
@@ -3034,7 +4010,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "DF",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204372.jpg",
-      "email": "dep.juliocesarribeiro@camara.leg.br"
+      "email": "dep.juliocesarribeiro@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/JulioCesarRib",
+        "https://www.facebook.com/JulioCesarRibeiro",
+        "https://www.instagram.com/juliocesarribeiro",
+        "https://youtube.com/JulioCesarRibeiro"
+      ]
     },
     {
       "id": 74253,
@@ -3045,7 +4027,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74253.jpg",
-      "email": "dep.juliolopes@camara.leg.br"
+      "email": "dep.juliolopes@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/juliolopesrio/?locale=pt_BR",
+        "https://www.instagram.com/juliolopes_rio/",
+        "https://youtube.com/JulioLopesRio"
+      ]
     },
     {
       "id": 204457,
@@ -3056,7 +4043,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204457.jpg",
-      "email": "dep.juninhodopneu@camara.leg.br"
+      "email": "dep.juninhodopneu@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/juninhodopneu01",
+        "https://www.instagram.com/juninhodopneu"
+      ]
     },
     {
       "id": 204520,
@@ -3067,7 +4058,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204520.jpg",
-      "email": "dep.junioamaral@camara.leg.br"
+      "email": "dep.junioamaral@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/cabojunioamaral",
+        "https://www.facebook.com/cabojunioamaral",
+        "https://www.instagram.com/junioamaraldm"
+      ]
     },
     {
       "id": 204497,
@@ -3078,7 +4074,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204497.jpg",
-      "email": "dep.juniorferrari@camara.leg.br"
+      "email": "dep.juniorferrari@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204574,
@@ -3089,7 +4086,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204574.jpg",
-      "email": "dep.juniorlourenco@camara.leg.br"
+      "email": "dep.juniorlourenco@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/juniorlourenco2200"
+      ]
     },
     {
       "id": 204550,
@@ -3100,7 +4100,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204550.jpg",
-      "email": "dep.juniormano@camara.leg.br"
+      "email": "dep.juniormano@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/juniormanodep",
+        "https://www.facebook.com/juniormanodep",
+        "https://www.instagram.com/juniormanodep",
+        "https://youtube.com/deputadojuniormano"
+      ]
     },
     {
       "id": 178886,
@@ -3111,7 +4117,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178886.jpg",
-      "email": "dep.juscelinofilho@camara.leg.br"
+      "email": "dep.juscelinofilho@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220677,
@@ -3122,7 +4129,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220677.jpg",
-      "email": "dep.kenistonbraga@camara.leg.br"
+      "email": "dep.kenistonbraga@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/kenistonoficial",
+        "https://www.instagram.com/kenistonoficial/",
+        "https://www.youtube.com/c/KenistonOficial"
+      ]
     },
     {
       "id": 162067,
@@ -3133,7 +4145,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/162067.jpg",
-      "email": "dep.kikoceleguim@camara.leg.br"
+      "email": "dep.kikoceleguim@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/kikoceleguim",
+        "https://www.facebook.com/kikoceleguim",
+        "https://www.instagram.com/kiko.celeguim",
+        "https://youtube.com/KikoCeleguimoficial"
+      ]
     },
     {
       "id": 204536,
@@ -3144,7 +4162,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204536.jpg",
-      "email": "dep.kimkataguiri@camara.leg.br"
+      "email": "dep.kimkataguiri@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/kimkataguiri",
+        "https://www.facebook.com/Kim-Kataguiri-833053646745836",
+        "https://www.instagram.com/kimkataguiri",
+        "https://youtube.com/kimkataguiri"
+      ]
     },
     {
       "id": 98057,
@@ -3155,7 +4179,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/98057.jpg",
-      "email": "dep.lafayettedeandrada@camara.leg.br"
+      "email": "dep.lafayettedeandrada@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/lafayetteandrad",
+        "https://www.facebook.com/lafayettedeandrada",
+        "https://www.instagram.com/lafayetteandrada",
+        "https://youtube.com/channel/UC5f8X2JAnafqV7bPLmDeZGw"
+      ]
     },
     {
       "id": 74856,
@@ -3166,7 +4196,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74856.jpg",
-      "email": "dep.lauracarneiro@camara.leg.br"
+      "email": "dep.lauracarneiro@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220566,
@@ -3177,7 +4208,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220566.jpg",
-      "email": "dep.ledaborges@camara.leg.br"
+      "email": "dep.ledaborges@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 231911,
@@ -3188,7 +4220,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/231911.jpg",
-      "email": "dep.lenirdeassis@camara.leg.br"
+      "email": "dep.lenirdeassis@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/LenirOficial",
+        "https://www.facebook.com/lenirdassis",
+        "https://www.instagram.com/lenirdeassis"
+      ]
     },
     {
       "id": 80815,
@@ -3199,7 +4236,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/80815.jpg",
-      "email": "dep.leoprates@camara.leg.br"
+      "email": "dep.leoprates@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/LeonardoPrates4",
+        "https://www.facebook.com/leo.prates.7",
+        "https://www.instagram.com/leoprates"
+      ]
     },
     {
       "id": 74156,
@@ -3210,7 +4252,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74156.jpg",
-      "email": "dep.leonardomonteiro@camara.leg.br"
+      "email": "dep.leonardomonteiro@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74299,
@@ -3221,7 +4264,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74299.jpg",
-      "email": "dep.leonidascristino@camara.leg.br"
+      "email": "dep.leonidascristino@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/joseleonidas",
+        "https://www.facebook.com/leonidascristinooficial",
+        "https://www.instagram.com/leonidas.cristino"
+      ]
     },
     {
       "id": 92102,
@@ -3232,7 +4280,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/92102.jpg",
-      "email": "dep.leurlomantojunior@camara.leg.br"
+      "email": "dep.leurlomantojunior@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/leurlomantojr",
+        "https://www.facebook.com/leurlomantojr/",
+        "https://www.instagram.com/leurlomantojr"
+      ]
     },
     {
       "id": 139285,
@@ -3243,7 +4296,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/139285.jpg",
-      "email": "dep.lidicedamata@camara.leg.br"
+      "email": "dep.lidicedamata@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/lidicedamata",
+        "https://www.instagram.com/lidicedamata"
+      ]
     },
     {
       "id": 74585,
@@ -3254,7 +4311,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74585.jpg",
-      "email": "dep.lincolnportela@camara.leg.br"
+      "email": "dep.lincolnportela@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74858,
@@ -3265,7 +4323,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74858.jpg",
-      "email": "dep.lindberghfarias@camara.leg.br"
+      "email": "dep.lindberghfarias@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220662,
@@ -3276,7 +4335,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220662.jpg",
-      "email": "dep.lucasramos@camara.leg.br"
+      "email": "dep.lucasramos@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/lucasramospe",
+        "https://www.facebook.com/lucasramosoficial",
+        "https://www.instagram.com/lucasramospe"
+      ]
     },
     {
       "id": 204404,
@@ -3287,7 +4351,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204404.jpg",
-      "email": "dep.lucasredecker@camara.leg.br"
+      "email": "dep.lucasredecker@camara.leg.br",
+      "redeSocial": [
+        "https://facebook.com/lucasredecker",
+        "https://instagram.com/lucasredecker",
+        "https://twitter.com/lucasredecker",
+        "https://youtube.com/user/lucasredecker"
+      ]
     },
     {
       "id": 138286,
@@ -3298,7 +4368,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/138286.jpg",
-      "email": "dep.lucianoalves@camara.leg.br"
+      "email": "dep.lucianoalves@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/deputadolucianoalves",
+        "https://www.instagram.com/deputadolucianoalves"
+      ]
     },
     {
       "id": 220581,
@@ -3309,7 +4383,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AL",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220581.jpg",
-      "email": "dep.lucianoamaral@camara.leg.br"
+      "email": "dep.lucianoamaral@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74478,
@@ -3320,7 +4395,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74478.jpg",
-      "email": "dep.lucianobivar@camara.leg.br"
+      "email": "dep.lucianobivar@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178931,
@@ -3331,7 +4407,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178931.jpg",
-      "email": "dep.lucianoducci@camara.leg.br"
+      "email": "dep.lucianoducci@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220616,
@@ -3342,7 +4419,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220616.jpg",
-      "email": "dep.lucianovieira@camara.leg.br"
+      "email": "dep.lucianovieira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/lucianovieirarj",
+        "https://www.facebook.com/lucianovieirarj",
+        "https://www.instagram.com/lucianovieirarj"
+      ]
     },
     {
       "id": 178954,
@@ -3353,7 +4435,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178954.jpg",
-      "email": "dep.luciomosquini@camara.leg.br"
+      "email": "dep.luciomosquini@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/deputadoluciomosquini",
+        "https://www.instagram.com/luciomosquini",
+        "https://youtube.com/lucioantoniomosquinimosqui7885"
+      ]
     },
     {
       "id": 222429,
@@ -3364,7 +4451,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/222429.jpg",
-      "email": "dep.luiscarlosgomes@camara.leg.br"
+      "email": "dep.luiscarlosgomes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160510,
@@ -3375,7 +4463,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160510.jpg",
-      "email": "dep.luistibe@camara.leg.br"
+      "email": "dep.luistibe@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/LuisTibeOficial",
+        "https://www.facebook.com/luistibeoficial",
+        "https://www.instagram.com/deputadoluistibe/",
+        "https://www.youtube.com/watch?v=BuVmJsuVjuY"
+      ]
     },
     {
       "id": 204410,
@@ -3386,7 +4480,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204410.jpg",
-      "email": "dep.luisacanziani@camara.leg.br"
+      "email": "dep.luisacanziani@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141485,
@@ -3397,7 +4492,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141485.jpg",
-      "email": "dep.luizcarlosbusato@camara.leg.br"
+      "email": "dep.luizcarlosbusato@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/lcbusato",
+        "https://www.facebook.com/lcbusato",
+        "https://www.instagram.com/lcbusato",
+        "https://youtube.com/channel/UCI1WRKDHZA-6HQwN5_yWypw"
+      ]
     },
     {
       "id": 73778,
@@ -3408,7 +4509,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73778.jpg",
-      "email": "dep.luizcarloshauly@camara.leg.br"
+      "email": "dep.luizcarloshauly@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/deputadoHauly",
+        "https://www.instagram.com/deputadohauly"
+      ]
     },
     {
       "id": 204485,
@@ -3419,7 +4524,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204485.jpg",
-      "email": "dep.luizcarlosmotta@camara.leg.br"
+      "email": "dep.luizcarlosmotta@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/deputadomotta",
+        "https://www.facebook.com/mottadoscomerciarios",
+        "https://www.instagram.com/deputadomotta",
+        "https://www.youtube.com/@DeputadoMotta"
+      ]
     },
     {
       "id": 74041,
@@ -3430,7 +4541,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74041.jpg",
-      "email": "dep.luizcouto@camara.leg.br"
+      "email": "dep.luizcouto@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141487,
@@ -3441,7 +4553,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141487.jpg",
-      "email": "dep.luizfernandofaria@camara.leg.br"
+      "email": "dep.luizfernandofaria@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220658,
@@ -3452,7 +4565,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220658.jpg",
-      "email": "dep.luizgastao@camara.leg.br"
+      "email": "dep.luizgastao@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204455,
@@ -3463,7 +4577,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204455.jpg",
-      "email": "dep.luizlima@camara.leg.br"
+      "email": "dep.luizlima@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/oficialluizlima",
+        "https://www.facebook.com/oficialluizlima",
+        "https://www.instagram.com/oficialluizlima",
+        "https://youtube.com/oficialluizlima"
+      ]
     },
     {
       "id": 162332,
@@ -3474,7 +4594,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/162332.jpg",
-      "email": "dep.luiznishimori@camara.leg.br"
+      "email": "dep.luiznishimori@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204526,
@@ -3485,7 +4606,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204526.jpg",
-      "email": "dep.luizphilippedeorleansebraganca@camara.leg.br"
+      "email": "dep.luizphilippedeorleansebraganca@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/lpbragancabr",
+        "https://www.facebook.com/luizphilippebr",
+        "https://www.instagram.com/lpbragancabr",
+        "https://youtube.com/luizphilippebr"
+      ]
     },
     {
       "id": 74784,
@@ -3496,7 +4623,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74784.jpg",
-      "email": "dep.luizaerundina@camara.leg.br"
+      "email": "dep.luizaerundina@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178866,
@@ -3507,7 +4635,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178866.jpg",
-      "email": "dep.luiziannelins@camara.leg.br"
+      "email": "dep.luiziannelins@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/luiziannelinsPT"
+      ]
     },
     {
       "id": 220669,
@@ -3518,7 +4649,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220669.jpg",
-      "email": "dep.luladafonte@camara.leg.br"
+      "email": "dep.luladafonte@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 166402,
@@ -3529,7 +4661,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/166402.jpg",
-      "email": "dep.magdamofatto@camara.leg.br"
+      "email": "dep.magdamofatto@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/MofattoMagda",
+        "https://www.facebook.com/MagdaMofatto.Goias",
+        "https://www.instagram.com/magdamofatto.goias"
+      ]
     },
     {
       "id": 220648,
@@ -3540,7 +4677,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220648.jpg",
-      "email": "dep.marangoni@camara.leg.br"
+      "email": "dep.marangoni@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/marangoni_fer",
+        "https://www.facebook.com/marangoni.oficial",
+        "https://www.instagram.com/marangoni.oficial",
+        "https://www.youtube.com/@fernandomarangoni99/"
+      ]
     },
     {
       "id": 156190,
@@ -3551,7 +4694,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/156190.jpg",
-      "email": "dep.marcelvanhattem@camara.leg.br"
+      "email": "dep.marcelvanhattem@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/MARCELVANHATTEM",
+        "https://www.facebook.com/MARCELVH",
+        "https://www.instagram.com/MARCELVANHATTEM",
+        "https://youtube.com/channel/UCAGHY76tgzPiiXpJtM1sVCg"
+      ]
     },
     {
       "id": 179000,
@@ -3562,7 +4711,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/179000.jpg",
-      "email": "dep.marceloalvaroantonio@camara.leg.br"
+      "email": "dep.marceloalvaroantonio@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/marceloalvaroan",
+        "https://www.facebook.com/marceloalvaroantonio",
+        "https://www.instagram.com/marceloalvaroantonio"
+      ]
     },
     {
       "id": 220599,
@@ -3573,7 +4727,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220599.jpg",
-      "email": "dep.marcelocrivella@camara.leg.br"
+      "email": "dep.marcelocrivella@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 133810,
@@ -3584,7 +4739,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/133810.jpg",
-      "email": "dep.marcelomoraes@camara.leg.br"
+      "email": "dep.marcelomoraes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160161,
@@ -3595,7 +4751,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160161.jpg",
-      "email": "dep.marceloqueiroz@camara.leg.br"
+      "email": "dep.marceloqueiroz@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178983,
@@ -3606,7 +4763,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178983.jpg",
-      "email": "dep.marcioalvino@camara.leg.br"
+      "email": "dep.marcioalvino@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 179001,
@@ -3617,7 +4775,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/179001.jpg",
-      "email": "dep.marciobiolchi@camara.leg.br"
+      "email": "dep.marciobiolchi@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220687,
@@ -3628,7 +4787,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220687.jpg",
-      "email": "dep.marciohonaiser@camara.leg.br"
+      "email": "dep.marciohonaiser@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/Marcio_Honaiser",
+        "https://www.facebook.com/marciohonaiser/",
+        "https://www.instagram.com/marciohonaiser/"
+      ]
     },
     {
       "id": 81055,
@@ -3639,7 +4803,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/81055.jpg",
-      "email": "dep.marciojerry@camara.leg.br"
+      "email": "dep.marciojerry@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/marciojerry",
+        "https://www.facebook.com/marciojerry",
+        "https://www.instagram.com/marciojerry",
+        "https://youtube.com/marciojerry"
+      ]
     },
     {
       "id": 150418,
@@ -3650,7 +4820,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/150418.jpg",
-      "email": "dep.marciomarinho@camara.leg.br"
+      "email": "dep.marciomarinho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/dpmarciomarinho?lang=pt-br",
+        "https://www.facebook.com/deputadomarciomarinho",
+        "https://www.instagram.com/deputadomarciomarinho",
+        "https://youtube.com/channel/UCx3t_YQx8H-93UD5k9Mt1lQ"
+      ]
     },
     {
       "id": 160535,
@@ -3661,7 +4837,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160535.jpg",
-      "email": "dep.marcon@camara.leg.br"
+      "email": "dep.marcon@camara.leg.br",
+      "redeSocial": [
+        "https://instagram.com/deputadomarcon",
+        "https://twitter.com/deputadomarcon",
+        "https://www.facebook.com/deputadomarcon"
+      ]
     },
     {
       "id": 204431,
@@ -3672,7 +4853,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PI",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204431.jpg",
-      "email": "dep.marcosaureliosampaio@camara.leg.br"
+      "email": "dep.marcosaureliosampaio@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204506,
@@ -3683,7 +4865,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204506.jpg",
-      "email": "dep.marcospereira@camara.leg.br"
+      "email": "dep.marcospereira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/marcospereira04",
+        "https://www.facebook.com/marcospereira1010",
+        "https://www.instagram.com/marcospereira1010",
+        "https://youtube.com/marcospereira0404"
+      ]
     },
     {
       "id": 220547,
@@ -3694,7 +4882,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220547.jpg",
-      "email": "dep.marcospollon@camara.leg.br"
+      "email": "dep.marcospollon@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/PollonMarcos",
+        "https://www.facebook.com/mpollon",
+        "https://www.instagram.com/pollonms",
+        "https://youtube.com/channel/UC8ioF4r2QoAp5mMp1epPAsg"
+      ]
     },
     {
       "id": 178943,
@@ -3705,7 +4899,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178943.jpg",
-      "email": "dep.marcossoares@camara.leg.br"
+      "email": "dep.marcossoares@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220604,
@@ -3716,7 +4911,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220604.jpg",
-      "email": "dep.marcostavares@camara.leg.br"
+      "email": "dep.marcostavares@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/oficialmarcostavares",
+        "https://www.instagram.com/oficialmarcostavares"
+      ]
     },
     {
       "id": 220668,
@@ -3727,7 +4926,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220668.jpg",
-      "email": "dep.mariaarraes@camara.leg.br"
+      "email": "dep.mariaarraes@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/mariaarraespe",
+        "https://www.facebook.com//mariaarraespe",
+        "https://www.instagram.com/mariaarraes"
+      ]
     },
     {
       "id": 74398,
@@ -3738,7 +4942,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74398.jpg",
-      "email": "dep.mariadorosario@camara.leg.br"
+      "email": "dep.mariadorosario@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/mariadorosario",
+        "https://www.facebook.com/DeputadaMariaDoRosario",
+        "https://www.instagram.com/_mariadorosario"
+      ]
     },
     {
       "id": 204540,
@@ -3749,7 +4958,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204540.jpg",
-      "email": "dep.mariarosas@camara.leg.br"
+      "email": "dep.mariarosas@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/mariarosassp",
+        "https://www.facebook.com/depmariarosas",
+        "https://www.instagram.com/mariarosas.oficial",
+        "https://youtube.com/channel/UCWIJ_PIc4AsfR_LlBxSILSA"
+      ]
     },
     {
       "id": 220655,
@@ -3760,7 +4975,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220655.jpg",
-      "email": "dep.mariofrias@camara.leg.br"
+      "email": "dep.mariofrias@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/mfriasoficial",
+        "https://www.instagram.com/mariofriasoficial"
+      ]
     },
     {
       "id": 74158,
@@ -3771,7 +4990,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74158.jpg",
-      "email": "dep.marioheringer@camara.leg.br"
+      "email": "dep.marioheringer@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178858,
@@ -3782,7 +5002,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178858.jpg",
-      "email": "dep.marionegromontejr@camara.leg.br"
+      "email": "dep.marionegromontejr@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/marionegromontejr"
+      ]
     },
     {
       "id": 220572,
@@ -3793,7 +5016,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220572.jpg",
-      "email": "dep.marussaboldrin@camara.leg.br"
+      "email": "dep.marussaboldrin@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/marussago",
+        "https://www.facebook.com/marussaboldrin.go",
+        "https://www.instagram.com/marussa.boldrin"
+      ]
     },
     {
       "id": 178843,
@@ -3804,7 +5032,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AL",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178843.jpg",
-      "email": "dep.marxbeltrao@camara.leg.br"
+      "email": "dep.marxbeltrao@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220661,
@@ -3815,7 +5044,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220661.jpg",
-      "email": "dep.matheusnoronha@camara.leg.br"
+      "email": "dep.matheusnoronha@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220609,
@@ -3826,7 +5056,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220609.jpg",
-      "email": "dep.mauriciocarvalho@camara.leg.br"
+      "email": "dep.mauriciocarvalho@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220628,
@@ -3837,7 +5068,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220628.jpg",
-      "email": "dep.mauriciodovolei@camara.leg.br"
+      "email": "dep.mauriciodovolei@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/mauriciodovolei",
+        "https://www.facebook.com/mauriciodovolei",
+        "https://www.instagram.com/mauriciodovolei"
+      ]
     },
     {
       "id": 220550,
@@ -3848,7 +5084,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220550.jpg",
-      "email": "dep.mauriciomarcon@camara.leg.br"
+      "email": "dep.mauriciomarcon@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220647,
@@ -3859,7 +5096,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220647.jpg",
-      "email": "dep.mauricioneves@camara.leg.br"
+      "email": "dep.mauricioneves@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/MauricioNeves_",
+        "https://www.facebook.com/mauricioneves",
+        "https://www.instagram.com/mauricioneves_oficial",
+        "https://youtube.com/mauricioneves9642"
+      ]
     },
     {
       "id": 204486,
@@ -3870,7 +5113,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204486.jpg",
-      "email": "dep.maurobenevidesfilho@camara.leg.br"
+      "email": "dep.maurobenevidesfilho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/mauro_bfilho",
+        "https://www.instagram.com/mauro_benevidesfilho"
+      ]
     },
     {
       "id": 220607,
@@ -3881,7 +5128,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220607.jpg",
-      "email": "dep.maxlemos@camara.leg.br"
+      "email": "dep.maxlemos@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/maxlemosoficial",
+        "https://www.facebook.com/maxlemos.com.br",
+        "https://www.instagram.com/maxlemosoficial",
+        "https://youtube.com/@maxlemos9960"
+      ]
     },
     {
       "id": 220591,
@@ -3892,7 +5145,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220591.jpg",
-      "email": "dep.meireserafim@camara.leg.br"
+      "email": "dep.meireserafim@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depmeireserafim",
+        "https://www.facebook.com/dep.meireserafim",
+        "https://www.instagram.com/dep.meireserafim"
+      ]
     },
     {
       "id": 74428,
@@ -3903,7 +5161,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74428.jpg",
-      "email": "dep.mendoncafilho@camara.leg.br"
+      "email": "dep.mendoncafilho@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 188097,
@@ -3914,7 +5173,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PI",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/188097.jpg",
-      "email": "dep.merlongsolano@camara.leg.br"
+      "email": "dep.merlongsolano@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/merlongsolano",
+        "https://www.facebook.com/merlongsolano",
+        "https://www.instagram.com/merlongsolano"
+      ]
     },
     {
       "id": 220585,
@@ -3925,7 +5189,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220585.jpg",
-      "email": "dep.mersinholucena@camara.leg.br"
+      "email": "dep.mersinholucena@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220530,
@@ -3936,7 +5201,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "ES",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220530.jpg",
-      "email": "dep.messiasdonato@camara.leg.br"
+      "email": "dep.messiasdonato@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/MessiasDonato",
+        "https://www.facebook.com/messiasdonato",
+        "https://www.instagram.com/messiasdonato",
+        "https://youtube.com/channel/UCzw1O2NLEynTs9dm3X2AILA"
+      ]
     },
     {
       "id": 171786,
@@ -3947,7 +5218,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/171786.jpg",
-      "email": "dep.miguelangelo@camara.leg.br"
+      "email": "dep.miguelangelo@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/MiguelAngelo_",
+        "https://www.facebook.com/MiguelÂngelo",
+        "https://www.instagram.com/miguelangelomg13"
+      ]
     },
     {
       "id": 178985,
@@ -3958,7 +5234,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178985.jpg",
-      "email": "dep.miguellombardi@camara.leg.br"
+      "email": "dep.miguellombardi@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/dep.miguellombardi",
+        "https://youtube.com/channel/UCzP0L6ymrNXOBJuOpflBwgA"
+      ]
     },
     {
       "id": 178895,
@@ -3969,7 +5249,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178895.jpg",
-      "email": "dep.misaelvarella@camara.leg.br"
+      "email": "dep.misaelvarella@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/deputadomisaelvarella",
+        "https://www.instagram.com/misaelvarella"
+      ]
     },
     {
       "id": 160561,
@@ -3980,7 +5264,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160561.jpg",
-      "email": "dep.missionariojoseolimpio@camara.leg.br"
+      "email": "dep.missionariojoseolimpio@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178997,
@@ -3991,7 +5276,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178997.jpg",
-      "email": "dep.mosesrodrigues@camara.leg.br"
+      "email": "dep.mosesrodrigues@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DepFederalMoses",
+        "https://www.facebook.com/MosesRodriguesOficial",
+        "https://www.instagram.com/mosesrodriguesoficial"
+      ]
     },
     {
       "id": 220617,
@@ -4002,7 +5292,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220617.jpg",
-      "email": "dep.murillogouvea@camara.leg.br"
+      "email": "dep.murillogouvea@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/murillogouvea.rj",
+        "https://www.facebook.com/murillogouvea.rj",
+        "https://www.instagram.com/murillogouvea.rj"
+      ]
     },
     {
       "id": 220584,
@@ -4013,7 +5308,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220584.jpg",
-      "email": "dep.murilogaldino@camara.leg.br"
+      "email": "dep.murilogaldino@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/Murilogaldinopb",
+        "https://www.facebook.com/murilogaldinopb"
+      ]
     },
     {
       "id": 204453,
@@ -4024,7 +5323,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RN",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204453.jpg",
-      "email": "dep.nataliabonavides@camara.leg.br"
+      "email": "dep.nataliabonavides@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/Natbonavides",
+        "https://www.facebook.com/nataliabonavides",
+        "https://www.instagram.com/nataliabonavides",
+        "https://youtube.com/channel/UC4SZ1UNy6t9Mz99In-Rt1tw"
+      ]
     },
     {
       "id": 204449,
@@ -4035,7 +5340,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MT",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204449.jpg",
-      "email": "dep.nelsonbarbudo@camara.leg.br"
+      "email": "dep.nelsonbarbudo@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/onelsonbarbudo",
+        "https://www.instagram.com/nelsonbarbudo",
+        "https://youtube.com/channel/UC2wzaVfyw_DJ7Dw8vMqNoCw"
+      ]
     },
     {
       "id": 220703,
@@ -4046,7 +5356,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220703.jpg",
-      "email": "dep.netocarletto@camara.leg.br"
+      "email": "dep.netocarletto@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/carlettoneto",
+        "https://www.facebook.com/netocarletto",
+        "https://www.instagram.com/netocarletto"
+      ]
     },
     {
       "id": 178896,
@@ -4057,7 +5372,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178896.jpg",
-      "email": "dep.newtoncardosojr@camara.leg.br"
+      "email": "dep.newtoncardosojr@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204479,
@@ -4068,7 +5384,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204479.jpg",
-      "email": "dep.nicoletti@camara.leg.br"
+      "email": "dep.nicoletti@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depnicoletti",
+        "https://www.facebook.com/DeputadoNicoletti",
+        "https://www.instagram.com/deputadonicoletti",
+        "https://youtube.com/DeputadoNicoletti"
+      ]
     },
     {
       "id": 209787,
@@ -4079,7 +5401,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/209787.jpg",
-      "email": "dep.nikolasferreira@camara.leg.br"
+      "email": "dep.nikolasferreira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/nikolas_dm",
+        "https://www.instagram.com/nikolasferreiradm/",
+        "https://www.youtube.com/@NikolasFerreiraO"
+      ]
     },
     {
       "id": 178986,
@@ -4090,7 +5417,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178986.jpg",
-      "email": "dep.niltotatto@camara.leg.br"
+      "email": "dep.niltotatto@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74159,
@@ -4101,7 +5429,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74159.jpg",
-      "email": "dep.odaircunha@camara.leg.br"
+      "email": "dep.odaircunha@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/odaircunhamg",
+        "https://www.facebook.com/odaircunhamg",
+        "https://www.instagram.com/odaircunhamg"
+      ]
     },
     {
       "id": 204498,
@@ -4112,7 +5445,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204498.jpg",
-      "email": "dep.olivalmarques@camara.leg.br"
+      "email": "dep.olivalmarques@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/OlivalMarquesOf",
+        "https://www.facebook.com/OlivalMarquesOficial",
+        "https://www.instagram.com/OlivalMarques"
+      ]
     },
     {
       "id": 178987,
@@ -4123,7 +5461,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178987.jpg",
-      "email": "dep.orlandosilva@camara.leg.br"
+      "email": "dep.orlandosilva@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/orlandosilva",
+        "https://www.facebook.com/orlandosilvasp",
+        "https://www.instagram.com/orlandosilvasp"
+      ]
     },
     {
       "id": 73692,
@@ -4134,7 +5477,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73692.jpg",
-      "email": "dep.osmarterra@camara.leg.br"
+      "email": "dep.osmarterra@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/OsmarTerra",
+        "https://www.facebook.com/DeputadoOsmarTerra",
+        "https://www.instagram.com/terra.osmar",
+        "https://youtube.com/channel/UCZdKvhFxyXQm-JmyvHUYojA"
+      ]
     },
     {
       "id": 204422,
@@ -4145,7 +5494,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204422.jpg",
-      "email": "dep.ossesiosilva@camara.leg.br"
+      "email": "dep.ossesiosilva@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/ossesio_silva",
+        "https://www.facebook.com/ossesio.silva",
+        "https://www.instagram.com/ossesio.silva"
+      ]
     },
     {
       "id": 204441,
@@ -4156,7 +5510,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204441.jpg",
-      "email": "dep.otonidepaula@camara.leg.br"
+      "email": "dep.otonidepaula@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/otonidepfederal",
+        "https://www.facebook.com/OtoniDeputadoFederal",
+        "https://www.instagram.com/otonidepaulaoficial"
+      ]
     },
     {
       "id": 220706,
@@ -4167,7 +5526,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220706.jpg",
-      "email": "dep.padovani@camara.leg.br"
+      "email": "dep.padovani@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/padovanidep",
+        "https://www.instagram.com/nelsinhopadovani"
+      ]
     },
     {
       "id": 160556,
@@ -4178,7 +5541,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160556.jpg",
-      "email": "dep.padrejoao@camara.leg.br"
+      "email": "dep.padrejoao@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/dep_padrejoao",
+        "https://www.facebook.com/padrejoao",
+        "https://www.instagram.com/dep_padrejoao",
+        "https://youtube.com/channel/UC3xn6en0oZZdxt56VW8PS9A"
+      ]
     },
     {
       "id": 180214,
@@ -4189,7 +5558,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/180214.jpg",
-      "email": "dep.pastordiniz@camara.leg.br"
+      "email": "dep.pastordiniz@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/pr.diniz.rr",
+        "https://www.instagram.com/pastordiniz.ad"
+      ]
     },
     {
       "id": 160642,
@@ -4200,7 +5573,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160642.jpg",
-      "email": "dep.pastoreurico@camara.leg.br"
+      "email": "dep.pastoreurico@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204570,
@@ -4211,7 +5585,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204570.jpg",
-      "email": "dep.pastorgil@camara.leg.br"
+      "email": "dep.pastorgil@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/deputadopastorgil",
+        "https://www.instagram.com/deputadogildenemyr"
+      ]
     },
     {
       "id": 220615,
@@ -4222,7 +5600,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220615.jpg",
-      "email": "dep.pastorhenriquevieira@camara.leg.br"
+      "email": "dep.pastorhenriquevieira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/pastorhenriquev",
+        "https://www.facebook.com/pastorhenriquevieira",
+        "https://www.instagram.com/pastorhenriquevieira",
+        "https://youtube.com/PastorHenriqueVieira"
+      ]
     },
     {
       "id": 204553,
@@ -4233,7 +5617,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204553.jpg",
-      "email": "dep.pastorsargentoisidorio@camara.leg.br"
+      "email": "dep.pastorsargentoisidorio@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/pastorisidorio",
+        "https://www.instagram.com/pastorsargentoisidorio"
+      ]
     },
     {
       "id": 74160,
@@ -4244,7 +5632,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74160.jpg",
-      "email": "dep.patrusananias@camara.leg.br"
+      "email": "dep.patrusananias@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74095,
@@ -4255,7 +5644,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AM",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74095.jpg",
-      "email": "dep.pauderneyavelino@camara.leg.br"
+      "email": "dep.pauderneyavelino@camara.leg.br",
+      "redeSocial": [
+        "http://www.twitter.com/pauderney"
+      ]
     },
     {
       "id": 171617,
@@ -4266,7 +5658,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AL",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/171617.jpg",
-      "email": "dep.paulao@camara.leg.br"
+      "email": "dep.paulao@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141518,
@@ -4277,7 +5670,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141518.jpg",
-      "email": "dep.paulinhodaforca@camara.leg.br"
+      "email": "dep.paulinhodaforca@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141516,
@@ -4288,7 +5682,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141516.jpg",
-      "email": "dep.pauloabiackel@camara.leg.br"
+      "email": "dep.pauloabiackel@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220650,
@@ -4299,7 +5694,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220650.jpg",
-      "email": "dep.pauloalexandrebarbosa@camara.leg.br"
+      "email": "dep.pauloalexandrebarbosa@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/https:",
+        "https://www.facebook.com/pauloalexandrebarbosapsdb",
+        "https://www.instagram.com/pauloalexandrebarbosa"
+      ]
     },
     {
       "id": 178860,
@@ -4310,7 +5710,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178860.jpg",
-      "email": "dep.pauloazi@camara.leg.br"
+      "email": "dep.pauloazi@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/PauloAzi",
+        "https://www.facebook.com/PauloAzi",
+        "https://www.instagram.com/PauloAziofcial"
+      ]
     },
     {
       "id": 160517,
@@ -4321,7 +5726,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "ES",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160517.jpg",
-      "email": "dep.paulofolletto@camara.leg.br"
+      "email": "dep.paulofolletto@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/deputadofoletto",
+        "https://www.facebook.com/foletto.paulo",
+        "https://www.instagram.com/paulo.folletto"
+      ]
     },
     {
       "id": 160558,
@@ -4332,7 +5742,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160558.jpg",
-      "email": "dep.paulofreirecosta@camara.leg.br"
+      "email": "dep.paulofreirecosta@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204492,
@@ -4343,7 +5754,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204492.jpg",
-      "email": "dep.pauloguedes@camara.leg.br"
+      "email": "dep.pauloguedes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220685,
@@ -4354,7 +5766,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220685.jpg",
-      "email": "dep.paulolitro@camara.leg.br"
+      "email": "dep.paulolitro@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74574,
@@ -4365,7 +5778,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74574.jpg",
-      "email": "dep.paulomagalhaes@camara.leg.br"
+      "email": "dep.paulomagalhaes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 128760,
@@ -4376,7 +5790,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/128760.jpg",
-      "email": "dep.paulomarinhojr@camara.leg.br"
+      "email": "dep.paulomarinhojr@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74400,
@@ -4387,7 +5802,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74400.jpg",
-      "email": "dep.paulopimenta@camara.leg.br"
+      "email": "dep.paulopimenta@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220667,
@@ -4398,7 +5814,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220667.jpg",
-      "email": "dep.pedrocampos@camara.leg.br"
+      "email": "dep.pedrocampos@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/pedrocampospe",
+        "https://www.instagram.com/pedrocampospe"
+      ]
     },
     {
       "id": 122974,
@@ -4409,7 +5829,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/122974.jpg",
-      "email": "dep.pedrolucasfernandes@camara.leg.br"
+      "email": "dep.pedrolucasfernandes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204395,
@@ -4420,7 +5841,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204395.jpg",
-      "email": "dep.pedrolupion@camara.leg.br"
+      "email": "dep.pedrolupion@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/pedro_lupion",
+        "https://www.facebook.com/pedrolupion",
+        "https://www.instagram.com/pedrolupion"
+      ]
     },
     {
       "id": 122158,
@@ -4431,7 +5857,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/122158.jpg",
-      "email": "dep.pedropaulo@camara.leg.br"
+      "email": "dep.pedropaulo@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160604,
@@ -4442,7 +5869,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160604.jpg",
-      "email": "dep.pedrouczai@camara.leg.br"
+      "email": "dep.pedrouczai@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204406,
@@ -4453,7 +5881,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204406.jpg",
-      "email": "dep.pedrowestphalen@camara.leg.br"
+      "email": "dep.pedrowestphalen@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 161440,
@@ -4464,7 +5893,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/161440.jpg",
-      "email": "dep.pezenti@camara.leg.br"
+      "email": "dep.pezenti@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/deputadopezenti",
+        "https://www.facebook.com/deputadopezenti",
+        "https://www.instagram.com/deputadopezenti"
+      ]
     },
     {
       "id": 204524,
@@ -4475,7 +5909,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204524.jpg",
-      "email": "dep.pinheirinho@camara.leg.br"
+      "email": "dep.pinheirinho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/pinheirinhomg",
+        "https://www.facebook.com/pinheirinhomg",
+        "https://www.instagram.com/pinheirinhomg",
+        "https://youtube.com/channel/UCrsQcx5F8S_gHJTpfiE8FfA"
+      ]
     },
     {
       "id": 73486,
@@ -4486,7 +5926,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73486.jpg",
-      "email": "dep.pompeodemattos@camara.leg.br"
+      "email": "dep.pompeodemattos@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/PompeodeMattos",
+        "https://www.facebook.com/PompeodeMattos",
+        "https://www.instagram.com/pompeodemattospdt",
+        "https://youtube.com/PompeodeMattos"
+      ]
     },
     {
       "id": 160601,
@@ -4497,7 +5943,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160601.jpg",
-      "email": "dep.pr.marcofeliciano@camara.leg.br"
+      "email": "dep.pr.marcofeliciano@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220533,
@@ -4508,7 +5955,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "DF",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220533.jpg",
-      "email": "dep.prof.reginaldoveras@camara.leg.br"
+      "email": "dep.prof.reginaldoveras@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/Reginaldoveras",
+        "https://www.facebook.com/reginaldoverasdf",
+        "https://www.instagram.com/reginaldo.veras",
+        "https://youtube.com/Reginaldoveras12"
+      ]
     },
     {
       "id": 204390,
@@ -4519,7 +5972,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204390.jpg",
-      "email": "dep.professoralcides@camara.leg.br"
+      "email": "dep.professoralcides@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/ProfessorAlcidesoficial",
+        "https://www.instagram.com/professoralcidesoficial",
+        "https://youtube.com/DeputadoProfessorAlcides"
+      ]
     },
     {
       "id": 221338,
@@ -4530,7 +5988,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/221338.jpg",
-      "email": "dep.professoralucienecavalcante@camara.leg.br"
+      "email": "dep.professoralucienecavalcante@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160641,
@@ -4541,7 +6000,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160641.jpg",
-      "email": "dep.professoramarcivania@camara.leg.br"
+      "email": "dep.professoramarcivania@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/profmarcivania",
+        "https://www.facebook.com/profmarcivania",
+        "https://www.instagram.com/profmarcivania"
+      ]
     },
     {
       "id": 220586,
@@ -4552,7 +6016,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AL",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220586.jpg",
-      "email": "dep.rafaelbrito@camara.leg.br"
+      "email": "dep.rafaelbrito@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/rafaelbrito15",
+        "https://youtube.com/channel/UCq3xwtJvyjdU-ceUhWg-lPg"
+      ]
     },
     {
       "id": 233594,
@@ -4563,7 +6031,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/233594.jpg",
-      "email": "dep.rafaelfera@camara.leg.br"
+      "email": "dep.rafaelfera@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220532,
@@ -4574,7 +6043,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "DF",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220532.jpg",
-      "email": "dep.rafaelprudente@camara.leg.br"
+      "email": "dep.rafaelprudente@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/rafaelprudente_",
+        "https://www.facebook.com/rafaelprudentedep",
+        "https://www.instagram.com/rafaelprudentedep",
+        "https://youtube.com/RafaelPrudente"
+      ]
     },
     {
       "id": 220626,
@@ -4585,7 +6060,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220626.jpg",
-      "email": "dep.rafaelsimoes@camara.leg.br"
+      "email": "dep.rafaelsimoes@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/rafaelsimoesmg",
+        "https://www.facebook.com/rafaelsimoesmg",
+        "https://www.instagram.com/rafaelsimoesmg"
+      ]
     },
     {
       "id": 204567,
@@ -4596,7 +6076,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204567.jpg",
-      "email": "dep.raimundocosta@camara.leg.br"
+      "email": "dep.raimundocosta@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/raimundocostaba",
+        "https://www.facebook.com/oficialraimundocosta"
+      ]
     },
     {
       "id": 74084,
@@ -4607,7 +6091,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74084.jpg",
-      "email": "dep.raimundosantos@camara.leg.br"
+      "email": "dep.raimundosantos@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/deprsantos",
+        "https://www.facebook.com/raimundosantosdep",
+        "https://www.instagram.com/depraimundosantos/",
+        "https://youtube.com/channel/UCDl2RREU083fkW3AR1PC3OQ"
+      ]
     },
     {
       "id": 74161,
@@ -4618,7 +6108,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74161.jpg",
-      "email": "dep.reginaldolopes@camara.leg.br"
+      "email": "dep.reginaldolopes@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/reginaldolopes",
+        "https://www.facebook.com/reginaldolopesmg",
+        "https://youtube.com/channel/UCKrXcydte7lEBDWVoogEptw"
+      ]
     },
     {
       "id": 220606,
@@ -4629,7 +6124,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220606.jpg",
-      "email": "dep.reimont@camara.leg.br"
+      "email": "dep.reimont@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 205865,
@@ -4640,7 +6136,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/205865.jpg",
-      "email": "dep.reinholdstephanes@camara.leg.br"
+      "email": "dep.reinholdstephanes@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178989,
@@ -4651,7 +6148,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178989.jpg",
-      "email": "dep.renataabreu@camara.leg.br"
+      "email": "dep.renataabreu@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 153423,
@@ -4662,7 +6160,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/153423.jpg",
-      "email": "dep.renilcenicodemos@camara.leg.br"
+      "email": "dep.renilcenicodemos@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/RenilceOficial",
+        "https://www.facebook.com/renilcenicodemos",
+        "https://www.instagram.com/renilcenicodemoss"
+      ]
     },
     {
       "id": 73801,
@@ -4673,7 +6176,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73801.jpg",
-      "email": "dep.renildocalheiros@camara.leg.br"
+      "email": "dep.renildocalheiros@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 175765,
@@ -4684,7 +6188,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/175765.jpg",
-      "email": "dep.ribamarsilva@camara.leg.br"
+      "email": "dep.ribamarsilva@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/ribamarsilvaoficial"
+      ]
     },
     {
       "id": 235088,
@@ -4695,7 +6202,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/235088.jpg",
-      "email": "dep.ribeironeto@camara.leg.br"
+      "email": "dep.ribeironeto@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/ribeironeto.ma"
+      ]
     },
     {
       "id": 221329,
@@ -4706,7 +6216,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/221329.jpg",
-      "email": "dep.ricardoabrao@camara.leg.br"
+      "email": "dep.ricardoabrao@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/RicardoAbrao_RJ",
+        "https://www.facebook.com/ricardoabraooficial",
+        "https://www.instagram.com/ricardoabraooficial"
+      ]
     },
     {
       "id": 220543,
@@ -4717,7 +6232,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "TO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220543.jpg",
-      "email": "dep.ricardoayres@camara.leg.br"
+      "email": "dep.ricardoayres@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/ricardoayres_to",
+        "https://www.facebook.com/ricardoayres.to",
+        "https://www.instagram.com/ricardoayres_to"
+      ]
     },
     {
       "id": 73788,
@@ -4728,7 +6248,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73788.jpg",
-      "email": "dep.ricardobarros@camara.leg.br"
+      "email": "dep.ricardobarros@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 234310,
@@ -4739,7 +6260,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/234310.jpg",
-      "email": "dep.ricardogalvao@camara.leg.br"
+      "email": "dep.ricardogalvao@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/ricardogalvaosp",
+        "https://www.instagram.com/ricardogalvaosp"
+      ]
     },
     {
       "id": 204362,
@@ -4750,7 +6275,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204362.jpg",
-      "email": "dep.ricardoguidi@camara.leg.br"
+      "email": "dep.ricardoguidi@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/ricardozguidi",
+        "https://www.facebook.com/deputadoricardoguidi",
+        "https://www.instagram.com/ricardozguidi"
+      ]
     },
     {
       "id": 220694,
@@ -4761,7 +6291,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220694.jpg",
-      "email": "dep.ricardomaia@camara.leg.br"
+      "email": "dep.ricardomaia@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/ricardomaiadep",
+        "https://www.facebook.com/RicardoMaia.DaBahia",
+        "https://www.instagram.com/ricardomaia.dabahia",
+        "https://youtube.com/ricardomaiadabahia5610"
+      ]
     },
     {
       "id": 220633,
@@ -4772,7 +6308,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220633.jpg",
-      "email": "dep.ricardosalles@camara.leg.br"
+      "email": "dep.ricardosalles@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204489,
@@ -4783,7 +6320,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204489.jpg",
-      "email": "dep.roberiomonteiro@camara.leg.br"
+      "email": "dep.roberiomonteiro@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/dep.roberiomonteiro"
+      ]
     },
     {
       "id": 220693,
@@ -4794,7 +6334,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220693.jpg",
-      "email": "dep.robertaroma@camara.leg.br"
+      "email": "dep.robertaroma@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220588,
@@ -4805,7 +6346,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220588.jpg",
-      "email": "dep.robertoduarte@camara.leg.br"
+      "email": "dep.robertoduarte@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/rdnarede",
+        "https://www.facebook.com/robertoduartenarede",
+        "https://www.instagram.com/rdnarede"
+      ]
     },
     {
       "id": 220613,
@@ -4816,7 +6362,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220613.jpg",
-      "email": "dep.robertomonteiropai@camara.leg.br"
+      "email": "dep.robertomonteiropai@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220624,
@@ -4827,7 +6374,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RN",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220624.jpg",
-      "email": "dep.robinsonfaria@camara.leg.br"
+      "email": "dep.robinsonfaria@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220546,
@@ -4838,7 +6386,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220546.jpg",
-      "email": "dep.rodolfonogueira@camara.leg.br"
+      "email": "dep.rodolfonogueira@camara.leg.br",
+      "redeSocial": [
+        "https://instagram.com/rodolfonogueirams?igshid=YmMyMTA2M2Y=",
+        "https://twitter.com/rodolfoms",
+        "https://www.facebook.com/rodolfonogueiraoficial",
+        "https://youtube.com/RodolfoNogueirams"
+      ]
     },
     {
       "id": 230767,
@@ -4849,7 +6403,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MT",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/230767.jpg",
-      "email": "dep.rodrigodazaeli@camara.leg.br"
+      "email": "dep.rodrigodazaeli@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141531,
@@ -4860,7 +6415,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141531.jpg",
-      "email": "dep.rodrigodecastro@camara.leg.br"
+      "email": "dep.rodrigodecastro@camara.leg.br",
+      "redeSocial": [
+        "http://twitter.com/#!/RodrigoCastro45",
+        "http://www.facebook.com/pages/deputado-federal-Rodrigo-de-Castro/124002814371381",
+        "http://www.youtube.com/rodrigocastro45"
+      ]
     },
     {
       "id": 223128,
@@ -4871,7 +6431,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/223128.jpg",
-      "email": "dep.rodrigoestacho@camara.leg.br"
+      "email": "dep.rodrigoestacho@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220641,
@@ -4882,7 +6443,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220641.jpg",
-      "email": "dep.rodrigogambale@camara.leg.br"
+      "email": "dep.rodrigogambale@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/RodrigoGambale",
+        "https://www.instagram.com/rodrigogambale"
+      ]
     },
     {
       "id": 141533,
@@ -4893,7 +6458,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "DF",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141533.jpg",
-      "email": "dep.rodrigorollemberg@camara.leg.br"
+      "email": "dep.rodrigorollemberg@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 165470,
@@ -4904,7 +6470,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/165470.jpg",
-      "email": "dep.rodrigovaladares@camara.leg.br"
+      "email": "dep.rodrigovaladares@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DepRodrigo_",
+        "https://www.facebook.com/DeputadoRodrigo.SE",
+        "https://www.instagram.com/rodrigovaladares_",
+        "https://youtube.com/deputadorodrigovaladares1954"
+      ]
     },
     {
       "id": 220695,
@@ -4915,7 +6487,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220695.jpg",
-      "email": "dep.rogeriasantos@camara.leg.br"
+      "email": "dep.rogeriasantos@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/drarogeria",
+        "https://www.facebook.com/rogeriasantosoficial",
+        "https://www.instagram.com/rogeriasantosoficial",
+        "https://youtube.com/channel/UCWe-7aMx_Q87rZIbh7ccbyw"
+      ]
     },
     {
       "id": 204480,
@@ -4926,7 +6504,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204480.jpg",
-      "email": "dep.rogeriocorreia@camara.leg.br"
+      "email": "dep.rogeriocorreia@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/RogerioCorreia_",
+        "https://www.facebook.com/deputadorogeriocorreia",
+        "https://www.instagram.com/rogeriocorreia_",
+        "https://youtube.com/channel/UC6AVYYHC-GswIhS2xlYUb5g"
+      ]
     },
     {
       "id": 160629,
@@ -4937,7 +6521,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160629.jpg",
-      "email": "dep.romerorodrigues@camara.leg.br"
+      "email": "dep.romerorodrigues@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/romeropelapb",
+        "https://www.facebook.com/romerorodriguespb",
+        "https://www.instagram.com/romerorodriguespb",
+        "https://youtube.com/romerorodriguespb"
+      ]
     },
     {
       "id": 204525,
@@ -4948,7 +6538,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204525.jpg",
-      "email": "dep.rosanavalle@camara.leg.br"
+      "email": "dep.rosanavalle@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DepRosanaValle",
+        "https://www.facebook.com/RosanaValleOficial",
+        "https://www.instagram.com/rosanavalleoficial",
+        "https://youtube.com/channel/UCoiIg7-jlQtJX3CCgOceQbA"
+      ]
     },
     {
       "id": 220644,
@@ -4959,7 +6555,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220644.jpg",
-      "email": "dep.rosangelamoro@camara.leg.br"
+      "email": "dep.rosangelamoro@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/rosangelawm",
+        "https://www.facebook.com/rosangelawolffmoro",
+        "https://www.instagram.com/rosangelawmoro",
+        "https://youtube.com/channel/UC5X-86dz8GEf6QGMm95ZoAA"
+      ]
     },
     {
       "id": 220620,
@@ -4970,7 +6572,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220620.jpg",
-      "email": "dep.rosangelareis@camara.leg.br"
+      "email": "dep.rosangelareis@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/rosangelareis.mg"
+      ]
     },
     {
       "id": 74371,
@@ -4981,7 +6586,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74371.jpg",
-      "email": "dep.rubensotoni@camara.leg.br"
+      "email": "dep.rubensotoni@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178887,
@@ -4992,7 +6598,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178887.jpg",
-      "email": "dep.rubenspereirajunior@camara.leg.br"
+      "email": "dep.rubenspereirajunior@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/https:",
+        "https://www.facebook.com/share",
+        "https://www.instagram.com/rubenspereirajr",
+        "https://youtube.com/channel/UCovkVrGdzXbAHaV6ODAWbeA"
+      ]
     },
     {
       "id": 73604,
@@ -5003,7 +6615,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73604.jpg",
-      "email": "dep.ruifalcao@camara.leg.br"
+      "email": "dep.ruifalcao@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/rfalcao13",
+        "https://www.facebook.com/rfalcao13",
+        "https://www.instagram.com/ruifalcao13",
+        "https://youtube.com/rfalcao13"
+      ]
     },
     {
       "id": 160635,
@@ -5014,7 +6632,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160635.jpg",
-      "email": "dep.ruycarneiro@camara.leg.br"
+      "email": "dep.ruycarneiro@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/ruycarneiropb",
+        "https://www.facebook.com/ruycarneiropb",
+        "https://www.instagram.com/ruy.carneiro"
+      ]
     },
     {
       "id": 204535,
@@ -5025,7 +6648,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204535.jpg",
-      "email": "dep.samiabomfim@camara.leg.br"
+      "email": "dep.samiabomfim@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/samiabomfim",
+        "https://www.facebook.com/samia.bomfim.psol",
+        "https://www.instagram.com/samiabomfim",
+        "https://youtube.com/samiabomfimpsol"
+      ]
     },
     {
       "id": 220631,
@@ -5036,7 +6665,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220631.jpg",
-      "email": "dep.samuelviana@camara.leg.br"
+      "email": "dep.samuelviana@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/vianasamuelmg",
+        "https://www.facebook.com/samuelvianamg",
+        "https://www.instagram.com/vianasamuel",
+        "https://youtube.com/channel/UCgXYsH9AH6hf3kRJ272lAoQ"
+      ]
     },
     {
       "id": 204416,
@@ -5047,7 +6682,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204416.jpg",
-      "email": "dep.sanderson@camara.leg.br"
+      "email": "dep.sanderson@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DepSanderson",
+        "https://www.facebook.com/deputadosanderson",
+        "https://www.instagram.com/deputadosanderson",
+        "https://youtube.com/channel/UC3bESW2nMM1EW-in7OwlKwg?view_as=subscriber"
+      ]
     },
     {
       "id": 204387,
@@ -5058,7 +6699,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204387.jpg",
-      "email": "dep.sargentofahur@camara.leg.br"
+      "email": "dep.sargentofahur@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/SargentoFAHUR",
+        "https://www.facebook.com/SargentoFahur10",
+        "https://www.instagram.com/sargentofahurpr",
+        "https://youtube.com/channel/UCGtU73VeRj9hY1P3PtVUERw"
+      ]
     },
     {
       "id": 220621,
@@ -5069,7 +6716,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RN",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220621.jpg",
-      "email": "dep.sargentogoncalves@camara.leg.br"
+      "email": "dep.sargentogoncalves@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/sgtgoncalves22",
+        "https://www.facebook.com/sargentogoncalves22",
+        "https://www.instagram.com/sargentogoncalves22"
+      ]
     },
     {
       "id": 220618,
@@ -5080,7 +6732,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220618.jpg",
-      "email": "dep.sargentoportugal@camara.leg.br"
+      "email": "dep.sargentoportugal@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/sargentoportuga",
+        "https://www.facebook.com/DeputadoFederalSargentoPortugal"
+      ]
     },
     {
       "id": 226837,
@@ -5091,7 +6747,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/226837.jpg",
-      "email": "dep.saulopedroso@camara.leg.br"
+      "email": "dep.saulopedroso@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/saulopedrososp",
+        "https://www.facebook.com/saulopedrososp"
+      ]
     },
     {
       "id": 73808,
@@ -5102,7 +6762,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73808.jpg",
-      "email": "dep.sergiobrito@camara.leg.br"
+      "email": "dep.sergiobrito@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 77003,
@@ -5113,7 +6774,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/77003.jpg",
-      "email": "dep.sergiosantosrodrigues@camara.leg.br"
+      "email": "dep.sergiosantosrodrigues@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178933,
@@ -5124,7 +6786,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178933.jpg",
-      "email": "dep.sergiosouza@camara.leg.br"
+      "email": "dep.sergiosouza@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/_sergiosouza",
+        "https://www.facebook.com/sergiosouzaPR",
+        "https://www.instagram.com/sergiosouzapr",
+        "https://youtube.com/deputadofederalsergiosouza"
+      ]
     },
     {
       "id": 204557,
@@ -5135,7 +6803,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AM",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204557.jpg",
-      "email": "dep.sidneyleite@camara.leg.br"
+      "email": "dep.sidneyleite@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74356,
@@ -5146,7 +6815,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AM",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74356.jpg",
-      "email": "dep.silascamara@camara.leg.br"
+      "email": "dep.silascamara@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204360,
@@ -5157,7 +6827,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204360.jpg",
-      "email": "dep.silviacristina@camara.leg.br"
+      "email": "dep.silviacristina@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 227310,
@@ -5168,7 +6839,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/227310.jpg",
-      "email": "dep.silvioantonio@camara.leg.br"
+      "email": "dep.silvioantonio@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/silvioantonioma",
+        "https://www.facebook.com/silvioantonioma",
+        "https://www.instagram.com/silvioantonioma",
+        "https://youtube.com/channel/UCmyO0mvtwWDuOmB9n0BaWRQ"
+      ]
     },
     {
       "id": 220569,
@@ -5179,7 +6856,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "GO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220569.jpg",
-      "email": "dep.silvyealves@camara.leg.br"
+      "email": "dep.silvyealves@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/silvyealves",
+        "https://www.facebook.com/SilvyeeAlves",
+        "https://www.instagram.com/silvyealves"
+      ]
     },
     {
       "id": 220651,
@@ -5190,7 +6872,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220651.jpg",
-      "email": "dep.simonemarquetto@camara.leg.br"
+      "email": "dep.simonemarquetto@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/simonemarquetto"
+      ]
     },
     {
       "id": 104552,
@@ -5201,7 +6886,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/104552.jpg",
-      "email": "dep.socorroneri@camara.leg.br"
+      "email": "dep.socorroneri@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/SocorroNeriAC",
+        "https://www.facebook.com/SocorroNeri.Ac",
+        "https://www.instagram.com/socorroneri"
+      ]
     },
     {
       "id": 222565,
@@ -5212,7 +6902,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/222565.jpg",
-      "email": "dep.soldadonoelio@camara.leg.br"
+      "email": "dep.soldadonoelio@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/https:",
+        "https://www.facebook.com/SoldadoNoelio",
+        "https://www.instagram.com/soldadonoelio"
+      ]
     },
     {
       "id": 178946,
@@ -5223,7 +6918,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178946.jpg",
-      "email": "dep.sorayasantos@camara.leg.br"
+      "email": "dep.sorayasantos@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/https:",
+        "https://www.instagram.com/dep.sorayasantos",
+        "https://www.youtube.com/channel/UCYJ_VrjZS7ISX0Ut0bU_AMA"
+      ]
     },
     {
       "id": 178947,
@@ -5234,7 +6934,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178947.jpg",
-      "email": "dep.sostenescavalcante@camara.leg.br"
+      "email": "dep.sostenescavalcante@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DepSostenes",
+        "https://www.facebook.com/sostenescavalcante",
+        "https://www.instagram.com/sostenescavalcante",
+        "https://youtube.com/channel/UCI2j76o7JyLVSmooEcSvLxA"
+      ]
     },
     {
       "id": 92776,
@@ -5245,7 +6951,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/92776.jpg",
-      "email": "dep.stefanoaguiar@camara.leg.br"
+      "email": "dep.stefanoaguiar@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depstefano",
+        "https://www.facebook.com/PastorStefanoAguiar",
+        "https://www.instagram.com/depstefano"
+      ]
     },
     {
       "id": 204534,
@@ -5256,7 +6967,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204534.jpg",
-      "email": "dep.tabataamaral@camara.leg.br"
+      "email": "dep.tabataamaral@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/tabataamaralsp",
+        "https://www.facebook.com/tabataamaralSP",
+        "https://www.instagram.com/tabataamaralsp",
+        "https://youtube.com/channel/UCWcx5M5negY_kqSawo2bjZQ"
+      ]
     },
     {
       "id": 220682,
@@ -5267,7 +6984,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220682.jpg",
-      "email": "dep.tadeuveneri@camara.leg.br"
+      "email": "dep.tadeuveneri@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204464,
@@ -5278,7 +6996,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204464.jpg",
-      "email": "dep.taliriapetrone@camara.leg.br"
+      "email": "dep.taliriapetrone@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220598,
@@ -5289,7 +7008,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RJ",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220598.jpg",
-      "email": "dep.tarcisiomotta@camara.leg.br"
+      "email": "dep.tarcisiomotta@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/MottaTarcisio",
+        "https://www.facebook.com/TarcisioMottaPSOL",
+        "https://www.instagram.com/tarcisiomottapsol",
+        "https://youtube.com/tarcisiomottapsol"
+      ]
     },
     {
       "id": 220560,
@@ -5300,7 +7025,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220560.jpg",
-      "email": "dep.thiagodejoaldo@camara.leg.br"
+      "email": "dep.thiagodejoaldo@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/thiagodejoaldo"
+      ]
     },
     {
       "id": 220597,
@@ -5311,7 +7039,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220597.jpg",
-      "email": "dep.thiagoflores@camara.leg.br"
+      "email": "dep.thiagoflores@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depthiagoflores",
+        "https://www.facebook.com/depthiagoflores",
+        "https://www.instagram.com/deputadothiagoflores",
+        "https://www.youtube.com/channel/UCF6Ks4RTqfjqxPMqUTotKkg"
+      ]
     },
     {
       "id": 143084,
@@ -5322,7 +7056,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "TO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/143084.jpg",
-      "email": "dep.tiagodimas@camara.leg.br"
+      "email": "dep.tiagodimas@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/tiagodimas7788"
+      ]
     },
     {
       "id": 220684,
@@ -5333,7 +7070,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220684.jpg",
-      "email": "dep.tiaomedeiros@camara.leg.br"
+      "email": "dep.tiaomedeiros@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160976,
@@ -5344,7 +7082,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160976.jpg",
-      "email": "dep.tiririca@camara.leg.br"
+      "email": "dep.tiririca@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178934,
@@ -5355,7 +7094,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178934.jpg",
-      "email": "dep.toninhowandscheer@camara.leg.br"
+      "email": "dep.toninhowandscheer@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 157130,
@@ -5366,7 +7106,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/157130.jpg",
-      "email": "dep.tuliogadelha@camara.leg.br"
+      "email": "dep.tuliogadelha@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/tuliogadelha",
+        "https://www.facebook.com/TulioGadelhaOficial",
+        "https://www.instagram.com/tulio.gadelha"
+      ]
     },
     {
       "id": 160610,
@@ -5377,7 +7122,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160610.jpg",
-      "email": "dep.valmirassuncao@camara.leg.br"
+      "email": "dep.valmirassuncao@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 74376,
@@ -5388,7 +7134,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74376.jpg",
-      "email": "dep.vanderloubet@camara.leg.br"
+      "email": "dep.vanderloubet@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/vanderloubet",
+        "https://www.instagram.com/vanderloubet"
+      ]
     },
     {
       "id": 234673,
@@ -5399,7 +7149,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "CE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/234673.jpg",
-      "email": "dep.vanderlanalves@camara.leg.br"
+      "email": "dep.vanderlanalves@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204396,
@@ -5410,7 +7161,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204396.jpg",
-      "email": "dep.vermelho@camara.leg.br"
+      "email": "dep.vermelho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/depvermelho",
+        "https://www.facebook.com/vermelhodeputadofederal",
+        "https://www.instagram.com/deputado_vermelho"
+      ]
     },
     {
       "id": 74283,
@@ -5421,7 +7177,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74283.jpg",
-      "email": "dep.vicentinho@camara.leg.br"
+      "email": "dep.vicentinho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/Vicentinhopt",
+        "https://www.facebook.com/DeputadoFederalVicentinho",
+        "https://www.instagram.com/vicentinho_pt",
+        "https://youtube.com/DeputadoFederalVicentinhoPTSP"
+      ]
     },
     {
       "id": 137070,
@@ -5432,7 +7194,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "TO",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/137070.jpg",
-      "email": "dep.vicentinhojunior@camara.leg.br"
+      "email": "dep.vicentinhojunior@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 141555,
@@ -5443,7 +7206,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141555.jpg",
-      "email": "dep.viniciuscarvalho@camara.leg.br"
+      "email": "dep.viniciuscarvalho@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/falecomvinicius",
+        "https://www.facebook.com/ViniciusCarvalhoOficial",
+        "https://www.instagram.com/viniciuscarvalhooficial",
+        "https://youtube.com/channel/UC0jfgVGfyujPS4YeBjTdJpw"
+      ]
     },
     {
       "id": 160591,
@@ -5454,7 +7223,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160591.jpg",
-      "email": "dep.viniciusgurgel@camara.leg.br"
+      "email": "dep.viniciusgurgel@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 178992,
@@ -5465,7 +7235,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SP",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178992.jpg",
-      "email": "dep.vitorlippi@camara.leg.br"
+      "email": "dep.vitorlippi@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DepVitorLippi",
+        "https://www.facebook.com/vitorlippi",
+        "https://www.instagram.com/vitorlippi"
+      ]
     },
     {
       "id": 91228,
@@ -5476,7 +7251,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/91228.jpg",
-      "email": "dep.waldemaroliveira@camara.leg.br"
+      "email": "dep.waldemaroliveira@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/waldemarolivei",
+        "https://www.facebook.com/waldemaroliveiraoficial",
+        "https://www.instagram.com/waldemaroliveiraoficial"
+      ]
     },
     {
       "id": 160569,
@@ -5487,7 +7267,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160569.jpg",
-      "email": "dep.waldenorpereira@camara.leg.br"
+      "email": "dep.waldenorpereira@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160518,
@@ -5498,7 +7279,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160518.jpg",
-      "email": "dep.welitonprado@camara.leg.br"
+      "email": "dep.welitonprado@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/weliton.prado"
+      ]
     },
     {
       "id": 74043,
@@ -5509,7 +7293,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74043.jpg",
-      "email": "dep.wellingtonroberto@camara.leg.br"
+      "email": "dep.wellingtonroberto@camara.leg.br",
+      "redeSocial": [
+        "https://www.instagram.com/wellingtonroberto.pb"
+      ]
     },
     {
       "id": 224333,
@@ -5520,7 +7307,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/224333.jpg",
-      "email": "dep.welter@camara.leg.br"
+      "email": "dep.welter@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/DeputadoWelter",
+        "https://www.facebook.com/deputadowelter",
+        "https://www.instagram.com/eltonwelter"
+      ]
     },
     {
       "id": 74044,
@@ -5531,7 +7323,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PB",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74044.jpg",
-      "email": "dep.wilsonsantiago@camara.leg.br"
+      "email": "dep.wilsonsantiago@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/Wilsonsantiago_",
+        "https://www.facebook.com/wilsonsantiagopb",
+        "https://www.instagram.com/wilsonsantiago"
+      ]
     },
     {
       "id": 220564,
@@ -5542,7 +7339,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SE",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220564.jpg",
-      "email": "dep.yandramoura@camara.leg.br"
+      "email": "dep.yandramoura@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/yandramourase",
+        "https://www.facebook.com/yandramourase",
+        "https://www.instagram.com/yandramourase",
+        "https://youtube.com/Yandramourase"
+      ]
     },
     {
       "id": 230768,
@@ -5553,7 +7356,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/230768.jpg",
-      "email": "dep.zeadriano@camara.leg.br"
+      "email": "dep.zeadriano@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 220536,
@@ -5564,7 +7368,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220536.jpg",
-      "email": "dep.zeharoldocathedral@camara.leg.br"
+      "email": "dep.zeharoldocathedral@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204559,
@@ -5575,7 +7380,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "BA",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204559.jpg",
-      "email": "dep.zeneto@camara.leg.br"
+      "email": "dep.zeneto@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 160632,
@@ -5586,7 +7392,13 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160632.jpg",
-      "email": "dep.zesilva@camara.leg.br"
+      "email": "dep.zesilva@camara.leg.br",
+      "redeSocial": [
+        "https://twitter.com/ZeSilva_?t=FMvtU0UvtQUawDXz6Bp3kA&s=08",
+        "https://www.facebook.com/deputadofederalzesilva",
+        "https://www.instagram.com/depzesilva",
+        "https://youtube.com/deputadozesilva"
+      ]
     },
     {
       "id": 220558,
@@ -5597,7 +7409,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "SC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220558.jpg",
-      "email": "dep.zetrovao@camara.leg.br"
+      "email": "dep.zetrovao@camara.leg.br",
+      "redeSocial": []
     },
     {
       "id": 204517,
@@ -5608,7 +7421,11 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "MG",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204517.jpg",
-      "email": "dep.zevitor@camara.leg.br"
+      "email": "dep.zevitor@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/zevitorMG",
+        "https://www.instagram.com/zevitormg"
+      ]
     },
     {
       "id": 160592,
@@ -5619,7 +7436,12 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "PR",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160592.jpg",
-      "email": "dep.zecadirceu@camara.leg.br"
+      "email": "dep.zecadirceu@camara.leg.br",
+      "redeSocial": [
+        "http://www.twitter.com/zeca_dirceu",
+        "https://www.facebook.com/deputadofederalzecadirceu/",
+        "https://www.instagram.com/zecadirceuoficial"
+      ]
     },
     {
       "id": 220592,
@@ -5630,7 +7452,10 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "AC",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220592.jpg",
-      "email": "dep.zezinhobarbary@camara.leg.br"
+      "email": "dep.zezinhobarbary@camara.leg.br",
+      "redeSocial": [
+        "https://www.facebook.com/ZezinhoBarbary"
+      ]
     },
     {
       "id": 220552,
@@ -5641,7 +7466,8 @@ export const TODOS_DEPUTADOS = {
       "siglaUf": "RS",
       "idLegislatura": 57,
       "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220552.jpg",
-      "email": "dep.zucco@camara.leg.br"
+      "email": "dep.zucco@camara.leg.br",
+      "redeSocial": []
     }
   ],
   "links": [

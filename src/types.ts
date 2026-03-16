@@ -7,10 +7,19 @@ export type Deputado = {
     siglaUf: string,
     idLegislatura: number,
     urlFoto: string,
-    email: string
+    email: string,
+    redeSocial: string[]
 }
 
 export type Tema = 'segurança pública' | 'direitos humanos' | 'meio ambiente' | 'democracia'
+
+export type SocialPlatform = 'facebook' | 'instagram' | 'youtube' | 'x'
+
+export type DeputadoSocialLink = {
+    url: string,
+    platform: SocialPlatform,
+    label: string,
+}
 
 export type PautaPodre = {
     id: number,

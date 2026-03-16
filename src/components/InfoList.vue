@@ -18,7 +18,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-const props = defineProps<{ info: Record<string, string | number> }>();
+const props = defineProps<{ info: Record<string, string | number | string[]> }>();
 
 const HIDDEN_KEYS = new Set(['uri', 'uriPartido', 'urlFoto']);
 
@@ -29,6 +29,7 @@ const LABELS: Record<string, string> = {
   siglaUf: 'Estado',
   idLegislatura: 'Legislatura',
   email: 'E-mail',
+  redeSocial: 'Redes sociais',
 };
 
 const displayEntries = computed(() =>

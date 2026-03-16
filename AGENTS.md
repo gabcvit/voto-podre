@@ -66,6 +66,7 @@ pnpm build        # type-check + vite build → dist/ + runs scripts/prerender.m
 pnpm preview      # serve dist/
 pnpm test:unit    # vitest
 pnpm lint         # oxlint + eslint (auto-fix)
+pnpm sync:deputados:rede-social  # fetches redeSocial for every deputy and rewrites src/data/deputados.ts
 pnpm deploy       # build + push to gh-pages branch
 ```
 
@@ -77,10 +78,11 @@ pnpm deploy       # build + push to gh-pages branch
 /
 ├── index.html                  # Loads Google Fonts (Syne + DM Sans), mounts #app; anti-flash theme script; base SEO/OG/Twitter meta + JSON-LD
 ├── scripts/
-│   └── prerender.mjs           # Post-build script: generates dist/<route>/index.html for each static
+│   ├── prerender.mjs           # Post-build script: generates dist/<route>/index.html for each static
 │                               # route with correct OG/Twitter meta pre-patched, plus dist/404.html
 │                               # fallback. Required for social-media rich-embed support (GitHub Pages
 │                               # returns 404 for SPA sub-paths without these files).
+│   └── update-deputados-rede-social.mjs # Fetches /deputados/:id for all deputies and updates redeSocial in src/data/deputados.ts
 ├── public/
 │   ├── robots.txt              # Allow all crawlers; points to sitemap
 │   ├── sitemap.xml             # Static-route + pauta-detail sitemap for search engines
@@ -119,7 +121,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   ├── views/
 │   │   ├── HomeView.vue            # Landing: hero, stats, callout, message cards
 │   │   ├── DeputadosView.vue       # Lists deputies via BaseDeputado; includes DeputadosFilters panel
-│   │   ├── DeputadoDetailsView.vue # Single deputy: card + InfoList + PautasList + share button (Web Share API / clipboard fallback)
+│   │   ├── DeputadoDetailsView.vue # Single deputy: card + social buttons (from redeSocial, platform-aware icons) + InfoList + PautasList + share button (Web Share API / clipboard fallback)
 │   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList; tema filter buttons
 │   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + list of flagged deputies + share button (Web Share API / clipboard fallback)
 │   │   ├── AboutView.vue          # Static info / methodology
@@ -139,7 +141,11 @@ pnpm deploy       # build + push to gh-pages branch
 │       ├── DeputadosFilters.vue    # Filter panel for DeputadosView (search, status, partido, UF, min pautas)
 │       └── icons/                  # Simple SVG icon components
 │           ├── IconArrowBack.vue
+│           ├── IconFacebook.vue     # Used in DeputadoDetailsView social buttons
+│           ├── IconInstagram.vue    # Used in DeputadoDetailsView social buttons
 │           ├── IconShare.vue       # Used in DeputadoDetailsView and PautaDetailsView share buttons
+│           ├── IconX.vue            # Used in DeputadoDetailsView social buttons for X/Twitter links
+│           ├── IconYoutube.vue      # Used in DeputadoDetailsView social buttons
 │           ├── IconSun.vue         # Used in theme toggle (shown in dark mode → switch to light)
 │           └── IconMoon.vue        # Used in theme toggle (shown in light mode → switch to dark)
 ```
@@ -151,6 +157,14 @@ pnpm deploy       # build + push to gh-pages branch
 ```ts
 export type Tema = 'segurança pública' | 'direitos humanos' | 'meio ambiente' | 'democracia'
 
+export type SocialPlatform = 'facebook' | 'instagram' | 'youtube' | 'x'
+
+export type DeputadoSocialLink = {
+  url: string
+  platform: SocialPlatform
+  label: string
+}
+
 type Deputado = {
   id: number
   uri: string          // Câmara API URI
@@ -161,6 +175,7 @@ type Deputado = {
   idLegislatura: number
   urlFoto: string
   email: string
+  redeSocial: string[] // Social profile URLs from /deputados/:id
 }
 
 type PautaPodre = {
@@ -256,7 +271,7 @@ Rows with `tipo === 'negativa'` get a red left-border and a **PAUTA PODRE** labe
 ### `InfoList`
 | Prop | Type | Notes |
 |---|---|---|
-| `info` | `Record<string, string \| number>` | Filters hidden keys: `uri`, `uriPartido`, `urlFoto` |
+| `info` | `Record<string, string \| number \| string[]>` | Filters hidden keys: `uri`, `uriPartido`, `urlFoto` |
 
 Rendered as a `<dl>` (description list) with `<dt>`/`<dd>` pairs for each key-value entry.
 

@@ -8,6 +8,7 @@
     "build": "run-p type-check \"build-only {@}\" -- && node scripts/prerender.mjs",
     "preview": "vite preview",
     "test:unit": "vitest",
+    "sync:deputados:rede-social": "node scripts/update-deputados-rede-social.mjs",
     "build-only": "vite build",
     "deploy": "pnpm build && gh-pages -d dist",
     "type-check": "vue-tsc --build",

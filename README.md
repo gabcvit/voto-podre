@@ -13,7 +13,7 @@ Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputad
 ## Funcionalidades
 
 - **Listagem de deputados** com busca por nome, filtro por partido, estado (UF), status ("podre" / "limpo") e quantidade mínima de pautas
-- **Perfil individual** de cada deputado com seus dados e as pautas em que teve voto questionável
+- **Perfil individual** de cada deputado com seus dados, botões de redes sociais (com identificação da plataforma) e pautas em que teve voto questionável
 - **Catálogo de pautas** com descrição detalhada e lista de todos os deputados flagrados
 - **Glossário de termos** com explicações simples para siglas e conceitos legislativos (ex.: PEC, PL, proposição)
 - **Estatísticas** em tempo real: total de deputados monitorados, pautas catalogadas e deputados flagrados
@@ -58,6 +58,9 @@ pnpm build
 
 # Rodar testes
 pnpm test:unit
+
+# Atualizar redeSocial dos deputados a partir da API da Câmara
+pnpm sync:deputados:rede-social
 
 # Deploy para GitHub Pages
 pnpm deploy
