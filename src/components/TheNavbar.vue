@@ -24,6 +24,15 @@
           <IconSun v-if="themeStore.isDark" class="w-4 h-4" />
           <IconMoon v-else class="w-4 h-4" />
         </button>
+        <a
+          href="https://www.instagram.com/voto.podre/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram do Voto Podre"
+          class="ml-2 p-1.5 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
+        >
+          <IconInstagram class="w-4 h-4" />
+        </a>
       </div>
 
       <!-- Mobile right side: theme toggle + burger -->
@@ -36,6 +45,15 @@
           <IconSun v-if="themeStore.isDark" class="w-4 h-4" />
           <IconMoon v-else class="w-4 h-4" />
         </button>
+        <a
+          href="https://www.instagram.com/voto.podre/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram do Voto Podre"
+          class="p-1.5 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
+        >
+          <IconInstagram class="w-4 h-4" />
+        </a>
         <button
           @click="menuOpen = !menuOpen"
           class="p-1.5 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
@@ -79,6 +97,7 @@ import { ref } from 'vue';
 import { useThemeStore } from '@/stores/useThemeStore';
 import IconSun from '@/components/icons/IconSun.vue';
 import IconMoon from '@/components/icons/IconMoon.vue';
+import IconInstagram from '@/components/icons/IconInstagram.vue';
 
 const themeStore = useThemeStore();
 const menuOpen = ref(false);

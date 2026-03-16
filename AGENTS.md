@@ -124,14 +124,14 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   ├── DeputadoDetailsView.vue # Single deputy: card + social buttons (from redeSocial, platform-aware icons) + InfoList + PautasList + share button (Web Share API / clipboard fallback)
 │   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList; tema filter buttons
 │   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + toggleable "Leia mais" references (collapsed by default) + list of flagged deputies + share button (Web Share API / clipboard fallback)
-│   │   ├── AboutView.vue          # Static info / methodology
+│   │   ├── AboutView.vue          # Static info / methodology + project Instagram link
 │   │   ├── GlossaryView.vue       # Glossário de termos legislativos usados no site (PEC, PL, proposição, etc.)
 │   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, declares zero data collection
 │   │   └── TermsOfUseView.vue     # Termos de Uso — govering law, liability, editorial character
 │   │
 │   └── components/
-│       ├── TheNavbar.vue           # Sticky top nav (logo + 5 links + theme toggle button)
-│       ├── TheFooter.vue           # Site footer: author credit (gabcvit), links to /privacidade and /termos
+│       ├── TheNavbar.vue           # Sticky top nav (logo + 5 links + theme toggle + project Instagram icon link)
+│       ├── TheFooter.vue           # Site footer: author credit (gabcvit), project Instagram link, links to /privacidade and /termos
 │       ├── BaseDeputado.vue        # Deputy row (list) or expanded card (details view); badge shows "votos podres" count
 │       ├── PageTitle.vue           # h1 + optional subtitle used by list views
 │       ├── StatCard.vue            # Number + label + description; top-border colour variant
@@ -345,6 +345,7 @@ Emits `reset` when "Limpar filtros" is clicked. Label reads **Mín. pautas** (no
 No props. Renders the site-wide footer with:
 - Author credit linking to `https://gabcvit.dev/`
 - Attribution link to the Câmara dos Deputados open data API
+- External link to the project Instagram profile (`https://www.instagram.com/voto.podre/`)
 - Navigation links to `/privacidade` and `/termos`
 
 Registered globally in `App.vue`. The root `<div>` in `App.vue` uses `flex flex-col` so the footer always sits at the bottom — `<main>` gets `flex-1`.

@@ -78,7 +78,7 @@
     </section>
 
     <section class="animate-fade-in-up" style="animation-delay: 500ms">
-      <p class="text-zinc-500 text-md uppercase tracking-widest dark:text-zinc-500">
+      <p class="text-zinc-500 text-md uppercase tracking-widest dark:text-zinc-500 mb-2">
         Dados extraídos da
         <a
           href="https://dadosabertos.camara.leg.br/"
@@ -86,6 +86,15 @@
           rel="noopener noreferrer"
           class="text-zinc-500 hover:text-zinc-900 transition-colors dark:hover:text-white"
         >API de Dados Abertos da Câmara dos Deputados</a>.
+      </p>
+      <p class="text-zinc-500 text-md uppercase tracking-widest dark:text-zinc-500">
+        Acompanhe o projeto no
+        <a
+          href="https://www.instagram.com/voto.podre/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-zinc-500 hover:text-zinc-900 transition-colors dark:hover:text-white"
+        >Instagram @voto.podre</a>.
       </p>
     </section>
 

@@ -19,6 +19,14 @@
       </p>
 
       <nav aria-label="Links de política" class="flex items-center gap-5 flex-shrink-0">
+        <a
+          href="https://www.instagram.com/voto.podre/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
+        >
+          Instagram
+        </a>
         <RouterLink
           to="/privacidade"
           class="text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
