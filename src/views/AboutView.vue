@@ -38,7 +38,7 @@
         Projetos de Lei (PLs) e outras votações — que representam ataque direto a direitos
         conquistados na luta, criminalização de movimentos sociais, entrega de território
         e recursos naturais ao capital, ou blindagem de quem explora e oprime.
-        Cada pauta é documentada com fontes oficiais da Câmara para verificação independente.
+        As votações são documentadas com fontes oficiais da Câmara e verificáveis por qualquer pessoa. As descrições de cada pauta são resumos editoriais escritos pela equipe do Voto Podre, em linguagem direta — para que qualquer pessoa possa entender o que estava em jogo, sem precisar de formação jurídica.
       </p>
     </section>
 
@@ -73,8 +73,7 @@
       <p class="text-zinc-500 text-md leading-relaxed">
         Este projeto tem perspectiva de classe: defende os interesses dos trabalhadores,
         dos povos da terra, dos oprimidos. Não pretende ser neutro — neutralidade
-        diante da exploração é cumplicidade. Todos os dados são públicos e provenientes
-        de fontes oficiais da Câmara dos Deputados do Brasil, verificáveis por qualquer pessoa.
+        diante da exploração é cumplicidade. Os registros de votação e as informações dos deputados são públicos, obtidos da API oficial da Câmara dos Deputados do Brasil e verificáveis por qualquer pessoa. As descrições das pautas são análises editoriais da equipe do Voto Podre — texto independente, com perspectiva de classe declarada.
       </p>
     </section>
 

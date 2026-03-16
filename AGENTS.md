@@ -123,7 +123,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   ├── DeputadosView.vue       # Lists deputies via BaseDeputado; includes DeputadosFilters panel
 │   │   ├── DeputadoDetailsView.vue # Single deputy: card + social buttons (from redeSocial, platform-aware icons) + InfoList + PautasList + share button (Web Share API / clipboard fallback)
 │   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList; tema filter buttons
-│   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + list of flagged deputies + share button (Web Share API / clipboard fallback)
+│   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + toggleable "Leia mais" references (collapsed by default) + list of flagged deputies + share button (Web Share API / clipboard fallback)
 │   │   ├── AboutView.vue          # Static info / methodology
 │   │   ├── GlossaryView.vue       # Glossário de termos legislativos usados no site (PEC, PL, proposição, etc.)
 │   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, declares zero data collection
@@ -165,6 +165,13 @@ export type DeputadoSocialLink = {
   label: string
 }
 
+export type PautaReference = {
+  title: string
+  url: string
+  source: string
+  summary?: string
+}
+
 type Deputado = {
   id: number
   uri: string          // Câmara API URI
@@ -187,6 +194,7 @@ type PautaPodre = {
   idsDeputadosPodres: (number | undefined)[]  // Deputy IDs who voted FOR it
   tipo: 'negativa' | 'positiva'       // negativa = voted Sim is bad; positiva = voted Não is bad
   temas: Tema[]                        // One or more thematic categories — use the Tema union type
+  referencias?: PautaReference[]       // Optional "Leia mais" glossary with curated links and source metadata
 }
 ```
 
@@ -420,6 +428,7 @@ Displays all catalogued `pautas` with a row of **tema filter buttons** ("Todos" 
    - For **negative** pautas (voting Sim = bad): import `extractIdsPodres` from `./utils` and call it with the raw `VOTOS` constant.
    - For **positive** pautas (voting Não = bad): import `extractIdsContraPauta` from `./utils` and call it with the raw `VOTOS` constant.
 2. Import it in `src/data/pautasPodres.ts` and add an entry to `PAUTAS_PODRES` with all `PautaPodre` fields, setting `tipo` to `'negativa'` or `'positiva'` and `tema` to a descriptive thematic category string (e.g. `'direitos humanos'`, `'meio ambiente'`, `'segurança pública'`, `'democracia'`).
+  - Add `referencias` when available (`PautaReference[]`) to populate the toggleable "Leia mais" section in `PautaDetailsView.vue` (hidden by default until the user expands it).
 3. No store, router, or component changes needed.
 
 ### New Deputy

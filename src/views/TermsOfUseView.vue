@@ -53,9 +53,12 @@
         de acesso livre e irrestrito, conforme prevê a
         <strong class="text-zinc-900 dark:text-white">Lei de Acesso à Informação (Lei nº 12.527/2011)</strong>.
       </p>
-      <p class="text-zinc-500 leading-relaxed text-sm">
+      <p class="text-zinc-500 leading-relaxed text-sm mb-3">
         O exercício do mandato parlamentar e os votos dados em plenário são atos públicos, de interesse coletivo,
         não sujeitos a qualquer expectativa de privacidade por parte dos parlamentares no exercício de suas funções.
+      </p>
+      <p class="text-zinc-500 leading-relaxed text-sm">
+        As <strong class="text-zinc-900 dark:text-white">descrições editoriais das pautas</strong> — os textos explicativos sobre cada PEC ou PL — são de autoria da equipe do Voto Podre. Esses textos não são dados da Câmara dos Deputados, mas resumos independentes elaborados para tornar o conteúdo legislativo acessível ao público em geral, em linguagem clara e sem juridiquês.
       </p>
     </section>
 

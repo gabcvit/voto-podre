@@ -21,6 +21,13 @@ export type DeputadoSocialLink = {
     label: string,
 }
 
+export type PautaReference = {
+    title: string,
+    url: string,
+    source: string,
+    summary?: string,
+}
+
 export type PautaPodre = {
     id: number,
     nome: string,
@@ -34,4 +41,5 @@ export type PautaPodre = {
      */
     tipo: 'negativa' | 'positiva',
     temas: Tema[],
+    referencias?: PautaReference[],
 }

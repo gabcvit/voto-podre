@@ -1,11 +1,11 @@
 <template>
   <div v-if="pauta" class="max-w-3xl mx-auto px-4 py-12">
     <div class="mb-8 flex items-center justify-between">
-      <button @click="goBack" class="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+      <button @click="goBack" class="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
         <IconArrowBack />
         Voltar
       </button>
-      <button @click="share" class="flex items-center gap-2 text-xs font-black uppercase tracking-widest transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500" :class="copied ? 'text-green-500' : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white'">
+      <button @click="share" class="flex items-center gap-2 text-sm font-black uppercase tracking-widest transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500" :class="copied ? 'text-green-500' : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white'">
         <IconShare class="w-4 h-4" />
         {{ copied ? 'Link copiado!' : 'Compartilhar' }}
       </button>
@@ -23,18 +23,52 @@
         class="font-black uppercase leading-tight text-zinc-900 mb-3 dark:text-white"
         style="font-family: 'Syne', sans-serif; font-size: clamp(1.5rem, 4vw, 2.25rem);"
       >{{ pauta.nome }}</h1>
-      <p class="text-zinc-500 text-sm leading-relaxed mb-4">{{ pauta.descricao }}</p>
+      <p class="text-zinc-500 text-sm leading-relaxed mb-2">{{ pauta.descricao }}</p>
+      <p class="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-4">Análise editorial — Equipe Voto Podre</p>
       <a
         v-if="pauta.urlProposicao"
         :href="pauta.urlProposicao"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-xs font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white"
+        class="inline-block text-xs font-black uppercase tracking-widest border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-colors px-4 py-2"
       >Ver tramitação na Câmara →</a>
+      <button
+        v-if="references.length"
+        type="button"
+        @click="showReferences = !showReferences"
+        class="ml-3 inline-block text-xs font-black uppercase tracking-widest border-2 border-zinc-300 text-zinc-500 hover:border-zinc-900 hover:text-zinc-900 transition-colors px-4 py-2 dark:border-zinc-800 dark:text-zinc-600 dark:hover:border-white dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+      >
+        {{ showReferences ? 'Ocultar materiais de leitura' : 'Mostrar materiais de leitura' }}
+      </button>
     </div>
 
+    <section v-if="references.length && showReferences" class="mb-10">
+      <h2 class="mb-4 text-xs font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-600">
+        Leia mais
+      </h2>
+      <ul class="flex flex-col gap-3">
+        <li
+          v-for="reference in references"
+          :key="`${reference.url}-${reference.title}`"
+          class="border-l-2 border-zinc-300 pl-4 dark:border-zinc-800"
+        >
+          <a
+            :href="reference.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm font-black uppercase tracking-wide text-zinc-900 transition-colors hover:text-red-500 dark:text-white"
+          >
+            {{ reference.title }}
+          </a>
+          <p class="mt-1 text-sm font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600">
+            {{ reference.source }}
+          </p>
+        </li>
+      </ul>
+    </section>
+
     <div class="mb-6">
-      <p class="text-xs font-black uppercase tracking-widest text-zinc-500 mb-4 dark:text-zinc-600">
+      <p class="text-sm font-black uppercase tracking-widest text-zinc-500 mb-4 dark:text-zinc-600">
         {{ deputados.length }} deputado{{ deputados.length !== 1 ? 's' : '' }}
         {{ pauta.tipo === 'positiva' ? 'que votaram contra' : 'que apoiaram' }}
       </p>
@@ -51,7 +85,7 @@
   </div>
   <div v-else class="text-center py-16">
     <p class="text-zinc-500 uppercase tracking-widest text-sm dark:text-zinc-600">Pauta não encontrada.</p>
-    <button @click="goBack" class="mt-6 flex items-center gap-2 mx-auto text-xs font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+    <button @click="goBack" class="mt-6 flex items-center gap-2 mx-auto text-sm font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
       <IconArrowBack />
       Voltar
     </button>
@@ -88,6 +122,7 @@ const deputados = computed(() => {
   if (!pauta.value || !Array.isArray(pauta.value.idsDeputadosPodres)) return [];
   return getDeputadosByIds(pauta.value.idsDeputadosPodres.filter((id) => id !== undefined));
 });
+const references = computed(() => pauta.value?.referencias ?? []);
 
 const metaDescription = computed(() => {
   if (!pauta.value) return 'Detalhes sobre esta pauta e os deputados com voto questionável.';
@@ -103,6 +138,7 @@ useMeta({
 });
 
 const copied = ref(false);
+const showReferences = ref(false);
 
 async function share() {
   const url = window.location.href;

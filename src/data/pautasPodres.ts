@@ -16,7 +16,29 @@ export const PAUTAS_PODRES: PautaPodre[] = [
         urlProposicao: 'https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2270800',
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PEC_BANDIDAGEM,
         tipo: 'negativa',
-        temas: ['segurança pública'],
+        temas: ['democracia'],
+        referencias: [
+          {
+            title: '‘PEC da Bandidagem’ é atentado à sociedade e à democracia, denuncia cientista político',
+            source: 'Brasil de Fato',
+            url: 'https://www.brasildefato.com.br/2025/09/17/pec-da-bandidagem-e-atentado-a-sociedade-e-a-democracia-denuncia-cientista-politico/',
+          },
+          {
+            title: 'Manifestações em todo o país marcam repúdio à PEC da Blindagem e à anistia a golpistas',
+            source: 'Andes Sindicato Nacional',
+            url: 'https://www.andes.org.br/conteudos/noticia/manifestacoes-em-todo-o-pais-marcam-repudio-a-pEC-da-blindagem-e-a-anistia-a-golpistas1',
+          },
+          {
+            title: 'Entenda como PEC blinda parlamentares de investigações do STF e de prisões',
+            source: 'Folha de S.Paulo',
+            url: 'https://www1.folha.uol.com.br/poder/2025/09/entenda-como-pec-blinda-parlamentares-de-investigacoes-do-stf-e-de-prisoes.shtml',
+          },
+          {
+            title: 'PEC da blindagem: entenda a regra atual e o que muda com projeto que beneficia parlamentares',
+            source: 'O Globo',
+            url: 'https://oglobo.globo.com/politica/noticia/2025/09/21/pec-da-blindagem-entenda-a-regra-atual-e-o-que-muda-com-projeto-que-beneficia-parlamentares.ghtml',
+          }
+        ],
     },
     {
         id: 543252,
@@ -27,6 +49,28 @@ export const PAUTAS_PODRES: PautaPodre[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PEC_ABORTO,
         tipo: 'negativa',
         temas: ['direitos humanos'],
+        referencias: [
+          {
+            title: 'Sob protestos, CCJ da Câmara aprova PEC do Estupro, que acaba com aborto legal, por 35 votos a 15',
+            source: 'Brasil de Fato',
+            url: 'https://www.brasildefato.com.br/2024/11/27/sob-protestos-ccj-da-camara-aprova-pec-do-estupro-que-acaba-com-aborto-legal-por-35-votos-a-15/',
+          },
+          {
+            title: 'Aborto é problema de saúde pública',
+            source: 'Nexojornal',
+            url: 'https://pp.nexojornal.com.br/opiniao/2021/04/12/aborto-e-problema-de-saude-publica',
+          },
+          {
+            title: 'Aborto inseguro no Brasil: revisão sistemática da produção científica, 2008-2018',
+            source: 'CSP - Cadernos de Saúde Pública',
+            url: 'https://cadernos.ensp.fiocruz.br/ojs/index.php/csp/article/view/7357',
+          },
+          {
+            title: 'PEC do aborto ameaça direitos reprodutivos e agrava riscos para mulheres no Brasil',
+            source: 'CUT Brasil',
+            url: 'https://www.cut.org.br/noticias/pec-do-aborto-ameaca-direitos-reprodutivos-e-agrava-riscos-para-mulheres-no-bras-57f6',
+          },
+        ],
     },
     {
         id: 257161,
@@ -37,6 +81,23 @@ export const PAUTAS_PODRES: PautaPodre[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PL_DEVASTACAO,
         tipo: 'negativa',
         temas: ['meio ambiente'],
+        referencias: [
+          {
+            title: 'Aprovação do PL da Devastação pelo Senado é inconstitucional e pode gerar retrocessos ambientais irreversíveis',
+            source: 'WWF Brasil',
+            url: 'https://www.wwf.org.br/?91541/Aprovacao-do-PL-da-Devastacao-pelo-Senado-e-inconstitucional-e-pode-gerar-retrocessos-ambientais-irreversiveis',
+          },
+          {
+            title: 'Câmara aprova PL da Devastação. Veja quais são os riscos que o Brasil corre',
+            source: 'CUT Brasil',
+            url: 'https://www.cut.org.br/noticias/camara-aprova-pl-da-devastacao-veja-quais-sao-os-riscos-que-o-brasil-corre-ecd8',
+          },
+          {
+            title: 'PL da Devastação avança com ameaças à Lei da Mata Atlântica',
+            source: 'SOS Mata Atlântica',
+            url: 'https://sosma.org.br/noticias/pl-da-devastacao-avanca-com-ameacas-a-lei-da-mata-atlantica',
+          },
+        ],
     },
     {
         id: 2352476,
@@ -47,6 +108,23 @@ export const PAUTAS_PODRES: PautaPodre[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PEC_ANISTIA,
         tipo: 'negativa',
         temas: ['democracia'],
+        referencias: [
+          {
+            title: 'Nota oficial contra a PEC 9/2023',
+            source: 'Governo Federal',
+            url: 'https://www.gov.br/igualdaderacial/pt-br/assuntos/noticias/nota-ofial-contra-a-pec-9-2023',
+          },
+          {
+            title: 'CONTRA A PEC 9/2023',
+            source: 'A Tenda das Candidatas',
+            url: 'https://atendadascandidatas.org/incidencias/contra-a-pec-9-2023/',
+          },
+          {
+            title: 'PEC 09/23 e o perdão ao imperdoável: o caminho antirrepublicano dos partidos',
+            source: 'Consultor Jurídico',
+            url: 'https://www.conjur.com.br/2023-mai-01/direito-eleitoral-pec-092023-candidaturas-femininas-perdao-imperdoavel/',
+          },
+        ],
     },
     {
         id: 345311,
@@ -57,6 +135,23 @@ export const PAUTAS_PODRES: PautaPodre[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PL_MARCO_TEMPORAL,
         tipo: 'negativa',
         temas: ['meio ambiente', 'direitos humanos'],
+        referencias: [
+          {
+            title: '“PL 490/07 e marco temporal colocam em risco os direitos dos povos indígenas”, alerta presidenta da Funai',
+            source: 'Fundação Nacional dos Povos Indígenas - Governo Federal',
+            url: 'https://www.gov.br/funai/pt-br/assuntos/noticias/2023/201cpl-490-07-e-marco-temporal-colocam-em-risco-os-direitos-dos-povos-indigenas201d-alerta-presidenta-da-funai',
+          },
+          {
+            title: 'NOTA TÉCNICO-JURÍDICA SOBRE O SUBSTITUTIVO AO PL N.º 490/2007',
+            source: 'Instituto Socioambiental',
+            url: 'https://www.socioambiental.org/sites/default/files/noticias-e-posts/2023-05/Nota%20Tecnica%20ISA%20PL%20490%20integra.pdf',
+          },
+          {
+            title: 'Com aprovação do PL 490, Câmara ataca povos indígenas e incita violência no campo',
+            source: 'WWF Brasil',
+            url: 'https://www.wwf.org.br/?85943/Com-aprovacao-do-PL-490-Camara-ataca-povos-indigenas-e-incita-violencia-no-campo',
+          },
+        ],
     },
     {
         id: 2349493,
@@ -67,15 +162,45 @@ export const PAUTAS_PODRES: PautaPodre[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PL_ANTI_MOVIMENTOS_RURAIS,
         tipo: 'negativa',
         temas: ['direitos humanos'],
+        referencias: [
+          {
+            title: 'Câmara dos Deputados aprova PL que pune pessoas que ocuparem terras',
+            source: 'Brasil de Fato',
+            url: 'https://www.brasildefato.com.br/2024/05/21/camara-dos-deputados-aprova-pl-que-pune-pessoas-que-ocuparem-terras/',
+          },
+          {
+            title: 'NOTA DA DIRETORIA DO ANDES-SN EM REPÚDIO AO PL Nº 709/2023 QUE AMPLIA A CRIMINALIZAÇÃO DOS MOVIMENTOS SOCIAIS DO CAMPO.',
+            source: 'Andes Sindicato Nacional',
+            url: 'https://www.andes.org.br/conteudos/nota/nOTA-dA-dIRETORIA-dO-aNDES-sN-eM-rEPUDIO-aO-pL-no-709-2023-qUE-aMPLIA-a-cRIMINALIZACAO-dOS-mOVIMENTOS-sOCIAIS-dO-cAMPO1',
+          },
+        ]
+        ,
     },
     {
         id: 2357053,
         nome: 'PL 182/2024 e mercado de carbono',
-        descricao: 'O PL 182/2024, que regulamenta o mercado brasileiro de carbono, é uma das iniciativas básicas para que o Brasil cumpra seus compromissos climáticos no Acordo de Paris e gere renda real para as comunidades que vivem de preservar nossas florestas. Ao criar um sistema regulado e transparente de negociação de créditos de carbono, a lei estabelece limites reais de emissão para os maiores poluidores do país, tornando financeiramente inevitável que a indústria e o agronegócio pesado reduzam seus impactos ambientais. Votar contra esse projeto não foi posição técnica nem ideológica: foi uma escolha deliberada de proteger os setores que mais poluem, que mais desmatam e que mais lucram com a ausência de qualquer regra ambiental séria. Os deputados que rejeitaram a proposta viraram as costas para as comunidades indígenas e ribeirinhas que dependem das florestas, para os compromissos internacionais do Brasil e para o próprio futuro do planeta — tudo para não incomodar os financiadores do agronegócio e da indústria pesada.',
+        descricao: 'O PL 182/2024, que cria regras para o mercado brasileiro de carbono, não é solução mágica para a crise climática — e tem limites importantes, inclusive brechas e setores relevantes parcialmente preservados. Ainda assim, ele estabelece um piso regulatório que hoje praticamente não existe: cria monitoramento, obrigações de reporte e incentivos econômicos para cortar emissões em vez de tratá-las como custo invisível. Rejeitar esse marco não significou “prudência técnica”; significou manter a desregulação que beneficia quem mais polui e mais lucra com a ausência de controle público. Em um país que já enfrenta eventos climáticos extremos, votar contra qualquer regra mínima de responsabilização ambiental é escolher o atraso: enfraquece a transição ecológica, reduz previsibilidade para investimentos limpos e aumenta a conta social paga por populações vulneráveis, especialmente nas periferias urbanas e nos territórios tradicionais.',
         urlVotos: 'https://dadosabertos.camara.leg.br/api/v2/votacoes/1548579-194/votos',
         urlProposicao: 'https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=1548579',
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PL_MERCADO_DE_CARBONO,
         tipo: 'positiva',
         temas: ['meio ambiente'],
+        referencias: [
+          {
+            title: 'Mercado regulado de carbono é aprovado pelo Congresso, mas deixa agro de fora',
+            source: 'Brasil de Fato',
+            url: 'https://www.brasildefato.com.br/2024/12/18/mercado-regulado-de-carbono-e-aprovado-pelo-congresso-mas-deixa-agro-de-fora/',
+          },
+          {
+            title: 'Mas, afinal, o que é o mercado de crédito de carbono?',
+            source: 'O Globo',
+            url: 'https://oglobo.globo.com/economia/especial/o-que-e-o-mercado-de-carbono-entenda-no-especial-que-explica-a-regulacao-aprovada-no-senado.ghtml',
+          },
+          {
+            title: 'Especialistas veem com bons olhos texto que regulamenta o mercado de carbono no Brasil',
+            source: 'Um Só Planeta - Globo',
+            url: 'https://umsoplaneta.globo.com/opiniao/colunas-e-blogs/clima-desenvolvimento/noticia/2024/11/20/especialistas-veem-com-bons-olhos-texto-que-regulamenta-o-mercado-de-carbono-no-brasil.ghtml',
+          },
+        ],
     },
 ];
