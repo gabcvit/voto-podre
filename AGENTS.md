@@ -140,7 +140,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + toggleable "Leia mais" references (collapsed by default) + list of flagged deputies + share button (Web Share API / clipboard fallback)
 │   │   ├── AboutView.vue          # Static info / methodology + project Instagram link
 │   │   ├── GlossaryView.vue       # Glossário de termos legislativos usados no site (PEC, PL, PLP, proposição, etc.)
-│   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, declares zero data collection
+│   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, zero personal data collection, zero cookies; uses Plausible Analytics (cookieless, anonymous aggregates)
 │   │   └── TermsOfUseView.vue     # Termos de Uso — govering law, liability, editorial character
 │   │
 │   └── components/
@@ -423,8 +423,9 @@ Bootstrap it once in `App.vue` (`useThemeStore()`) so the watcher fires on app i
 Both legal pages are static views with no props or stores. They follow the same layout conventions as `AboutView.vue` (`max-w-3xl mx-auto px-4 py-12`) and use `PageTitle` for the heading.
 
 ### `PrivacyPolicyView` (`/privacidade`)
-- Declares **zero data collection, zero cookies** (permanently and irrevocably)
-- Sections: identification, data collected, cookies, third-party sharing, LGPD conformance, data subject rights, hosting (GitHub Pages), change policy
+- Declares **zero personal data collection, zero cookies**
+- Discloses use of **Plausible Analytics** (cookieless, GDPR/LGPD-compliant, anonymous aggregate metrics only)
+- Sections: identification, data collected, cookies, third-party sharing, LGPD conformance, data subject rights, hosting (GitHub Pages), analytics (Plausible), change policy
 - Only data persisted locally: `theme` key in `localStorage` (never transmitted to any server)
 - LGPD articles referenced: art. 7º (legal basis), art. 18 (data subject rights), art. 20 (profiling), art. 33 (international transfer)
 

@@ -6,7 +6,7 @@
     />
 
     <p class="text-zinc-400 text-xs uppercase tracking-widest mb-10 dark:text-zinc-600">
-      Última atualização: 15 de março de 2026
+      Última atualização: 21 de março de 2026
     </p>
 
     <!-- DECLARAÇÃO PRINCIPAL -->
