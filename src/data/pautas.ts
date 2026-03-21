@@ -1,6 +1,8 @@
+import IDS_DEPUTADOS_PODRES_MP_AGORA_TEM_ESPECIALISTA from './single-pautas/mp-agora-tem-especialista';
 import IDS_DEPUTADOS_PODRES_PEC_BANDIDAGEM from './single-pautas/pec-bandidagem';
 import IDS_DEPUTADOS_PODRES_PEC_ABORTO from './single-pautas/pec-aborto';
 import IDS_DEPUTADOS_PODRES_PEC_ANISTIA from './single-pautas/pec-anistia';
+import IDS_DEPUTADOS_PODRES_PEC_169_PEJOTIZACAO_PROFESSORES from './single-pautas/pec-pejotizacao-deprofessores';
 import IDS_DEPUTADOS_PODRES_PL_DEVASTACAO from './single-pautas/pl-devastacao';
 import IDS_DEPUTADOS_PODRES_PL_MARCO_TEMPORAL from './single-pautas/pl-marco-temporal';
 import IDS_DEPUTADOS_PODRES_PL_ANTI_MOVIMENTOS_RURAIS from './single-pautas/pl-anti-movimentos-trabalhadores-rurais-e-indigenas';
@@ -178,7 +180,7 @@ export const PAUTAS: Pauta[] = [
         ,
     },
     {
-        id: 2357053,
+        id: 1548579,
         nome: 'PL 182/2024 e mercado de carbono',
         descricao: 'O PL 182/2024, que cria regras para o mercado brasileiro de carbono, não é solução mágica para a crise climática — e tem limites importantes, inclusive brechas e setores relevantes parcialmente preservados. Ainda assim, ele estabelece um piso regulatório que hoje praticamente não existe: cria monitoramento, obrigações de reporte e incentivos econômicos para cortar emissões em vez de tratá-las como custo invisível. Rejeitar esse marco não significou “prudência técnica”; significou manter a desregulação que beneficia quem mais polui e mais lucra com a ausência de controle público. Em um país que já enfrenta eventos climáticos extremos, votar contra qualquer regra mínima de responsabilização ambiental é escolher o atraso: enfraquece a transição ecológica, reduz previsibilidade para investimentos limpos e aumenta a conta social paga por populações vulneráveis, especialmente nas periferias urbanas e nos territórios tradicionais.',
         urlVotos: 'https://dadosabertos.camara.leg.br/api/v2/votacoes/1548579-194/votos',
@@ -212,7 +214,7 @@ export const PAUTAS: Pauta[] = [
         urlProposicao: 'https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2357053',
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PLP_ARCABOUCO_FISCAL,
         tipo: 'negativa',
-        temas: ['sucateamento do setor público', 'meio ambiente', 'saúde', 'educação'],
+        temas: ['meio ambiente', 'saúde', 'educação'],
 
         referencias: [
           {
@@ -229,6 +231,62 @@ export const PAUTAS: Pauta[] = [
             title: 'Governo entrega projeto de lei do novo marco fiscal do Brasil',
             source: 'Governo Federal - Ministério da Fazenda',
             url: 'https://www.gov.br/fazenda/pt-br/assuntos/noticias/2023/abril/governo-entrega-projeto-de-lei-do-novo-marco-fiscal-do-brasil',
+          },
+        ],
+    },
+    {
+        id: 2225224,
+        nome: 'PEC 169/2019 da Pejotização de Professores',
+        descricao: 'A PEC 169/2019, de autoria do deputado Capitão Alberto Neto (Republicanos-AM), é um ataque disfarçado de solução ao magistério público brasileiro. Sob o pretexto de resolver o "apagão de professores", a proposta abre as portas das salas de aula para qualquer servidor público — independente de formação pedagógica — acumular cargo docente, esvaziando a exigência técnica e o perfil profissional que a educação de qualidade requer. Pior: em sua versão anterior, o substitutivo chegou a propor a constitucionalização da "pejotização" dos professores, permitindo que docentes fossem contratados como microempreendedores individuais, sem direito a piso salarial, plano de carreira, férias, 13º salário, aposentadoria especial ou qualquer outra garantia trabalhista conquistada ao longo de décadas. Essa cláusula foi retirada após forte pressão da CNTE, mas pode voltar a qualquer momento na votação em plenário. O problema do apagão de professores não é falta de gente: é falta de valorização. Salários aviltantes, contratos precários e condições de trabalho degradantes afastam a juventude da profissão. A PEC 169 ignora tudo isso e propõe uma solução barata e destrutiva: enfiar qualquer servidor público numa sala de aula e mandar o recado à sociedade de que ser professor é "bico", que qualquer um faz. É a desqualificação do magistério elevada a norma constitucional, em sentido contrário às próprias recomendações da UNESCO sobre valorização docente.',
+        urlVotos: 'https://dadosabertos.camara.leg.br/api/v2/votacoes/2225224-125/votos',
+        urlProposicao: 'https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2225224',
+        idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PEC_169_PEJOTIZACAO_PROFESSORES,
+        tipo: 'negativa',
+        temas: ['educação'],
+
+        referencias: [
+          {
+            title: 'PEC 169 fomenta a desprofissionalização e a desvalorização docente no país',
+            source: 'Sintep-MT',
+            url: 'https://sintep.org.br/sintep/Utilidades/view_noticia/pec-169-fomenta-a-desprofissionalizacao-e-a-desvalorizacao-docente-no-pais/i:4323',
+          },
+          {
+            title: 'Por que a CNTE é contra a PEC 169?',
+            source: 'CNTE - Confederação Nacional dos Trabalhadores em Educação',
+            url: 'https://cnte.org.br/noticias/por-que-a-cnte-e-contra-a-pec-169-a28f',
+          },
+          {
+            title: 'Em nota, CNTE reforça que vitórias parciais nas PECs 66 e 169 exigem manter a mobilização',
+            source: 'CPERS-Sindicato',
+            url: 'https://cpers.com.br/em-nota-cnte-reforca-que-vitorias-parciais-nas-pecs-66-e-169-exigem-manter-a-mobilizacao/',
+          },
+        ],
+    },
+    {
+        id: 2519886,
+        nome: 'Programa Agora Tem Especialista',
+        descricao: 'A MP 1301/2025 criou o Programa Agora Tem Especialistas, a maior iniciativa da história do SUS para reduzir as filas de consultas, exames e cirurgias especializadas — e foi aprovada com 403 votos a favor na Câmara e unanimidade no Senado. Uma minoria decidiu votar contra. Em um país onde mais de 50% das mortes são causadas por doenças cardíacas ou oncológicas, onde um diagnóstico de câncer que chega com meses de atraso pode significar a diferença entre a vida e a morte, esses deputados escolheram dizer não. O programa mobiliza toda a estrutura de saúde do país — pública e privada — em seis especialidades prioritárias: oncologia, cardiologia, ginecologia, ortopedia, oftalmologia e otorrinolaringologia. Leva carretas com equipes médicas e equipamentos cirúrgicos para comunidades indígenas, quilombolas e periferias sem infraestrutura de saúde. Força planos de saúde e hospitais privados a converter dívidas com a União em cirurgias e exames para pacientes do SUS. Parte da fila que o programa tenta zerar foi acumulada pela gestão desastrosa da pandemia Bolsonaro, que paralisou o sistema de saúde por dois anos e jogou mais 20 milhões de pessoas na espera. Votar contra esse programa não foi prudência técnica nem ressalva orçamentária: foi abandonar quem tem câncer, quem precisa de uma cirurgia cardíaca, quem esperava anos por uma consulta de especialista que nunca chegava.',
+        urlVotos: 'https://dadosabertos.camara.leg.br/api/v2/votacoes/2519886-34/votos',
+        urlProposicao: 'https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2519886',
+        idsDeputadosPodres: IDS_DEPUTADOS_PODRES_MP_AGORA_TEM_ESPECIALISTA,
+        tipo: 'positiva',
+        temas: ['saúde'],
+
+        referencias: [
+          {
+            title: 'Congresso Nacional aprova Medida Provisória que criou o Agora Tem Especialistas com ampla maioria',
+            source: 'Governo Federal - Ministério da Saúde',
+            url: 'https://www.gov.br/saude/pt-br/assuntos/noticias/2025/setembro/congresso-nacional-aprova-medida-provisoria-que-criou-o-agora-tem-especialistas-com-ampla-maioria',
+          },
+          {
+            title: 'Programa Agora Tem Especialista busca reduzir demanda acumulada após ‘gestão irresponsável da pandemia’, diz representante da Saúde',
+            source: 'Brasil de Fato',
+            url: 'https://www.brasildefato.com.br/2026/01/16/programa-agora-tem-especialista-busca-reduzir-demanda-acumulada-apos-gestao-irresponsavel-da-pandemia-diz-representante-da-saude/',
+          },
+          {
+            title: 'Câmara aprova MP que cria programa Agora Tem Especialistas',
+            source: 'Agencia Brasil',
+            url: 'https://agenciabrasil.ebc.com.br/saude/noticia/2025-09/camara-aprova-mp-que-cria-programa-agora-tem-especialistas',
           },
         ],
     },

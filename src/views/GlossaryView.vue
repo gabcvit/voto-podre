@@ -53,6 +53,11 @@ const terms = [
       'Sigla para Projeto de Lei Complementar. Regulamenta artigos específicos da Constituição que exigem esse tipo de norma. Tem força maior que um PL comum, mas menor que uma PEC. Para ser aprovado, precisa de maioria absoluta dos votos (mais da metade de todos os membros da Casa, não só dos presentes).',
   },
   {
+    term: 'MP',
+    description:
+      'Sigla para Medida Provisória. É um ato normativo com força de lei imediata, editado pelo presidente da República em situações de urgência e relevância. Tem validade por 60 dias, prorrogáveis por mais 60, e precisa ser aprovada pelo Congresso para se tornar lei definitiva. Se não for votada nesse prazo, perde a validade automaticamente.',
+  },
+  {
     term: 'Pauta',
     description:
       'No site, “pauta” é uma proposta legislativa monitorada pelo projeto. Pode ser uma PEC, um PL ou outro tipo de votação considerada relevante.',

@@ -32,7 +32,7 @@ Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputad
 | **PL 490/2007 e marco temporal** | PL | meio ambiente, direitos humanos | Impõe o marco temporal e ameaça territórios indígenas |
 | **PL 709/2023 contra movimentos trabalhistas rurais e indígenas** | PL | direitos humanos | Criminaliza ocupações do MST e comunidades indígenas |
 | **PL 182/2024 e mercado de carbono** *(positiva)* | PL | meio ambiente | Deputados que votaram **contra** o marco regulatório do mercado de carbono |
-| **PLP do Arcabouço Fiscal** | PLP | sucateamento do setor público, saúde, educação | Amarra investimentos públicos em saúde, educação e infraestrutura |
+| **PLP do Arcabouço Fiscal** | PLP | meio ambiente, saúde, educação | Amarra investimentos públicos em saúde, educação e infraestrutura |
 
 ---
 

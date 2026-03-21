@@ -111,9 +111,11 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   └── single-pautas/
 │           ├── utils.ts                                                 # extractIdsPodres(votos) — IDs of deputies who voted "Sim" (use for negative pautas)
 │           │                                                            # extractIdsContraPauta(votos) — IDs of deputies who voted "Não" (use for positive pautas)
+│           ├── mp-agora-tem-especialista.ts                            # Deputy IDs flagged (voted Não — positiva)
 │           ├── pec-aborto.ts                                           # Deputy IDs flagged (voted Sim)
 │           ├── pec-anistia.ts                                          # Deputy IDs flagged (voted Sim)
 │           ├── pec-bandidagem.ts                                       # Deputy IDs flagged (voted Sim)
+│           ├── pec-pejotizacao-deprofessores.ts                        # Deputy IDs flagged (voted Sim)
 │           ├── pl-anti-movimentos-trabalhadores-rurais-e-indigenas.ts  # Deputy IDs flagged (voted Sim)
 │           ├── pl-devastacao.ts                                        # Deputy IDs flagged (voted Sim)
 │           ├── pl-marco-temporal.ts                                    # Deputy IDs flagged (voted Sim)
@@ -167,7 +169,7 @@ pnpm deploy       # build + push to gh-pages branch
 ## 5. Core Types (`src/types.ts`)
 
 ```ts
-export type Tema = 'segurança pública' | 'direitos humanos' | 'meio ambiente' | 'democracia' | 'sucateamento do setor público' | 'educação' | 'saúde'
+export type Tema = 'segurança pública' | 'direitos humanos' | 'meio ambiente' | 'democracia' | 'educação' | 'saúde'
 
 export type SocialPlatform = 'facebook' | 'instagram' | 'youtube' | 'x'
 
@@ -437,10 +439,10 @@ Both legal pages are static views with no props or stores. They follow the same 
 
 ### `PautasView` (`/pautas`)
 Displays all catalogued `pautas` with a row of **tema filter buttons** ("Todos" + one button per unique `tema` value). Clicking a button filters the list to that theme; clicking "Todos" resets. Filter state is local (`ref`) inside the view — no composable needed.
-1. Create `src/data/single-pautas/<type>-<slug>.ts` — use `pec-` prefix for PECs, `pl-` prefix for PLs, and `plp-` prefix for PLPs.
+1. Create `src/data/single-pautas/<type>-<slug>.ts` — use `pec-` prefix for PECs, `pl-` prefix for PLs, `plp-` prefix for PLPs, and `mp-` prefix for Medidas Provisórias.
    - For **negative** pautas (voting Sim = bad): import `extractIdsPodres` from `./utils` and call it with the raw `VOTOS` constant.
    - For **positive** pautas (voting Não = bad): import `extractIdsContraPauta` from `./utils` and call it with the raw `VOTOS` constant.
-2. Import it in `src/data/pautas.ts` and add an entry to `PAUTAS` with all `Pauta` fields, setting `tipo` to `'negativa'` or `'positiva'` and `temas` to one or more values from the `Tema` union (e.g. `'direitos humanos'`, `'meio ambiente'`, `'segurança pública'`, `'democracia'`, `'sucateamento do setor público'`, `'educação'`, `'saúde'`).
+2. Import it in `src/data/pautas.ts` and add an entry to `PAUTAS` with all `Pauta` fields, setting `tipo` to `'negativa'` or `'positiva'` and `temas` to one or more values from the `Tema` union (e.g. `'direitos humanos'`, `'meio ambiente'`, `'segurança pública'`, `'democracia'`, `'educação'`, `'saúde'`).
   - Add `referencias` when available (`PautaReference[]`) to populate the toggleable "Leia mais" section in `PautaDetailsView.vue` (hidden by default until the user expands it).
 3. No store, router, or component changes needed.
 

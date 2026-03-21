@@ -11,7 +11,7 @@ export type Deputado = {
     redeSocial: string[]
 }
 
-export type Tema = 'segurança pública' | 'direitos humanos' | 'meio ambiente' | 'democracia' | 'sucateamento do setor público' | 'educação' | 'saúde'
+export type Tema = 'segurança pública' | 'direitos humanos' | 'meio ambiente' | 'democracia' | 'educação' | 'saúde'
 
 export type SocialPlatform = 'facebook' | 'instagram' | 'youtube' | 'x'
 
