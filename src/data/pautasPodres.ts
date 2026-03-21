@@ -5,6 +5,7 @@ import IDS_DEPUTADOS_PODRES_PL_DEVASTACAO from './pecs-podres/pl-devastacao';
 import IDS_DEPUTADOS_PODRES_PL_MARCO_TEMPORAL from './pecs-podres/pl-marco-temporal';
 import IDS_DEPUTADOS_PODRES_PL_ANTI_MOVIMENTOS_RURAIS from './pecs-podres/pl-anti-movimentos-trabalhadores-rurais-e-indigenas';
 import IDS_DEPUTADOS_PODRES_PL_MERCADO_DE_CARBONO from './pecs-podres/pl-mercado-de-carbono';
+import IDS_DEPUTADOS_PODRES_PLP_ARCABOUCO_FISCAL from './pecs-podres/plp-arcabouco-fiscal';
 import type { PautaPodre } from '@/types';
 
 export const PAUTAS_PODRES: PautaPodre[] = [
@@ -200,6 +201,34 @@ export const PAUTAS_PODRES: PautaPodre[] = [
             title: 'Especialistas veem com bons olhos texto que regulamenta o mercado de carbono no Brasil',
             source: 'Um Só Planeta - Globo',
             url: 'https://umsoplaneta.globo.com/opiniao/colunas-e-blogs/clima-desenvolvimento/noticia/2024/11/20/especialistas-veem-com-bons-olhos-texto-que-regulamenta-o-mercado-de-carbono-no-brasil.ghtml',
+          },
+        ],
+    },
+    {
+        id: 2357053,
+        nome: 'PLP do Arcabouço Fiscal',
+        descricao: 'A PLP 93/2023 do Arcabouço Fiscal é um projeto que, sob o pretexto de "ajustar as contas públicas", na verdade amarra o país e o setor público a uma agenda de austeridade que sacrifica investimentos essenciais em saúde, educação, assistência social e infraestrutura para garantir o pagamento de juros e privilégios de uma minoria. Na prática, a proposta impõe um teto rígido para os gastos públicos, limitando a capacidade do Estado de responder a crises econômicas, sociais e ambientais, e aprofundando as desigualdades ao cortar recursos de programas que beneficiam os mais vulneráveis. Em um cenário de estagnação econômica e aumento da pobreza, votar a favor do Arcabouço é escolher o retrocesso: é priorizar o mercado financeiro em detrimento do povo brasileiro, perpetuando um ciclo vicioso de austeridade que só beneficia os mais ricos.',
+        urlVotos: 'https://dadosabertos.camara.leg.br/api/v2/votacoes/2357053-47/votos',
+        urlProposicao: 'https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2357053',
+        idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PLP_ARCABOUCO_FISCAL,
+        tipo: 'negativa',
+        temas: ['sucateamento do setor público', 'meio ambiente', 'saúde', 'educação'],
+
+        referencias: [
+          {
+            title: 'Senado altera projeto de arcabouço fiscal, mas não retira amarras e gatilhos',
+            source: 'CUT Brasil',
+            url: 'https://www.cut.org.br/noticias/senado-altera-projeto-de-arcabouco-fiscal-mas-nao-retira-amarras-e-gatilhos-6485',
+          },
+          {
+            title: 'Senado aprova arcabouço fiscal com alterações e texto volta à Câmara dos Deputados',
+            source: 'Andes Sindicato Nacional',
+            url: 'https://www.andes.org.br/conteudos/noticia/senado-aprova-arcabouco-fiscal-com-alteracoes-e-texto-volta-a-camara-dos-deputados1',
+          },
+          {
+            title: 'Governo entrega projeto de lei do novo marco fiscal do Brasil',
+            source: 'Governo Federal - Ministério da Fazenda',
+            url: 'https://www.gov.br/fazenda/pt-br/assuntos/noticias/2023/abril/governo-entrega-projeto-de-lei-do-novo-marco-fiscal-do-brasil',
           },
         ],
     },

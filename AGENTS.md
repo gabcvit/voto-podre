@@ -117,7 +117,8 @@ pnpm deploy       # build + push to gh-pages branch
 │           ├── pl-anti-movimentos-trabalhadores-rurais-e-indigenas.ts  # Deputy IDs flagged (voted Sim)
 │           ├── pl-devastacao.ts                                        # Deputy IDs flagged (voted Sim)
 │           ├── pl-marco-temporal.ts                                    # Deputy IDs flagged (voted Sim)
-│           └── pl-mercado-de-carbono.ts                                # Deputy IDs flagged (voted Sim)
+│           ├── pl-mercado-de-carbono.ts                                # Deputy IDs flagged (voted Não — positiva)
+│           └── plp-arcabouco-fiscal.ts                                 # Deputy IDs flagged (voted Sim)
 │   │
 │   ├── stores/
 │   │   ├── useDeputadosStore.ts     # Pinia store: exposes { deputados }
@@ -136,7 +137,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList; tema filter buttons
 │   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + toggleable "Leia mais" references (collapsed by default) + list of flagged deputies + share button (Web Share API / clipboard fallback)
 │   │   ├── AboutView.vue          # Static info / methodology + project Instagram link
-│   │   ├── GlossaryView.vue       # Glossário de termos legislativos usados no site (PEC, PL, proposição, etc.)
+│   │   ├── GlossaryView.vue       # Glossário de termos legislativos usados no site (PEC, PL, PLP, proposição, etc.)
 │   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, declares zero data collection
 │   │   └── TermsOfUseView.vue     # Termos de Uso — govering law, liability, editorial character
 │   │
@@ -166,7 +167,7 @@ pnpm deploy       # build + push to gh-pages branch
 ## 5. Core Types (`src/types.ts`)
 
 ```ts
-export type Tema = 'segurança pública' | 'direitos humanos' | 'meio ambiente' | 'democracia'
+export type Tema = 'segurança pública' | 'direitos humanos' | 'meio ambiente' | 'democracia' | 'sucateamento do setor público' | 'educação' | 'saúde'
 
 export type SocialPlatform = 'facebook' | 'instagram' | 'youtube' | 'x'
 
@@ -436,10 +437,10 @@ Both legal pages are static views with no props or stores. They follow the same 
 
 ### `PautasPodresView` (`/pautas-podres`)
 Displays all catalogued `pautas` with a row of **tema filter buttons** ("Todos" + one button per unique `tema` value). Clicking a button filters the list to that theme; clicking "Todos" resets. Filter state is local (`ref`) inside the view — no composable needed.
-1. Create `src/data/pecs-podres/<type>-<slug>.ts` — use `pec-` prefix for PECs and `pl-` prefix for PLs.
+1. Create `src/data/pecs-podres/<type>-<slug>.ts` — use `pec-` prefix for PECs, `pl-` prefix for PLs, and `plp-` prefix for PLPs.
    - For **negative** pautas (voting Sim = bad): import `extractIdsPodres` from `./utils` and call it with the raw `VOTOS` constant.
    - For **positive** pautas (voting Não = bad): import `extractIdsContraPauta` from `./utils` and call it with the raw `VOTOS` constant.
-2. Import it in `src/data/pautasPodres.ts` and add an entry to `PAUTAS_PODRES` with all `PautaPodre` fields, setting `tipo` to `'negativa'` or `'positiva'` and `tema` to a descriptive thematic category string (e.g. `'direitos humanos'`, `'meio ambiente'`, `'segurança pública'`, `'democracia'`).
+2. Import it in `src/data/pautasPodres.ts` and add an entry to `PAUTAS_PODRES` with all `PautaPodre` fields, setting `tipo` to `'negativa'` or `'positiva'` and `temas` to one or more values from the `Tema` union (e.g. `'direitos humanos'`, `'meio ambiente'`, `'segurança pública'`, `'democracia'`, `'sucateamento do setor público'`, `'educação'`, `'saúde'`).
   - Add `referencias` when available (`PautaReference[]`) to populate the toggleable "Leia mais" section in `PautaDetailsView.vue` (hidden by default until the user expands it).
 3. No store, router, or component changes needed.
 

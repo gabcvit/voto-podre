@@ -5,7 +5,7 @@
       subtitle="Transparência. Memória. Responsabilidade."
     />
 
-    <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800 animate-fade-in-up">
+    <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800 c">
       <p class="text-zinc-500 leading-relaxed text-md">
         O <strong class="text-red-500 font-bold">Voto Podre</strong> é uma ferramenta de
         memória coletiva e transparência de classe. Ele extrai dados públicos da Câmara dos Deputados

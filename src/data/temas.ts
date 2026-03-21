@@ -21,4 +21,19 @@ export const TEMA_CONFIG: Record<Tema, { emoji: string; colorClass: string; butt
         colorClass: 'text-amber-500 dark:text-amber-400',
         buttonActiveClass: 'border-amber-500 text-amber-500 dark:border-amber-400 dark:text-amber-400',
     },
+    'sucateamento do setor público': {
+        emoji: '🏛️',
+        colorClass: 'text-orange-500 dark:text-orange-400',
+        buttonActiveClass: 'border-orange-500 text-orange-500 dark:border-orange-400 dark:text-orange-400',
+    },
+    'educação': {
+        emoji: '📚',
+        colorClass: 'text-sky-500 dark:text-sky-400',
+        buttonActiveClass: 'border-sky-500 text-sky-500 dark:border-sky-400 dark:text-sky-400',
+    },
+    'saúde': {
+        emoji: '❤️',
+        colorClass: 'text-rose-500 dark:text-rose-400',
+        buttonActiveClass: 'border-rose-500 text-rose-500 dark:border-rose-400 dark:text-rose-400',
+    },
 }

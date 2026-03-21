@@ -48,6 +48,11 @@ const terms = [
       'Sigla para Projeto de Lei. Cria ou altera leis que não são parte da Constituição. Depois de aprovado no Congresso e sancionado, vira lei.',
   },
   {
+    term: 'PLP',
+    description:
+      'Sigla para Projeto de Lei Complementar. Regulamenta artigos específicos da Constituição que exigem esse tipo de norma. Tem força maior que um PL comum, mas menor que uma PEC. Para ser aprovado, precisa de maioria absoluta dos votos (mais da metade de todos os membros da Casa, não só dos presentes).',
+  },
+  {
     term: 'Pauta',
     description:
       'No site, “pauta” é uma proposta legislativa monitorada pelo projeto. Pode ser uma PEC, um PL ou outro tipo de votação considerada relevante.',
