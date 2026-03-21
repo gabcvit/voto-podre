@@ -38,29 +38,29 @@
 import { computed, ref } from 'vue';
 import PautasList from '@/components/PautasList.vue';
 import PageTitle from '@/components/PageTitle.vue';
-import { usePautasPodresStore } from '@/stores/usePautasPodresStore';
+import { usePautasStore } from '@/stores/usePautasStore';
 import { useMeta } from '@/composables/useMeta';
 import type { Tema } from '@/types';
 import { TEMA_CONFIG } from '@/data/temas';
 
-const { pautasPodres } = usePautasPodresStore();
+const { pautas } = usePautasStore();
 
 const temaFilter = ref<Tema | ''>('');
 
 const availableTemas = computed<Tema[]>(() => {
-  const temas = pautasPodres.flatMap(p => p.temas).filter((t): t is Tema => Boolean(t));
+  const temas = pautas.flatMap(p => p.temas).filter((t): t is Tema => Boolean(t));
   return [...new Set(temas)].sort();
 });
 
 const filteredPautas = computed(() =>
   temaFilter.value === ''
-    ? pautasPodres
-    : pautasPodres.filter(p => p.temas.includes(temaFilter.value as Tema))
+    ? pautas
+    : pautas.filter(p => p.temas.includes(temaFilter.value as Tema))
 );
 
 useMeta({
   title: 'Pautas',
   description: 'Conheça as pautas catalogadas pelo Voto Podre — proposições legislativas monitoradas no Congresso brasileiro.',
-  canonicalPath: '/pautas-podres',
+  canonicalPath: '/pautas',
 });
 </script>

@@ -78,7 +78,7 @@
           :key="deputado.id"
           :style="{ '--enter-delay': `${Math.min(index, 15) * 30}ms` }"
           :deputado="deputado"
-          :pautasPodres="[pauta]"
+          :pautas="[pauta]"
         />
       </TransitionGroup>
     </div>
@@ -99,14 +99,14 @@ import IconArrowBack from '@/components/icons/IconArrowBack.vue';
 import IconShare from '@/components/icons/IconShare.vue';
 import BaseDeputado from '@/components/BaseDeputado.vue';
 import { TODOS_DEPUTADOS } from '@/data/deputados';
-import { PAUTAS_PODRES } from '@/data/pautasPodres';
+import { PAUTAS } from '@/data/pautas';
 import { useMeta } from '@/composables/useMeta';
 
 const route = useRoute();
 const router = useRouter();
 
 function getPautaById(id: string | number) {
-  return PAUTAS_PODRES.find(pauta => String(pauta.id) === String(id));
+  return PAUTAS.find(pauta => String(pauta.id) === String(id));
 }
 
 function getDeputadosByIds(ids: Array<number | undefined>) {
@@ -134,7 +134,7 @@ const metaDescription = computed(() => {
 useMeta({
   title: computed(() => pauta.value?.nome ?? 'Pauta'),
   description: metaDescription,
-  canonicalPath: computed(() => pauta.value ? `/pauta/${pauta.value.id}` : '/pautas-podres'),
+  canonicalPath: computed(() => pauta.value ? `/pauta/${pauta.value.id}` : '/pautas'),
 });
 
 const copied = ref(false);

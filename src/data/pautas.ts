@@ -1,14 +1,14 @@
-import IDS_DEPUTADOS_PODRES_PEC_BANDIDAGEM from './pecs-podres/pec-bandidagem';
-import IDS_DEPUTADOS_PODRES_PEC_ABORTO from './pecs-podres/pec-aborto';
-import IDS_DEPUTADOS_PODRES_PEC_ANISTIA from './pecs-podres/pec-anistia';
-import IDS_DEPUTADOS_PODRES_PL_DEVASTACAO from './pecs-podres/pl-devastacao';
-import IDS_DEPUTADOS_PODRES_PL_MARCO_TEMPORAL from './pecs-podres/pl-marco-temporal';
-import IDS_DEPUTADOS_PODRES_PL_ANTI_MOVIMENTOS_RURAIS from './pecs-podres/pl-anti-movimentos-trabalhadores-rurais-e-indigenas';
-import IDS_DEPUTADOS_PODRES_PL_MERCADO_DE_CARBONO from './pecs-podres/pl-mercado-de-carbono';
-import IDS_DEPUTADOS_PODRES_PLP_ARCABOUCO_FISCAL from './pecs-podres/plp-arcabouco-fiscal';
-import type { PautaPodre } from '@/types';
+import IDS_DEPUTADOS_PODRES_PEC_BANDIDAGEM from './single-pautas/pec-bandidagem';
+import IDS_DEPUTADOS_PODRES_PEC_ABORTO from './single-pautas/pec-aborto';
+import IDS_DEPUTADOS_PODRES_PEC_ANISTIA from './single-pautas/pec-anistia';
+import IDS_DEPUTADOS_PODRES_PL_DEVASTACAO from './single-pautas/pl-devastacao';
+import IDS_DEPUTADOS_PODRES_PL_MARCO_TEMPORAL from './single-pautas/pl-marco-temporal';
+import IDS_DEPUTADOS_PODRES_PL_ANTI_MOVIMENTOS_RURAIS from './single-pautas/pl-anti-movimentos-trabalhadores-rurais-e-indigenas';
+import IDS_DEPUTADOS_PODRES_PL_MERCADO_DE_CARBONO from './single-pautas/pl-mercado-de-carbono';
+import IDS_DEPUTADOS_PODRES_PLP_ARCABOUCO_FISCAL from './single-pautas/plp-arcabouco-fiscal';
+import type { Pauta } from '@/types';
 
-export const PAUTAS_PODRES: PautaPodre[] = [
+export const PAUTAS: Pauta[] = [
     {
         id: 2270800,
         nome: 'PEC da Bandidagem',

@@ -3,7 +3,7 @@ import type { RouteRecordRaw } from 'vue-router';
 import HomeView from './views/HomeView.vue';
 import DeputadosView from './views/DeputadosView.vue';
 import DeputadoDetailsView from './views/DeputadoDetailsView.vue';
-import PautasPodresView from './views/PautasPodresView.vue';
+import PautasView from './views/PautasView.vue';
 import PautaDetailsView from './views/PautaDetailsView.vue';
 import AboutView from './views/AboutView.vue';
 import GlossaryView from './views/GlossaryView.vue';
@@ -28,9 +28,9 @@ const routes: RouteRecordRaw[] = [
     props: true,
   },
   {
-    path: '/pautas-podres',
-    name: 'PautasPodres',
-    component: PautasPodresView,
+    path: '/pautas',
+    name: 'Pautas',
+    component: PautasView,
   },
   {
     path: '/pauta/:id',

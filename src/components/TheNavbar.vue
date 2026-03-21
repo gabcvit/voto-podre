@@ -107,6 +107,6 @@ const navLinks = [
   { to: '/sobre', label: 'Sobre' },
   { to: '/glossario', label: 'Glossário' },
   { to: '/deputados', label: 'Deputados' },
-  { to: '/pautas-podres', label: 'Pautas' },
+  { to: '/pautas', label: 'Pautas' },
 ];
 </script>

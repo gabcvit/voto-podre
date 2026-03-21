@@ -1,18 +1,18 @@
 import { ref, computed } from 'vue';
 import { useDeputadosStore } from '@/stores/useDeputadosStore';
-import { usePautasPodresStore } from '@/stores/usePautasPodresStore';
-import type { Deputado, PautaPodre } from '@/types';
+import { usePautasStore } from '@/stores/usePautasStore';
+import type { Deputado, Pauta } from '@/types';
 
 export function useDeputadoDetails(id: string | number) {
   const deputadosStore = useDeputadosStore();
-  const pautasStore = usePautasPodresStore();
+  const pautasStore = usePautasStore();
   const deputado = ref<Deputado | null>(null);
 
   deputado.value = deputadosStore.deputados.find((d: Deputado) => String(d.id) === String(id)) || null;
 
-  const pautasDoDeputado = computed<PautaPodre[]>(() => {
+  const pautasDoDeputado = computed<Pauta[]>(() => {
     if (!deputado.value) return [];
-    return pautasStore.pautasPodres.filter((pauta: PautaPodre) => pauta.idsDeputadosPodres.includes(deputado.value!.id));
+    return pautasStore.pautas.filter((pauta: Pauta) => pauta.idsDeputadosPodres.includes(deputado.value!.id));
   });
 
   return {

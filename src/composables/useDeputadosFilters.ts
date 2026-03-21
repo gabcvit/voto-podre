@@ -1,6 +1,6 @@
 import { ref, computed } from 'vue'
 import type { Ref } from 'vue'
-import type { Deputado, PautaPodre } from '@/types'
+import type { Deputado, Pauta } from '@/types'
 
 export type StatusFilter = 'all' | 'podres' | 'clean'
 
@@ -12,16 +12,16 @@ export const STATUS_OPTIONS = [
 
 export function useDeputadosFilters(
   deputados: Ref<Deputado[]>,
-  pautasPodres: Ref<PautaPodre[]>,
+  pautas: Ref<Pauta[]>,
 ) {
   const searchQuery = ref('')
   const statusFilter = ref<StatusFilter>('all')
   const partidoFilter = ref('')
   const ufFilter = ref('')
-  const minPautasPodres = ref(0)
+  const minPautaComVotoPodre = ref(0)
 
   function podreCountFor(id: number): number {
-    return pautasPodres.value.filter(p => p.idsDeputadosPodres.includes(id)).length
+    return pautas.value.filter(p => p.idsDeputadosPodres.includes(id)).length
   }
 
   const availablePartidos = computed<string[]>(() =>
@@ -55,8 +55,8 @@ export function useDeputadosFilters(
   }
 
   function matchesMinPautas(d: Deputado): boolean {
-    if (minPautasPodres.value <= 0) return true
-    return podreCountFor(d.id) >= minPautasPodres.value
+    if (minPautaComVotoPodre.value <= 0) return true
+    return podreCountFor(d.id) >= minPautaComVotoPodre.value
   }
 
   const filteredDeputados = computed<Deputado[]>(() =>
@@ -73,7 +73,7 @@ export function useDeputadosFilters(
     statusFilter.value !== 'all' ||
     partidoFilter.value !== '' ||
     ufFilter.value !== '' ||
-    minPautasPodres.value > 0,
+    minPautaComVotoPodre.value > 0,
   )
 
   function resetFilters(): void {
@@ -81,7 +81,7 @@ export function useDeputadosFilters(
     statusFilter.value = 'all'
     partidoFilter.value = ''
     ufFilter.value = ''
-    minPautasPodres.value = 0
+    minPautaComVotoPodre.value = 0
   }
 
   return {
@@ -89,7 +89,7 @@ export function useDeputadosFilters(
     statusFilter,
     partidoFilter,
     ufFilter,
-    minPautasPodres,
+    minPautaComVotoPodre,
     availablePartidos,
     availableUfs,
     filteredDeputados,

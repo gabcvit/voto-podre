@@ -13,7 +13,7 @@
       v-model:statusFilter="statusFilter"
       v-model:partidoFilter="partidoFilter"
       v-model:ufFilter="ufFilter"
-      v-model:minPautasPodres="minPautasPodres"
+      v-model:minPautaComVotoPodre="minPautaComVotoPodre"
       :availablePartidos="availablePartidos"
       :availableUfs="availableUfs"
       :hasActiveFilters="hasActiveFilters"
@@ -44,7 +44,7 @@
           :key="deputado.id"
           :style="{ '--enter-delay': `${Math.min(index, 15) * 30}ms` }"
           :deputado="deputado"
-          :pautasPodres="pautasPodres"
+          :pautas="pautas"
         />
       </TransitionGroup>
     </div>
@@ -57,7 +57,7 @@ import BaseDeputado from '@/components/BaseDeputado.vue'
 import DeputadosFilters from '@/components/DeputadosFilters.vue'
 import PageTitle from '@/components/PageTitle.vue'
 import { useDeputadosStore } from '@/stores/useDeputadosStore'
-import { usePautasPodresStore } from '@/stores/usePautasPodresStore'
+import { usePautasStore } from '@/stores/usePautasStore'
 import { useDeputadosFilters } from '@/composables/useDeputadosFilters'
 import { useMeta } from '@/composables/useMeta'
 
@@ -68,18 +68,18 @@ useMeta({
 })
 
 const { deputados } = storeToRefs(useDeputadosStore())
-const { pautasPodres } = storeToRefs(usePautasPodresStore())
+const { pautas } = storeToRefs(usePautasStore())
 
 const {
   searchQuery,
   statusFilter,
   partidoFilter,
   ufFilter,
-  minPautasPodres,
+  minPautaComVotoPodre,
   availablePartidos,
   availableUfs,
   filteredDeputados,
   hasActiveFilters,
   resetFilters,
-} = useDeputadosFilters(deputados, pautasPodres)
+} = useDeputadosFilters(deputados, pautas)
 </script>

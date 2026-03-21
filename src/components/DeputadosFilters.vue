@@ -101,12 +101,12 @@
         </label>
         <input
           id="filter-min-pautas"
-          :value="minPautasPodres"
+          :value="minPautaComVotoPodre"
           type="number"
           min="0"
           placeholder="0"
           class="w-full bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:border-red-500 dark:focus:border-red-500 focus-visible:ring-1 focus-visible:ring-red-500 transition-colors"
-          @input="$emit('update:minPautasPodres', Number(($event.target as HTMLInputElement).value))"
+          @input="$emit('update:minPautaComVotoPodre', Number(($event.target as HTMLInputElement).value))"
         />
       </div>
     </div>
@@ -122,7 +122,7 @@ interface Props {
   statusFilter: StatusFilter
   partidoFilter: string
   ufFilter: string
-  minPautasPodres: number
+  minPautaComVotoPodre: number
   availablePartidos: string[]
   availableUfs: string[]
   hasActiveFilters: boolean
@@ -135,7 +135,7 @@ defineEmits<{
   'update:statusFilter': [value: StatusFilter]
   'update:partidoFilter': [value: string]
   'update:ufFilter': [value: string]
-  'update:minPautasPodres': [value: number]
+  'update:minPautaComVotoPodre': [value: number]
   'reset': []
 }>()
 

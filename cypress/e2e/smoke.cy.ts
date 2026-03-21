@@ -51,7 +51,7 @@ const smokePages: SmokePage[] = [
   },
   {
     name: 'pautas list',
-    path: '/pautas-podres',
+    path: '/pautas',
     title: 'Pautas',
     assertContent: () => {
       cy.contains('h1', 'Pautas').should('be.visible')

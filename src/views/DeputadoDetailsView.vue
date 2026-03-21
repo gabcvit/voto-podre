@@ -13,7 +13,7 @@
 
       <BaseDeputado
         :deputado="deputado"
-        :pautasPodres="pautasDoDeputado"
+        :pautas="pautasDoDeputado"
         variant="card"
         class="mb-8"
       />

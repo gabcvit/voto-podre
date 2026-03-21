@@ -23,11 +23,16 @@ Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputad
 
 ## Pautas Catalogadas
 
-| Proposição | Tipo | Descrição resumida |
-|---|---|---|
-| **PEC da Bandidagem** | PEC | Proposta que beneficia membros de organizações criminosas como o PCC |
-| **PEC do Aborto** | PEC | Proposta que criminaliza o aborto em todas as circunstâncias, incluindo estupro e risco de vida |
-| **PL da Devastação** | PL | Projeto que desmonta o licenciamento ambiental e abre caminho para desastres como Mariana e Brumadinho |
+| Proposição | Tipo | Temas | Descrição resumida |
+|---|---|---|---|
+| **PEC da Bandidagem** | PEC | democracia | Proposta que blinda parlamentares investigados de processos no STF |
+| **PEC do Estupro** | PEC | direitos humanos | Proposta que criminaliza o aborto em todas as circunstâncias, incluindo estupro e risco de vida |
+| **PL da Devastação** | PL | meio ambiente | Projeto que desmonta o licenciamento ambiental e abre caminho para desastres como Mariana e Brumadinho |
+| **PL da Anistia** | PEC | democracia | Anistia partidos de multas eleitorais e irregularidades, inclusive por caixa 2 |
+| **PL 490/2007 e marco temporal** | PL | meio ambiente, direitos humanos | Impõe o marco temporal e ameaça territórios indígenas |
+| **PL 709/2023 contra movimentos trabalhistas rurais e indígenas** | PL | direitos humanos | Criminaliza ocupações do MST e comunidades indígenas |
+| **PL 182/2024 e mercado de carbono** *(positiva)* | PL | meio ambiente | Deputados que votaram **contra** o marco regulatório do mercado de carbono |
+| **PLP do Arcabouço Fiscal** | PLP | sucateamento do setor público, saúde, educação | Amarra investimentos públicos em saúde, educação e infraestrutura |
 
 ---
 

@@ -89,11 +89,11 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { RouterLink } from 'vue-router';
-import type { Deputado, PautaPodre } from '@/types';
+import type { Deputado, Pauta } from '@/types';
 
 interface Props {
     deputado: Deputado
-    pautasPodres: PautaPodre[]
+    pautas: Pauta[]
     variant?: 'list' | 'card'
 }
 
@@ -102,10 +102,10 @@ const props = defineProps<Props>()
 const isCard = computed(() => props.variant === 'card');
 
 const isPodre = computed(() =>
-    props.pautasPodres.some(pauta => pauta.idsDeputadosPodres.includes(props.deputado.id))
+    props.pautas.some(pauta => pauta.idsDeputadosPodres.includes(props.deputado.id))
 )
 
 const podreCount = computed(() =>
-    props.pautasPodres.filter(pauta => pauta.idsDeputadosPodres.includes(props.deputado.id)).length
+    props.pautas.filter(pauta => pauta.idsDeputadosPodres.includes(props.deputado.id)).length
 )
 </script>

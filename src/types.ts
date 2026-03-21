@@ -28,7 +28,7 @@ export type PautaReference = {
     summary?: string,
 }
 
-export type PautaPodre = {
+export type Pauta = {
     id: number,
     nome: string,
     descricao: string,

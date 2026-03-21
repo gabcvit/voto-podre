@@ -98,7 +98,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   ├── main.ts                 # Creates Vue app, registers Pinia + Router, mounts
 │   ├── App.vue                 # Root: initialises useThemeStore, applies theme-aware bg/text, TheNavbar + <router-view> + TheFooter; flex-col layout so footer sticks to bottom
 │   ├── router.ts               # All routes (see §6)
-│   ├── types.ts                # Shared TypeScript types: Deputado, PautaPodre
+│   ├── types.ts                # Shared TypeScript types: Deputado, Pauta
 │   │
 │   ├── assets/
 │   │   ├── base.css            # body font-family (DM Sans), h1-h6 font-family (Syne)
@@ -106,9 +106,9 @@ pnpm deploy       # build + push to gh-pages branch
 │   │
 │   ├── data/
 │   │   ├── deputados.ts        # TODOS_DEPUTADOS — static export of all monitored deputies
-│   │   ├── pautasPodres.ts     # PAUTAS_PODRES: PautaPodre[] — array of PautaPodre objects (typed)
+│   │   ├── pautas.ts           # PAUTAS: Pauta[] — array of Pauta objects (typed)
 │   │   ├── temas.ts            # TEMA_CONFIG: Record<Tema, { emoji, colorClass, buttonActiveClass }> — per-tema UI config
-│   │   └── pecs-podres/
+│   │   └── single-pautas/
 │           ├── utils.ts                                                 # extractIdsPodres(votos) — IDs of deputies who voted "Sim" (use for negative pautas)
 │           │                                                            # extractIdsContraPauta(votos) — IDs of deputies who voted "Não" (use for positive pautas)
 │           ├── pec-aborto.ts                                           # Deputy IDs flagged (voted Sim)
@@ -122,7 +122,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   │
 │   ├── stores/
 │   │   ├── useDeputadosStore.ts     # Pinia store: exposes { deputados }
-│   │   ├── usePautasPodresStore.ts  # Pinia store: exposes { pautasPodres }
+│   │   ├── usePautasStore.ts        # Pinia store: exposes { pautas }
 │   │   └── useThemeStore.ts         # Pinia store: exposes { isDark, toggle() }; syncs .dark class on <html> and localStorage
 │   │
 │   ├── composables/
@@ -134,7 +134,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   ├── HomeView.vue            # Landing: hero, stats, callout, message cards
 │   │   ├── DeputadosView.vue       # Lists deputies via BaseDeputado; includes DeputadosFilters panel
 │   │   ├── DeputadoDetailsView.vue # Single deputy: card + social buttons (from redeSocial, platform-aware icons) + InfoList + PautasList + share button (Web Share API / clipboard fallback)
-│   │   ├── PautasPodresView.vue    # Lists all pautas via PautasList; tema filter buttons
+│   │   ├── PautasView.vue          # Lists all pautas via PautasList; tema filter buttons
 │   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + toggleable "Leia mais" references (collapsed by default) + list of flagged deputies + share button (Web Share API / clipboard fallback)
 │   │   ├── AboutView.vue          # Static info / methodology + project Instagram link
 │   │   ├── GlossaryView.vue       # Glossário de termos legislativos usados no site (PEC, PL, PLP, proposição, etc.)
@@ -148,7 +148,7 @@ pnpm deploy       # build + push to gh-pages branch
 │       ├── PageTitle.vue           # h1 + optional subtitle used by list views
 │       ├── StatCard.vue            # Number + label + description; top-border colour variant
 │       ├── MessageCard.vue         # Left-bordered editorial text block
-│       ├── PautasList.vue          # Renders list of PautaPodre items; red row for negative, green row for positive; clickable
+│       ├── PautasList.vue          # Renders list of Pauta items; red row for negative, green row for positive; clickable
 │       ├── InfoList.vue            # Key-value table of a deputy's raw fields
 │       ├── DeputadosFilters.vue    # Filter panel for DeputadosView (search, status, partido, UF, min pautas)
 │       └── icons/                  # Simple SVG icon components
@@ -197,7 +197,7 @@ type Deputado = {
   redeSocial: string[] // Social profile URLs from /deputados/:id
 }
 
-type PautaPodre = {
+type Pauta = {
   id: number                          // Proposição ID from Câmara API
   nome: string
   descricao: string
@@ -219,7 +219,7 @@ type PautaPodre = {
 | `/` | `Home` | `HomeView` | |
 | `/deputados` | `Deputados` | `DeputadosView` | |
 | `/deputado/:id` | `DeputadoDetails` | `DeputadoDetailsView` | `props: true` |
-| `/pautas-podres` | `PautasPodres` | `PautasPodresView` | tema filter buttons |
+| `/pautas` | `Pautas` | `PautasView` | tema filter buttons |
 | `/pauta/:id` | `PautaDetails` | `PautaDetailsView` | |
 | `/sobre` | `Sobre` | `AboutView` | |
 | `/glossario` | `Glossario` | `GlossaryView` | glossário de termos legislativos |
@@ -232,18 +232,18 @@ type PautaPodre = {
 
 ```
 src/data/deputados.ts         ──► useDeputadosStore  ──► DeputadosView / useDeputadoDetails
-src/data/pautasPodres.ts      ──► usePautasPodresStore ──► PautasPodresView / HomeView stats
-src/data/pecs-podres/*.ts     ──► pautasPodres.ts (imported inside PAUTAS_PODRES array)
+src/data/pautas.ts            ──► usePautasStore ──► PautasView / HomeView stats
+src/data/single-pautas/*.ts   ──► pautas.ts (imported inside PAUTAS array)
 ```
 
 **"Is a deputy podre?"** logic lives in `BaseDeputado.vue`:
 ```ts
-const isPodre = pautasPodres.some(p => p.idsDeputadosPodres.includes(deputado.id))
+const isPodre = pautas.some(p => p.idsDeputadosPodres.includes(deputado.id))
 ```
 
 **Home page stat counts** are derived in `HomeView.vue` via `computed()`:
 - `totalDeputadosMonitorados` = `deputados.length`
-- `totalPautasPodres` = `pautasPodres.length`
+- `totalPautas` = `pautas.length`
 - `totalDeputadosPodres` = unique deputy IDs across all pautas
 
 ---
@@ -254,7 +254,7 @@ const isPodre = pautasPodres.some(p => p.idsDeputadosPodres.includes(deputado.id
 | Prop | Type | Default | Notes |
 |---|---|---|---|
 | `deputado` | `Deputado` | — | Required |
-| `pautasPodres` | `PautaPodre[]` | — | Used to compute `isPodre` and `podreCount` |
+| `pautas` | `Pauta[]` | — | Used to compute `isPodre` and `podreCount` |
 | `variant` | `'list' \| 'card'` | `'list'` | `'card'` = expanded layout, no click-to-navigate |
 
 In `list` variant: renders as `<RouterLink>` (anchor) to `/deputado/:id` — fully keyboard accessible. In `card` variant: renders as `<div>` with no navigation.
@@ -296,7 +296,7 @@ Rows with `tipo === 'negativa'` get a red left-border and a **PAUTA PODRE** labe
 Rendered as a `<dl>` (description list) with `<dt>`/`<dd>` pairs for each key-value entry.
 
 ### `useDeputadoDetails(id: string | number)`
-Returns `{ deputado: Ref<Deputado | null>, pautasDoDeputado: ComputedRef<PautaPodre[]> }`.
+Returns `{ deputado: Ref<Deputado | null>, pautasDoDeputado: ComputedRef<Pauta[]> }`.
 
 ### `useMeta(opts)`
 Reactively updates `<head>` meta, Open Graph, and Twitter/X Card tags for the current route. Uses `watchEffect` so reactive refs update the DOM when data resolves.
@@ -317,15 +317,15 @@ Exports `SITE_URL = 'https://voto-podre.com.br'` for use in other modules.
 - Dynamic routes (`/deputado/:id`, `/pauta/:id`): fall back to `dist/404.html` (GitHub Pages' SPA fallback). Real users get correct in-app navigation; social-media crawlers may show the homepage defaults.
 - If you add a new static route, add a matching entry to `scripts/prerender.mjs`.
 
-### `useDeputadosFilters(deputados, pautasPodres)`
-Accepts `Ref<Deputado[]>` and `Ref<PautaPodre[]>` (use `storeToRefs` when passing from stores). Returns:
+### `useDeputadosFilters(deputados, pautas)`
+Accepts `Ref<Deputado[]>` and `Ref<Pauta[]>` (use `storeToRefs` when passing from stores). Returns:
 ```ts
 {
   searchQuery: Ref<string>           // name substring search
   statusFilter: Ref<StatusFilter>    // 'all' | 'podres' | 'clean'
   partidoFilter: Ref<string>         // '' = all parties
   ufFilter: Ref<string>              // '' = all states
-  minPautasPodres: Ref<number>       // 0 = no minimum
+  minPautaComVotoPodre: Ref<number>  // 0 = no minimum
   availablePartidos: ComputedRef<string[]>
   availableUfs: ComputedRef<string[]>
   filteredDeputados: ComputedRef<Deputado[]>
@@ -346,7 +346,7 @@ Dumb UI component — all state lives in the composable. Communicates via `v-mod
 | `v-model:statusFilter` | `StatusFilter` | Toggle buttons with `aria-pressed`; wrapped in `role="group"` |
 | `v-model:partidoFilter` | `string` | Dropdown; `''` = all parties |
 | `v-model:ufFilter` | `string` | Dropdown; `''` = all states |
-| `v-model:minPautasPodres` | `number` | Number input; `0` = no minimum |
+| `v-model:minPautaComVotoPodre` | `number` | Number input; `0` = no minimum |
 | `availablePartidos` | `string[]` | Drives partido dropdown options |
 | `availableUfs` | `string[]` | Drives UF dropdown options |
 | `hasActiveFilters` | `boolean` | Shows "Limpar filtros" button when `true` |
@@ -435,12 +435,12 @@ Both legal pages are static views with no props or stores. They follow the same 
 
 ## 11. Adding New Content
 
-### `PautasPodresView` (`/pautas-podres`)
+### `PautasView` (`/pautas`)
 Displays all catalogued `pautas` with a row of **tema filter buttons** ("Todos" + one button per unique `tema` value). Clicking a button filters the list to that theme; clicking "Todos" resets. Filter state is local (`ref`) inside the view — no composable needed.
-1. Create `src/data/pecs-podres/<type>-<slug>.ts` — use `pec-` prefix for PECs, `pl-` prefix for PLs, and `plp-` prefix for PLPs.
+1. Create `src/data/single-pautas/<type>-<slug>.ts` — use `pec-` prefix for PECs, `pl-` prefix for PLs, and `plp-` prefix for PLPs.
    - For **negative** pautas (voting Sim = bad): import `extractIdsPodres` from `./utils` and call it with the raw `VOTOS` constant.
    - For **positive** pautas (voting Não = bad): import `extractIdsContraPauta` from `./utils` and call it with the raw `VOTOS` constant.
-2. Import it in `src/data/pautasPodres.ts` and add an entry to `PAUTAS_PODRES` with all `PautaPodre` fields, setting `tipo` to `'negativa'` or `'positiva'` and `temas` to one or more values from the `Tema` union (e.g. `'direitos humanos'`, `'meio ambiente'`, `'segurança pública'`, `'democracia'`, `'sucateamento do setor público'`, `'educação'`, `'saúde'`).
+2. Import it in `src/data/pautas.ts` and add an entry to `PAUTAS` with all `Pauta` fields, setting `tipo` to `'negativa'` or `'positiva'` and `temas` to one or more values from the `Tema` union (e.g. `'direitos humanos'`, `'meio ambiente'`, `'segurança pública'`, `'democracia'`, `'sucateamento do setor público'`, `'educação'`, `'saúde'`).
   - Add `referencias` when available (`PautaReference[]`) to populate the toggleable "Leia mais" section in `PautaDetailsView.vue` (hidden by default until the user expands it).
 3. No store, router, or component changes needed.
 

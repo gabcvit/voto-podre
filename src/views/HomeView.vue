@@ -17,7 +17,7 @@
       </p>
       <div class="flex flex-wrap gap-3">
         <RouterLink
-          to="/pautas-podres"
+          to="/pautas"
           class="px-5 py-2 bg-red-500 hover:bg-red-400 text-white text-sm font-black uppercase tracking-widest transition-colors"
         >
           Ver Pautas
@@ -40,7 +40,7 @@
         color="zinc"
       />
       <StatCard
-        :value="totalPautasPodres"
+        :value="totalPautas"
         label="Pautas catalogadas"
         description="Proposições legislativas classificadas e monitoradas."
         color="red"
@@ -95,7 +95,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useDeputadosStore } from '@/stores/useDeputadosStore';
-import { usePautasPodresStore } from '@/stores/usePautasPodresStore';
+import { usePautasStore } from '@/stores/usePautasStore';
 import StatCard from '@/components/StatCard.vue';
 import MessageCard from '@/components/MessageCard.vue';
 import { useMeta } from '@/composables/useMeta';
@@ -107,15 +107,15 @@ useMeta({
 });
 
 const { deputados } = useDeputadosStore();
-const { pautasPodres } = usePautasPodresStore();
+const { pautas } = usePautasStore();
 
 const totalDeputadosMonitorados = computed(() => deputados.length);
 
-const totalPautasPodres = computed(() => pautasPodres.length);
+const totalPautas = computed(() => pautas.length);
 
 const totalDeputadosPodres = computed(() =>
   deputados.filter(d =>
-    pautasPodres.some(p => p.idsDeputadosPodres.includes(d.id))
+    pautas.some(p => p.idsDeputadosPodres.includes(d.id))
   ).length
 );
 </script>
