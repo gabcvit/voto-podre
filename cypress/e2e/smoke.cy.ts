@@ -12,7 +12,7 @@ const deputado = {
 
 const pauta = {
   id: 2270800,
-  nome: 'PEC da Bandidagem',
+  nome: 'PEC 3/2021 da Bandidagem',
 }
 
 const smokePages: SmokePage[] = [
@@ -116,7 +116,7 @@ const smokePages: SmokePage[] = [
     title: 'Apoie o Projeto',
     assertContent: () => {
       cy.contains('h1', 'Apoie o Voto Podre').should('be.visible')
-      cy.contains('h2', 'Contribua via PIX').should('be.visible')
+      cy.contains('h2', 'Me compre um cafézinho').should('be.visible')
       cy.contains('button', 'Copiar chave PIX').should('be.visible')
     },
   },

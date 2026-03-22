@@ -11,13 +11,9 @@
         sem publicidade, sem patrocínio corporativo e sem nenhum vínculo com partidos ou grupos políticos.
         Todo o trabalho de pesquisa, curadoria de dados e desenvolvimento é feito voluntariamente.
       </p>
-      <p class="text-zinc-500 leading-relaxed text-md mb-4">
-        Deixo claro: a intenção deste projeto <strong class="text-zinc-900 dark:text-white">não é, em nenhuma hipótese, lucrar com informação pública</strong>.
-        Os dados utilizados são abertos, disponibilizados pela própria Câmara dos Deputados, e pertencem à sociedade.
-      </p>
       <p class="text-zinc-500 leading-relaxed text-md">
         Porém, toda a infraestrutura necessária para desenvolver, testar e hospedar o site — domínio, ferramentas de desenvolvimento
-        e serviços de hospedagem — é paga do meu próprio bolso. Qualquer contribuição ajuda a cobrir esses custos e a manter o projeto no ar.
+        e serviços de hospedagem — é paga do meu próprio bolso. Qualquer contribuição ajuda a cobrir esses custos e a manter o projeto no ar!
       </p>
     </section>
 
@@ -40,7 +36,7 @@
     </section>
 
     <section class="animate-fade-in-up" style="animation-delay: 200ms">
-      <h2 class="text-xl font-black uppercase tracking-tight text-zinc-900 mb-3 dark:text-white" style="font-family: 'Syne', sans-serif;">Contribua via PIX</h2>
+      <h2 class="text-xl font-black uppercase tracking-tight text-zinc-900 mb-3 dark:text-white" style="font-family: 'Syne', sans-serif;">Me compre um cafézinho</h2>
       <p class="text-zinc-500 leading-relaxed text-md mb-6">
         Qualquer valor é bem-vindo e ajuda a manter o projeto vivo. Não há valor mínimo.
       </p>
