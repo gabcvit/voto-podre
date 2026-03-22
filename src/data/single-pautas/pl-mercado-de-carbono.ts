@@ -1947,7 +1947,7 @@ const VOTOS = {
         "siglaUf": "SP",
         "idLegislatura": 57,
         "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/227433.jpg",
-        "email": "dep.douglasviegas@camara.leg.br"
+        "email": null
       }
     },
     {
@@ -3177,7 +3177,7 @@ const VOTOS = {
         "siglaUf": "MG",
         "idLegislatura": 57,
         "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220622.jpg",
-        "email": null
+        "email": "dep.nelyaquino@camara.leg.br"
       }
     },
     {
