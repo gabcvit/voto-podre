@@ -165,7 +165,7 @@ export const PAUTAS: Pauta[] = [
         id: 2349493,
         nome: 'PL 709/2023 contra Movimentos Trabalhistas Rurais e Indígenas',
         descricao: 'O PL 709/2023 endurece as penas para a ocupação de terras — medida que na prática afeta desproporcionalmente movimentos de trabalhadores rurais sem-terra e comunidades indígenas. A Constituição estabelece que a propriedade rural deve cumprir função social: terras que não geram trabalho produtivo podem ser desapropriadas para fins de reforma agrária. A ocupação de latifúndios improdutivos é uma forma histórica de pressão para que essa norma constitucional seja aplicada. O projeto aumenta as penalidades para quem exerce essa pressão, mas não impõe obrigações equivalentes aos proprietários que descumprem a função social. Organizações de direitos humanos apontam que o texto criminaliza uma forma de mobilização legítima sem endereçar a concentração fundiária que a motiva.',
-        urlVotos: 'https://dadosabertos.camara.leg.br/api/v2/votacoes/2349493-103/votos',
+        urlVotos: 'https://dadosabertos.camara.leg.br/api/v2/votacoes/2349493-82/votos',
         urlProposicao: 'https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2349493',
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PL_ANTI_MOVIMENTOS_RURAIS,
         tipo: 'negativa',
