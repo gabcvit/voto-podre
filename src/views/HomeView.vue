@@ -13,7 +13,7 @@
       <p class="text-zinc-600 max-w-xl leading-relaxed mb-8 text-md dark:text-zinc-400">
         Transparência é a arma do cidadão.<br>
         Aqui você descobre quais deputados votaram
-        <strong class="text-zinc-900 font-bold dark:text-white">contra o seu futuro</strong>.
+        <strong class="text-zinc-900 font-bold dark:text-white">contra o povo</strong>.
       </p>
       <div class="flex flex-wrap gap-3">
         <RouterLink
@@ -59,33 +59,32 @@
         class="font-black uppercase leading-none tracking-tight text-zinc-900 mb-4 dark:text-white"
         style="font-family: 'Syne', sans-serif; font-size: clamp(1.5rem, 4vw, 2.5rem);"
       >
-        Nunca esqueça quem votou <span class="text-red-500">contra o seu futuro.</span>
+        Saiba quem votou <span class="text-red-500">contra seus direitos.</span>
       </h2>
       <p class="text-zinc-500 leading-relaxed max-w-2xl text-md">
-        Cada voto podre é uma escolha deliberada de um parlamentar em prejudicar
-        trabalhadores, mulheres, os mais vulneráveis e a democracia brasileira.
-        Guarde esses nomes. Compartilhe com as pessoas ao seu redor. Leve essa informação
-        para as urnas.
+        Cada votação registrada aqui representa uma posição concreta de um parlamentar eleito
+        — sobre direitos trabalhistas, saúde pública, meio ambiente, igualdade de gênero e
+        proteção de povos originários. Registre, compartilhe e leve essas informações para as urnas.
       </p>
     </section>
 
     <!-- Messages -->
     <section aria-label="Mensagens" class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-12 animate-fade-in-up" style="animation-delay: 300ms">
       <MessageCard
-        title="Seu voto tem poder"
-        body="A democracia só funciona quando cidadãos informados exercem seu direito de voto. Não deixe que candidatos com histórico de traição ao povo sejam reeleitos."
+        title="Seu voto tem peso"
+        body="A democracia funciona melhor quando cidadãos conhecem o histórico de seus representantes. O registro das votações é público — e está aqui."
       />
       <MessageCard
-        title="Informação é resistência"
-        body="Quando o povo sabe como seus representantes votam, fica muito mais difícil governar contra o interesse público. Compartilhe, discuta, conscientize."
+        title="Transparência muda o jogo"
+        body="Quando eleitores sabem como seus representantes votam, a fiscalização democrática se fortalece. Compartilhe, discuta, conscientize."
       />
       <MessageCard
         title="Responsabilidade eleitoral"
-        body="Deputados que apoiam pautas contrárias aos direitos fundamentais não merecem uma segunda chance. Registre, divulgue e cobre seus representantes."
+        body="Parlamentares que sistematicamente votam contra direitos fundamentais devem ser cobrados. Registre, divulgue e exija responsabilidade dos seus representantes."
       />
       <MessageCard
-        title="Seja melhor que eles"
-        body="Enquanto esses parlamentares servem a interesses escusos, o povo brasileiro continua resistindo, se organizando e construindo um futuro mais justo."
+        title="A mudança começa com informação"
+        body="Conhecer os votos, acompanhar as pautas, conversar com quem está ao seu redor. A participação informada é o ponto de partida para qualquer mudança real."
       />
     </section>
 

@@ -8,26 +8,25 @@
     <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800 c">
       <p class="text-zinc-500 leading-relaxed text-md">
         O <strong class="text-red-500 font-bold">Voto Podre</strong> é uma ferramenta de
-        memória coletiva e transparência de classe. Ele extrai dados públicos da Câmara dos Deputados
-        e expõe quais parlamentares votaram contra os trabalhadores
-        — retrocedem conquistas históricas arrancadas com organização, greve e luta nas ruas,
-        não com benevolência do Estado.
+        transparência e memória eleitoral. Ele reúne dados públicos da Câmara dos Deputados
+        e registra como parlamentares votaram nas proposições que afetam trabalhadores,
+        mulheres, povos indígenas, meio ambiente e serviços públicos essenciais.
       </p>
     </section>
 
     <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800 animate-fade-in-up" style="animation-delay: 100ms">
       <h2 class="text-xl font-black uppercase tracking-tight text-zinc-900 mb-3 dark:text-white" style="font-family: 'Syne', sans-serif;">Por que monitoramos o Congresso?</h2>
       <p class="text-zinc-500 leading-relaxed text-md mb-4">
-        Nenhuma conquista da classe trabalhadora foi dada de presente pelo parlamento.
-        Direitos trabalhistas, reforma agrária, acesso à saúde e à educação —
-        tudo foi resultado de organização coletiva, pressão das ruas, sindicatos e movimentos populares.
-        O Congresso costuma responder à correlação de forças, não à consciência individual.
+        O Congresso representa interesses variados — e nem sempre os que mais precisam de proteção
+        são os que têm mais voz na política institucional. Direitos trabalhistas, acesso à saúde
+        pública, proteção ambiental e demarcação de terras indígenas são conquistas que precisam
+        de atenção constante, porque estão em permanente disputa no legislativo.
       </p>
       <p class="text-zinc-500 leading-relaxed text-md">
-        Mas quando deputados ignoram completamente o que acontece nas ruas e votam abertamente
-        contra trabalhadores, camponeses, mulheres e povos originários, precisam ser nomeados e cobrados.
-        Este projeto fornece essa memória — para que movimentos, sindicatos e eleitores
-        saibam exatamente com quem não podem contar.
+        Quando parlamentares votam contra o interesse de trabalhadores, mulheres, comunidades
+        indígenas e do meio ambiente, é importante que os eleitores saibam. Este projeto fornece
+        esse registro — para que qualquer cidadão possa verificar, com base em dados oficiais,
+        qual foi o posicionamento concreto de cada deputado.
       </p>
     </section>
 
@@ -45,17 +44,18 @@
         <div class="border-l-2 border-red-500 pl-4 py-1">
           <span class="text-xs font-black uppercase tracking-widest text-red-500 block mb-1">Pauta Podre</span>
           <p class="text-zinc-500 leading-relaxed text-md">
-            Uma proposta que representa ataque direto a direitos conquistados na luta trabalhista, criminalização de movimentos sociais,
-            entrega de território e recursos naturais ao capital, ou blindagem de quem explora e oprime.
+            Uma proposta que, na avaliação do Voto Podre, prejudica direitos de trabalhadores,
+            enfraquece a proteção ambiental, criminaliza movimentos sociais ou favorece interesses
+            privados em detrimento do bem coletivo.
             Os deputados listados nessa pauta votaram <strong class="text-zinc-900 dark:text-white">a favor</strong> dela.
           </p>
         </div>
         <div class="border-l-2 border-green-500 pl-4 py-1">
           <span class="text-xs font-black uppercase tracking-widest text-green-500 block mb-1">Pauta Positiva</span>
           <p class="text-zinc-500 leading-relaxed text-md">
-            Uma proposta que avança direitos, protege populações vulneráveis ou cria obrigações concretas para o Estado.
-            Os deputados listados nessa pauta votaram <strong class="text-zinc-900 dark:text-white">contra</strong> ela —
-            escolheram o retrocesso quando tinham a chance de mudar.
+            Uma proposta que, na avaliação do Voto Podre, amplia direitos, protege populações
+            vulneráveis ou fortalece serviços públicos essenciais.
+            Os deputados listados nessa pauta votaram <strong class="text-zinc-900 dark:text-white">contra</strong> ela.
           </p>
         </div>
       </div>
@@ -66,23 +66,23 @@
       <ol class="space-y-3 text-md">
         <li class="flex items-start gap-3">
           <span class="text-md font-black text-red-500 w-5 flex-shrink-0 pt-0.5">01</span>
-          <span class="text-zinc-500"><strong class="text-zinc-900 dark:text-white">Organize-se.</strong> Sindicatos, associações de moradores, coletivos, movimentos do campo e da cidade — a luta coletiva transforma estruturas. Nenhuma urna faz isso sozinha.</span>
+          <span class="text-zinc-500"><strong class="text-zinc-900 dark:text-white">Participe.</strong> Associações de moradores, sindicatos, grupos locais e redes comunitárias fortalecem a democracia além do voto. A eleição é uma frente importante dessa participação, não a única.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-md font-black text-red-500 w-5 flex-shrink-0 pt-0.5">02</span>
-          <span class="text-zinc-500">Consulte a lista de <RouterLink to="/pautas-podres" class="text-zinc-900 font-bold hover:text-red-500 transition-colors dark:text-white">Pautas</RouterLink> para entender o que está em jogo em cada votação.</span>
+          <span class="text-zinc-500">Consulte a lista de <RouterLink to="/pautas" class="text-zinc-900 font-bold hover:text-red-500 transition-colors dark:text-white">Pautas</RouterLink> para entender o que estava em jogo em cada votação monitorada.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-md font-black text-red-500 w-5 flex-shrink-0 pt-0.5">03</span>
-          <span class="text-zinc-500">Veja quais <RouterLink to="/deputados" class="text-zinc-900 font-bold hover:text-red-500 transition-colors dark:text-white">Deputados</RouterLink> votaram contra os trabalhadores — e quais ao menos acompanharam o que acontecia nas ruas.</span>
+          <span class="text-zinc-500">Veja quais <RouterLink to="/deputados" class="text-zinc-900 font-bold hover:text-red-500 transition-colors dark:text-white">Deputados</RouterLink> votaram nas pautas monitoradas e qual foi o posicionamento concreto de cada um.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-md font-black text-red-500 w-5 flex-shrink-0 pt-0.5">04</span>
-          <span class="text-zinc-500">Use essa informação nas urnas — sem ilusão, mas sem abrir mão de nenhuma frente de disputa. Votar em quem respeita a luta popular é parte da estratégia, não o fim dela.</span>
+          <span class="text-zinc-500">Use essas informações para escolher seus representantes com mais critério. O histórico de votações é um indicador concreto de como um parlamentar age quando a decisão importa.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-md font-black text-red-500 w-5 flex-shrink-0 pt-0.5">05</span>
-          <span class="text-zinc-500">Compartilhe com o seu movimento, sindicato, grupo e comunidade. Memória coletiva é arma política.</span>
+          <span class="text-zinc-500">Compartilhe com amigos, familiares e sua comunidade. Quanto mais pessoas tiverem acesso a essas informações, mais saudável é o debate público.</span>
         </li>
       </ol>
     </section>
@@ -90,9 +90,12 @@
     <section class="border-l-2 border-red-500 pl-5 py-1 mb-10 animate-fade-in-up" style="animation-delay: 400ms">
       <h2 class="text-md font-black uppercase tracking-widest text-red-500 mb-2">Posicionamento</h2>
       <p class="text-zinc-500 text-md leading-relaxed">
-        Este projeto tem perspectiva de classe: defende os interesses dos trabalhadores,
-        dos povos da terra, dos oprimidos. Não pretende ser neutro — neutralidade
-        diante da exploração é cumplicidade. Os registros de votação e as informações dos deputados são públicos, obtidos da API oficial da Câmara dos Deputados do Brasil e verificáveis por qualquer pessoa. As descrições das pautas são análises editoriais da equipe do Voto Podre — texto independente, com perspectiva de classe declarada.
+        Este projeto tem perspectiva declarada: defende os interesses de trabalhadores,
+        mulheres, povos indígenas, meio ambiente e serviços públicos. Não pretende ser neutro
+        quanto a valores — mas os dados são rigorosamente baseados em registros oficiais.
+        Os votos e informações dos deputados são obtidos da API pública da Câmara dos Deputados
+        do Brasil e verificáveis por qualquer pessoa. As descrições das pautas são análises
+        editoriais da equipe do Voto Podre, com essa perspectiva claramente declarada.
       </p>
     </section>
 
@@ -126,7 +129,7 @@ import { useMeta } from '@/composables/useMeta';
 
 useMeta({
   title: 'Sobre',
-  description: 'Sobre o Voto Podre — ferramenta de memória coletiva que expõe deputados que votaram contra trabalhadores e movimentos populares no Brasil.',
+  description: 'Sobre o Voto Podre — ferramenta de transparência eleitoral que registra como deputados federais votaram em pautas que afetam trabalhadores, mulheres, povos indígenas e meio ambiente.',
 
   canonicalPath: '/sobre',
 });
