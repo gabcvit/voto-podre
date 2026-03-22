@@ -20,6 +20,7 @@ export const PAUTAS: Pauta[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PEC_BANDIDAGEM,
         tipo: 'negativa',
         temas: ['democracia'],
+        explicacao: 'Quando um parlamentar acusado de corrupção pode pedir ao próprio grupo de colegas que decida, em votação secreta, se ele será processado, o resultado é previsível. Essa proposta não protege nenhum inocente — protege quem rouba dinheiro público. Esse dinheiro desviado sai diretamente das políticas que chegam às famílias que mais precisam: saúde, educação, moradia.',
         referencias: [
           {
             title: '‘PEC da Bandidagem’ é atentado à sociedade e à democracia, denuncia cientista político',
@@ -52,6 +53,7 @@ export const PAUTAS: Pauta[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PEC_ABORTO,
         tipo: 'negativa',
         temas: ['direitos humanos'],
+        explicacao: 'Mulheres ricas sempre tiveram acesso a outros caminhos, seja no Brasil ou no exterior. O aborto inseguro mata mulheres pobres — as que não têm escolha. Forçar uma vítima de estupro a levar a gestação adiante não é proteção à vida: é uma punição adicional imposta pelo Estado a quem já sofreu violência.',
         referencias: [
           {
             title: 'Sob protestos, CCJ da Câmara aprova PEC do Estupro, que acaba com aborto legal, por 35 votos a 15',
@@ -84,6 +86,7 @@ export const PAUTAS: Pauta[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PL_DEVASTACAO,
         tipo: 'negativa',
         temas: ['meio ambiente'],
+        explicacao: 'Mariana. Brumadinho. Essas tragédias aconteceram porque o controle ambiental falhou — e quem pagou a conta mais cara foram as comunidades ribeirinhas, os pescadores, os trabalhadores do entorno, não as empresas. Esse PL remove o que restava dessas travas. Povos indígenas, quilombolas e comunidades tradicionais são os primeiros atingidos quando o licenciamento deixa de funcionar.',
         referencias: [
           {
             title: 'Aprovação do PL da Devastação pelo Senado é inconstitucional e pode gerar retrocessos ambientais irreversíveis',
@@ -111,6 +114,7 @@ export const PAUTAS: Pauta[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PEC_ANISTIA,
         tipo: 'negativa',
         temas: ['democracia'],
+        explicacao: 'Partidos que ignoraram as cotas de gênero e raça — prejudicando candidaturas de mulheres e pessoas negras — seriam recompensados com perdão financiado por dinheiro público. Democracia representativa precisa de rostos que representem a maioria da população. Quem votou a favor dessa PEC escolheu proteger partidos que sistematicamente excluíram mulheres e negros da política.',
         referencias: [
           {
             title: 'Nota oficial contra a PEC 9/2023',
@@ -138,6 +142,7 @@ export const PAUTAS: Pauta[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PL_MARCO_TEMPORAL,
         tipo: 'negativa',
         temas: ['meio ambiente', 'direitos humanos'],
+        explicacao: 'Comunidades inteiras foram expulsas de seus territórios à força, por violência de Estado ou de fazendeiros, décadas antes de 1988. Pelo critério do marco temporal, essa expulsão passaria a ser definitiva — quem foi vítima perde o direito para sempre. Na prática, essa lei abriu caminho para o agronegócio e a mineração avançarem sobre terras que o próprio Supremo já reconheceu como indígenas.',
         referencias: [
           {
             title: '“PL 490/07 e marco temporal colocam em risco os direitos dos povos indígenas”, alerta presidenta da Funai',
@@ -165,6 +170,7 @@ export const PAUTAS: Pauta[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PL_ANTI_MOVIMENTOS_RURAIS,
         tipo: 'negativa',
         temas: ['direitos humanos'],
+        explicacao: 'A Constituição estabelece que terra rural só é protegida quando cumpre função social. Latifúndio improdutivo pode e deve ser desapropriado — é o que a lei diz. A ocupação desses imóveis pelos movimentos sociais é pressão para que essa norma seja cumprida. Esse PL criminaliza quem exige a aplicação da Constituição, sem criar nenhuma obrigação para quem a descumpre acumulando terra sem trabalhar.',
         referencias: [
           {
             title: 'Câmara dos Deputados aprova PL que pune pessoas que ocuparem terras',
@@ -188,6 +194,7 @@ export const PAUTAS: Pauta[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PL_MERCADO_DE_CARBONO,
         tipo: 'positiva',
         temas: ['meio ambiente'],
+        explicacao: 'Em 2024, o Rio Grande do Sul enfrentou as piores enchentes de sua história, a Amazônia registrou a seca mais severa já documentada, e as temperaturas globais bateram recordes consecutivos. Votar contra qualquer regulação de emissões nesse contexto é uma escolha. Quem mais perde com eventos climáticos extremos não tem fazenda segurada — mora na beira do rio, na periferia, na terra indígena.',
         referencias: [
           {
             title: 'Mercado regulado de carbono é aprovado pelo Congresso, mas deixa agro de fora',
@@ -215,7 +222,7 @@ export const PAUTAS: Pauta[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PLP_ARCABOUCO_FISCAL,
         tipo: 'negativa',
         temas: ['meio ambiente', 'saúde', 'educação'],
-
+        explicacao: 'Quando o teto de gastos é atingido, os cortes começam onde a resistência política é menor: merenda escolar, unidades básicas de saúde, habitação popular, bolsas universitárias. Os juros sobre a dívida pública não são cortados. As renúncias fiscais para grandes empresas não são cortadas. Essa é a assimetria da austeridade — e quem paga o preço nunca é quem estabelece a regra.',
         referencias: [
           {
             title: 'Senado altera projeto de arcabouço fiscal, mas não retira amarras e gatilhos',
@@ -243,7 +250,7 @@ export const PAUTAS: Pauta[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_PEC_169_PEJOTIZACAO_PROFESSORES,
         tipo: 'negativa',
         temas: ['educação'],
-
+        explicacao: 'Pejotizar professor significa retirar piso salarial, plano de carreira e aposentadoria especial de quem dedica a vida a ensinar crianças que dependem exclusivamente da escola pública. A escassez de professores existe porque a profissão é mal remunerada e desvalorizada — e essa PEC não muda isso. Pelo contrário: precariza ainda mais quem permanece na carreira.',
         referencias: [
           {
             title: 'PEC 169 fomenta a desprofissionalização e a desvalorização docente no país',
@@ -271,7 +278,7 @@ export const PAUTAS: Pauta[] = [
         idsDeputadosPodres: IDS_DEPUTADOS_PODRES_MP_AGORA_TEM_ESPECIALISTA,
         tipo: 'positiva',
         temas: ['saúde'],
-
+        explicacao: 'Fila do SUS não é inevitável — é o resultado de anos de subfinanciamento e escolhas políticas. Quem tem plano de saúde vê cardiologista em 48 horas; quem depende do SUS espera meses ou anos — às vezes o diagnóstico vem tarde demais. Esse programa usa estrutura já existente para reduzir essa desigualdade. Votar contra foi dizer que a fila está boa assim.',
         referencias: [
           {
             title: 'Congresso Nacional aprova Medida Provisória que criou o Agora Tem Especialistas com ampla maioria',

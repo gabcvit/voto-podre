@@ -33,6 +33,8 @@ Voto Podre é um projeto de transparência eleitoral que monitora os 513 deputad
 | **PL 709/2023 contra movimentos trabalhistas rurais e indígenas** | PL | direitos humanos | Criminaliza ocupações do MST e comunidades indígenas |
 | **PL 182/2024 e mercado de carbono** *(positiva)* | PL | meio ambiente | Deputados que votaram **contra** o marco regulatório do mercado de carbono |
 | **PLP do Arcabouço Fiscal** | PLP | meio ambiente, saúde, educação | Amarra investimentos públicos em saúde, educação e infraestrutura |
+| **PEC 169/2019 da Pejotização de Professores** | PEC | educação | Abre caminho para a pejotização e desvalorização de professores da rede pública |
+| **Programa Agora Tem Especialista** *(positiva)* | MP | saúde | Deputados que votaram **contra** a expansão de especialistas no SUS |
 
 ---
 

@@ -208,6 +208,7 @@ type Pauta = {
   idsDeputadosPodres: (number | undefined)[]  // Deputy IDs who voted FOR it
   tipo: 'negativa' | 'positiva'       // negativa = voted Sim is bad; positiva = voted Não is bad
   temas: Tema[]                        // One or more thematic categories — use the Tema union type
+  explicacao?: string                  // Editorial voice: why this pauta is harmful (shown in PautaDetailsView above "Leia mais")
   referencias?: PautaReference[]       // Optional "Leia mais" glossary with curated links and source metadata
 }
 ```

@@ -41,5 +41,6 @@ export type Pauta = {
      */
     tipo: 'negativa' | 'positiva',
     temas: Tema[],
+    explicacao?: string,
     referencias?: PautaReference[],
 }

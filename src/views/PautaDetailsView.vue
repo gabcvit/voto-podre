@@ -24,6 +24,13 @@
         style="font-family: 'Syne', sans-serif; font-size: clamp(1.5rem, 4vw, 2.25rem);"
       >{{ pauta.nome }}</h1>
       <p class="text-zinc-500 text-sm leading-relaxed mb-2">{{ pauta.descricao }}</p>
+      <div v-if="pauta.explicacao" class="mt-5 pt-5 border-t border-zinc-200 dark:border-zinc-800 mb-1">
+        <p
+          class="text-xs font-black uppercase tracking-widest mb-2"
+          :class="pauta.tipo === 'positiva' ? 'text-green-500' : 'text-red-500'"
+        >{{ pauta.tipo === 'positiva' ? 'Por que essa pauta é importante?' : 'Por que essa pauta é podre?' }}</p>
+        <p class="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">{{ pauta.explicacao }}</p>
+      </div>
       <p class="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-4">Análise editorial — Equipe Voto Podre</p>
       <a
         v-if="pauta.urlProposicao"
