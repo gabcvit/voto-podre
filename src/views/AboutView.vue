@@ -25,7 +25,7 @@
       </p>
       <p class="text-zinc-500 leading-relaxed text-md">
         Mas quando deputados ignoram completamente o que acontece nas ruas e votam abertamente
-        contra trabalhadores, camponeses e povos originários, precisam ser nomeados e cobrados.
+        contra trabalhadores, camponeses, mulheres e povos originários, precisam ser nomeados e cobrados.
         Este projeto fornece essa memória — para que movimentos, sindicatos e eleitores
         saibam exatamente com quem não podem contar.
       </p>
@@ -33,13 +33,32 @@
 
     <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800 animate-fade-in-up" style="animation-delay: 200ms">
       <h2 class="text-xl font-black uppercase tracking-tight text-zinc-900 mb-3 dark:text-white" style="font-family: 'Syne', sans-serif;">O que são as Pautas?</h2>
-      <p class="text-zinc-500 leading-relaxed text-md">
+      <p class="text-zinc-500 leading-relaxed text-md mb-6">
         São proposições legislativas — Propostas de Emenda à Constituição (PECs),
-        Projetos de Lei (PLs) e outras votações — que representam ataque direto a direitos
-        conquistados na luta, criminalização de movimentos sociais, entrega de território
-        e recursos naturais ao capital, ou blindagem de quem explora e oprime.
-        As votações são documentadas com fontes oficiais da Câmara e verificáveis por qualquer pessoa. As descrições de cada pauta são resumos editoriais escritos pela equipe do Voto Podre, em linguagem direta — para que qualquer pessoa possa entender o que estava em jogo, sem precisar de formação jurídica.
+        Projetos de Lei (PLs), Projetos de Lei Complementar (PLPs) e Medidas Provisórias (MPs)
+        — cujos registros de votação revelam o posicionamento real de cada parlamentar.
+        As votações são documentadas com fontes oficiais da Câmara e verificáveis por qualquer pessoa.
+        As descrições são resumos editoriais da equipe do Voto Podre, em linguagem direta —
+        para que qualquer pessoa possa entender o que estava em jogo, sem precisar de formação jurídica.
       </p>
+      <div class="space-y-4">
+        <div class="border-l-2 border-red-500 pl-4 py-1">
+          <span class="text-xs font-black uppercase tracking-widest text-red-500 block mb-1">Pauta Podre</span>
+          <p class="text-zinc-500 leading-relaxed text-md">
+            Uma proposta que representa ataque direto a direitos conquistados na luta trabalhista, criminalização de movimentos sociais,
+            entrega de território e recursos naturais ao capital, ou blindagem de quem explora e oprime.
+            Os deputados listados nessa pauta votaram <strong class="text-zinc-900 dark:text-white">a favor</strong> dela.
+          </p>
+        </div>
+        <div class="border-l-2 border-green-500 pl-4 py-1">
+          <span class="text-xs font-black uppercase tracking-widest text-green-500 block mb-1">Pauta Positiva</span>
+          <p class="text-zinc-500 leading-relaxed text-md">
+            Uma proposta que avança direitos, protege populações vulneráveis ou cria obrigações concretas para o Estado.
+            Os deputados listados nessa pauta votaram <strong class="text-zinc-900 dark:text-white">contra</strong> ela —
+            escolheram o retrocesso quando tinham a chance de mudar.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800 animate-fade-in-up" style="animation-delay: 300ms">
