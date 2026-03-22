@@ -10,10 +10,10 @@
       class="animate-fade-in-up"
       style="animation-delay: 100ms"
       v-model:searchQuery="searchQuery"
-      v-model:statusFilter="statusFilter"
       v-model:partidoFilter="partidoFilter"
       v-model:ufFilter="ufFilter"
       v-model:minPautaComVotoPodre="minPautaComVotoPodre"
+      v-model:sortOrder="sortOrder"
       :availablePartidos="availablePartidos"
       :availableUfs="availableUfs"
       :hasActiveFilters="hasActiveFilters"
@@ -72,10 +72,10 @@ const { pautas } = storeToRefs(usePautasStore())
 
 const {
   searchQuery,
-  statusFilter,
   partidoFilter,
   ufFilter,
   minPautaComVotoPodre,
+  sortOrder,
   availablePartidos,
   availableUfs,
   filteredDeputados,

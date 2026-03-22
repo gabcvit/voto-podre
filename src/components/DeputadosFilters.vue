@@ -31,29 +31,6 @@
         />
       </div>
 
-      <!-- Status filter -->
-      <div class="sm:col-span-2 lg:col-span-3">
-        <p id="status-filter-label" class="block text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
-          Status
-        </p>
-        <div class="flex flex-wrap gap-2" role="group" aria-labelledby="status-filter-label">
-          <button
-            v-for="option in STATUS_OPTIONS"
-            :key="option.value"
-            :aria-pressed="statusFilter === option.value"
-            :class="[
-              'px-3 py-1.5 text-sm font-black uppercase tracking-widest transition-colors border focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500',
-              statusFilter === option.value
-                ? activeStatusClass(option.value)
-                : 'bg-transparent border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:border-zinc-500 dark:hover:border-zinc-500 hover:text-zinc-900 dark:hover:text-white'
-            ]"
-            @click="$emit('update:statusFilter', option.value)"
-          >
-            {{ option.label }}
-          </button>
-        </div>
-      </div>
-
       <!-- Partido filter -->
       <div>
         <label for="filter-partido" class="block text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
@@ -94,6 +71,29 @@
         </div>
       </div>
 
+      <!-- Sort order -->
+      <div class="sm:col-span-2 lg:col-span-3">
+        <p id="sort-order-label" class="block text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
+          Ordenar por
+        </p>
+        <div class="flex flex-wrap gap-2" role="group" aria-labelledby="sort-order-label">
+          <button
+            v-for="option in SORT_OPTIONS"
+            :key="option.value"
+            :aria-pressed="sortOrder === option.value"
+            :class="[
+              'px-3 py-1.5 text-sm font-black uppercase tracking-widest transition-colors border focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500',
+              sortOrder === option.value
+                ? 'bg-zinc-900 dark:bg-white border-zinc-900 dark:border-white text-white dark:text-zinc-900'
+                : 'bg-transparent border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:border-zinc-500 dark:hover:border-zinc-500 hover:text-zinc-900 dark:hover:text-white'
+            ]"
+            @click="$emit('update:sortOrder', option.value)"
+          >
+            {{ option.label }}
+          </button>
+        </div>
+      </div>
+
       <!-- Min votos podres -->
       <div>
         <label for="filter-min-pautas" class="block text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
@@ -114,15 +114,15 @@
 </template>
 
 <script setup lang="ts">
-import { STATUS_OPTIONS } from '@/composables/useDeputadosFilters'
-import type { StatusFilter } from '@/composables/useDeputadosFilters'
+import { SORT_OPTIONS } from '@/composables/useDeputadosFilters'
+import type { SortOrder } from '@/composables/useDeputadosFilters'
 
 interface Props {
   searchQuery: string
-  statusFilter: StatusFilter
   partidoFilter: string
   ufFilter: string
   minPautaComVotoPodre: number
+  sortOrder: SortOrder
   availablePartidos: string[]
   availableUfs: string[]
   hasActiveFilters: boolean
@@ -132,16 +132,11 @@ defineProps<Props>()
 
 defineEmits<{
   'update:searchQuery': [value: string]
-  'update:statusFilter': [value: StatusFilter]
   'update:partidoFilter': [value: string]
   'update:ufFilter': [value: string]
   'update:minPautaComVotoPodre': [value: number]
+  'update:sortOrder': [value: SortOrder]
   'reset': []
 }>()
 
-function activeStatusClass(status: StatusFilter): string {
-  if (status === 'podres') return 'bg-red-500 border-red-500 text-white'
-  if (status === 'clean') return 'bg-zinc-200 dark:bg-zinc-700 border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white'
-  return 'bg-zinc-900 dark:bg-white border-zinc-900 dark:border-white text-white dark:text-zinc-900'
-}
 </script>

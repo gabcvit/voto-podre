@@ -324,20 +324,20 @@ Accepts `Ref<Deputado[]>` and `Ref<Pauta[]>` (use `storeToRefs` when passing fro
 ```ts
 {
   searchQuery: Ref<string>           // name substring search
-  statusFilter: Ref<StatusFilter>    // 'all' | 'podres' | 'clean'
   partidoFilter: Ref<string>         // '' = all parties
   ufFilter: Ref<string>              // '' = all states
   minPautaComVotoPodre: Ref<number>  // 0 = no minimum
+  sortOrder: Ref<SortOrder>          // 'desc' (most podres first, default) | 'asc' (fewest podres first)
   availablePartidos: ComputedRef<string[]>
   availableUfs: ComputedRef<string[]>
-  filteredDeputados: ComputedRef<Deputado[]>
+  filteredDeputados: ComputedRef<Deputado[]>  // already sorted by sortOrder
   hasActiveFilters: ComputedRef<boolean>
   resetFilters(): void
 }
 ```
 Each filter criterion is a separate pure predicate function internally (`matchesSearch`, `matchesStatus`, `matchesPartido`, `matchesUf`, `matchesMinPautas`).
 
-`StatusFilter` type and `STATUS_OPTIONS` array are also exported from this module.
+`SortOrder` type, `SORT_OPTIONS` array are also exported from this module.
 
 ### `DeputadosFilters`
 Dumb UI component — all state lives in the composable. Communicates via `v-model` bindings and a `reset` event.
@@ -345,10 +345,10 @@ Dumb UI component — all state lives in the composable. Communicates via `v-mod
 | Prop / v-model | Type | Notes |
 |---|---|---|
 | `v-model:searchQuery` | `string` | Text search by name |
-| `v-model:statusFilter` | `StatusFilter` | Toggle buttons with `aria-pressed`; wrapped in `role="group"` |
 | `v-model:partidoFilter` | `string` | Dropdown; `''` = all parties |
 | `v-model:ufFilter` | `string` | Dropdown; `''` = all states |
 | `v-model:minPautaComVotoPodre` | `number` | Number input; `0` = no minimum |
+| `v-model:sortOrder` | `SortOrder` | Toggle buttons: `'desc'` = most podres first (default); `'asc'` = fewest podres first |
 | `availablePartidos` | `string[]` | Drives partido dropdown options |
 | `availableUfs` | `string[]` | Drives UF dropdown options |
 | `hasActiveFilters` | `boolean` | Shows "Limpar filtros" button when `true` |
