@@ -158,7 +158,7 @@ export const PAUTAS: Pauta[] = [
     },
     {
         id: 2349493,
-        nome: 'PL 709/2023 contra movimentos trabalhistas rurais e indígenas',
+        nome: 'PL 709/2023 contra Movimentos Trabalhistas Rurais e Indígenas',
         descricao: 'O PL 709/2023 endurece as penas para a ocupação de terras — medida que na prática afeta desproporcionalmente movimentos de trabalhadores rurais sem-terra e comunidades indígenas. A Constituição estabelece que a propriedade rural deve cumprir função social: terras que não geram trabalho produtivo podem ser desapropriadas para fins de reforma agrária. A ocupação de latifúndios improdutivos é uma forma histórica de pressão para que essa norma constitucional seja aplicada. O projeto aumenta as penalidades para quem exerce essa pressão, mas não impõe obrigações equivalentes aos proprietários que descumprem a função social. Organizações de direitos humanos apontam que o texto criminaliza uma forma de mobilização legítima sem endereçar a concentração fundiária que a motiva.',
         urlVotos: 'https://dadosabertos.camara.leg.br/api/v2/votacoes/2349493-103/votos',
         urlProposicao: 'https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2349493',
@@ -181,7 +181,7 @@ export const PAUTAS: Pauta[] = [
     },
     {
         id: 1548579,
-        nome: 'PL 182/2024 e mercado de carbono',
+        nome: 'PL 182/2024 e Mercado de Carbono',
         descricao: 'O PL 182/2024 cria as regras para o mercado regulado de carbono no Brasil. Não representa uma solução definitiva para a crise climática — o texto tem limitações importantes, como a exclusão parcial do setor agropecuário — mas estabelece um piso regulatório hoje praticamente inexistente: monitoramento de emissões, obrigações de reporte e incentivos econômicos para a redução de gases de efeito estufa. Votar contra esse marco significou manter a desregulação vigente, que não cria obrigações de controle para os maiores emissores. Em um país já atingido por eventos climáticos extremos em frequência crescente, a ausência de regras aumenta os custos sociais que recaem desproporcionalmente sobre populações mais vulneráveis — nas periferias urbanas e em territórios tradicionais.',
         urlVotos: 'https://dadosabertos.camara.leg.br/api/v2/votacoes/1548579-194/votos',
         urlProposicao: 'https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=1548579',

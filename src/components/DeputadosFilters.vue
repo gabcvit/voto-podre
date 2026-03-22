@@ -72,7 +72,7 @@
       </div>
 
       <!-- Sort order -->
-      <div class="sm:col-span-2 lg:col-span-3">
+      <div v-if="showSortOrder" class="sm:col-span-2 lg:col-span-3">
         <p id="sort-order-label" class="block text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
           Ordenar por
         </p>
@@ -95,7 +95,7 @@
       </div>
 
       <!-- Min votos podres -->
-      <div>
+      <div v-if="showMinPautas">
         <label for="filter-min-pautas" class="block text-sm font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1.5">
           Mín. votos podres
         </label>
@@ -126,9 +126,14 @@ interface Props {
   availablePartidos: string[]
   availableUfs: string[]
   hasActiveFilters: boolean
+  showSortOrder?: boolean
+  showMinPautas?: boolean
 }
 
-defineProps<Props>()
+withDefaults(defineProps<Props>(), {
+  showSortOrder: true,
+  showMinPautas: true,
+})
 
 defineEmits<{
   'update:searchQuery': [value: string]

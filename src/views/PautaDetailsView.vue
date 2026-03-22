@@ -68,19 +68,37 @@
     </section>
 
     <div class="mb-6">
+      <DeputadosFilters
+        v-model:searchQuery="searchQuery"
+        v-model:partidoFilter="partidoFilter"
+        v-model:ufFilter="ufFilter"
+        v-model:minPautaComVotoPodre="minPautaComVotoPodre"
+        v-model:sortOrder="sortOrder"
+        :availablePartidos="availablePartidos"
+        :availableUfs="availableUfs"
+        :hasActiveFilters="hasActiveFilters"
+        :showSortOrder="false"
+        :showMinPautas="false"
+        @reset="resetFilters"
+      />
+
       <p class="text-sm font-black uppercase tracking-widest text-zinc-500 mb-4 dark:text-zinc-600">
-        {{ deputados.length }} deputado{{ deputados.length !== 1 ? 's' : '' }}
+        {{ filteredDeputados.length }} deputado{{ filteredDeputados.length !== 1 ? 's' : '' }}
         {{ pauta.tipo === 'positiva' ? 'que votaram contra' : 'que apoiaram' }}
+        <span v-if="hasActiveFilters" class="text-zinc-400 dark:text-zinc-700">(de {{ deputados.length }} total)</span>
       </p>
       <TransitionGroup name="fade-up" tag="div" class="flex flex-col">
         <BaseDeputado
-          v-for="(deputado, index) in deputados"
+          v-for="(deputado, index) in filteredDeputados"
           :key="deputado.id"
           :style="{ '--enter-delay': `${Math.min(index, 15) * 30}ms` }"
           :deputado="deputado"
           :pautas="[pauta]"
         />
       </TransitionGroup>
+      <p v-if="hasActiveFilters && filteredDeputados.length === 0" class="text-sm text-zinc-500 dark:text-zinc-600 uppercase tracking-widest text-center py-8">
+        Nenhum deputado encontrado com esses filtros.
+      </p>
     </div>
   </div>
   <div v-else class="text-center py-16">
@@ -98,9 +116,11 @@ import { computed, ref } from 'vue';
 import IconArrowBack from '@/components/icons/IconArrowBack.vue';
 import IconShare from '@/components/icons/IconShare.vue';
 import BaseDeputado from '@/components/BaseDeputado.vue';
+import DeputadosFilters from '@/components/DeputadosFilters.vue';
 import { TODOS_DEPUTADOS } from '@/data/deputados';
 import { PAUTAS } from '@/data/pautas';
 import { useMeta } from '@/composables/useMeta';
+import { useDeputadosFilters } from '@/composables/useDeputadosFilters';
 
 const route = useRoute();
 const router = useRouter();
@@ -123,6 +143,21 @@ const deputados = computed(() => {
   return getDeputadosByIds(pauta.value.idsDeputadosPodres.filter((id) => id !== undefined));
 });
 const references = computed(() => pauta.value?.referencias ?? []);
+
+const pautaAsArray = computed(() => pauta.value ? [pauta.value] : []);
+
+const {
+  searchQuery,
+  partidoFilter,
+  ufFilter,
+  minPautaComVotoPodre,
+  sortOrder,
+  availablePartidos,
+  availableUfs,
+  filteredDeputados,
+  hasActiveFilters,
+  resetFilters,
+} = useDeputadosFilters(deputados, pautaAsArray);
 
 const metaDescription = computed(() => {
   if (!pauta.value) return 'Detalhes sobre esta pauta e os deputados com voto questionável.';
