@@ -74,21 +74,44 @@
       </ul>
     </section>
 
-    <div class="mb-6">
-      <DeputadosFilters
-        v-model:searchQuery="searchQuery"
-        v-model:partidoFilter="partidoFilter"
-        v-model:ufFilter="ufFilter"
-        v-model:minPautaComVotoPodre="minPautaComVotoPodre"
-        v-model:sortOrder="sortOrder"
-        :availablePartidos="availablePartidos"
-        :availableUfs="availableUfs"
-        :hasActiveFilters="hasActiveFilters"
-        :showSortOrder="false"
-        :showMinPautas="false"
-        @reset="resetFilters"
-      />
+    <DeputadosFilters
+      v-model:searchQuery="searchQuery"
+      v-model:partidoFilter="partidoFilter"
+      v-model:ufFilter="ufFilter"
+      v-model:minPautaComVotoPodre="minPautaComVotoPodre"
+      v-model:sortOrder="sortOrder"
+      :availablePartidos="availablePartidos"
+      :availableUfs="availableUfs"
+      :hasActiveFilters="hasActiveFilters"
+      :showSortOrder="false"
+      :showMinPautas="false"
+      @reset="resetFilters"
+    />
 
+    <!-- Tab navigation -->
+    <div class="flex mb-6" role="tablist" aria-label="Tipo de visualização">
+      <button
+        role="tab"
+        :aria-selected="activeTab === 'list'"
+        @click="activeTab = 'list'"
+        class="flex-1 py-2.5 text-xs font-black uppercase tracking-widest border-b-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-inset"
+        :class="activeTab === 'list'
+          ? 'border-red-500 text-red-500'
+          : 'border-zinc-200 dark:border-zinc-800 text-zinc-400 dark:text-zinc-600 hover:text-zinc-700 dark:hover:text-zinc-300'"
+      >Deputados</button>
+      <button
+        role="tab"
+        :aria-selected="activeTab === 'stats'"
+        @click="activeTab = 'stats'"
+        class="flex-1 py-2.5 text-xs font-black uppercase tracking-widest border-b-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-inset"
+        :class="activeTab === 'stats'
+          ? 'border-red-500 text-red-500'
+          : 'border-zinc-200 dark:border-zinc-800 text-zinc-400 dark:text-zinc-600 hover:text-zinc-700 dark:hover:text-zinc-300'"
+      >Por Partido</button>
+    </div>
+
+    <!-- Tab: list -->
+    <div v-if="activeTab === 'list'" class="mb-6">
       <p class="text-sm font-black uppercase tracking-widest text-zinc-500 mb-4 dark:text-zinc-600">
         {{ filteredDeputados.length }} deputado{{ filteredDeputados.length !== 1 ? 's' : '' }}
         {{ pauta.tipo === 'positiva' ? 'que votaram contra' : 'que apoiaram' }}
@@ -107,6 +130,18 @@
         Nenhum deputado encontrado com esses filtros.
       </p>
     </div>
+
+    <!-- Tab: stats -->
+    <div v-else class="mb-6">
+      <p class="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-4">
+        {{ filteredDeputados.length }} deputado{{ filteredDeputados.length !== 1 ? 's' : '' }}
+        {{ pauta.tipo === 'positiva' ? 'que votaram contra' : 'que apoiaram' }} · por partido
+      </p>
+      <PartyStatsChart
+        :deputados="filteredDeputados"
+        :emptyLabel="pauta.tipo === 'positiva' ? 'Nenhum deputado flagrado nesta pauta.' : 'Nenhum deputado flagrado nesta pauta.'"
+      />
+    </div>
   </div>
   <div v-else class="text-center py-16">
     <p class="text-zinc-500 uppercase tracking-widest text-sm dark:text-zinc-600">Pauta não encontrada.</p>
@@ -124,6 +159,7 @@ import IconArrowBack from '@/components/icons/IconArrowBack.vue';
 import IconShare from '@/components/icons/IconShare.vue';
 import BaseDeputado from '@/components/BaseDeputado.vue';
 import DeputadosFilters from '@/components/DeputadosFilters.vue';
+import PartyStatsChart from '@/components/PartyStatsChart.vue';
 import { TODOS_DEPUTADOS } from '@/data/deputados';
 import { PAUTAS } from '@/data/pautas';
 import { useMeta } from '@/composables/useMeta';
@@ -181,6 +217,7 @@ useMeta({
 
 const copied = ref(false);
 const showReferences = ref(false);
+const activeTab = ref<'list' | 'stats'>('list');
 
 async function share() {
   const url = window.location.href;

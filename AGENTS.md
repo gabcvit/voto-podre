@@ -148,6 +148,7 @@ pnpm deploy       # build + push to gh-pages branch
 │       ├── BaseDeputado.vue        # Deputy row (list) or expanded card (details view); badge shows "votos podres" count
 │       ├── PageTitle.vue           # h1 + optional subtitle used by list views
 │       ├── StatCard.vue            # Number + label + description; top-border colour variant
+│       ├── PartyStatsChart.vue     # Horizontal bar chart of deputy count per party; used in DeputadosView and PautaDetailsView tab switch
 │       ├── MessageCard.vue         # Left-bordered editorial text block
 │       ├── PautasList.vue          # Renders list of Pauta items; red row for negative, green row for positive; clickable
 │       ├── InfoList.vue            # Key-value table of a deputy's raw fields
@@ -219,10 +220,10 @@ type Pauta = {
 | Path | Name | View | Notes |
 |---|---|---|---|
 | `/` | `Home` | `HomeView` | |
-| `/deputados` | `Deputados` | `DeputadosView` | |
+| `/deputados` | `Deputados` | `DeputadosView` | tab navigation: lista / por partido |
 | `/deputado/:id` | `DeputadoDetails` | `DeputadoDetailsView` | `props: true` |
 | `/pautas` | `Pautas` | `PautasView` | tema filter buttons |
-| `/pauta/:id` | `PautaDetails` | `PautaDetailsView` | |
+| `/pauta/:id` | `PautaDetails` | `PautaDetailsView` | tab navigation: lista de deputados / por partido |
 | `/sobre` | `Sobre` | `AboutView` | |
 | `/glossario` | `Glossario` | `GlossaryView` | glossário de termos legislativos |
 | `/apoio` | `Apoio` | `SupportView` | chave PIX para doações |
@@ -261,6 +262,14 @@ const isPodre = pautas.some(p => p.idsDeputadosPodres.includes(deputado.id))
 | `variant` | `'list' \| 'card'` | `'list'` | `'card'` = expanded layout, no click-to-navigate |
 
 In `list` variant: renders as `<RouterLink>` (anchor) to `/deputado/:id` — fully keyboard accessible. In `card` variant: renders as `<div>` with no navigation.
+
+### `PartyStatsChart`
+| Prop | Type | Default | Notes |
+|---|---|---|---|
+| `deputados` | `Deputado[]` | — | Required. Deputies to aggregate by party. |
+| `emptyLabel` | `string` | `'Nenhum deputado encontrado.'` | Message shown when the list is empty. |
+
+Renders a sorted horizontal bar chart (largest party first). Each row shows the party sigla, a red fill bar proportional to the maximum count, and the numeric count. Used inside tab navigation in `DeputadosView` (shows `filteredDeputados`) and `PautaDetailsView` (shows the full unfiltered list of flagged deputies).
 
 ### `StatCard`
 | Prop | Type | Notes |
