@@ -139,8 +139,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   ├── PautasView.vue          # Lists all pautas via PautasList; tema filter buttons
 │   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + toggleable "Leia mais" references (collapsed by default) + list of flagged deputies + share button (Web Share API / clipboard fallback)
 │   │   ├── AboutView.vue          # Static info / methodology + project Instagram link
-│   │   ├── GlossaryView.vue       # Glossário de termos legislativos usados no site (PEC, PL, PLP, proposição, etc.)
-│   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, zero personal data collection, zero cookies; uses Plausible Analytics (cookieless, anonymous aggregates)
+│   │   ├── GlossaryView.vue       # Glossário de termos legislativos usados no site (PEC, PL, PLP, proposição, etc.)│   ├── SupportView.vue        # Página de apoio: exibe chave PIX com botão de copiar para doações│   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, zero personal data collection, zero cookies; uses Plausible Analytics (cookieless, anonymous aggregates)
 │   │   └── TermsOfUseView.vue     # Termos de Uso — govering law, liability, editorial character
 │   │
 │   └── components/
@@ -226,6 +225,7 @@ type Pauta = {
 | `/pauta/:id` | `PautaDetails` | `PautaDetailsView` | |
 | `/sobre` | `Sobre` | `AboutView` | |
 | `/glossario` | `Glossario` | `GlossaryView` | glossário de termos legislativos |
+| `/apoio` | `Apoio` | `SupportView` | chave PIX para doações |
 | `/privacidade` | `Privacidade` | `PrivacyPolicyView` | |
 | `/termos` | `Termos` | `TermsOfUseView` | |
 

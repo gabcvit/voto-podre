@@ -108,5 +108,6 @@ const navLinks = [
   { to: '/glossario', label: 'Glossário' },
   { to: '/deputados', label: 'Deputados' },
   { to: '/pautas', label: 'Pautas' },
+  { to: '/apoio', label: 'Apoiar' },
 ];
 </script>

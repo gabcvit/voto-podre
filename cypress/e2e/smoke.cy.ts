@@ -110,6 +110,16 @@ const smokePages: SmokePage[] = [
       cy.contains('h2', '1. Objeto e Finalidade').should('be.visible')
     },
   },
+  {
+    name: 'support',
+    path: '/apoio',
+    title: 'Apoie o Projeto',
+    assertContent: () => {
+      cy.contains('h1', 'Apoie o Voto Podre').should('be.visible')
+      cy.contains('h2', 'Contribua via PIX').should('be.visible')
+      cy.contains('button', 'Copiar chave PIX').should('be.visible')
+    },
+  },
 ]
 
 describe('public page smoke tests', () => {

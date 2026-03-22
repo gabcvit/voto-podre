@@ -9,6 +9,7 @@ import AboutView from './views/AboutView.vue';
 import GlossaryView from './views/GlossaryView.vue';
 import PrivacyPolicyView from './views/PrivacyPolicyView.vue';
 import TermsOfUseView from './views/TermsOfUseView.vue';
+import SupportView from './views/SupportView.vue';
 
 const routes: RouteRecordRaw[] = [
   {
@@ -57,6 +58,11 @@ const routes: RouteRecordRaw[] = [
     path: '/termos',
     name: 'Termos',
     component: TermsOfUseView,
+  },
+  {
+    path: '/apoio',
+    name: 'Apoio',
+    component: SupportView,
   },
 ];
 

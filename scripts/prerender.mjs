@@ -63,6 +63,12 @@ const routes = [
     description:
       'Termos de uso do Voto Podre. Projeto de transparência eleitoral baseado em dados públicos da Câmara dos Deputados, sob a Lei de Acesso à Informação.',
   },
+  {
+    path: '/apoio',
+    title: 'Apoie o Projeto — Voto Podre',
+    description:
+      'Apoie o Voto Podre via PIX. Um projeto independente de transparência eleitoral que monitora os votos de deputados federais no Congresso brasileiro.',
+  },
 ]
 
 // ---------------------------------------------------------------------------
