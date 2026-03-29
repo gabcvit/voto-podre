@@ -5,10 +5,60 @@
         <IconArrowBack />
         Voltar
       </button>
-      <button @click="share" class="flex items-center gap-2 text-sm font-black uppercase tracking-widest transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500" :class="copied ? 'text-green-500' : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white'">
-        <IconShare class="w-4 h-4" />
-        {{ copied ? 'Link copiado!' : 'Compartilhar' }}
-      </button>
+      <div class="flex items-center gap-3">
+        <template v-if="!shareExpanded">
+          <button
+            @click="shareExpanded = true"
+            :disabled="generating"
+            class="flex items-center gap-2 text-sm font-black uppercase tracking-widest transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 disabled:opacity-50 disabled:cursor-wait text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white"
+          >
+            <IconShare class="w-4 h-4" />
+            {{ generating ? 'Gerando imagem…' : 'Compartilhar' }}
+          </button>
+        </template>
+        <template v-else>
+          <span class="hidden sm:inline text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600">Compartilhar:</span>
+          <button
+            @click="shareByPartido"
+            :disabled="generating"
+            class="text-sm font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white transition-colors disabled:opacity-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+          >Por partido</button>
+          <span class="text-zinc-300 dark:text-zinc-700 select-none">·</span>
+          <button
+            @click="ufPickerVisible = !ufPickerVisible"
+            :disabled="generating"
+            class="text-sm font-black uppercase tracking-widest transition-colors disabled:opacity-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+            :class="ufPickerVisible ? 'text-red-500' : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white'"
+          >Por estado</button>
+          <button
+            @click="shareExpanded = false; ufPickerVisible = false; shareUf = ''"
+            class="text-xs text-zinc-400 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white transition-colors focus:outline-none"
+            aria-label="Fechar opções de compartilhar"
+          >✕</button>
+        </template>
+      </div>
+    </div>
+
+    <!-- UF picker -->
+    <div v-if="shareExpanded && ufPickerVisible" class="mb-8 flex flex-wrap gap-3 items-center border-b border-zinc-200 dark:border-zinc-800 pb-6 -mt-2">
+      <div class="relative">
+        <select
+          v-model="shareUf"
+          class="appearance-none bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 pr-8 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-red-500 dark:focus:border-red-500 focus-visible:ring-1 focus-visible:ring-red-500 transition-colors font-black uppercase tracking-widest"
+        >
+          <option value="" disabled>Selecione um estado</option>
+          <option v-for="uf in deputadoUfs" :key="uf" :value="uf">{{ uf }} ({{ ufDeputadoCounts[uf] }} dep.)</option>
+        </select>
+        <span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-zinc-400 text-sm">▾</span>
+      </div>
+      <button
+        @click="shareByUf"
+        :disabled="!shareUf || generating"
+        class="text-sm font-black uppercase tracking-widest px-4 py-2 bg-red-500 text-white hover:bg-red-600 disabled:opacity-50 disabled:cursor-wait transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+      >{{ generating ? 'Gerando…' : 'Gerar imagem' }}</button>
+      <p v-if="shareUf" class="text-xs text-zinc-400 dark:text-zinc-600 uppercase tracking-widest">
+        {{ ufDeputadoCounts[shareUf] ?? 0 }} deputado{{ (ufDeputadoCounts[shareUf] ?? 0) !== 1 ? 's' : '' }} de {{ shareUf }}
+      </p>
     </div>
 
     <div
@@ -164,6 +214,7 @@ import { TODOS_DEPUTADOS } from '@/data/deputados';
 import { PAUTAS } from '@/data/pautas';
 import { useMeta } from '@/composables/useMeta';
 import { useDeputadosFilters } from '@/composables/useDeputadosFilters';
+import { useShareImage } from '@/composables/useShareImage';
 
 const route = useRoute();
 const router = useRouter();
@@ -215,25 +266,60 @@ useMeta({
   canonicalPath: computed(() => pauta.value ? `/pauta/${pauta.value.id}` : '/pautas'),
 });
 
-const copied = ref(false);
 const showReferences = ref(false);
 const activeTab = ref<'list' | 'stats'>('list');
 
-async function share() {
-  const url = window.location.href;
-  const title = pauta.value ? `${pauta.value.nome} — Voto Podre` : 'Voto Podre';
-  const text = metaDescription.value;
-  if (navigator.share) {
-    try {
-      await navigator.share({ title, text, url });
-    } catch {
-      // user cancelled
-    }
-  } else {
-    await navigator.clipboard.writeText(url);
-    copied.value = true;
-    setTimeout(() => { copied.value = false; }, 2500);
+const { generating, generate } = useShareImage();
+
+const shareExpanded = ref(false);
+const ufPickerVisible = ref(false);
+const shareUf = ref('');
+
+const deputadoUfs = computed(() => {
+  const ufs = new Set(deputados.value.map((d) => d.siglaUf));
+  return [...ufs].sort();
+});
+
+const ufDeputadoCounts = computed(() => {
+  const counts: Record<string, number> = {};
+  for (const d of deputados.value) {
+    counts[d.siglaUf] = (counts[d.siglaUf] ?? 0) + 1;
   }
+  return counts;
+});
+
+const topParties = computed(() => {
+  const counts: Record<string, number> = {};
+  for (const d of deputados.value) {
+    counts[d.siglaPartido] = (counts[d.siglaPartido] ?? 0) + 1;
+  }
+  return Object.entries(counts)
+    .map(([sigla, count]) => ({ sigla, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 6);
+});
+
+async function shareByPartido() {
+  if (!pauta.value) return;
+  shareExpanded.value = false;
+  await generate({
+    mode: 'pauta',
+    pauta: pauta.value,
+    deputadosCount: deputados.value.length,
+    topParties: topParties.value,
+  });
+}
+
+async function shareByUf() {
+  if (!pauta.value || !shareUf.value) return;
+  const ufDeputados = deputados.value.filter((d) => d.siglaUf === shareUf.value);
+  await generate({
+    mode: 'pauta-by-uf',
+    pauta: pauta.value,
+    uf: shareUf.value,
+    deputadosCount: ufDeputados.length,
+    deputadoItems: ufDeputados.map((d) => ({ nome: d.nome, siglaPartido: d.siglaPartido })),
+  });
 }
 
 function goBack() {

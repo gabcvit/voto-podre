@@ -130,14 +130,15 @@ pnpm deploy       # build + push to gh-pages branch
 │   ├── composables/
 │   │   ├── useDeputadoDetails.ts   # Takes an ID, returns { deputado, pautasDoDeputado }
 │   │   ├── useDeputadosFilters.ts  # Filter logic for DeputadosView; exports useDeputadosFilters + StatusFilter type + STATUS_OPTIONS
-│   │   └── useMeta.ts              # Per-route <head> management (title, description, OG, Twitter/X, canonical)
+│   │   ├── useMeta.ts              # Per-route <head> management (title, description, OG, Twitter/X, canonical)
+│   │   └── useShareImage.ts        # Generates a 1080×1350px share image (4:5 portrait) via html-to-image; triggers Web Share API file share on mobile or download on desktop. Supports three modes: 'deputado', 'pauta', 'pauta-by-uf'
 │   │
 │   ├── views/
 │   │   ├── HomeView.vue            # Landing: hero, stats, callout, message cards
 │   │   ├── DeputadosView.vue       # Lists deputies via BaseDeputado; includes DeputadosFilters panel
-│   │   ├── DeputadoDetailsView.vue # Single deputy: card + social buttons (from redeSocial, platform-aware icons) + InfoList + PautasList + share button (Web Share API / clipboard fallback)
+│   │   ├── DeputadoDetailsView.vue # Single deputy: card + social buttons (from redeSocial, platform-aware icons) + InfoList + PautasList + share button (generates PNG via useShareImage)
 │   │   ├── PautasView.vue          # Lists all pautas via PautasList; tema filter buttons
-│   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + toggleable "Leia mais" references (collapsed by default) + list of flagged deputies + share button (Web Share API / clipboard fallback)
+│   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + toggleable "Leia mais" references (collapsed by default) + list of flagged deputies + expandable share menu ("Por partido" generates party-chart card; "Por estado" shows a UF picker dropdown then generates a per-state deputy list card)
 │   │   ├── AboutView.vue          # Static info / methodology + project Instagram link
 │   │   ├── GlossaryView.vue       # Glossário de termos legislativos usados no site (PEC, PL, PLP, proposição, etc.)│   ├── SupportView.vue        # Página de apoio: exibe chave PIX com botão de copiar para doações│   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, zero personal data collection, zero cookies; uses Plausible Analytics (cookieless, anonymous aggregates)
 │   │   └── TermsOfUseView.vue     # Termos de Uso — govering law, liability, editorial character
@@ -153,6 +154,7 @@ pnpm deploy       # build + push to gh-pages branch
 │       ├── PautasList.vue          # Renders list of Pauta items; red row for negative, green row for positive; clickable
 │       ├── InfoList.vue            # Key-value table of a deputy's raw fields
 │       ├── DeputadosFilters.vue    # Filter panel for DeputadosView (search, status, partido, UF, min pautas)
+│       ├── ShareCard.vue           # Offscreen 1080×1350px share card rendered by useShareImage; supports mode='deputado', mode='pauta', and mode='pauta-by-uf'; dark-themed with red header + footer watermark. Party-chart rows use stacked name/bar layout. pauta-by-uf uses an adaptive 2- or 3-column grid (switches at >20 deputies)
 │       └── icons/                  # Simple SVG icon components
 │           ├── IconArrowBack.vue
 │           ├── IconFacebook.vue     # Used in DeputadoDetailsView social buttons
@@ -309,6 +311,31 @@ Rendered as a `<dl>` (description list) with `<dt>`/`<dd>` pairs for each key-va
 
 ### `useDeputadoDetails(id: string | number)`
 Returns `{ deputado: Ref<Deputado | null>, pautasDoDeputado: ComputedRef<Pauta[]> }`.
+
+### `useShareImage()`
+Generates a 1080×1350px (4:5 portrait) PNG via `html-to-image` and shares or downloads it.
+
+```ts
+const { generating, generate } = useShareImage()
+// generating: Ref<boolean> — true while the image is being captured
+// generate(options): Promise<void>
+```
+
+`options` is one of:
+```ts
+{ mode: 'deputado'; deputado: Deputado; pautas: Pauta[] }
+{ mode: 'pauta'; pauta: Pauta; deputadosCount: number; topParties: { sigla: string; count: number }[] }
+{ mode: 'pauta-by-uf'; pauta: Pauta; uf: string; deputadosCount: number; deputadoItems: { nome: string; siglaPartido: string }[] }
+```
+
+On mobile (when `navigator.canShare({ files })` is supported), shares the PNG as a file via the Web Share API so the user can send it to WhatsApp, Instagram Stories, etc. On desktop, downloads the PNG.
+
+The card is rendered by `ShareCard.vue` — an offscreen 1080×1350px `<div>` mounted temporarily via `createApp` and then unmounted after capture.
+
+**`ShareCard.vue` modes:**
+- `deputado` — deputy photo placeholder, name, party/UF, podre count badge, list of flagged pautas
+- `pauta` — pauta tipo/name/description, deputy count badge, top-parties chart (party name + count on one row, full-width bar below)
+- `pauta-by-uf` — pauta tipo/name, state + count badge, adaptive grid of deputies (name + party sigla per cell). Automatically switches from 2 to 3 columns and compacts header sizes when the list exceeds 20 entries; cap is 48 deputies before overflow notice
 
 ### `useMeta(opts)`
 Reactively updates `<head>` meta, Open Graph, and Twitter/X Card tags for the current route. Uses `watchEffect` so reactive refs update the DOM when data resolves.

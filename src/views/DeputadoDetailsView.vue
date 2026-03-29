@@ -5,9 +5,9 @@
           <IconArrowBack />
           Voltar
         </button>
-        <button @click="share" class="flex items-center gap-2 text-sm font-black uppercase tracking-widest transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500" :class="copied ? 'text-green-500' : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white'">
+        <button @click="share" :disabled="generating" class="flex items-center gap-2 text-sm font-black uppercase tracking-widest transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 disabled:opacity-50 disabled:cursor-wait" :class="'text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white'">
           <IconShare class="w-4 h-4" />
-          {{ copied ? 'Link copiado!' : 'Compartilhar' }}
+          {{ generating ? 'Gerando imagem…' : 'Compartilhar' }}
         </button>
       </div>
 
@@ -63,7 +63,8 @@
   </template>
 
 <script setup lang="ts">
-import { computed, ref, type Component } from 'vue';
+import { computed, type Component } from 'vue';
+import { useShareImage } from '@/composables/useShareImage';
 import { useRoute, useRouter } from 'vue-router';
 import { useDeputadoDetails } from '@/composables/useDeputadoDetails';
 import BaseDeputado from '@/components/BaseDeputado.vue';
@@ -138,7 +139,7 @@ useMeta({
   canonicalPath: computed(() => deputado.value ? `/deputado/${deputado.value.id}` : '/deputados'),
 });
 
-const copied = ref(false);
+const { generating, generate } = useShareImage();
 
 function buildSocialLink(url: string): DeputadoSocialLink | null {
   const normalizedUrl = normalizeUrl(url);
@@ -197,22 +198,12 @@ function detectPlatform(url: string): SocialPlatform | null {
 }
 
 async function share() {
-  const url = window.location.href;
-  const title = deputado.value
-    ? `${deputado.value.nome} (${deputado.value.siglaPartido}/${deputado.value.siglaUf}) — Voto Podre`
-    : 'Voto Podre';
-  const text = metaDescription.value;
-  if (navigator.share) {
-    try {
-      await navigator.share({ title, text, url });
-    } catch {
-      // user cancelled
-    }
-  } else {
-    await navigator.clipboard.writeText(url);
-    copied.value = true;
-    setTimeout(() => { copied.value = false; }, 2500);
-  }
+  if (!deputado.value) return;
+  await generate({
+    mode: 'deputado',
+    deputado: deputado.value,
+    pautas: pautasDoDeputado.value,
+  });
 }
 
 function goBack() {
