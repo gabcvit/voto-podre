@@ -104,7 +104,6 @@ const menuOpen = ref(false);
 
 const navLinks = [
   { to: '/', label: 'Início' },
-  { to: '/sobre', label: 'Sobre' },
   { to: '/glossario', label: 'Glossário' },
   { to: '/deputados', label: 'Deputados' },
   { to: '/pautas', label: 'Pautas' },

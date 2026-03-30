@@ -134,17 +134,17 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   └── useShareImage.ts        # Generates a 1080×1350px share image (4:5 portrait) via html-to-image; triggers Web Share API file share on mobile or download on desktop. Supports three modes: 'deputado', 'pauta', 'pauta-by-uf'
 │   │
 │   ├── views/
-│   │   ├── HomeView.vue            # Landing: hero, stats, callout, message cards
+│   │   ├── HomeView.vue            # Landing: hero, "O que é um Voto Podre?" section (Pauta Podre / Pauta Positiva definitions), "Por que monitoramos" + Posicionamento sections
 │   │   ├── DeputadosView.vue       # Lists deputies via BaseDeputado; includes DeputadosFilters panel
 │   │   ├── DeputadoDetailsView.vue # Single deputy: card + social buttons (from redeSocial, platform-aware icons) + InfoList + PautasList + share button (generates PNG via useShareImage)
 │   │   ├── PautasView.vue          # Lists all pautas via PautasList; tema filter buttons
 │   │   ├── PautaDetailsView.vue    # Single pauta: header (tipo-aware color/label) + toggleable "Leia mais" references (collapsed by default) + list of flagged deputies + expandable share menu ("Por partido" generates party-chart card; "Por estado" shows a UF picker dropdown then generates a per-state deputy list card)
-│   │   ├── AboutView.vue          # Static info / methodology + project Instagram link
+│   │   ├── AboutView.vue          # Removed — content merged into HomeView
 │   │   ├── GlossaryView.vue       # Glossário de termos legislativos usados no site (PEC, PL, PLP, proposição, etc.)│   ├── SupportView.vue        # Página de apoio: exibe chave PIX com botão de copiar para doações│   │   ├── PrivacyPolicyView.vue  # Política de Privacidade — LGPD-compliant, zero personal data collection, zero cookies; uses Plausible Analytics (cookieless, anonymous aggregates)
 │   │   └── TermsOfUseView.vue     # Termos de Uso — govering law, liability, editorial character
 │   │
 │   └── components/
-│       ├── TheNavbar.vue           # Sticky top nav (logo + 5 links + theme toggle + project Instagram icon link)
+│       ├── TheNavbar.vue           # Sticky top nav (logo + 4 links + theme toggle + project Instagram icon link)
 │       ├── TheFooter.vue           # Site footer: author credit (gabcvit), project Instagram link, links to /privacidade and /termos
 │       ├── BaseDeputado.vue        # Deputy row (list) or expanded card (details view); badge shows "votos podres" count
 │       ├── PageTitle.vue           # h1 + optional subtitle used by list views
@@ -221,12 +221,12 @@ type Pauta = {
 
 | Path | Name | View | Notes |
 |---|---|---|---|
-| `/` | `Home` | `HomeView` | |
+| `/` | `Home` | `HomeView` | Hero + "O que é um Voto Podre?" + "Por que monitoramos" |
 | `/deputados` | `Deputados` | `DeputadosView` | tab navigation: lista / por partido |
 | `/deputado/:id` | `DeputadoDetails` | `DeputadoDetailsView` | `props: true` |
 | `/pautas` | `Pautas` | `PautasView` | tema filter buttons |
 | `/pauta/:id` | `PautaDetails` | `PautaDetailsView` | tab navigation: lista de deputados / por partido |
-| `/sobre` | `Sobre` | `AboutView` | |
+| `/sobre` | — | — | Redirects to `/` |
 | `/glossario` | `Glossario` | `GlossaryView` | glossário de termos legislativos |
 | `/apoio` | `Apoio` | `SupportView` | chave PIX para doações |
 | `/privacidade` | `Privacidade` | `PrivacyPolicyView` | |

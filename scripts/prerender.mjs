@@ -39,12 +39,7 @@ const routes = [
     description:
       'Conheça as pautas catalogadas pelo Voto Podre — proposições legislativas monitoradas no Congresso brasileiro.',
   },
-  {
-    path: '/sobre',
-    title: 'Sobre — Voto Podre',
-    description:
-      'Sobre o Voto Podre — ferramenta de memória coletiva que expõe deputados que votaram contra trabalhadores e movimentos populares no Brasil.',
-  },
+
   {
     path: '/glossario',
     title: 'Glossário — Voto Podre',

@@ -53,39 +53,75 @@
       />
     </section>
 
-    <!-- Callout -->
-    <section aria-label="Mantenha a memória" class="border-b border-zinc-200 py-12 dark:border-zinc-800 animate-fade-in-up" style="animation-delay: 200ms">
+    <!-- O que é um Voto Podre -->
+    <section aria-label="O que é um Voto Podre" class="py-12 border-b border-zinc-200 dark:border-zinc-800 animate-fade-in-up" style="animation-delay: 100ms">
       <h2
         class="font-black uppercase leading-none tracking-tight text-zinc-900 mb-4 dark:text-white"
         style="font-family: 'Syne', sans-serif; font-size: clamp(1.5rem, 4vw, 2.5rem);"
       >
-        Saiba quem votou <span class="text-red-500">contra seus direitos.</span>
+        O que é um Voto Podre?
       </h2>
-      <p class="text-zinc-500 leading-relaxed max-w-2xl text-md">
-        Cada votação registrada aqui representa uma posição concreta de um parlamentar eleito
-        — sobre direitos trabalhistas, saúde pública, meio ambiente, igualdade de gênero e
-        proteção de povos originários. Registre, compartilhe e leve essas informações para as urnas.
+      <p class="text-zinc-500 leading-relaxed text-md mb-4">
+        Um voto podre é quando um deputado eleito pelo povo usa seu mandato para votar
+        <strong class="text-zinc-900 dark:text-white">contra os interesses da população.</strong>
+        Favorecendo pautas que prejudicam trabalhadores, enfraquecem direitos, destroem o meio ambiente
+        ou entregam o bem coletivo a interesses privados.
       </p>
+      <p class="text-zinc-500 leading-relaxed text-md mb-6">
+        Para identificar esses votos, monitoramos proposições legislativas concretas e classificamos
+        cada uma como <strong class="text-zinc-900 dark:text-white">Pauta Podre</strong> ou <strong class="text-zinc-900 dark:text-white">Pauta Positiva</strong>:
+      </p>
+      <div class="space-y-4">
+        <div class="border-l-2 border-red-500 pl-4 py-1">
+          <span class="text-xs font-black uppercase tracking-widest text-red-500 block mb-1">Pauta Podre</span>
+          <p class="text-zinc-500 leading-relaxed text-md">
+            Uma proposta que, na avaliação do Voto Podre, prejudica direitos de trabalhadores,
+            enfraquece a proteção ambiental, criminaliza movimentos sociais ou favorece interesses
+            privados em detrimento do bem coletivo.
+            Os deputados listados nessa pauta votaram <strong class="text-zinc-900 dark:text-white">a favor</strong> dela.
+          </p>
+        </div>
+        <div class="border-l-2 border-green-500 pl-4 py-1">
+          <span class="text-xs font-black uppercase tracking-widest text-green-500 block mb-1">Pauta Positiva</span>
+          <p class="text-zinc-500 leading-relaxed text-md">
+            Uma proposta que, na avaliação do Voto Podre, amplia direitos, protege populações
+            vulneráveis ou fortalece serviços públicos essenciais.
+            Os deputados listados nessa pauta votaram <strong class="text-zinc-900 dark:text-white">contra</strong> ela.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Messages -->
-    <section aria-label="Mensagens" class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-12 animate-fade-in-up" style="animation-delay: 300ms">
-      <MessageCard
-        title="Seu voto tem peso"
-        body="A democracia funciona melhor quando cidadãos conhecem o histórico de seus representantes. O registro das votações é público — e está aqui."
-      />
-      <MessageCard
-        title="Transparência muda o jogo"
-        body="Quando eleitores sabem como seus representantes votam, a fiscalização democrática se fortalece. Compartilhe, discuta, conscientize."
-      />
-      <MessageCard
-        title="Responsabilidade eleitoral"
-        body="Parlamentares que sistematicamente votam contra direitos fundamentais devem ser cobrados. Registre, divulgue e exija responsabilidade dos seus representantes."
-      />
-      <MessageCard
-        title="A mudança começa com informação"
-        body="Conhecer os votos, acompanhar as pautas, conversar com quem está ao seu redor. A participação informada é o ponto de partida para qualquer mudança real."
-      />
+    <!-- Por que monitoramos -->
+    <section aria-label="Propósito" class="py-12 animate-fade-in-up" style="animation-delay: 200ms">
+      <h2
+        class="font-black uppercase leading-none tracking-tight text-zinc-900 mb-4 dark:text-white"
+        style="font-family: 'Syne', sans-serif; font-size: clamp(1.5rem, 4vw, 2.5rem);"
+      >
+        Por que monitoramos o Congresso?
+      </h2>
+      <p class="text-zinc-500 leading-relaxed text-md mb-4">
+        O Congresso representa interesses variados — e nem sempre os que mais precisam de proteção
+        são os que têm mais voz na política institucional. Direitos trabalhistas, acesso à saúde
+        pública, proteção ambiental e demarcação de terras indígenas são conquistas que precisam
+        de atenção constante, porque estão em permanente disputa no legislativo.
+      </p>
+      <p class="text-zinc-500 leading-relaxed text-md mb-8">
+        Quando parlamentares votam contra o interesse de trabalhadores, o direitos das mulheres, pessoas
+        em situação de vulnerabilidade, comunidades indígenas e do meio ambiente, é importante que os eleitores saibam.
+        Este projeto fornece esse registro — para que qualquer cidadão possa verificar, com base em dados oficiais,
+        qual foi o posicionamento concreto de cada deputado.
+      </p>
+      <div class="border-l-2 border-red-500 pl-5 py-1">
+        <h3 class="text-sm font-black uppercase tracking-widest text-red-500 mb-2">Posicionamento</h3>
+        <p class="text-zinc-500 text-md leading-relaxed">
+          Este projeto tem perspectiva declarada: defende os interesses da classe trabalhadora brasileira,
+          dos direitos humanos, do meio ambiente e dos serviços públicos. Não pretende ser neutro
+          quanto a valores — mas os dados são rigorosamente baseados em registros oficiais.
+          Os votos e informações dos deputados são obtidos da API pública da Câmara dos Deputados
+          do Brasil e verificáveis por qualquer pessoa.
+        </p>
+      </div>
     </section>
 
   </div>
@@ -96,7 +132,6 @@ import { computed } from 'vue';
 import { useDeputadosStore } from '@/stores/useDeputadosStore';
 import { usePautasStore } from '@/stores/usePautasStore';
 import StatCard from '@/components/StatCard.vue';
-import MessageCard from '@/components/MessageCard.vue';
 import { useMeta } from '@/composables/useMeta';
 
 useMeta({
@@ -109,9 +144,7 @@ const { deputados } = useDeputadosStore();
 const { pautas } = usePautasStore();
 
 const totalDeputadosMonitorados = computed(() => deputados.length);
-
 const totalPautas = computed(() => pautas.length);
-
 const totalDeputadosPodres = computed(() =>
   deputados.filter(d =>
     pautas.some(p => p.idsDeputadosPodres.includes(d.id))

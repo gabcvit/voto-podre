@@ -7,8 +7,8 @@
 
     <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800">
       <p class="text-zinc-500 leading-relaxed text-md mb-4">
-        O <strong class="text-red-500 font-bold">Voto Podre</strong> é mantido de forma independente,
-        sem publicidade, sem patrocínio corporativo e sem nenhum vínculo com partidos ou grupos políticos.
+        O <strong class="text-red-500 font-bold">Voto Podre</strong> é um projeto pessoal mantido de forma independente,
+        e sem patrocínio corporativo e sem nenhum vínculo com partidos políticos.
         Todo o trabalho de pesquisa, curadoria de dados e desenvolvimento é feito voluntariamente.
       </p>
       <p class="text-zinc-500 leading-relaxed text-md">

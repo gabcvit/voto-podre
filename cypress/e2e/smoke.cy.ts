@@ -24,6 +24,8 @@ const smokePages: SmokePage[] = [
       cy.contains('h1', 'Voto').should('contain.text', 'Podre')
       cy.contains('a', 'Ver Pautas').should('be.visible')
       cy.contains('a', 'Ver Deputados').should('be.visible')
+      cy.contains('h2', 'O que é um Voto Podre?').should('be.visible')
+      cy.contains('h2', 'Por que monitoramos o Congresso?').should('be.visible')
       cy.contains('section', 'Deputados monitorados').should('be.visible')
     },
   },
@@ -68,16 +70,6 @@ const smokePages: SmokePage[] = [
       cy.contains('button', 'Compartilhar').should('be.visible')
       cy.contains('a', 'Ver tramitação na Câmara').should('be.visible')
       cy.contains('button', 'Mostrar materiais de leitura').should('be.visible')
-    },
-  },
-  {
-    name: 'about',
-    path: '/sobre',
-    title: 'Sobre',
-    assertContent: () => {
-      cy.contains('h1', 'Sobre o Voto Podre').should('be.visible')
-      cy.contains('h2', 'Por que monitoramos o Congresso?').should('be.visible')
-      cy.contains('h2', 'Como usar este site').should('be.visible')
     },
   },
   {
