@@ -63,6 +63,9 @@ pnpm dev
 # Build de produção
 pnpm build
 
+# Rodar testes unitários
+pnpm test:unit
+
 # Rodar testes E2E (inicie o servidor antes em outro terminal)
 pnpm dev
 pnpm test
@@ -74,11 +77,13 @@ pnpm sync:deputados:rede-social
 pnpm deploy
 ```
 
-## Testes E2E
+## Testes
 
-- `pnpm test` executa o Cypress em modo headless (`cypress run`). Requer o servidor de desenvolvimento em execução (`pnpm dev` em outro terminal).
-- Em CI, o pipeline usa `cypress-io/github-action@v6`, que inicializa o servidor automaticamente antes de rodar os testes.
-- O job de build declara `needs: test`, então o deploy só ocorre se todos os smoke tests passarem.
+- `pnpm test:unit` executa a suíte Vitest para composables, componentes compartilhados e views com mais lógica interativa.
+- `pnpm test` e `pnpm test:e2e` executam o Cypress em modo headless (`cypress run`). Requerem o servidor de desenvolvimento em execução (`pnpm dev` em outro terminal).
+- A suíte E2E está dividida entre `cypress/e2e/smoke.cy.ts` (cobertura de todas as rotas públicas) e `cypress/e2e/interactions.cy.ts` (fluxos reais de navegação, filtros, tabs, compartilhamento e cópia da chave PIX).
+- Em CI, o pipeline executa primeiro `pnpm test:unit` e só depois roda a suíte E2E com `cypress-io/github-action@v7`, que inicializa o servidor automaticamente em Node 24.x.
+- O job de build só roda depois dessa sequência, então o deploy só ocorre se os testes unitários e E2E passarem.
 
 ---
 

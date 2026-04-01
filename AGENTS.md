@@ -54,6 +54,7 @@ Data is static (hand-curated from the public Câmara dos Deputados Open Data API
 | Linting | ESLint + oxlint |
 | Package manager | **pnpm** |
 | Deploy | `gh-pages` (runs `pnpm build && gh-pages -d dist`) |
+| CI runtime | Node.js 24.x only in GitHub Actions |
 | Fonts | Google Fonts — **Syne** (headings, loaded in `index.html`) + **DM Sans** (body) |
 
 ---
@@ -64,7 +65,10 @@ Data is static (hand-curated from the public Câmara dos Deputados Open Data API
 pnpm dev          # dev server (localhost:5173)
 pnpm build        # type-check + vite build → dist/ + runs scripts/prerender.mjs
 pnpm preview      # serve dist/
-pnpm test         # run Cypress E2E smoke tests headlessly (requires dev server already running)
+pnpm test         # run the full Cypress E2E suite headlessly (requires dev server already running)
+pnpm test:e2e     # alias for the full Cypress E2E suite
+pnpm test:unit    # run Vitest component/composable/view unit tests once
+pnpm test:unit:watch # run Vitest in watch mode
 pnpm lint         # oxlint + eslint (auto-fix)
 pnpm sync:deputados:rede-social  # fetches redeSocial for every deputy and rewrites src/data/deputados.ts
 pnpm deploy       # build + push to gh-pages branch
@@ -78,10 +82,11 @@ pnpm deploy       # build + push to gh-pages branch
 /
 ├── .github/
 │   └── workflows/
-│       └── main_workflow.yml      # CI pipeline: install → Cypress smoke tests → build → GitHub Pages deploy
+│       └── main_workflow.yml      # CI pipeline: install → unit tests → Cypress E2E → build → GitHub Pages deploy; GitHub Actions are pinned to current releases and every job installs the latest Node 24.x (never below 24)
 ├── cypress/
 │   └── e2e/
-│       └── smoke.cy.ts            # Smoke coverage for every public route, including one deputado and one pauta details page
+│       ├── interactions.cy.ts     # Cross-page user journeys: theme toggle, mobile nav, filters, detail-page interactions, PIX copy, /sobre redirect
+│       └── smoke.cy.ts            # Baseline coverage for every public route, including one deputado and one pauta details page
 ├── cypress.config.ts          # Cypress E2E config (baseUrl, spec pattern, no support file)
 ├── index.html                  # Loads Google Fonts (Syne + DM Sans), mounts #app; anti-flash theme script; base SEO/OG/Twitter meta + JSON-LD
 ├── scripts/
@@ -128,12 +133,14 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   └── useThemeStore.ts         # Pinia store: exposes { isDark, toggle() }; light mode by default, syncs .dark class on <html> and localStorage
 │   │
 │   ├── composables/
+│   │   ├── __tests__/             # Vitest specs for composable logic (currently useDeputadosFilters)
 │   │   ├── useDeputadoDetails.ts   # Takes an ID, returns { deputado, pautasDoDeputado }
 │   │   ├── useDeputadosFilters.ts  # Filter logic for DeputadosView; exports useDeputadosFilters + StatusFilter type + STATUS_OPTIONS
 │   │   ├── useMeta.ts              # Per-route <head> management (title, description, OG, Twitter/X, canonical)
 │   │   └── useShareImage.ts        # Generates a 1080×1350px share image (4:5 portrait) via html-to-image; triggers Web Share API file share on mobile or download on desktop. Supports three modes: 'deputado', 'pauta', 'pauta-by-uf'
 │   │
 │   ├── views/
+│   │   ├── __tests__/             # Vitest specs for high-interaction views (support and detail pages)
 │   │   ├── HomeView.vue            # Landing: hero, "O que é um Voto Podre?" section (Pauta Podre / Pauta Positiva definitions), "Por que monitoramos" + Posicionamento sections
 │   │   ├── DeputadosView.vue       # Lists deputies via BaseDeputado; includes DeputadosFilters panel
 │   │   ├── DeputadoDetailsView.vue # Single deputy: card + social buttons (from redeSocial, platform-aware icons) + InfoList + PautasList + share button (generates PNG via useShareImage)
@@ -144,6 +151,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   │   └── TermsOfUseView.vue     # Termos de Uso — govering law, liability, editorial character
 │   │
 │   └── components/
+│       ├── __tests__/             # Vitest specs for shared UI components and navbar behavior
 │       ├── TheNavbar.vue           # Sticky top nav (logo + 4 links + theme toggle + project Instagram icon link)
 │       ├── TheFooter.vue           # Site footer: author credit (gabcvit), project Instagram link, links to /privacidade and /termos
 │       ├── BaseDeputado.vue        # Deputy row (list) or expanded card (details view); badge shows "votos podres" count
@@ -492,11 +500,12 @@ Add an entry to `TODOS_DEPUTADOS.dados` in `src/data/deputados.ts` following the
 
 ## 12. Testing
 
-- E2E smoke tests live in `cypress/e2e/smoke.cy.ts` — one test per public route asserting the page title, main heading, and key UI controls/content.
-- `pnpm test` runs Cypress headlessly (`cypress run`). The dev server must already be running (`pnpm dev` in a separate terminal).
-- In CI, the `test` job runs `pnpm cypress install` before `cypress-io/github-action@v6` (configured with `install: false`) to ensure the Cypress binary is present under pnpm v10; the action then starts `pnpm vite --host` and waits for `http://localhost:5173` before running the suite.
-- The `build` job declares `needs: test`, so GitHub Pages deploys are gated on passing smoke coverage.
-- Unit test infrastructure (Vitest + `@vue/test-utils`) is installed but no `test:unit` script is defined. Specs would live in `src/components/__tests__/`.
+- E2E smoke coverage lives in `cypress/e2e/smoke.cy.ts` — one test per public route asserting the page title, main heading, and key UI controls/content.
+- E2E interaction coverage lives in `cypress/e2e/interactions.cy.ts` — shared shell navigation, theme toggle, deputies filters, pauta-detail interactions, PIX copy flow, and `/sobre` redirect.
+- `pnpm test` / `pnpm test:e2e` run Cypress headlessly (`cypress run`). The dev server must already be running (`pnpm dev` in a separate terminal).
+- `pnpm test:unit` runs Vitest against composables, components, and high-interaction views. Current specs live under `src/composables/__tests__/`, `src/components/__tests__/`, and `src/views/__tests__/`.
+- In CI, the `unit-test` job runs `pnpm test:unit` first. The `e2e-test` job depends on it, installs the Cypress binary, and then uses `cypress-io/github-action@v7` (configured with `install: false`) to start `pnpm vite --host` and wait for `http://localhost:5173` before running the suite. Every CI job installs the latest available Node 24.x release.
+- The `build` job declares `needs: e2e-test`, so GitHub Pages deploys are gated on both unit and E2E coverage passing in sequence.
 - **Cypress config notes** (`cypress.config.ts`): `baseUrl: http://localhost:5173/`, `pageLoadTimeout: 30000`, `defaultCommandTimeout: 8000`. A `beforeEach` intercept stubs all `camara.leg.br` requests so external deputy photo URLs don't stall `window.load` on pages that render hundreds of images.
 
 ---
