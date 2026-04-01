@@ -16,12 +16,15 @@ describe('PartyStatsChart', () => {
     })
 
     const rows = wrapper.findAll('div[class*="gap-3"]')
+    const bars = wrapper.findAll('.bg-red-500')
 
     expect(wrapper.text()).toContain('PT')
     expect(wrapper.text()).toContain('PSOL')
-    expect(rows[0].text()).toContain('PT')
-    expect(wrapper.findAll('.bg-red-500')[0].attributes('style')).toContain('width: 100%')
-    expect(wrapper.findAll('.bg-red-500')[1].attributes('style')).toContain('width: 50%')
+    expect(rows).toHaveLength(2)
+    expect(bars).toHaveLength(2)
+    expect(rows[0]!.text()).toContain('PT')
+    expect(bars[0]!.attributes('style')).toContain('width: 100%')
+    expect(bars[1]!.attributes('style')).toContain('width: 50%')
   })
 
   it('renders the provided empty label', () => {

@@ -24,7 +24,7 @@ describe('PautasList', () => {
     const links = wrapper.findAllComponents(RouterLinkStub)
 
     expect(links).toHaveLength(2)
-    expect(links[0].props('to')).toEqual({ name: 'PautaDetails', params: { id: 1 } })
+  expect(links[0]!.props('to')).toEqual({ name: 'PautaDetails', params: { id: 1 } })
     expect(wrapper.text()).toContain('PAUTA PODRE')
     expect(wrapper.text()).toContain('PAUTA POSITIVA')
     expect(wrapper.text()).toContain('democracia')

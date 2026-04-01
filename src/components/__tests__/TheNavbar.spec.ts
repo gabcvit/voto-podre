@@ -33,7 +33,8 @@ describe('TheNavbar', () => {
 
     const themeButton = wrapper.findAll('button[aria-label="Mudar para modo escuro"]')[0]
 
-    await themeButton.trigger('click')
+    expect(themeButton).toBeDefined()
+    await themeButton!.trigger('click')
 
     expect(document.documentElement.classList.contains('dark')).toBe(true)
     expect(localStorage.getItem('theme')).toBe('dark')
@@ -49,7 +50,7 @@ describe('TheNavbar', () => {
 
     await wrapper.get('button[aria-label="Abrir menu"]').trigger('click')
 
-    expect(wrapper.get('#mobile-menu').exists()).toBe(true)
+  expect(wrapper.find('#mobile-menu').exists()).toBe(true)
 
     const deputadosLink = wrapper
       .get('#mobile-menu')

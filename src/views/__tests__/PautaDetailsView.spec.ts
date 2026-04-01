@@ -160,7 +160,9 @@ describe('PautaDetailsView', () => {
     })
 
     expect(wrapper.findAllComponents(BaseDeputado)).toHaveLength(2)
-    await wrapper.findAll('[role="tab"]')[1].trigger('click')
+    const tabs = wrapper.findAll('[role="tab"]')
+    expect(tabs).toHaveLength(2)
+    await tabs[1]!.trigger('click')
     expect(wrapper.findComponent(PartyStatsChart).exists()).toBe(true)
   })
 
