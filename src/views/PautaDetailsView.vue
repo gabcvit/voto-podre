@@ -190,6 +190,7 @@
       <PartyStatsChart
         :deputados="filteredDeputados"
         :emptyLabel="pauta.tipo === 'positiva' ? 'Nenhum deputado flagrado nesta pauta.' : 'Nenhum deputado flagrado nesta pauta.'"
+        :stackedRows="true"
       />
     </div>
   </div>
