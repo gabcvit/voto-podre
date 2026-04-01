@@ -6,7 +6,7 @@
     />
 
     <section class="mb-10 border-l-2 border-red-500 pl-5 py-1">
-      <p class="text-zinc-500 text-md leading-relaxed">
+      <p class="text-zinc-700 dark:text-zinc-300 text-md leading-relaxed">
         Esta página reúne expressões que aparecem no Voto Podre e em votações da Câmara.
         A ideia é facilitar a leitura para quem não acompanha política institucional todos os dias.
       </p>
@@ -24,7 +24,7 @@
         >
           {{ item.term }}
         </h2>
-        <p class="text-zinc-500 leading-relaxed text-md">
+        <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed text-md">
           {{ item.description }}
         </p>
       </article>

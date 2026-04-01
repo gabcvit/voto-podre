@@ -4,8 +4,8 @@
     :class="borderClasses"
   >
     <span class="text-5xl font-black tabular-nums" :class="valueClasses">{{ value }}</span>
-    <span class="text-xs font-bold uppercase tracking-widest text-zinc-600 mt-1 dark:text-zinc-300">{{ label }}</span>
-    <p class="text-sm text-zinc-500 mt-0.5 leading-relaxed dark:text-zinc-500">{{ description }}</p>
+    <span class="text-xs font-bold uppercase tracking-widest text-zinc-700 mt-1 dark:text-zinc-200">{{ label }}</span>
+    <p class="text-sm text-zinc-700 mt-0.5 leading-relaxed dark:text-zinc-300">{{ description }}</p>
   </div>
 </template>
 

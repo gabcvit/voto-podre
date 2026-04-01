@@ -1,7 +1,7 @@
 <template>
-  <nav aria-label="Navegação principal" class="bg-white border-b border-zinc-200 sticky top-0 z-50 dark:bg-black dark:border-zinc-800">
+  <nav aria-label="Navegação principal" class="bg-white border-b border-zinc-200 sticky top-0 z-50 dark:bg-zinc-950 dark:border-zinc-700">
     <div class="max-w-5xl mx-auto px-4 flex items-center justify-between h-14">
-      <RouterLink to="/" class="text-zinc-900 font-black text-lg uppercase tracking-tighter hover:text-red-500 transition-colors dark:text-white" style="font-family: 'Syne', sans-serif;">
+      <RouterLink to="/" class="text-zinc-950 font-black text-lg uppercase tracking-tighter hover:text-red-500 transition-colors dark:text-zinc-50" style="font-family: 'Syne', sans-serif;">
         Voto Podre
       </RouterLink>
 
@@ -11,14 +11,14 @@
           v-for="link in navLinks"
           :key="link.to"
           :to="link.to"
-          class="px-3 py-1 text-sm font-bold text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors uppercase tracking-widest"
-          active-class="text-zinc-900 dark:text-white"
+          class="px-3 py-1 text-sm font-bold text-zinc-700 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-zinc-50 transition-colors uppercase tracking-widest"
+          active-class="text-zinc-950 dark:text-zinc-50"
         >
           {{ link.label }}
         </RouterLink>
         <button
           @click="themeStore.toggle()"
-          class="ml-4 p-1.5 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
+          class="ml-4 p-1.5 text-zinc-700 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-zinc-50 transition-colors"
           :aria-label="themeStore.isDark ? 'Mudar para modo claro' : 'Mudar para modo escuro'"
         >
           <IconSun v-if="themeStore.isDark" class="w-4 h-4" />
@@ -29,7 +29,7 @@
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram do Voto Podre"
-          class="ml-2 p-1.5 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
+          class="ml-2 p-1.5 text-zinc-700 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-zinc-50 transition-colors"
         >
           <IconInstagram class="w-4 h-4" />
         </a>
@@ -39,7 +39,7 @@
       <div class="flex items-center gap-2 md:hidden">
         <button
           @click="themeStore.toggle()"
-          class="p-1.5 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
+          class="p-1.5 text-zinc-700 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-zinc-50 transition-colors"
           :aria-label="themeStore.isDark ? 'Mudar para modo claro' : 'Mudar para modo escuro'"
         >
           <IconSun v-if="themeStore.isDark" class="w-4 h-4" />
@@ -50,13 +50,13 @@
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram do Voto Podre"
-          class="p-1.5 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
+          class="p-1.5 text-zinc-700 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-zinc-50 transition-colors"
         >
           <IconInstagram class="w-4 h-4" />
         </a>
         <button
           @click="menuOpen = !menuOpen"
-          class="p-1.5 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors"
+          class="p-1.5 text-zinc-700 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-zinc-50 transition-colors"
           :aria-label="menuOpen ? 'Fechar menu' : 'Abrir menu'"
           :aria-expanded="menuOpen"
           aria-controls="mobile-menu"
@@ -76,14 +76,14 @@
     <div
       id="mobile-menu"
       v-if="menuOpen"
-      class="md:hidden border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-black"
+      class="md:hidden border-t border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-950"
     >
       <RouterLink
         v-for="link in navLinks"
         :key="link.to"
         :to="link.to"
-        class="block px-4 py-3 text-sm font-bold text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors uppercase tracking-widest border-b border-zinc-100 dark:border-zinc-900 last:border-b-0"
-        active-class="text-zinc-900 dark:text-white"
+        class="block px-4 py-3 text-sm font-bold text-zinc-700 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-zinc-50 transition-colors uppercase tracking-widest border-b border-zinc-100 dark:border-zinc-800 last:border-b-0"
+        active-class="text-zinc-950 dark:text-zinc-50"
         @click="menuOpen = false"
       >
         {{ link.label }}

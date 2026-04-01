@@ -31,12 +31,12 @@
           {{ TEMA_CONFIG[tema].emoji }} {{ tema }}
         </span>
       </div>
-      <div class="text-sm text-zinc-500 leading-relaxed">
+      <div class="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">
         {{ pauta.descricao.slice(0, 300) }}{{ pauta.descricao.length > 300 ? '...' : '' }}
       </div>
     </RouterLink>
   </TransitionGroup>
-  <div v-else class="text-zinc-600 text-sm uppercase tracking-widest">Nenhum voto encontrado.</div>
+  <div v-else class="text-zinc-700 dark:text-zinc-300 text-sm uppercase tracking-widest">Nenhum voto encontrado.</div>
 </template>
 
 <script setup lang="ts">

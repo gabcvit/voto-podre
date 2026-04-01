@@ -11,10 +11,10 @@
         isPodre
           ? isCard
             ? 'bg-zinc-50 border-l-4 border-red-500 dark:bg-zinc-950'
-            : 'bg-zinc-50 border-l-4 border-red-500 border-r border-t border-b border-r-zinc-200 border-t-zinc-200 border-b-zinc-200 hover:bg-zinc-100 dark:bg-zinc-950 dark:border-r-zinc-800 dark:border-t-zinc-800 dark:border-b-zinc-800 dark:hover:bg-zinc-900'
+            : 'bg-zinc-50 border-l-4 border-red-500 border-r border-t border-b border-r-zinc-200 border-t-zinc-200 border-b-zinc-200 hover:bg-zinc-100 dark:bg-zinc-950 dark:border-r-zinc-700 dark:border-t-zinc-700 dark:border-b-zinc-700 dark:hover:bg-zinc-900'
           : isCard
-            ? 'bg-zinc-50 border-l-4 border-zinc-300 dark:bg-zinc-950 dark:border-zinc-700'
-            : 'bg-zinc-50 border-l-4 border-zinc-300 border-r border-t border-b border-r-zinc-200 border-t-zinc-200 border-b-zinc-200 hover:bg-zinc-100 hover:border-l-zinc-400 dark:bg-zinc-950 dark:border-zinc-800 dark:border-r-zinc-800 dark:border-t-zinc-800 dark:border-b-zinc-800 dark:hover:bg-zinc-900 dark:hover:border-l-zinc-600'
+            ? 'bg-zinc-50 border-l-4 border-zinc-400 dark:bg-zinc-950 dark:border-zinc-600'
+            : 'bg-zinc-50 border-l-4 border-zinc-400 border-r border-t border-b border-r-zinc-200 border-t-zinc-200 border-b-zinc-200 hover:bg-zinc-100 hover:border-l-zinc-500 dark:bg-zinc-950 dark:border-zinc-700 dark:border-r-zinc-700 dark:border-t-zinc-700 dark:border-b-zinc-700 dark:hover:bg-zinc-900 dark:hover:border-l-zinc-500'
       ]"
     >
       <!-- Avatar -->
@@ -37,8 +37,8 @@
         <div class="flex items-center gap-2 flex-wrap" :class="isCard ? 'mb-2' : ''">
           <span
             :class="[
-              isCard ? 'text-2xl font-black uppercase tracking-tight' : 'font-bold text-zinc-900 dark:text-white text-md',
-              isPodre ? 'text-red-800 dark:text-red-100' : 'text-zinc-900 dark:text-white'
+              isCard ? 'text-2xl font-black uppercase tracking-tight' : 'font-bold text-zinc-950 dark:text-zinc-50 text-md',
+              isPodre ? 'text-red-800 dark:text-red-100' : 'text-zinc-950 dark:text-zinc-50'
             ]"
             style="font-family: 'Syne', sans-serif;"
           >{{ deputado.nome }}</span>
@@ -46,7 +46,7 @@
             class="font-bold uppercase tracking-widest"
             :class="[
               isCard ? 'text-xs px-2 py-0.5' : 'text-xs px-1.5 py-0.5',
-              isPodre ? 'bg-red-500/20 text-red-400' : 'bg-zinc-200 text-zinc-500 dark:bg-zinc-800'
+              isPodre ? 'bg-red-500/20 text-red-700 dark:text-red-200' : 'bg-zinc-200 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-200'
             ]"
           >
             {{ deputado.siglaPartido }} · {{ deputado.siglaUf }}
@@ -56,17 +56,17 @@
         <template v-if="isCard">
           <a
             :href="deputado.uri"
-            class="text-xs text-zinc-600 hover:text-zinc-400 transition-colors"
+            class="text-xs text-zinc-700 hover:text-zinc-950 dark:text-zinc-300 dark:hover:text-zinc-50 transition-colors"
             @click.stop
           >{{ deputado.uri }}</a>
           <br>
           <a
             :href="'mailto:' + deputado.email"
-            class="text-xs text-zinc-600 hover:text-zinc-400 transition-colors"
+            class="text-xs text-zinc-700 hover:text-zinc-950 dark:text-zinc-300 dark:hover:text-zinc-50 transition-colors"
             @click.stop
           >{{ deputado.email }}</a>
         </template>
-        <span v-else class="text-xs text-zinc-600 block truncate">{{ deputado.email }}</span>
+        <span v-else class="text-xs text-zinc-700 dark:text-zinc-300 block truncate">{{ deputado.email }}</span>
       </div>
 
       <!-- Podre badge -->
@@ -77,7 +77,7 @@
           style="font-family: 'Syne', sans-serif;"
         >{{ podreCount }}</span>
         <span
-          class="font-bold uppercase tracking-widest text-red-600"
+          class="font-bold uppercase tracking-widest text-red-700 dark:text-red-300"
           :class="isCard ? 'text-xs' : 'text-[11px]'"
         >
           voto{{ podreCount > 1 ? 's' : '' }}<br>podre{{ podreCount > 1 ? 's' : '' }}

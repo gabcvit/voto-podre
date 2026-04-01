@@ -6,12 +6,12 @@
     />
 
     <section class="mb-10 border-b border-zinc-200 pb-10 dark:border-zinc-800">
-      <p class="text-zinc-500 leading-relaxed text-md mb-4">
+      <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed text-md mb-4">
         O <strong class="text-red-500 font-bold">Voto Podre</strong> é um projeto pessoal mantido de forma independente,
         e sem patrocínio corporativo e sem nenhum vínculo com partidos políticos.
         Todo o trabalho de pesquisa, curadoria de dados e desenvolvimento é feito voluntariamente.
       </p>
-      <p class="text-zinc-500 leading-relaxed text-md">
+      <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed text-md">
         Porém, toda a infraestrutura necessária para desenvolver, testar e hospedar o site — domínio, ferramentas de desenvolvimento
         e serviços de hospedagem — é paga do meu próprio bolso. Qualquer contribuição ajuda a cobrir esses custos e a manter o projeto no ar!
       </p>
@@ -22,35 +22,35 @@
       <ul class="space-y-3">
         <li class="flex items-start gap-3">
           <span class="text-md font-black text-red-500 w-5 flex-shrink-0 pt-0.5">—</span>
-          <span class="text-zinc-500">Manter o registro de votações atualizado à medida que novas proposições são votadas no Congresso.</span>
+          <span class="text-zinc-700 dark:text-zinc-300">Manter o registro de votações atualizado à medida que novas proposições são votadas no Congresso.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-md font-black text-red-500 w-5 flex-shrink-0 pt-0.5">—</span>
-          <span class="text-zinc-500">Expandir a cobertura para mais deputados, proposições e temas relevantes.</span>
+          <span class="text-zinc-700 dark:text-zinc-300">Expandir a cobertura para mais deputados, proposições e temas relevantes.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-md font-black text-red-500 w-5 flex-shrink-0 pt-0.5">—</span>
-          <span class="text-zinc-500">Garantir que a ferramenta esteja disponível e funcionando para qualquer cidadão que queira consultar os dados.</span>
+          <span class="text-zinc-700 dark:text-zinc-300">Garantir que a ferramenta esteja disponível e funcionando para qualquer cidadão que queira consultar os dados.</span>
         </li>
       </ul>
     </section>
 
     <section class="animate-fade-in-up" style="animation-delay: 200ms">
       <h2 class="text-xl font-black uppercase tracking-tight text-zinc-900 mb-3 dark:text-white" style="font-family: 'Syne', sans-serif;">Me compre um cafézinho</h2>
-      <p class="text-zinc-500 leading-relaxed text-md mb-6">
+      <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed text-md mb-6">
         Qualquer valor é bem-vindo e ajuda a manter o projeto vivo. Não há valor mínimo.
       </p>
 
-      <div class="border border-zinc-200 dark:border-zinc-800 p-6">
+      <div class="border border-zinc-200 dark:border-zinc-700 p-6">
         <div class="mb-4">
-          <span class="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-500 block mb-2">Chave PIX</span>
-          <span class="text-zinc-900 dark:text-white font-mono text-lg font-bold break-all select-all">{{ PIX_KEY }}</span>
+          <span class="text-xs font-black uppercase tracking-widest text-zinc-700 dark:text-zinc-300 block mb-2">Chave PIX</span>
+          <span class="text-zinc-950 dark:text-zinc-50 font-mono text-lg font-bold break-all select-all">{{ PIX_KEY }}</span>
         </div>
 
         <button
           @click="copyPix"
           class="flex items-center gap-2 text-sm font-black uppercase tracking-widest transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
-          :class="copied ? 'text-green-500' : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white'"
+          :class="copied ? 'text-green-500' : 'text-zinc-700 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-zinc-50'"
         >
           <svg v-if="!copied" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
             <rect x="9" y="9" width="13" height="13" rx="0" ry="0" stroke-linecap="square" />
@@ -63,7 +63,7 @@
         </button>
       </div>
 
-      <p class="mt-6 text-xs text-zinc-400 dark:text-zinc-600 uppercase tracking-widest">
+      <p class="mt-6 text-xs text-zinc-700 dark:text-zinc-300 uppercase tracking-widest">
         O PIX é processado diretamente entre você e o responsável pelo projeto. Nenhum dado seu é coletado ou armazenado por este site.
       </p>
     </section>

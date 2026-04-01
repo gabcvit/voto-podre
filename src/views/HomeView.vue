@@ -10,10 +10,10 @@
       >
         Voto<br><span class="text-red-500">Podre</span>
       </h1>
-      <p class="text-zinc-600 max-w-xl leading-relaxed mb-8 text-md dark:text-zinc-400">
+      <p class="text-zinc-700 max-w-xl leading-relaxed mb-8 text-md dark:text-zinc-300">
         Transparência é a arma do cidadão.<br>
         Aqui você descobre quais deputados votaram
-        <strong class="text-zinc-900 font-bold dark:text-white">contra o povo</strong>.
+        <strong class="text-zinc-950 font-bold dark:text-zinc-50">contra o povo</strong>.
       </p>
       <div class="flex flex-wrap gap-3">
         <RouterLink
@@ -24,7 +24,7 @@
         </RouterLink>
         <RouterLink
           to="/deputados"
-          class="px-5 py-2 border border-zinc-300 hover:border-zinc-500 text-zinc-900 text-sm font-black uppercase tracking-widest transition-colors dark:border-zinc-700 dark:hover:border-zinc-500 dark:text-white"
+          class="px-5 py-2 border border-zinc-300 hover:border-zinc-500 text-zinc-950 text-sm font-black uppercase tracking-widest transition-colors dark:border-zinc-700 dark:hover:border-zinc-500 dark:text-zinc-50"
         >
           Ver Deputados
         </RouterLink>
@@ -61,32 +61,32 @@
       >
         O que é um Voto Podre?
       </h2>
-      <p class="text-zinc-500 leading-relaxed text-md mb-4">
+      <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed text-md mb-4">
         Um voto podre é quando um deputado eleito pelo povo usa seu mandato para votar
-        <strong class="text-zinc-900 dark:text-white">contra os interesses da população.</strong>
+        <strong class="text-zinc-950 dark:text-zinc-50">contra os interesses da população.</strong>
         Favorecendo pautas que prejudicam trabalhadores, enfraquecem direitos, destroem o meio ambiente
         ou entregam o bem coletivo a interesses privados.
       </p>
-      <p class="text-zinc-500 leading-relaxed text-md mb-6">
+      <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed text-md mb-6">
         Para identificar esses votos, monitoramos proposições legislativas concretas e classificamos
-        cada uma como <strong class="text-zinc-900 dark:text-white">Pauta Podre</strong> ou <strong class="text-zinc-900 dark:text-white">Pauta Positiva</strong>:
+        cada uma como <strong class="text-zinc-950 dark:text-zinc-50">Pauta Podre</strong> ou <strong class="text-zinc-950 dark:text-zinc-50">Pauta Positiva</strong>:
       </p>
       <div class="space-y-4">
         <div class="border-l-2 border-red-500 pl-4 py-1">
           <span class="text-xs font-black uppercase tracking-widest text-red-500 block mb-1">Pauta Podre</span>
-          <p class="text-zinc-500 leading-relaxed text-md">
+          <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed text-md">
             Uma proposta que, na avaliação do Voto Podre, prejudica direitos de trabalhadores,
             enfraquece a proteção ambiental, criminaliza movimentos sociais ou favorece interesses
             privados em detrimento do bem coletivo.
-            Os deputados listados nessa pauta votaram <strong class="text-zinc-900 dark:text-white">a favor</strong> dela.
+            Os deputados listados nessa pauta votaram <strong class="text-zinc-950 dark:text-zinc-50">a favor</strong> dela.
           </p>
         </div>
         <div class="border-l-2 border-green-500 pl-4 py-1">
           <span class="text-xs font-black uppercase tracking-widest text-green-500 block mb-1">Pauta Positiva</span>
-          <p class="text-zinc-500 leading-relaxed text-md">
+          <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed text-md">
             Uma proposta que, na avaliação do Voto Podre, amplia direitos, protege populações
             vulneráveis ou fortalece serviços públicos essenciais.
-            Os deputados listados nessa pauta votaram <strong class="text-zinc-900 dark:text-white">contra</strong> ela.
+            Os deputados listados nessa pauta votaram <strong class="text-zinc-950 dark:text-zinc-50">contra</strong> ela.
           </p>
         </div>
       </div>
@@ -100,13 +100,13 @@
       >
         Por que monitoramos o Congresso?
       </h2>
-      <p class="text-zinc-500 leading-relaxed text-md mb-4">
+      <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed text-md mb-4">
         O Congresso representa interesses variados — e nem sempre os que mais precisam de proteção
         são os que têm mais voz na política institucional. Direitos trabalhistas, acesso à saúde
         pública, proteção ambiental e demarcação de terras indígenas são conquistas que precisam
         de atenção constante, porque estão em permanente disputa no legislativo.
       </p>
-      <p class="text-zinc-500 leading-relaxed text-md mb-8">
+      <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed text-md mb-8">
         Quando parlamentares votam contra o interesse de trabalhadores, o direitos das mulheres, pessoas
         em situação de vulnerabilidade, comunidades indígenas e do meio ambiente, é importante que os eleitores saibam.
         Este projeto fornece esse registro — para que qualquer cidadão possa verificar, com base em dados oficiais,
@@ -114,7 +114,7 @@
       </p>
       <div class="border-l-2 border-red-500 pl-5 py-1">
         <h3 class="text-sm font-black uppercase tracking-widest text-red-500 mb-2">Posicionamento</h3>
-        <p class="text-zinc-500 text-md leading-relaxed">
+        <p class="text-zinc-700 dark:text-zinc-300 text-md leading-relaxed">
           Este projeto tem perspectiva declarada: defende os interesses da classe trabalhadora brasileira,
           dos direitos humanos, do meio ambiente e dos serviços públicos. Não pretende ser neutro
           quanto a valores — mas os dados são rigorosamente baseados em registros oficiais.

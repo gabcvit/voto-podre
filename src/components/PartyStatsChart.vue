@@ -2,7 +2,7 @@
   <div>
     <p
       v-if="sortedParties.length === 0"
-      class="text-zinc-500 dark:text-zinc-400 text-sm py-8 text-center uppercase tracking-widest"
+      class="text-zinc-700 dark:text-zinc-300 text-sm py-8 text-center uppercase tracking-widest"
     >
       {{ emptyLabel }}
     </p>
@@ -19,7 +19,7 @@
           style="font-family: 'Syne', sans-serif;"
         >{{ entry.party }}</span>
         <div :class="stackedRows ? 'flex items-center gap-3' : 'contents'">
-          <div class="flex-1 min-w-0 h-4 bg-zinc-100 dark:bg-zinc-900 overflow-hidden">
+          <div class="flex-1 min-w-0 h-4 bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
             <div
               class="h-full bg-red-500 transition-[width] duration-700 ease-out"
               :style="{ width: `${(entry.count / maxCount) * 100}%` }"

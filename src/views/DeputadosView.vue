@@ -34,7 +34,7 @@
         class="flex-1 py-2.5 text-xs font-black uppercase tracking-widest border-b-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-inset"
         :class="activeTab === 'list'
           ? 'border-red-500 text-red-500'
-          : 'border-zinc-200 dark:border-zinc-800 text-zinc-400 dark:text-zinc-600 hover:text-zinc-700 dark:hover:text-zinc-300'"
+          : 'border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-zinc-50'"
       >Deputados</button>
       <button
         role="tab"
@@ -43,7 +43,7 @@
         class="flex-1 py-2.5 text-xs font-black uppercase tracking-widest border-b-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-inset"
         :class="activeTab === 'stats'
           ? 'border-red-500 text-red-500'
-          : 'border-zinc-200 dark:border-zinc-800 text-zinc-400 dark:text-zinc-600 hover:text-zinc-700 dark:hover:text-zinc-300'"
+          : 'border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-zinc-50'"
       >Por Partido</button>
     </div>
 
@@ -53,7 +53,7 @@
         v-if="filteredDeputados.length === 0"
         role="status"
         aria-live="polite"
-        class="text-zinc-500 dark:text-zinc-400 text-sm py-12 text-center animate-fade-in-up"
+        class="text-zinc-700 dark:text-zinc-300 text-sm py-12 text-center animate-fade-in-up"
         style="animation-delay: 150ms"
       >
         Nenhum deputado encontrado com os filtros selecionados.
@@ -63,7 +63,7 @@
         <p
           role="status"
           aria-live="polite"
-          class="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-3"
+          class="text-xs font-black uppercase tracking-widest text-zinc-700 dark:text-zinc-300 mb-3"
         >
           {{ filteredDeputados.length }} deputado{{ filteredDeputados.length !== 1 ? 's' : '' }} encontrado{{ filteredDeputados.length !== 1 ? 's' : '' }}
         </p>
@@ -81,7 +81,7 @@
 
     <!-- Tab: stats -->
     <template v-else>
-      <p class="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-4 animate-fade-in-up">
+      <p class="text-xs font-black uppercase tracking-widest text-zinc-700 dark:text-zinc-300 mb-4 animate-fade-in-up">
         {{ filteredDeputados.length }} deputado{{ filteredDeputados.length !== 1 ? 's' : '' }} · distribuição por partido
       </p>
       <PartyStatsChart :deputados="filteredDeputados" />

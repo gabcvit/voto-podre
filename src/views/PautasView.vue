@@ -14,7 +14,7 @@
         class="px-3 py-1 text-xs font-black uppercase tracking-widest border transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
         :class="temaFilter === ''
           ? 'border-red-500 text-red-500'
-          : 'border-zinc-300 text-zinc-500 hover:border-zinc-500 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-500 dark:hover:border-zinc-500 dark:hover:text-white'"
+          : 'border-zinc-300 text-zinc-700 hover:border-zinc-500 hover:text-zinc-950 dark:border-zinc-700 dark:text-zinc-200 dark:hover:border-zinc-500 dark:hover:text-zinc-50'"
       >Todos</button>
       <button
         v-for="tema in availableTemas"
@@ -24,7 +24,7 @@
         class="px-3 py-1 text-xs font-black uppercase tracking-widest border transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
         :class="temaFilter === tema
           ? TEMA_CONFIG[tema].buttonActiveClass
-          : 'border-zinc-300 text-zinc-500 hover:border-zinc-500 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-500 dark:hover:border-zinc-500 dark:hover:text-white'"
+          : 'border-zinc-300 text-zinc-700 hover:border-zinc-500 hover:text-zinc-950 dark:border-zinc-700 dark:text-zinc-200 dark:hover:border-zinc-500 dark:hover:text-zinc-50'"
       >{{ TEMA_CONFIG[tema].emoji }} {{ tema }}</button>
     </div>
 

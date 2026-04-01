@@ -1,7 +1,7 @@
 <template>
   <div v-if="pauta" class="max-w-3xl mx-auto px-4 py-12">
     <div class="mb-8 flex items-center justify-between">
-      <button @click="goBack" class="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+      <button @click="goBack" class="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-zinc-700 hover:text-zinc-950 transition-colors dark:text-zinc-200 dark:hover:text-zinc-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
         <IconArrowBack />
         Voltar
       </button>
@@ -10,29 +10,29 @@
           <button
             @click="shareExpanded = true"
             :disabled="generating"
-            class="flex items-center gap-2 text-sm font-black uppercase tracking-widest transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 disabled:opacity-50 disabled:cursor-wait text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white"
+            class="flex items-center gap-2 text-sm font-black uppercase tracking-widest transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 disabled:opacity-50 disabled:cursor-wait text-zinc-700 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-zinc-50"
           >
             <IconShare class="w-4 h-4" />
             {{ generating ? 'Gerando imagem…' : 'Compartilhar' }}
           </button>
         </template>
         <template v-else>
-          <span class="hidden sm:inline text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600">Compartilhar:</span>
+          <span class="hidden sm:inline text-xs font-black uppercase tracking-widest text-zinc-700 dark:text-zinc-300">Compartilhar:</span>
           <button
             @click="shareByPartido"
             :disabled="generating"
-            class="text-sm font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white transition-colors disabled:opacity-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+            class="text-sm font-black uppercase tracking-widest text-zinc-700 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-zinc-50 transition-colors disabled:opacity-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
           >Por partido</button>
           <span class="text-zinc-300 dark:text-zinc-700 select-none">·</span>
           <button
             @click="ufPickerVisible = !ufPickerVisible"
             :disabled="generating"
             class="text-sm font-black uppercase tracking-widest transition-colors disabled:opacity-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
-            :class="ufPickerVisible ? 'text-red-500' : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white'"
+            :class="ufPickerVisible ? 'text-red-500' : 'text-zinc-700 hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-zinc-50'"
           >Por estado</button>
           <button
             @click="shareExpanded = false; ufPickerVisible = false; shareUf = ''"
-            class="text-xs text-zinc-400 hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-white transition-colors focus:outline-none"
+            class="text-xs text-zinc-600 hover:text-zinc-950 dark:text-zinc-300 dark:hover:text-zinc-50 transition-colors focus:outline-none"
             aria-label="Fechar opções de compartilhar"
           >✕</button>
         </template>
@@ -40,23 +40,23 @@
     </div>
 
     <!-- UF picker -->
-    <div v-if="shareExpanded && ufPickerVisible" class="mb-8 flex flex-wrap gap-3 items-center border-b border-zinc-200 dark:border-zinc-800 pb-6 -mt-2">
+    <div v-if="shareExpanded && ufPickerVisible" class="mb-8 flex flex-wrap gap-3 items-center border-b border-zinc-200 dark:border-zinc-700 pb-6 -mt-2">
       <div class="relative">
         <select
           v-model="shareUf"
-          class="appearance-none bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 pr-8 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-red-500 dark:focus:border-red-500 focus-visible:ring-1 focus-visible:ring-red-500 transition-colors font-black uppercase tracking-widest"
+          class="appearance-none bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 px-3 py-2 pr-8 text-sm text-zinc-950 dark:text-zinc-50 focus:outline-none focus:border-red-500 dark:focus:border-red-500 focus-visible:ring-1 focus-visible:ring-red-500 transition-colors font-black uppercase tracking-widest"
         >
           <option value="" disabled>Selecione um estado</option>
           <option v-for="uf in deputadoUfs" :key="uf" :value="uf">{{ uf }} ({{ ufDeputadoCounts[uf] }} dep.)</option>
         </select>
-        <span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-zinc-400 text-sm">▾</span>
+        <span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-zinc-700 dark:text-zinc-200 text-sm">▾</span>
       </div>
       <button
         @click="shareByUf"
         :disabled="!shareUf || generating"
         class="text-sm font-black uppercase tracking-widest px-4 py-2 bg-red-500 text-white hover:bg-red-600 disabled:opacity-50 disabled:cursor-wait transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
       >{{ generating ? 'Gerando…' : 'Gerar imagem' }}</button>
-      <p v-if="shareUf" class="text-xs text-zinc-400 dark:text-zinc-600 uppercase tracking-widest">
+      <p v-if="shareUf" class="text-xs text-zinc-700 dark:text-zinc-300 uppercase tracking-widest">
         {{ ufDeputadoCounts[shareUf] ?? 0 }} deputado{{ (ufDeputadoCounts[shareUf] ?? 0) !== 1 ? 's' : '' }} de {{ shareUf }}
       </p>
     </div>
@@ -73,15 +73,15 @@
         class="font-black uppercase leading-tight text-zinc-900 mb-3 dark:text-white"
         style="font-family: 'Syne', sans-serif; font-size: clamp(1.5rem, 4vw, 2.25rem);"
       >{{ pauta.nome }}</h1>
-      <p class="text-zinc-500 text-sm leading-relaxed mb-2">{{ pauta.descricao }}</p>
-      <div v-if="pauta.explicacao" class="mt-5 pt-5 border-t border-zinc-200 dark:border-zinc-800 mb-1">
+      <p class="text-zinc-700 dark:text-zinc-300 text-sm leading-relaxed mb-2">{{ pauta.descricao }}</p>
+      <div v-if="pauta.explicacao" class="mt-5 pt-5 border-t border-zinc-200 dark:border-zinc-700 mb-1">
         <p
           class="text-xs font-black uppercase tracking-widest mb-2"
           :class="pauta.tipo === 'positiva' ? 'text-green-500' : 'text-red-500'"
         >{{ pauta.tipo === 'positiva' ? 'Por que essa pauta é importante?' : 'Por que essa pauta é podre?' }}</p>
         <p class="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">{{ pauta.explicacao }}</p>
       </div>
-      <p class="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-4">Análise editorial — Equipe Voto Podre</p>
+      <p class="text-xs font-black uppercase tracking-widest text-zinc-700 dark:text-zinc-300 mb-4">Análise editorial — Equipe Voto Podre</p>
       <a
         v-if="pauta.urlProposicao"
         :href="pauta.urlProposicao"
@@ -93,14 +93,14 @@
         v-if="references.length"
         type="button"
         @click="showReferences = !showReferences"
-        class="mt-3 inline-block text-xs font-black uppercase tracking-widest border-2 border-zinc-300 text-zinc-500 hover:border-zinc-900 hover:text-zinc-900 transition-colors px-4 py-2 dark:border-zinc-800 dark:text-zinc-600 dark:hover:border-white dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+        class="mt-3 inline-block text-xs font-black uppercase tracking-widest border-2 border-zinc-300 text-zinc-700 hover:border-zinc-950 hover:text-zinc-950 transition-colors px-4 py-2 dark:border-zinc-700 dark:text-zinc-200 dark:hover:border-zinc-50 dark:hover:text-zinc-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
       >
         {{ showReferences ? 'Ocultar materiais de leitura' : 'Mostrar materiais de leitura' }}
       </button>
     </div>
 
     <section v-if="references.length && showReferences" class="mb-10">
-      <h2 class="mb-4 text-xs font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-600">
+      <h2 class="mb-4 text-xs font-black uppercase tracking-widest text-zinc-700 dark:text-zinc-300">
         Leia mais
       </h2>
       <ul class="flex flex-col gap-3">
@@ -113,11 +113,11 @@
             :href="reference.url"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-sm font-black uppercase tracking-wide text-zinc-900 transition-colors hover:text-red-500 dark:text-white"
+            class="text-sm font-black uppercase tracking-wide text-zinc-950 transition-colors hover:text-red-500 dark:text-zinc-50"
           >
             {{ reference.title }}
           </a>
-          <p class="mt-1 text-sm font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600">
+          <p class="mt-1 text-sm font-black uppercase tracking-widest text-zinc-700 dark:text-zinc-300">
             {{ reference.source }}
           </p>
         </li>
@@ -147,7 +147,7 @@
         class="flex-1 py-2.5 text-xs font-black uppercase tracking-widest border-b-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-inset"
         :class="activeTab === 'list'
           ? 'border-red-500 text-red-500'
-          : 'border-zinc-200 dark:border-zinc-800 text-zinc-400 dark:text-zinc-600 hover:text-zinc-700 dark:hover:text-zinc-300'"
+          : 'border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-zinc-50'"
       >Deputados</button>
       <button
         role="tab"
@@ -156,16 +156,16 @@
         class="flex-1 py-2.5 text-xs font-black uppercase tracking-widest border-b-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-inset"
         :class="activeTab === 'stats'
           ? 'border-red-500 text-red-500'
-          : 'border-zinc-200 dark:border-zinc-800 text-zinc-400 dark:text-zinc-600 hover:text-zinc-700 dark:hover:text-zinc-300'"
+          : 'border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-zinc-50'"
       >Por Partido</button>
     </div>
 
     <!-- Tab: list -->
     <div v-if="activeTab === 'list'" class="mb-6">
-      <p class="text-sm font-black uppercase tracking-widest text-zinc-500 mb-4 dark:text-zinc-600">
+      <p class="text-sm font-black uppercase tracking-widest text-zinc-700 mb-4 dark:text-zinc-300">
         {{ filteredDeputados.length }} deputado{{ filteredDeputados.length !== 1 ? 's' : '' }}
         {{ pauta.tipo === 'positiva' ? 'que votaram contra' : 'que apoiaram' }}
-        <span v-if="hasActiveFilters" class="text-zinc-400 dark:text-zinc-700">(de {{ deputados.length }} total)</span>
+        <span v-if="hasActiveFilters" class="text-zinc-700 dark:text-zinc-300">(de {{ deputados.length }} total)</span>
       </p>
       <TransitionGroup name="fade-up" tag="div" class="flex flex-col">
         <BaseDeputado
@@ -176,14 +176,14 @@
           :pautas="[pauta]"
         />
       </TransitionGroup>
-      <p v-if="hasActiveFilters && filteredDeputados.length === 0" class="text-sm text-zinc-500 dark:text-zinc-600 uppercase tracking-widest text-center py-8">
+      <p v-if="hasActiveFilters && filteredDeputados.length === 0" class="text-sm text-zinc-700 dark:text-zinc-300 uppercase tracking-widest text-center py-8">
         Nenhum deputado encontrado com esses filtros.
       </p>
     </div>
 
     <!-- Tab: stats -->
     <div v-else class="mb-6">
-      <p class="text-xs font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-4">
+      <p class="text-xs font-black uppercase tracking-widest text-zinc-700 dark:text-zinc-300 mb-4">
         {{ filteredDeputados.length }} deputado{{ filteredDeputados.length !== 1 ? 's' : '' }}
         {{ pauta.tipo === 'positiva' ? 'que votaram contra' : 'que apoiaram' }} · por partido
       </p>
@@ -195,8 +195,8 @@
     </div>
   </div>
   <div v-else class="text-center py-16">
-    <p class="text-zinc-500 uppercase tracking-widest text-sm dark:text-zinc-600">Pauta não encontrada.</p>
-    <button @click="goBack" class="mt-6 flex items-center gap-2 mx-auto text-sm font-black uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors dark:text-zinc-600 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+    <p class="text-zinc-700 uppercase tracking-widest text-sm dark:text-zinc-300">Pauta não encontrada.</p>
+    <button @click="goBack" class="mt-6 flex items-center gap-2 mx-auto text-sm font-black uppercase tracking-widest text-zinc-700 hover:text-zinc-950 transition-colors dark:text-zinc-200 dark:hover:text-zinc-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
       <IconArrowBack />
       Voltar
     </button>

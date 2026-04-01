@@ -96,7 +96,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   └── og-image.svg            # Source artwork for OG share image (convert to og-image.png for deployment)
 ├── src/
 │   ├── main.ts                 # Creates Vue app, registers Pinia + Router, mounts
-│   ├── App.vue                 # Root: initialises useThemeStore, applies theme-aware bg/text, TheNavbar + <router-view> + TheFooter; flex-col layout so footer sticks to bottom
+│   ├── App.vue                 # Root: initialises useThemeStore, applies higher-contrast theme-aware bg/text, TheNavbar + <router-view> + TheFooter; light mode is default and flex-col layout keeps footer at the bottom
 │   ├── router.ts               # All routes (see §6)
 │   ├── types.ts                # Shared TypeScript types: Deputado, Pauta
 │   │
@@ -125,7 +125,7 @@ pnpm deploy       # build + push to gh-pages branch
 │   ├── stores/
 │   │   ├── useDeputadosStore.ts     # Pinia store: exposes { deputados }
 │   │   ├── usePautasStore.ts        # Pinia store: exposes { pautas }
-│   │   └── useThemeStore.ts         # Pinia store: exposes { isDark, toggle() }; syncs .dark class on <html> and localStorage
+│   │   └── useThemeStore.ts         # Pinia store: exposes { isDark, toggle() }; light mode by default, syncs .dark class on <html> and localStorage
 │   │
 │   ├── composables/
 │   │   ├── useDeputadoDetails.ts   # Takes an ID, returns { deputado, pautasDoDeputado }
@@ -406,14 +406,14 @@ Registered globally in `App.vue`. The root `<div>` in `App.vue` uses `flex flex-
 
 ## 9. Design System
 
-The app uses a **flat, manifesto-style design** targeting Gen Z aesthetics, with support for both **dark mode** (default) and **light mode**.
+The app uses a **flat, manifesto-style design** targeting Gen Z aesthetics, with support for both **light mode** (default) and **dark mode**.
 
 ### Theme System
-- Dark mode is the default. Preference is persisted in `localStorage` under the key `theme` (`'dark'` | `'light'`).
-- An inline `<script>` in `index.html` adds `.dark` to `<html>` before first paint to avoid flash.
+- Light mode is the default. Preference is persisted in `localStorage` under the key `theme` (`'dark'` | `'light'`).
+- An inline `<script>` in `index.html` adds `.dark` to `<html>` before first paint only when the stored preference is `dark`, avoiding flash.
 - `useThemeStore` owns all theme logic. Call `themeStore.toggle()` to switch; read `themeStore.isDark` to check.
 - Tailwind's `dark:` variant is activated by the `.dark` class on `<html>` via `@custom-variant dark (&:where(.dark, .dark *))` in `main.css`.
-- **All components and views carry both light and `dark:` Tailwind classes.** Never add a colour class without its counterpart.
+- **All components and views carry both light and `dark:` Tailwind classes.** Keep body copy darker in light mode and brighter in dark mode; never add a colour class without its counterpart.
 
 ### Fonts
 - **Headings (`h1`–`h6`)**: `Syne` — Black/ExtraBold weight, `uppercase`, tight `tracking-tight` or `tracking-tighter`
@@ -428,8 +428,8 @@ The app uses a **flat, manifesto-style design** targeting Gen Z aesthetics, with
 | `zinc-800` / `zinc-900` | — | Dividers, secondary surfaces |
 | `zinc-900` | Primary text, key headings | — |
 | `white` | — | Primary text, key headings |
-| `zinc-500` / `zinc-600` | Body copy, secondary text | Body copy, secondary text |
-| `zinc-400` / `zinc-500` | — | Muted labels, metadata |
+| `zinc-700` / `zinc-800` | Body copy, secondary text | — |
+| `zinc-200` / `zinc-300` | — | Body copy, muted labels, metadata |
 | `red-500` | Primary accent — all "podre" highlights, CTAs, left borders on flagged content | Same |
 | `red-400` / `red-600` | Supporting red tones | Same |
 | `orange-400` / `orange-500` | "Deputies flagrado" stat only | Same |
@@ -449,7 +449,7 @@ The `font-family: 'Syne', sans-serif` is applied inline via `style` attribute on
 ### `useThemeStore` API
 ```ts
 const { isDark, toggle } = useThemeStore()
-// isDark: Ref<boolean> — true = dark mode active
+// isDark: Ref<boolean> — true = dark mode active; false = light mode active (default)
 // toggle(): void — switches mode, updates <html> class and localStorage
 ```
 Bootstrap it once in `App.vue` (`useThemeStore()`) so the watcher fires on app init. Any component can then call it freely without re-registering.
